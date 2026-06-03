@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets");
-    eleventyConfig.addPassthroughCopy(".htaccess");
-    eleventyConfig.addPassthroughCopy("admin");
+    eleventyConfig.addPassthroughCopy("src/.htaccess");
+    eleventyConfig.addPassthroughCopy("src/admin");
 
     // Set global permalinks to resource.html style
     eleventyConfig.addGlobalData("permalink", () => {
