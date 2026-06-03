@@ -1,8 +1,9 @@
 ---
 layout: layouts/base.njk
 title: Art
+permalink: /art.html
 scripts:
-  - "/js/lightbox.js"
+  - "assets/js/lightbox.js"
 images:
   - file: watercolor.jpg
     position: full-photo
@@ -25,7 +26,7 @@ images:
 ---
 <div class='art-layout grid-inherit image-gallery'>
 {% for image in images %}
-    <img src="{{ ('/images/' + image.file) | url }}"
+    <img src="{{ ('/assets/images/' + image.file) | url }}"
         class='{{ image.position }} lightbox-trigger'
         alt="{{ image.alt }}"
         data-caption="">

@@ -1,8 +1,9 @@
 ---
 layout: layouts/base.njk
 title: Photography
+permalink: /photography.html
 scripts:
-  - "/js/lightbox.js"
+  - "assets/js/lightbox.js"
 photos:
   - file: indiana-2025-293.jpg
     caption: Testing
@@ -29,7 +30,7 @@ photos:
 
       {% for photo in photos %}
         {% if loop.index0 % 3 == column %}
-          <img src="{{ ('/images/' + photo.file) | url }}"
+          <img src="{{ ('/assets/images/' + photo.file) | url }}"
                class="lightbox-trigger"
                alt=""
                data-caption="{{ photo.caption }}">

@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Kallie Rollenhagen
+permalink: /
 slides:
   - file: Design-Wayside-all-covers.jpg
     alt: Wayside cover designs
@@ -18,9 +19,9 @@ slides:
 <div class="home-slider home-feature grid-inherit" id="home-slider">
   {% for slide in slides %}
     <div class="slide"{% if loop.first %} data-active{% endif %}>
-      <img src="{{ ('/images/' + slide.file) | url }}"
+      <img src="{{ ('/assets/images/' + slide.file) | url }}"
            alt="{{ slide.alt }}">
     </div>
   {% endfor %}
 </div>
-<script src="{{ '/js/home-slider.js' | url }}"></script>
+<script src="{{ '/assets/js/home-slider.js' | url }}"></script>
