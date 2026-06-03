@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+title: Photography
+scripts:
+  - "/js/lightbox.js"
+photos:
+  - file: indiana-2025-293.jpg
+    caption: Testing
+
+  - file: philadelphia-2025-462.jpg
+    caption: Testing
+
+  - file: BX6A9290.jpg
+    caption: Testing
+
+  - file: indiana-2025-75.jpg
+    caption: Testing
+
+  - file: philadelphia-2025-385.jpg
+    caption: Testing
+
+  - file: BX6A9307.jpg
+    caption: Testing
+---
+<div class="photography-layout grid-inherit image-gallery">
+  
+  {% for column in [0,1,2] %}
+    <div class="photography-column">
+
+      {% for photo in photos %}
+        {% if loop.index0 % 3 == column %}
+          <img src="{{ ('/images/' + photo.file) | url }}"
+               class="lightbox-trigger"
+               alt=""
+               data-caption="{{ photo.caption }}">
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  {% endfor %}
+</div>

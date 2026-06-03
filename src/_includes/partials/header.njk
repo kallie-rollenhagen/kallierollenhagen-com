@@ -1,0 +1,19 @@
+<header class="grid-inherit">
+    <nav>
+    <a href="{{ '/' | url }}">
+      {{ site.title }}
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+    </button>
+    <div class="nav-links">
+      {% for item in site.navigation %}
+        <a href="{{ item.url | url }}"
+           class="{% if item.match in page.url %}active{% endif %}">
+          {{ item.title }}
+        </a>
+      {% endfor %}
+    </div>
+    </nav>
+</header>
+<hr/>

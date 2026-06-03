@@ -1,0 +1,16 @@
+# Turn on the Apache Rewrite Engine
+RewriteEngine On
+
+# Tell the server this site lives inside your specific temporary subdirectory
+RewriteBase /website_e1e2df13/
+
+# RULE 1: THE DESIGN CONFLICT FIX
+# If someone requests exactly "design" or "design/", skip checking the directory
+# and serve design.html immediately.
+RewriteRule ^design/?$ design.html [NC,L]
+
+# RULE 2: STANDARD EXTENSIONLESS URLS (For Art, About, Photography, and Design Subpages)
+# If the request is not an actual directory that exists, look for a matching .html file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

@@ -1,0 +1,27 @@
+{
+  "title": "Kallie Rollenhagen",
+  "email": "hello@kallierollenhagen.com",
+
+  "navigation": [
+    {
+      "title": "Design",
+      "url": "/design",
+      "match": "design"
+    },
+    {
+      "title": "Art",
+      "url": "/art",
+      "match": "/art"
+    },
+    {
+      "title": "Photography",
+      "url": "/photography",
+      "match": "/photography"
+    },
+    {
+      "title": "About",
+      "url": "/about",
+      "match": "/about"
+    }
+  ]
+}

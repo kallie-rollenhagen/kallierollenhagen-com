@@ -1,0 +1,81 @@
+---
+layout: layouts/base.njk
+title: About
+permalink: /about.html
+photo: 
+  file: Kallie-Rollenhagen-About.png
+  alt: Kallie Rollenhagen portrait
+  credit: Photo by Zoe Prinds-Flash
+
+contact:
+  location: Northfield, Minnesota
+  email: kallie.rollenhagen@gmail.com
+
+links:
+  - text: CV
+    url: /
+  - text: Instagram
+    url: https://www.instagram.com/kallierollenhagen/
+  - text: LinkedIn
+    url: https://www.linkedin.com/in/kallierollenhagen
+  - text: Photography | For Hire
+    url: /
+
+bio:
+  - Kallie is a designer, creative director, photographer, and artist. She loves working with scrappy entrepreneurs, rural regenerators, and other artists and designers. She partners with doers and makers to elevate their work (and make new friends).
+  - Raised on a corn farm on the flat, fertile soil of south central Minnesota, she has a deep love of prairie places and people, with a special attraction to the less-flat topography of the driftless region. One of her core beliefs is that small places deserve nice things.
+  - Kallie is currently the director of design and user experience at Carleton College.
+
+education:
+    - school: Minneapolis College of Art & Design
+      degree: MA in graphic & web design
+    - school: University of Wisconsin-Milwaukee
+      degree: BA in psychology, minor in architecture
+clients:
+  - Artists and Arts Organizations
+  - Architects
+  - Cafes and Restaurants
+  - Cool People with an Interesting Idea
+  - Interior Designers
+  - Rural Economic Development Agencies
+  - Small Businesses
+  - Tourism Agencies
+---
+<div class="about-layout grid-inherit">
+    <div class="about-column about-column-1">
+        <figure>
+            <img src="{{ ('/images/' + photo.file) | url }}" alt="{{ photo.alt }}">
+            <figcaption>{{ photo.credit }}</figcaption>
+        </figure>
+        <div>
+            <p>{{ contact.location }}<br/>
+            {{ contact.email }}</p>
+            <ul>
+                {% for link in links %}
+                <li><a href='{{ link.url }}'>{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="about-column about-column-2">
+        <h3>Bio</h3>
+        <hr>
+        {% for paragraph in bio %}
+        <p>{{ paragraph }}</p>
+        {% endfor%}
+    </div>
+    <div class="about-column about-column-3">
+        <h3>Education</h3>
+        <hr>
+        {% for degree in education %}
+        <p><strong>{{ degree.school }}</strong> | {{ degree.degree }}</p>
+        {% endfor %}
+        <h3 style="margin-top: 24px;">Ideal Clients</h3>
+        <hr>
+        <ul>
+            {% for client in clients %}
+            <li>{{ client }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

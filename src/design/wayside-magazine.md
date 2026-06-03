@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Wayside Magazine
+---
+<div class="design-project-grid">
+    <div class="design-text-container">
+        <div class="design-text-top">
+            <h2>{{ title }}</h2>
+            <span>Layout Design | Brand Development</span>
+            <p>CREATIVE DIRECTION: Kallie Rollenhagen<br/>
+            DESIGNER: Nancy Eato<br/>
+            PHOTOGRAPHY: Zach Spindler-Kragge
+            </p>
+        </div>
+        <div class="design-text-rest">
+            <p>A quarterly travel magazine for off-the-road and underrated places, focused on the essence of a place—captured via essays and recommendations from locals and emotive film photography. Featured locations are primarily U.S. based, with more of a Midwest focus, occasionally featuring spots further afield.</p>
+            <h3>Visual Direction</h3>
+            <p>Adventurous and curious, embodied by documentary style photo essays; modern, slightly quirky typefaces; textural cover photos; and contemporary colors.</p>
+            <h3>Brand Voice</h3>
+            <p>An irreverent, sincere and authentic tilt, with a dash of the Monocle (design-forward) personality. A more edited and rural version of Atlas Obscura, content-wise.</p>
+            <h3>Audience</h3>
+            <p>Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place. They are the vinyl hunters, light roast coffee drinkers, and film photographers looking for low-key mini-vacations while they save up to go to Tokyo.</p>
+        </div>
+    </div>
+    <img class="design-img-first" src="{{ '/images/Design-Wayside-all-covers.jpg' | url }}" alt="">
+    <img class="design-img-stacked" src="{{ '/images/Design-Wayside-green-mockup.jpg' | url }}" alt="">
+    <img class="design-img-fullwidth" src="{{ '/images/wayside_colors.png' | url }}" alt="">
+    <img class="design-img-fullwidth" src="{{ '/images/wayside_style_guide.jpg' | url }}" alt="">

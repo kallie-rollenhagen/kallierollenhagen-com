@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Art
+scripts:
+  - "/js/lightbox.js"
+images:
+  - file: watercolor.jpg
+    position: full-photo
+    alt: Kallie portrait
+  - file: 0A9A5587.jpg
+    position: half-photo-left
+    alt: Kallie portrait
+  - file: 0A9A5628.jpg
+    position: half-photo-right
+    alt: Kallie portrait
+  - file: 0A9A5593.jpg
+    position: full-photo
+    alt: Kallie portrait
+  - file: 0A9A5595.jpg
+    position: half-photo-left
+    alt: Kallie portrait
+  - file: 0A9A5598.jpg
+    position: half-photo-right
+    alt: Kallie portrait
+---
+<div class='art-layout grid-inherit image-gallery'>
+{% for image in images %}
+    <img src="{{ ('/images/' + image.file) | url }}"
+        class='{{ image.position }} lightbox-trigger'
+        alt="{{ image.alt }}"
+        data-caption="">
+{% endfor %}
+</div>
