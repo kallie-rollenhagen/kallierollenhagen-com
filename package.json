@@ -1,0 +1,24 @@
+{
+  "name": "kallie",
+  "version": "1.0.0",
+  "description": "This is the static site generator (SSG) that builds www.kallierollenhagen.com.",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kallie-rollenhagen/kallierollenhagen-com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kallie-rollenhagen/kallierollenhagen-com/issues"
+  },
+  "homepage": "https://github.com/kallie-rollenhagen/kallierollenhagen-com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
