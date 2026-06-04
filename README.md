@@ -33,6 +33,12 @@ This is the static site generator (SSG) that builds www.kallierollenhagen.com.
 2. Run Eleventy to build the static site files in the "_site" directory.
 3. Move the contents of the "_site" directory into the server.
 
+## Decap CMS Authentication
+* GitHub OAuth App
+* Netlify project that imports the website repository
+* Netlify Identity activated with GitHub OAuth client ID and secret
+* Additional collaborators added to GitHub repo and invited via Netlify identity
+
 ## Editing with Decap CMS
 
 ## Editing with Code Editor
