@@ -40,11 +40,9 @@ This is the static site generator (SSG) that builds www.kallierollenhagen.com.
 * Additional collaborators added to GitHub repo and invited via Netlify identity
 
 ## Editing with Decap CMS
-
 ## Editing with Code Editor
 
 ## Media Sizing
-
 * Grid images
     * Aspect ration: 3w:2h
     * Format: AVIF
