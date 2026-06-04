@@ -27,6 +27,31 @@ This is the static site generator (SSG) that builds www.kallierollenhagen.com.
     * **.eleventyignore**: List of files and directories that Eleventy ignores when building site.
     * **.gitignore**: List of files and directories that git ignores when creating snapshots of site.
 
+## Publishing workflow
+
+1. Edit any of the files in this codebase.
+2. Run Eleventy to build the static site files in the "_site" directory.
+3. Move the contents of the "_site" directory into the server.
+
+## Editing with Decap CMS
+
+## Editing with Code Editor
+
+## Media Sizing
+
+* Grid images
+    * Aspect ration: 3w:2h
+    * Format: AVIF
+    * File size: 500-800KB maximum
+    * Dimension: 2100x1400
+
+ffmpeg -i input.tif \
+-c:v libaom-av1 \
+-vf "scale=2100:1400:flags=lanczos" \
+-pix_fmt yuv444p \
+-crf 15 \
+-still-picture 1 \
+output_1602.avif
 
 ## To do
 
