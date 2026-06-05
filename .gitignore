@@ -1,3 +1,10 @@
 node_modules/
 _site/
 .DS_Store
+oauth/.env.local
+oauth/.env.local.php
+oauth/.env.*.local
+oauth/config/secrets/prod/prod.decrypt.private.php
+oauth/public/bundles/
+oauth/var/
+oauth/vendor

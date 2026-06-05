@@ -2,7 +2,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/.htaccess");
     eleventyConfig.addPassthroughCopy("src/admin");
-    eleventyConfig.addPassthroughCopy("src/oauth");
+    eleventyConfig.addPassthroughCopy("oauth");
 
     // Set global permalinks to resource.html style
     eleventyConfig.addGlobalData("permalink", () => {
@@ -26,6 +26,6 @@ module.exports = function (eleventyConfig) {
       output: "_site"
     },
     // Injects the Bluehost subfolder path prefix automatically
-    // pathPrefix: "website_e1e2df13" 
+    pathPrefix: "website_e1e2df13" 
   };
 };

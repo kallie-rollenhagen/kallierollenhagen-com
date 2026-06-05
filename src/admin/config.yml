@@ -1,6 +1,9 @@
 backend:
-    name: git-gateway
+    name: github
+    repo: kallie-rollenhagen/kallierollenhagen-com
     branch: main
+    base_url: https://jqj.rlj.mybluehost.me/website_e1e2df13/oauth/public
+    auth_endpoint: /auth
 
 media_folder: "src/assets/images/"
 public_folder: "/assets/images/"
