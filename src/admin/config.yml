@@ -14,3 +14,11 @@ collections:
         file: "src/content/art.njk"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+  - name: test
+    label: Test
+    files:
+      - label: Test
+        name: test
+        file: src/content/test.md
+        fields:
+          - { label: Title, name: title, widget: string }
