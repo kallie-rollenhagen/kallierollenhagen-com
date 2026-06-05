@@ -19,6 +19,6 @@ collections:
     files:
       - label: Test
         name: test
-        file: src/content/test.md
+        file: src/content/test2.md
         fields:
           - { label: Title, name: title, widget: string }
