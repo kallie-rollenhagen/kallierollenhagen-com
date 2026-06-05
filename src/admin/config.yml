@@ -6,6 +6,7 @@ media_folder: "src/assets/images/"
 collections:
   - name: "art"
     label: "Art Page"
+    format: frontmatter
     files:
       - label: "Art Page"
         name: "art"
