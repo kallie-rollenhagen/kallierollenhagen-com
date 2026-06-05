@@ -1,7 +1,8 @@
 backend:
     name: git-gateway
 
-media_folder: "/src/assets/images/"
+media_folder: "src/assets/images/"
+public_folder: "assets/images/"
 
 collections:
   - name: "art"
