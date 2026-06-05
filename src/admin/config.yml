@@ -8,7 +8,7 @@ collections:
     label: "Art Page"
     format: frontmatter
     files:
-      - label: "Art Page"
+      - label: "Art"
         name: "art"
         file: "src/content/art.njk"
         fields:
