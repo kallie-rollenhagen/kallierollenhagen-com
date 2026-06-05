@@ -1,5 +1,5 @@
 ---
-title: Doink Doink title frontmatter
+title: Doink Doink edited in Decap
 ---
 
 Hello World
