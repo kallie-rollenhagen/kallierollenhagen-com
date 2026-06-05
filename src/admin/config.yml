@@ -12,3 +12,4 @@ collections:
         file: "src/content/art.njk"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
