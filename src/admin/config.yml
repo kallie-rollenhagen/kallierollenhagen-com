@@ -17,7 +17,7 @@ collections:
   - name: test
     label: Test Page
     files:
-      - label: Test
+      - label: Test2
         name: test
         file: src/content/test2.md
         fields:
