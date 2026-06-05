@@ -13,9 +13,9 @@ collections:
         name: art
         file: "src/content/art.njk"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: Title, name: title, widget: string }
   - name: test
-    label: Test
+    label: Test Page
     files:
       - label: Test
         name: test
