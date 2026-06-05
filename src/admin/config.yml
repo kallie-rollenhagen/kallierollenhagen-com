@@ -6,12 +6,11 @@ media_folder: "src/assets/images/"
 public_folder: "/assets/images/"
 
 collections:
-  - name: "art"
-    label: "Art Page"
+  - name: art
+    label: Art Page
     files:
-      - label: "Art"
-        format: frontmatter
-        name: "art"
+      - label: Art
+        name: art
         file: "src/content/art.njk"
         fields:
           - { label: "Title", name: "title", widget: "string" }
