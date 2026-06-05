@@ -1,5 +1,5 @@
 ---
-title: Test Title
+title: Doink Doink title frontmatter
 ---
 
 Hello World
