@@ -7,9 +7,9 @@ public_folder: "assets/images/"
 collections:
   - name: "art"
     label: "Art Page"
-    format: frontmatter
     files:
       - label: "Art"
+        format: frontmatter
         name: "art"
         file: "src/content/art.njk"
         fields:
