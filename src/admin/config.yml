@@ -2,7 +2,7 @@ backend:
     name: github
     repo: kallie-rollenhagen/kallierollenhagen-com
     branch: main
-    base_url: https://jqj.rlj.mybluehost.me/website_e1e2df13/oauth/public
+    base_url: https://decap-proxy.hallenj.workers.dev
     auth_endpoint: /auth
 
 media_folder: "src/assets/images/"

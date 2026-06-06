@@ -7,4 +7,4 @@ oauth/.env.*.local
 oauth/config/secrets/prod/prod.decrypt.private.php
 oauth/public/bundles/
 oauth/var/
-oauth/vendor
+oauth/vendor/
