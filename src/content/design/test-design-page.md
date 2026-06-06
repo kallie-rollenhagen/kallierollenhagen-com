@@ -1,3 +1,0 @@
----
-title: Test design page
----
