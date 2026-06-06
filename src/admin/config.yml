@@ -14,7 +14,8 @@ collections:
     label: "Design Projects"
     folder: "src/content/design/"
     create: true
-    extensions: md
+    format: frontmatter
+    extensions: njk
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
