@@ -17,6 +17,13 @@ collections:
         file: "src/content/art.njk"
         fields:
           - { label: Title, name: title, widget: string }
+
+  - label: "Design Project"
+    name: "project"
+    folder: "src/content/design"
+    create: true
+    fields:
+
   - name: test
     label: Test Page
     files:
