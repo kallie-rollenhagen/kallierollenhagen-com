@@ -9,26 +9,32 @@ media_folder: "src/assets/images/"
 public_folder: "/assets/images/"
 
 collections:
+
+  - name: "projects"
+    label: "Design Projects"
+    folder: "src/content/design"
+    create: true
+    format: frontmatter
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      
   - name: art
-    label: Art Page
+    label: Art
+    format: frontmatter
     files:
       - label: Art
         name: art
         file: "src/content/art.njk"
         fields:
           - { label: Title, name: title, widget: string }
+          - {label: "Body", name: "body", widget: "markdown"}
 
-  - label: "Design Project"
-    name: "project"
-    folder: "src/content/design"
-    create: true
-    fields:
-
-  - name: test
-    label: Test Page
+  - name: photography
+    label: Photography
     files:
       - label: Test2
         name: test
         file: src/content/test2.md
         fields:
           - { label: Title, name: title, widget: string }
+          - {label: "Body", name: "body", widget: "markdown"}
