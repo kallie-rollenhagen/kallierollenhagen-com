@@ -12,11 +12,12 @@ collections:
 
   - name: "projects"
     label: "Design Projects"
-    folder: "src/content/design"
+    folder: "src/content/design/"
     create: true
-    format: frontmatter
+    extensions: md
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
       
   - name: art
     label: Art
