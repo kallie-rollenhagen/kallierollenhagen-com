@@ -10,6 +10,25 @@ credits:
     person: Nancy Eato
   - role: Photography
     person: Zach Spindler-Kagge
+main_image:
+    file: Design-Wayside-all-covers.avif
+    alt: Wayside Magazine covers
+side_image:
+    file: Design-Wayside-green-mockup.jpg
+    alt: Wayside Magazine inner mock up
+lower_images:
+  - file: wayside_colors.png
+    alt: Wayside Magazine color palette
+  - file: wayside_style_guide.jpg
+    alt: Wayside Magazine style guide
+project_description: |
+    <p>A quarterly travel magazine for off-the-road and underrated places, focused on the essence of a place—captured via essays and recommendations from locals and emotive film photography. Featured locations are primarily U.S. based, with more of a Midwest focus, occasionally featuring spots further afield.</p>
+    <h3>Visual Direction</h3>
+    <p>Adventurous and curious, embodied by documentary style photo essays; modern, slightly quirky typefaces; textural cover photos; and contemporary colors.</p>
+    <h3>Brand Voice</h3>
+    <p>An irreverent, sincere and authentic tilt, with a dash of the Monocle (design-forward) personality. A more edited and rural version of Atlas Obscura, content-wise.</p>
+    <h3>Audience</h3>
+    <p>Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place. They are the vinyl hunters, light roast coffee drinkers, and film photographers looking for low-key mini-vacations while they save up to go to Tokyo.</p>
 ---
 <div class="design-project-grid">
     <div class="design-text-container">
@@ -23,16 +42,11 @@ credits:
             </p>
         </div>
         <div class="design-text-rest">
-            <p>A quarterly travel magazine for off-the-road and underrated places, focused on the essence of a place—captured via essays and recommendations from locals and emotive film photography. Featured locations are primarily U.S. based, with more of a Midwest focus, occasionally featuring spots further afield.</p>
-            <h3>Visual Direction</h3>
-            <p>Adventurous and curious, embodied by documentary style photo essays; modern, slightly quirky typefaces; textural cover photos; and contemporary colors.</p>
-            <h3>Brand Voice</h3>
-            <p>An irreverent, sincere and authentic tilt, with a dash of the Monocle (design-forward) personality. A more edited and rural version of Atlas Obscura, content-wise.</p>
-            <h3>Audience</h3>
-            <p>Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place. They are the vinyl hunters, light roast coffee drinkers, and film photographers looking for low-key mini-vacations while they save up to go to Tokyo.</p>
+            {{ project_description | safe }}
         </div>
     </div>
-    <img class="design-img-first" src="{{ '/assets/images/Design-Wayside-all-covers.jpg' | url }}" alt="">
-    <img class="design-img-stacked" src="{{ '/assets/images/Design-Wayside-green-mockup.jpg' | url }}" alt="">
-    <img class="design-img-fullwidth" src="{{ '/assets/images/wayside_colors.png' | url }}" alt="">
-    <img class="design-img-fullwidth" src="{{ '/assets/images/wayside_style_guide.jpg' | url }}" alt="">    
+    <img class="design-img-first" src="{{ ('/assets/images/' + main_image.file) | url }}" alt="{{ main_image.alt }}">
+    <img class="design-img-stacked" src="{{ ('/assets/images/' + side_image.file) | url }}" alt="{{ side_image.alt }}">
+    {% for lower_image in lower_images %}
+        <img class="design-img-fullwidth" src="{{ ('/assets/images/' + lower_image.file) | url }}" alt="{{ lower_image.alt }}">
+    {% endfor %}
