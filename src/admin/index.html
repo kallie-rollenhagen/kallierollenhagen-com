@@ -9,5 +9,30 @@
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+    <script>
+      CMS.registerCustomFormat('njk', 'njk', {
+        fromFile: function(text) {
+          const match = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+          if (!match) return { body: text };
+          
+          const frontmatter = {};
+          match[1].split('\n').forEach(line => {
+            const [key, ...rest] = line.split(':');
+            if (key && rest.length) {
+              frontmatter[key.trim()] = rest.join(':').trim();
+            }
+          });
+          
+          return { ...frontmatter, body: match[2] };
+        },
+        toFile: function(value) {
+          const { body, ...fields } = value;
+          const frontmatter = Object.entries(fields)
+            .map(([k, v]) => `${k}: ${v}`)
+            .join('\n');
+          return `---\n${frontmatter}\n---\n${body || ''}`;
+        }
+      });
+    </script>
   </body>
 </html>
