@@ -25,7 +25,26 @@ collections:
         fields:
           - {label: "Role", name: "role", widget: "string"}
           - {label: "Person", name: "person", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Project Description", name: "project_description", widget: "text"}
+      - label: "Main Image"
+        name: "main_image"
+        widget: "object"
+        fields:
+          - {label: "File", name: "file", widget: "image"}
+          - {label: "Alt Text", name: "alt", widget: "string"}
+      - label: "Secondary Side Image"
+        name: "side_image"
+        widget: "object"
+        fields:
+          - {label: "File", name: "file", widget: "image"}
+          - {label: "Alt Text", name: "alt", widget: "string"}
+      - label: "Lower Images"
+        name: "lower_images"
+        widget: "list"
+        fields:
+          - {label: "File", name: "file", widget: "image"}
+          - {label: "Alt Text", name: "alt", widget: "string"}
+      - {label: "Template", name: "body", widget: "markdown"}
       
   - name: art
     label: Art
