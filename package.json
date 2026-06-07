@@ -4,6 +4,7 @@
   "description": "This is the static site generator (SSG) that builds www.kallierollenhagen.com.",
   "main": "eleventy.config.js",
   "scripts": {
+    "build": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
