@@ -34,8 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.style.setProperty('right', '0');
     navContainer.classList.toggle('menu-open');
     body.classList.add('body-menu-open')
-
-    console.log("TESTING");
   });
 
   navContainer.addEventListener('transitionend', (event) => {

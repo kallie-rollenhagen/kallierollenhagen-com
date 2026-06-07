@@ -14,11 +14,18 @@ collections:
     label: "Design Projects"
     folder: "src/content/design/"
     create: true
-    format: frontmatter
-    extensions: njk
+    format: njk
+    extension: njk
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
+      - label: "Credits"
+        name: "credits"
+        widget: "list"
+        fields:
+          - {label: "Role", name: "role", widget: "string"}
+          - {label: "Person", name: "person", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
       
   - name: art
     label: Art
@@ -29,6 +36,14 @@ collections:
         file: "src/content/art.njk"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - {label: "File", name: "file", widget: "image"}
+              - {label: "Position", name: "position", widget: "select", options: ["full-photo", "half-photo-left", "half-photo-right"]}
+              - {label: "Alt Text", name: "alt", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
   - name: photography

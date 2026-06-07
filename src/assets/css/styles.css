@@ -117,6 +117,10 @@ img {
     width: 100%;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: 25px repeat(12, minmax(0, 1fr));

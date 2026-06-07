@@ -2,15 +2,24 @@
 layout: layouts/base.njk
 title: Wayside Magazine
 permalink: /design/wayside-magazine.html
+roles_played: "Layout Design | Brand Development"
+credits:
+  - role: Creative Direction
+    person: Kallie Rollenhagen
+  - role: Designer
+    person: Nancy Education
+  - role: Photography
+    person: Zach Spindler-Kagge
 ---
 <div class="design-project-grid">
     <div class="design-text-container">
         <div class="design-text-top">
             <h2>{{ title }}</h2>
-            <span>Layout Design | Brand Development</span>
-            <p>CREATIVE DIRECTION: Kallie Rollenhagen<br/>
-            DESIGNER: Nancy Eato<br/>
-            PHOTOGRAPHY: Zach Spindler-Kragge
+            <span>{{ roles_played }}</span>
+            <p>
+            {% for credit in credits %}
+                <span class="uppercase">{{ credit.role }}</span>: {{ credit.person }}<br/>
+            {% endfor %}
             </p>
         </div>
         <div class="design-text-rest">
