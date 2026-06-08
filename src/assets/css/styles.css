@@ -1,6 +1,6 @@
 /* Global definition */
 :root {
-  --gutter_size: 25px;
+  --gutter_size: 35px;
   --dark: #363636;
   --light: #FAFAFA;
   --accent_yellow: #DEEE81;
@@ -123,7 +123,7 @@ img {
 
 #grid-container {
   display: grid;
-  grid-template-columns: 25px repeat(12, minmax(0, 1fr));
+  grid-template-columns: 35px repeat(12, minmax(0, 1fr));
   gap: 0 var(--gutter_size); 
   box-sizing: border-box;
   margin-bottom: var(--gutter_size)
@@ -311,7 +311,7 @@ hr, main {
     display: grid;
     gap: 1.5rem;
     grid-column: 2 / 14;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
         "text first"
