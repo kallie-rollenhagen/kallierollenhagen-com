@@ -314,10 +314,9 @@ hr, main {
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
-        "text first"
-        "text stacked"
-        "full1 full1"
-        "full2 full2";
+        "text first first"
+        "text stacked stacked"
+        "full1 full2 full2";
 }
 
 .project-card {
