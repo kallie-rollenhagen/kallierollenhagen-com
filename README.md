@@ -42,6 +42,8 @@ This is the static site generator (SSG) that builds www.kallierollenhagen.com.
 ## Editing with Decap CMS
 ## Editing with Code Editor
 
+Testing GitHub Action
+
 ## Media Sizing
 * Grid images
     * Aspect ration: 3w:2h
