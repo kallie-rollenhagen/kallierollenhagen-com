@@ -393,11 +393,11 @@ hr, main {
 }
 
 .project-card {
-  position: relative; /* CRUCIAL: Pins the absolute overlay strictly inside this card box */
+  position: relative;
   display: block;
   width: 100%;
-  overflow: hidden; /* Keeps everything cleanly contained */
-  text-decoration: none; /* Prevents underlines on her typography text */
+  overflow: hidden;
+  text-decoration: none;
 }
 
 .project-card img {
@@ -405,11 +405,11 @@ hr, main {
   width: 100%;
   height: auto;
   object-fit: cover;
-  transition: transform 0.5s ease; /* Subtle zoom effect for extra polish */
+  transition: transform 0.5s ease;
 }
 
 .project-overlay {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
