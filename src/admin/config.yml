@@ -48,7 +48,7 @@ collections:
       
   - name: art
     label: Art
-    format: frontmatter
+    format: njk
     files:
       - label: Art
         name: art
@@ -63,14 +63,15 @@ collections:
               - {label: "File", name: "file", widget: "image"}
               - {label: "Position", name: "position", widget: "select", options: ["full-photo", "half-photo-left", "half-photo-right"]}
               - {label: "Alt Text", name: "alt", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template", name: "body", widget: "markdown"}
 
   - name: photography
     label: Photography
     files:
-      - label: Test2
-        name: test
-        file: src/content/test2.md
+      - label: Photography
+        name: photography
+        file: src/content/photography.njk
         fields:
           - { label: Title, name: title, widget: string }
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - {label: "Template", name: "body", widget: "markdown"}
