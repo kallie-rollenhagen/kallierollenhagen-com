@@ -1,18 +1,19 @@
 ---
 layout: layouts/base.njk
+title: Wayside Magazine
 permalink: /design/wayside-magazine.html
-side_image:
-  file: Design-Wayside-green-mockup.jpg
-  alt: Wayside Magazine inner mock up
 roles_played: Layout Design | Brand Development
+credits:
+  - role: Brand & Design System
+    person: Kallie Rollenhagen
+  - role: Photography
+    person: Kallie Rollenhagen
 main_image:
   file: Design-Wayside-all-covers.avif
   alt: Wayside Magazine covers
-lower_images:
-  - file: 8-covers.png
-    alt: 8 different Wayside covers
-  - file: colors-for-web.png
-    alt: colors selected from four photos
+side_image:
+  file: Design-Wayside-green-mockup.jpg
+  alt: Wayside Magazine inner mock up
 project_description: >
   <p>A quarterly travel magazine for off-the-road and underrated places, focused
   on the essence of a place—captured via essays and recommendations from locals
@@ -38,12 +39,47 @@ project_description: >
   who live in a place. They are the vinyl hunters, light roast coffee drinkers,
   and film photographers looking for low-key mini-vacations while they save up
   to go to Tokyo.</p>
-title: Wayside Magazine
-credits:
-  - role: Brand & Design System
-    person: Kallie Rollenhagen
-  - role: Photography
-    person: Kallie Rollenhagen
+
+lower_rows:
+    - layout: "left-wide"
+      elements:
+        - type: image
+          file: 8-covers.png
+          alt: 8 different Wayside covers
+          span: wide
+        - type: text
+          text: Some caption text here
+          span: narrow
+    - layout: "right-wide"
+      elements:
+        - type: text
+          text: Some caption text here
+          span: narrow
+        - type: image
+          file: colors-for-web.png
+          alt: colors selected from four photos
+          span: wide
+    - layout: "thirds"
+      elements:
+        - type: image
+          file: Design-CarletonSustainable-Futures-posters.avif
+          alt: colors selected from four photos
+          span: third
+        - type: image
+          file: Design-CarletonSustainable-Futures-posters.avif
+          alt: colors selected from four photos
+          span: third
+        - type: image
+          file: Design-CarletonSustainable-Futures-posters.avif
+          alt: colors selected from four photos
+          span: third
+    - layout: "full-width"
+      elements:
+        - type: image
+          file: Design-Goldenrod-sandwich-board.avif
+          alt: colors selected from four photos
+          span: full-width
+        
 ---
 <div class="design-project-grid">
     <div class="design-text-container">
@@ -62,6 +98,23 @@ credits:
     </div>
     <img class="design-img-first" src="{{ ('/assets/images/' + main_image.file) | url }}" alt="{{ main_image.alt }}">
     <img class="design-img-stacked" src="{{ ('/assets/images/' + side_image.file) | url }}" alt="{{ side_image.alt }}">
-    {% for lower_image in lower_images %}
-        <img class="design-img-fullwidth" src="{{ ('/assets/images/' + lower_image.file) | url }}" alt="{{ lower_image.alt }}">
+</div>
+<div class="design-rows">
+    {% for row in lower_rows %}
+        <div class="design-row {{ row.layout }}">
+        {% for element in row.elements %}
+            <div class="design-row-element {{ element.type }}">
+            {% if element.type == "image" %}
+                <img src="{{ ('/assets/images/' + element.file) | url }}" alt="{{ element.alt }}">
+            {% elif element.type == "text" %}
+                <p>{{ element.text }}</p>
+            {% endif %}
+            </div>
+        {% endfor %}
+        </div>
     {% endfor %}
+</div>
+    
+    {# {% for lower_image in lower_images %}
+        <img class="design-img-fullwidth" src="{{ ('/assets/images/' + lower_image.file) | url }}" alt="{{ lower_image.alt }}">
+    {% endfor %} #}
