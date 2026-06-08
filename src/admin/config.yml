@@ -67,6 +67,7 @@ collections:
 
   - name: photography
     label: Photography
+    format: njk
     files:
       - label: Photography
         name: photography
@@ -74,4 +75,4 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Permalink", name: "permalink", widget: "string" }
-          - {label: "Template", name: "body", widget: "markdown"}
+          - { label: "Template", name: "body", widget: "markdown" }
