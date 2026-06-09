@@ -1,6 +1,6 @@
 /* Global definition */
 :root {
-  --gutter_size: 30px;
+  --gutter_size: clamp(12px, 2.4vw, 30px);
   --dark: #363636;
   --light: #FAFAFA;
   --accent_yellow: #DEEE81;
@@ -20,6 +20,7 @@ body {
     color: var(--dark);
     margin: 0px;
     background-color: var(--light);
+    max-width: 1600px;
 }
 
 body.body-menu-open {
@@ -131,7 +132,7 @@ img {
 
 #grid-container {
   display: grid;
-  grid-template-columns: 35px repeat(12, minmax(0, 1fr));
+  grid-template-columns: 35px repeat(12, minmax(0, 1fr)) 35px;
   gap: 0 var(--gutter_size); 
   box-sizing: border-box;
   margin-bottom: var(--gutter_size)
@@ -144,12 +145,12 @@ img {
 }
 
 header {
-    grid-column: 1/ 16;
+    grid-column: 1/ 14;
     z-index: 3;
 }
 
 hr, main {
-    grid-column: 1 / 16;
+    grid-column: 1 / 15;
 }
 
 .home-slider {
