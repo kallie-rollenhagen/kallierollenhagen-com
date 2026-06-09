@@ -38,8 +38,8 @@ collections:
         fields:
           - {label: "File", name: "file", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
-      - label: "Lower Image Rows"
-        name: "lower_rows"
+      - label: "Gallery"
+        name: "gallery"
         widget: "list"
         fields:
           - label: "Layout"

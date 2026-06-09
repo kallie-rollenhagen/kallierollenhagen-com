@@ -4,7 +4,7 @@ title: Art
 permalink: /art.html
 scripts:
   - "assets/js/lightbox.js"
-images:
+gallery:
   - file: watercolor.jpg
     position: full-photo
     alt: Kallie portrait
@@ -25,10 +25,10 @@ images:
     alt: Kallie portrait
 ---
 <div class='art-layout grid-inherit image-gallery'>
-{% for image in images %}
-    <img src="{{ ('/assets/images/' + image.file) | url }}"
-        class='{{ image.position }} lightbox-trigger'
-        alt="{{ image.alt }}"
+{% for item in gallery %}
+    <img src="{{ ('/assets/images/' + item.file) | url }}"
+        class='{{ item.position }} lightbox-trigger'
+        alt="{{ item.alt }}"
         data-caption="">
 {% endfor %}
 </div>
