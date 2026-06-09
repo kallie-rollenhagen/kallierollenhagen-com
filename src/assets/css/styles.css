@@ -1,6 +1,6 @@
 /* Global definition */
 :root {
-  --gutter_size: 35px;
+  --gutter_size: 30px;
   --dark: #363636;
   --light: #FAFAFA;
   --accent_yellow: #DEEE81;
@@ -392,21 +392,31 @@ hr, main {
     font-style: italic;
 }
 
+.project-card-wrapper {
+    width: 100%;
+}
+
 .project-card {
     position: relative;
     display: block;
     width: 100%;
-    overflow: hidden;
     text-decoration: none;
     opacity: 0;
     clip-path: inset(50% 0 50% 0);
     transition: clip-path 0.6s ease-out, opacity 0.3s ease-out;
     transition-delay: var(--delay, 0s);
+    /* will-change: clip-path; */
+    /* transform: translateZ(0); */
+    /* opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform 0.6s ease-out, opacity 0.3s ease-out;
+    transition-delay: var(--delay, 0s); */
 }
 
 .project-card.visible {
     opacity: 1;
-    clip-path: inset(0% 0 0% 0);
+    clip-path: inset(0% 0 0% 0);    
 }
 
 .project-card img {
@@ -455,9 +465,9 @@ hr, main {
 /* --- THE HOVER ACTIONS --- */
 
 /* 1. Fade the overlay smoothly into view */
-.project-card:hover .project-overlay {
+/* .project-card:hover .project-overlay {
   opacity: 1;
-}
+} */
 
 /* 2. Optional: Slightly scales up the background photography image on hover for depth */
 .project-card:hover img {

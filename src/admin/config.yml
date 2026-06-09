@@ -38,12 +38,33 @@ collections:
         fields:
           - {label: "File", name: "file", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
-      - label: "Lower Images"
-        name: "lower_images"
+      - label: "Lower Image Rows"
+        name: "lower_rows"
         widget: "list"
         fields:
-          - {label: "File", name: "file", widget: "image"}
-          - {label: "Alt Text", name: "alt", widget: "string"}
+          - label: "Layout"
+            name: "layout"
+            widget: "select"
+            options:
+              - { label: "Left Wide (2/3 + 1/3)", value: "left-wide" }
+              - { label: "Right Wide (1/3 + 2/3)", value: "right-wide" }
+              - { label: "Thirds (1/3 + 1/3 + 1/3)", value: "thirds" }
+              - { label: "Full Width (3/3)", value: "full-width" }
+          - label: "Elements"
+            name: "elements"
+            widget: "list"
+            types:
+              - label: "Image"
+                name: "image"
+                widget: "object"
+                fields:
+                  - { label: "File", name: "file", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Text"
+                name: "text"
+                widget: "object"
+                fields:
+                  - { label: "Text", name: "text", widget: "text" }
       - {label: "Template", name: "body", widget: "markdown"}
       
   - name: art

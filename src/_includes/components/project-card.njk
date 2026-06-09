@@ -1,17 +1,17 @@
 {% set side = "left" if loop.index0 % 2 == 0 else "right" %}
+<div class='project-card-wrapper half-photo-{{ side }}'>
+  <a href="{{ project.url | url }}"
+    class="project-card">
 
-<a href="{{ project.url | url }}"
-   class="half-photo-{{ side }} project-card">
+    <img src="{{ ('/assets/images/' + project.image) | url }}"
+        alt="{{ project.title }}"
+        class="half-photo-{{ side }}">
 
-  <img src="{{ ('/assets/images/' + project.image) | url }}"
-       alt="{{ project.title }}"
-       class="half-photo-{{ side }}">
-
-  <div class="project-overlay">
-    <div class="project-info">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.subtitle }}</p>
+    <div class="project-overlay">
+      <div class="project-info">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.subtitle }}</p>
+      </div>
     </div>
-  </div>
-
-</a>
+  </a>
+</div>
