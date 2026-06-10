@@ -6,7 +6,8 @@ backend:
     auth_endpoint: /auth
 
 media_folder: "src/assets/images/"
-public_folder: "/assets/images/"
+public_folder: "/assets/images"
+site_url: "https://jqj.rlj.mybluehost.me/website_e1e2df13"
 
 gallery_field: &gallery_field
   label: Gallery
