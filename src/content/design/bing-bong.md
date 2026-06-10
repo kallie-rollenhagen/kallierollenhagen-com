@@ -1,5 +1,6 @@
 ---
 title: Bing Bong
+roles_played: Badass | Boss
 credits:
   - role: Design
     person: Marty McFly
