@@ -38,4 +38,15 @@ gallery:
         - type: image
           file: /assets/images/purple-mockup-small.jpg
           alt: Wayside cover mockup
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### **Inspiration & Visual Direction**
+
+
+            Adventurous and curious, embodied by bold, editorial photography; modern, slightly quirky typefaces; textural cover photos; and contemporary, contrasting color palettes.
+        - type: image
+          file: /assets/images/moodboard-images-small.jpg
+          alt: Moodboard of several magazines
 ---
