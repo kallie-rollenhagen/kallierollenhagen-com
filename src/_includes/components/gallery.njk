@@ -17,19 +17,19 @@
 {% elif gallery.type == "masonry" %}
 
     {% for column in [0,1,2] %}
-      <div class="photography-column">
+        <div class="photography-column">
 
-        {% for photo in gallery.photos %}
-          {% if loop.index0 % 3 == column %}
-            <img
-              src="{{ ('/assets/images/' + photo.file) | url }}"
-              alt=""
-              data-caption="{{ photo.caption }}"
-              class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
-          {% endif %}
-        {% endfor %}
+            {% for row in gallery.rows %}
+            {% if row.elements[column] %}
+                <img
+                src="{{ ('/assets/images/' + row.elements[column].file) | url }}"
+                alt="{{ row.elements[column].alt }}"
+                data-caption="{{ row.elements[column].caption }}"
+                class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
+            {% endif %}
+            {% endfor %}
 
-      </div>
+        </div>
     {% endfor %}
 
 {% endif %}

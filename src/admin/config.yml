@@ -8,6 +8,62 @@ backend:
 media_folder: "src/assets/images/"
 public_folder: "/assets/images/"
 
+gallery_field: &gallery_field
+  label: Gallery
+  name: gallery
+  widget: object
+  fields:
+    - label: Gallery Type
+      name: type
+      widget: select
+      options:
+        - grid
+        - masonry
+
+    - label: Lightbox
+      name: lightbox
+      widget: boolean
+      default: false
+
+    - label: Rows
+      name: rows
+      widget: list
+      fields:
+        - label: Row
+          name: row
+          widget: object
+          fields:
+            - label: Elements
+              name: elements
+              widget: list
+              fields:
+                - label: Element Type
+                  name: type
+                  widget: select
+                  options:
+                    - image
+                    - text
+
+                - label: Image File
+                  name: file
+                  widget: image
+                  required: false
+
+                - label: Alt Text
+                  name: alt
+                  widget: string
+                  required: false
+
+                - label: Caption
+                  name: caption
+                  widget: string
+                  required: false
+
+                - label: Text Content
+                  name: text
+                  widget: text
+                  required: false
+
 collections:
 
   - name: "projects"
@@ -77,13 +133,14 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Permalink", name: "permalink", widget: "string" }
-          - label: "Images"
-            name: "images"
-            widget: "list"
-            fields:
-              - {label: "File", name: "file", widget: "image"}
-              - {label: "Position", name: "position", widget: "select", options: ["full-photo", "half-photo-left", "half-photo-right"]}
-              - {label: "Alt Text", name: "alt", widget: "string"}
+          # - label: "Images"
+          #   name: "images"
+          #   widget: "list"
+          #   fields:
+          #     - {label: "File", name: "file", widget: "image"}
+          #     - {label: "Position", name: "position", widget: "select", options: ["full-photo", "half-photo-left", "half-photo-right"]}
+          #     - {label: "Alt Text", name: "alt", widget: "string"}
+          - *gallery_field
           - {label: "Template", name: "body", widget: "markdown"}
 
   - name: photography
@@ -96,4 +153,5 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Permalink", name: "permalink", widget: "string" }
+          - *gallery_field
           - { label: "Template", name: "body", widget: "markdown" }

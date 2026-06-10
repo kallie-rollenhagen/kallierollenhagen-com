@@ -9,40 +9,39 @@ gallery:
   type: masonry
   lightbox: true
 
-  photos:
-    - file: indiana-2025-293.jpg
-      caption: Caption 1
+  rows:
+    - elements:
+      - type: image
+        file: indiana-2025-293.jpg
+        alt: 
+        caption: Caption 1
 
-    - file: philadelphia-2025-462.jpg
-      caption: Caption 2
+      - type: image
+        file: philadelphia-2025-462.jpg
+        alt:
+        caption: Caption 2
 
-    - file: BX6A9290.jpg
-      caption: Caption 3
+      - type: image
+        file: BX6A9290.jpg
+        alt:
+        caption: Caption 3
+    
+    - elements:
+      - type: image
+        file: indiana-2025-75.jpg
+        alt:
+        caption: Caption 3
 
-    - file: indiana-2025-75.jpg
-      caption: Caption 3
+      - type: image
+        file: philadelphia-2025-385.jpg
+        alt:
+        caption: Caption 3
 
-    - file: philadelphia-2025-385.jpg
-      caption: Caption 3
-
-    - file: BX6A9307.jpg
-      caption: Caption 3
+      - type: image
+        file: BX6A9307.jpg
+        alt:
+        caption: Caption 3
 ---
 <div class="photography-layout grid-inherit image-gallery">
   {% include "components/gallery.njk" %}
-  {# {% for column in [0,1,2] %}
-    <div class="photography-column">
-
-      {% for photo in gallery.photos %}
-        {% if loop.index0 % 3 == column %}
-          <img src="{{ ('/assets/images/' + photo.file) | url }}"
-               class="lightbox-trigger"
-               alt=""
-               data-caption="{{ photo.caption }}">
-        {% endif %}
-      {% endfor %}
-
-    </div>
-  {% endfor %} #}
-
 </div>
