@@ -24,8 +24,8 @@ main_image:
   file: /assets/images/covers-mockup-small.jpg
   alt: Range of Wayside magazine covers
 side_image:
-  alt: test
-  file: /assets/images/purple-mockup-small.jpg
+  alt: ""
+  file: ""
 gallery:
   lightbox: false
   type: grid
@@ -49,7 +49,6 @@ gallery:
         - type: image
           file: /assets/images/moodboard-images-small.jpg
           alt: Moodboard of several magazines
-        - type: image
     - layout: right-wide
       elements:
         - type: text
