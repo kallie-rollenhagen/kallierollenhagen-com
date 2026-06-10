@@ -118,7 +118,7 @@ collections:
           - {label: "File", name: "file", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
       - *gallery_field
-      - {label: "Template", name: "body", widget: "markdown", required: false}
+      # - {label: "Template", name: "body", widget: "markdown", required: false}
       
   - name: art
     label: Art
