@@ -49,4 +49,27 @@ gallery:
         - type: image
           file: /assets/images/moodboard-images-small.jpg
           alt: Moodboard of several magazines
+        - type: image
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### **Nameplate Iterations**
+
+
+            I explored a more quirky and adventurous directions vs. something more elegant and classic. I also wanted an option with enough contrast to stand out on a rack.
+        - type: image
+          file: /assets/images/nameplate-sketches-small.jpg
+          alt: Three different nameplate mockups
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### **Final Nameplate & Typefaces**
+
+
+            The final nameplate is derived from Necto Mono, designed by Marco Condello. The subhead is in the other brand font, Apfel Grotesk.
+        - type: image
+          file: /assets/images/nameplate-annotated.jpg
+          alt: Annotated nameplate
 ---
