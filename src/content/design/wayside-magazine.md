@@ -7,10 +7,10 @@ credits:
   - role: Photography
     person: Kallie Rollenhagen
 main_image:
-  file: Design-Wayside-all-covers.avif
+  file: /assets/images/Design-Wayside-all-covers.avif
   alt: Wayside Magazine covers
 side_image:
-  file: Design-Wayside-green-mockup.jpg
+  file: /assets/images/Design-Wayside-green-mockup.jpg
   alt: Wayside Magazine inner mock up
 project_description: >
   <p>A quarterly travel magazine for off-the-road and underrated places, focused
@@ -45,7 +45,7 @@ gallery:
         - layout: "left-wide"
           elements:
             - type: image
-              file: 8-covers.png
+              file: /assets/images/8-covers.png
               alt: 8 different Wayside covers
             - type: text
               text: Some caption text here
@@ -54,30 +54,30 @@ gallery:
             - type: text
               text: Some caption text here
             - type: image
-              file: colors-for-web.png
+              file: /assets/images/colors-for-web.png
               alt: colors selected from four photos
         - layout: "halves"
           elements:
             - type: image
-              file: Design-CarletonSustainable-Futures-posters.avif
+              file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos
             - type: image
-              file: Design-CarletonSustainable-Futures-posters.avif
+              file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos 
         - layout: "thirds"
           elements:
             - type: image
-              file: Design-CarletonSustainable-Futures-posters.avif
+              file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos
             - type: image
-              file: Design-CarletonSustainable-Futures-posters.avif
+              file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos
             - type: image
-              file: Design-CarletonSustainable-Futures-posters.avif
+              file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos
         - layout: "full-width"
           elements:
             - type: image
-              file: Design-CarletonSustainable-Futures-posters.avif
+              file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos
 ---

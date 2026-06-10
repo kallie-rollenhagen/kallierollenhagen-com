@@ -635,8 +635,11 @@ hr, main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self: center;
   align-items: center;
   grid-column: 2 / 3;
+  width: fit-content;
+  height: fit-content;
 }
 
 .lightbox-img-wrapper img {

@@ -4,7 +4,7 @@
         {% for element in row.elements %}
             <div class="gallery-row-element {{ element.type }}">
             {% if element.type == "image" %}
-                <img src="{{ ('/assets/images/' + element.file) | url }}" alt="{{ element.alt }}"
+                <img src="{{ element.file | url }}" alt="{{ element.alt }}"
                 class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
             {% elif element.type == "text" %}
                 <p>{{ element.text }}</p>
@@ -22,7 +22,7 @@
             {% for row in gallery.rows %}
             {% if row.elements[column] %}
                 <img
-                src="{{ ('/assets/images/' + row.elements[column].file) | url }}"
+                src="{{ row.elements[column].file | url }}"
                 alt="{{ row.elements[column].alt }}"
                 data-caption="{{ row.elements[column].caption }}"
                 class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
