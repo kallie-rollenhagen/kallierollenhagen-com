@@ -161,6 +161,24 @@ hr, main {
   overflow: hidden;
   background-color: var(--light);
 }
+
+#slider-cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+
+    opacity: 0;
+    transition:
+        opacity 0.2s ease,
+        transform 0.25s ease;
+
+    transform-origin: center center;
+}
+
+#slider-cursor.visible {
+    opacity: 1;
+}
+
 .cursor-right {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 60 60'%3E%3Cpath d='M0 20 h60 L30 55 v-11 L44 27 H0z' fill='%23FAFAFA'/%3E%3C/svg%3E") 60 20, pointer;
 }

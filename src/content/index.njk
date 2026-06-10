@@ -15,7 +15,6 @@ slides:
   - file: Design-CarletonSustainable-Futures-posters.jpg
     alt: Sustainable Futures posters
 ---
-
 <div class="home-slider home-feature grid-inherit" id="home-slider">
   {% for slide in slides %}
     <div class="slide"{% if loop.first %} data-active{% endif %}>
@@ -24,4 +23,15 @@ slides:
     </div>
   {% endfor %}
 </div>
+
+<div id="cursor-arrow">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="60"
+       height="60"
+       viewBox="0 0 60 60">
+    <path d="M0 20 h60 L30 55 v-11 L44 27 H0z"
+          fill="#FAFAFA" />
+  </svg>
+</div>
+
 <script src="{{ '/assets/js/home-slider.js' | url }}"></script>

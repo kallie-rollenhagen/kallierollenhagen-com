@@ -113,6 +113,7 @@ collections:
       - label: "Secondary Side Image"
         name: "side_image"
         widget: "object"
+        required: false
         fields:
           - {label: "File", name: "file", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
