@@ -1,0 +1,47 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<div class="design-project-grid">
+    <div class="design-text-container">
+
+        <div class="design-text-top">
+            <h2>{{ title }}</h2>
+
+            {% if roles_played %}
+                <span>{{ roles_played }}</span>
+            {% endif %}
+
+            {% if credits %}
+            <p>
+                {% for credit in credits %}
+                    <span class="uppercase">{{ credit.role }}</span>:
+                    {{ credit.person }}<br>
+                {% endfor %}
+            </p>
+            {% endif %}
+        </div>
+
+        <div class="design-text-rest">
+            {{ project_description | safe }}
+        </div>
+
+    </div>
+
+    <img
+        class="design-img-first"
+        src="{{ main_image.file | url }}"
+        alt="{{ main_image.alt }}">
+
+    <img
+        class="design-img-stacked"
+        src="{{ side_image.file | url }}"
+        alt="{{ side_image.alt }}">
+
+</div>
+
+<div class="gallery">
+    {% include "components/gallery.njk" %}
+</div>
+
+{% endblock %}
