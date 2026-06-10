@@ -6,7 +6,7 @@ backend:
     auth_endpoint: /auth
 
 media_folder: "src/assets/images/"
-public_folder: "/website_e1e2df13/assets/images"
+public_folder: "/website_e1e2df13/assets/images/"
 
 gallery_field: &gallery_field
   label: Gallery
