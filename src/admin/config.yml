@@ -95,6 +95,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Role Played by Kallie", name: "roles_played", widget: "string" }
       - label: "Credits"
         name: "credits"
         widget: "list"
