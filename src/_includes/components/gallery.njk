@@ -1,0 +1,13 @@
+{% for row in gallery.rows %}
+    <div class="gallery-row {{ row.layout }}">
+    {% for element in row.elements %}
+        <div class="gallery-row-element {{ element.type }}">
+        {% if element.type == "image" %}
+            <img src="{{ ('/assets/images/' + element.file) | url }}" alt="{{ element.alt }}">
+        {% elif element.type == "text" %}
+            <p>{{ element.text }}</p>
+        {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}

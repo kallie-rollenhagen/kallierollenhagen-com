@@ -41,37 +41,47 @@ project_description: >
   to go to Tokyo.</p>
 
 gallery:
-    - layout: "left-wide"
-      elements:
-        - type: image
-          file: 8-covers.png
-          alt: 8 different Wayside covers
-        - type: text
-          text: Some caption text here
-    - layout: "right-wide"
-      elements:
-        - type: text
-          text: Some caption text here
-        - type: image
-          file: colors-for-web.png
-          alt: colors selected from four photos
-    - layout: "thirds"
-      elements:
-        - type: image
-          file: Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-        - type: image
-          file: Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-        - type: image
-          file: Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-    - layout: "full-width"
-      elements:
-        - type: image
-          file: Design-Goldenrod-sandwich-board.avif
-          alt: colors selected from four photos
-        
+    layout: grid
+    lightbox: false
+    rows:
+        - layout: "left-wide"
+          elements:
+            - type: image
+              file: 8-covers.png
+              alt: 8 different Wayside covers
+            - type: text
+              text: Some caption text here
+        - layout: "right-wide"
+          elements:
+            - type: text
+              text: Some caption text here
+            - type: image
+              file: colors-for-web.png
+              alt: colors selected from four photos
+        - layout: "halves"
+          elements:
+            - type: image
+              file: Design-CarletonSustainable-Futures-posters.avif
+              alt: colors selected from four photos
+            - type: image
+              file: Design-CarletonSustainable-Futures-posters.avif
+              alt: colors selected from four photos 
+        - layout: "thirds"
+          elements:
+            - type: image
+              file: Design-CarletonSustainable-Futures-posters.avif
+              alt: colors selected from four photos
+            - type: image
+              file: Design-CarletonSustainable-Futures-posters.avif
+              alt: colors selected from four photos
+            - type: image
+              file: Design-CarletonSustainable-Futures-posters.avif
+              alt: colors selected from four photos
+        - layout: "full-width"
+          elements:
+            - type: image
+              file: Design-CarletonSustainable-Futures-posters.avif
+              alt: colors selected from four photos
 ---
 <div class="design-project-grid">
     <div class="design-text-container">
@@ -91,18 +101,6 @@ gallery:
     <img class="design-img-first" src="{{ ('/assets/images/' + main_image.file) | url }}" alt="{{ main_image.alt }}">
     <img class="design-img-stacked" src="{{ ('/assets/images/' + side_image.file) | url }}" alt="{{ side_image.alt }}">
 </div>
-<div class="design-rows">
-    {% for row in gallery %}
-        <div class="design-row {{ row.layout }}">
-        {% for element in row.elements %}
-            <div class="design-row-element {{ element.type }}">
-            {% if element.type == "image" %}
-                <img src="{{ ('/assets/images/' + element.file) | url }}" alt="{{ element.alt }}">
-            {% elif element.type == "text" %}
-                <p>{{ element.text }}</p>
-            {% endif %}
-            </div>
-        {% endfor %}
-        </div>
-    {% endfor %}
+<div class="gallery">
+    {% include "components/gallery.njk" %}
 </div>
