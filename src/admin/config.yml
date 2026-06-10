@@ -93,8 +93,6 @@ collections:
     label: "Design Projects"
     folder: "src/content/design/"
     create: true
-    format: njk
-    extension: njk
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: "Credits"
