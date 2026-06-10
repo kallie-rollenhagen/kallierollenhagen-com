@@ -29,40 +29,63 @@ gallery_field: &gallery_field
       name: rows
       widget: list
       fields:
-        - label: Row
-          name: row
-          widget: object
-          fields:
-            - label: Elements
-              name: elements
-              widget: list
+        - label: Layout
+          name: layout
+          widget: select
+          required: false
+          options:
+            - halves
+            - thirds
+            - left-wide
+            - right-wide
+            - full-width
+
+        - label: Elements
+          name: elements
+          widget: list
+          types:
+
+            - label: Image
+              name: image
+              widget: object
               fields:
-                - label: Element Type
-                  name: type
-                  widget: select
-                  options:
-                    - image
-                    - text
+                - { label: File, name: file, widget: image }
+                - { label: Alt Text, name: alt, widget: string, required: false }
+                - { label: Caption, name: caption, widget: string, required: false }
 
-                - label: Image File
-                  name: file
-                  widget: image
-                  required: false
+            - label: Text
+              name: text
+              widget: object
+              fields:
+                - { label: Text Content, name: text, widget: markdown }
 
-                - label: Alt Text
-                  name: alt
-                  widget: string
-                  required: false
+          # fields:
+          #   - label: Element Type
+          #     name: type
+          #     widget: select
+          #     options:
+          #       - image
+          #       - text
 
-                - label: Caption
-                  name: caption
-                  widget: string
-                  required: false
+          #   - label: Image File
+          #     name: file
+          #     widget: image
+          #     required: false
 
-                - label: Text Content
-                  name: text
-                  widget: text
-                  required: false
+          #   - label: Alt Text
+          #     name: alt
+          #     widget: string
+          #     required: false
+
+          #   - label: Caption
+          #     name: caption
+          #     widget: string
+          #     required: false
+
+          #   - label: Text Content
+          #     name: text
+          #     widget: text
+          #     required: false
 
 collections:
 
@@ -94,33 +117,7 @@ collections:
         fields:
           - {label: "File", name: "file", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        fields:
-          - label: "Layout"
-            name: "layout"
-            widget: "select"
-            options:
-              - { label: "Left Wide (2/3 + 1/3)", value: "left-wide" }
-              - { label: "Right Wide (1/3 + 2/3)", value: "right-wide" }
-              - { label: "Thirds (1/3 + 1/3 + 1/3)", value: "thirds" }
-              - { label: "Full Width (3/3)", value: "full-width" }
-          - label: "Elements"
-            name: "elements"
-            widget: "list"
-            types:
-              - label: "Image"
-                name: "image"
-                widget: "object"
-                fields:
-                  - { label: "File", name: "file", widget: "image" }
-                  - { label: "Alt Text", name: "alt", widget: "string" }
-              - label: "Text"
-                name: "text"
-                widget: "object"
-                fields:
-                  - { label: "Text", name: "text", widget: "text" }
+      - *gallery_field
       - {label: "Template", name: "body", widget: "markdown"}
       
   - name: art
