@@ -97,7 +97,6 @@ collections:
     extension: njk
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Permalink", name: "permalink", widget: "string" }
       - label: "Credits"
         name: "credits"
         widget: "list"

@@ -1,7 +1,5 @@
 ---
-layout: layouts/design-project.njk
 title: Wayside Magazine
-permalink: /design/wayside-magazine.html
 roles_played: Layout Design | Brand Development
 credits:
   - role: Brand & Design System
@@ -83,24 +81,3 @@ gallery:
               file: Design-CarletonSustainable-Futures-posters.avif
               alt: colors selected from four photos
 ---
-<div class="design-project-grid">
-    <div class="design-text-container">
-        <div class="design-text-top">
-            <h2>{{ title }}</h2>
-            <span>{{ roles_played }}</span>
-            <p>
-            {% for credit in credits %}
-                <span class="uppercase">{{ credit.role }}</span>: {{ credit.person }}<br/>
-            {% endfor %}
-            </p>
-        </div>
-        <div class="design-text-rest">
-            {{ project_description | safe }}
-        </div>
-    </div>
-    <img class="design-img-first" src="{{ ('/assets/images/' + main_image.file) | url }}" alt="{{ main_image.alt }}">
-    <img class="design-img-stacked" src="{{ ('/assets/images/' + side_image.file) | url }}" alt="{{ side_image.alt }}">
-</div>
-<div class="gallery">
-    {% include "components/gallery.njk" %}
-</div>
