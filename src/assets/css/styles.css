@@ -484,14 +484,6 @@ hr, main {
   transform: scale(1.05);
 }
 
-.art-layout {
-    grid-column: 1 / 14; 
-}
-
-.art-layout img {
-    cursor: pointer;
-}
-
 .full-photo {
     grid-column: 2 / 14;
 }
@@ -627,6 +619,9 @@ hr, main {
   transition: opacity 0.3s ease;
 }
 
+.lightbox-trigger {
+    cursor: pointer;
+}
 /* Open Active Toggle State */
 .lightbox-overlay.is-open {
   opacity: 1;
@@ -649,6 +644,7 @@ hr, main {
   max-height: 90vh;
   object-fit: contain;
   user-select: none;
+  cursor: default;
 }
 
 /* CONTROLS & CAPTIONS */

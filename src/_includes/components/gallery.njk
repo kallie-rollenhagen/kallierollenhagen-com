@@ -1,13 +1,35 @@
-{% for row in gallery.rows %}
-    <div class="gallery-row {{ row.layout }}">
-    {% for element in row.elements %}
-        <div class="gallery-row-element {{ element.type }}">
-        {% if element.type == "image" %}
-            <img src="{{ ('/assets/images/' + element.file) | url }}" alt="{{ element.alt }}">
-        {% elif element.type == "text" %}
-            <p>{{ element.text }}</p>
-        {% endif %}
+{% if gallery.type == "grid" %}
+    {% for row in gallery.rows %}
+        <div class="gallery-row {{ row.layout }}">
+        {% for element in row.elements %}
+            <div class="gallery-row-element {{ element.type }}">
+            {% if element.type == "image" %}
+                <img src="{{ ('/assets/images/' + element.file) | url }}" alt="{{ element.alt }}"
+                class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
+            {% elif element.type == "text" %}
+                <p>{{ element.text }}</p>
+            {% endif %}
+            </div>
+        {% endfor %}
         </div>
     {% endfor %}
-    </div>
-{% endfor %}
+
+{% elif gallery.type == "masonry" %}
+
+    {% for column in [0,1,2] %}
+      <div class="photography-column">
+
+        {% for photo in gallery.photos %}
+          {% if loop.index0 % 3 == column %}
+            <img
+              src="{{ ('/assets/images/' + photo.file) | url }}"
+              alt=""
+              data-caption="{{ photo.caption }}"
+              class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    {% endfor %}
+
+{% endif %}

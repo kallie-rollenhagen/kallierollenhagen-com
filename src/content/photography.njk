@@ -4,31 +4,36 @@ title: Photography
 permalink: /photography.html
 scripts:
   - "assets/js/lightbox.js"
-photos:
-  - file: indiana-2025-293.jpg
-    caption: Testing
 
-  - file: philadelphia-2025-462.jpg
-    caption: Testing
+gallery:
+  type: masonry
+  lightbox: true
 
-  - file: BX6A9290.jpg
-    caption: Testing
+  photos:
+    - file: indiana-2025-293.jpg
+      caption: Caption 1
 
-  - file: indiana-2025-75.jpg
-    caption: Testing
+    - file: philadelphia-2025-462.jpg
+      caption: Caption 2
 
-  - file: philadelphia-2025-385.jpg
-    caption: Testing
+    - file: BX6A9290.jpg
+      caption: Caption 3
 
-  - file: BX6A9307.jpg
-    caption: Testing
+    - file: indiana-2025-75.jpg
+      caption: Caption 3
+
+    - file: philadelphia-2025-385.jpg
+      caption: Caption 3
+
+    - file: BX6A9307.jpg
+      caption: Caption 3
 ---
 <div class="photography-layout grid-inherit image-gallery">
-  
-  {% for column in [0,1,2] %}
+  {% include "components/gallery.njk" %}
+  {# {% for column in [0,1,2] %}
     <div class="photography-column">
 
-      {% for photo in photos %}
+      {% for photo in gallery.photos %}
         {% if loop.index0 % 3 == column %}
           <img src="{{ ('/assets/images/' + photo.file) | url }}"
                class="lightbox-trigger"
@@ -38,5 +43,6 @@ photos:
       {% endfor %}
 
     </div>
-  {% endfor %}
+  {% endfor %} #}
+
 </div>
