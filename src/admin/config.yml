@@ -115,8 +115,8 @@ collections:
         widget: "object"
         required: false
         fields:
-          - {label: "File", name: "file", widget: "image"}
-          - {label: "Alt Text", name: "alt", widget: "string"}
+          - {label: "File", name: "file", widget: "image", required: false}
+          - {label: "Alt Text", name: "alt", widget: "string", required: false}
       - *gallery_field
       # - {label: "Template", name: "body", widget: "markdown", required: false}
       

@@ -70,3 +70,13 @@ slider.addEventListener('click', (e) => {
     // currentIndex = slides.indexOf(currentSlide);
     // console.log(`currentIndex = ${currentIndex}`)
 });
+const slider = document.querySelector('.slider');
+const cursor = document.getElementById('slider-cursor');
+
+slider.addEventListener('mouseenter', () => {
+    cursor.classList.add('visible');
+});
+
+slider.addEventListener('mouseleave', () => {
+    cursor.classList.remove('visible');
+});
