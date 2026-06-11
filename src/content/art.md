@@ -3,6 +3,7 @@ layout: layouts/art.njk
 title: Art
 permalink: /art.html
 scripts:
+  - "assets/js/swipe.js"
   - "assets/js/lightbox.js"
 gallery:
     type: grid

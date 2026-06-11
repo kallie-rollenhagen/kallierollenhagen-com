@@ -90,4 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "ArrowRight") showNext();
     if (e.key === "ArrowLeft") showPrev();
   });
+
+  addSwipeNavigation(lightbox, {
+    onPrev: showPrev,
+    onNext: showNext
 });
+});
+
