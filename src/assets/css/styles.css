@@ -769,6 +769,14 @@ hr, main {
         height: auto;
         object-fit: cover;
     }
+
+    .lightbox-prev, .lightbox-next {
+        display: none;
+    }
+    .lightbox-img-wrapper {
+        grid-column: 1 / 4;
+        margin: 0 10px;
+    }
 }
 
 @media (max-width: 635px) {
