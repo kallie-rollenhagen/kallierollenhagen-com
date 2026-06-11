@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+---
+<div class="about-layout grid-inherit">
+    <div class="about-column about-column-1">
+        <figure>
+            <img src="{{ photo.file | url }}" alt="{{ photo.alt }}">
+            <figcaption>{{ photo.credit }}</figcaption>
+        </figure>
+        <div>
+            <p>{{ contact.location }}<br/>
+            {{ contact.email }}</p>
+            <ul>
+                {% for link in links %}
+                <li><a href='{{ link.url }}'>{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="about-column about-column-2">
+        <h3>Bio</h3>
+        <hr>
+        {% for paragraph in bio %}
+        <p>{{ paragraph }}</p>
+        {% endfor%}
+    </div>
+    <div class="about-column about-column-3">
+        <h3>Education</h3>
+        <hr>
+        {% for degree in education %}
+        <p><strong>{{ degree.school }}</strong> | {{ degree.degree }}</p>
+        {% endfor %}
+        <h3 style="margin-top: 24px;">Ideal Clients</h3>
+        <hr>
+        <ul>
+            {% for client in clients %}
+            <li>{{ client }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

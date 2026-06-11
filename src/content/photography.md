@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/photography.njk
 title: Photography
 permalink: /photography.html
 scripts:
@@ -42,6 +42,3 @@ gallery:
         alt:
         caption: Caption 3
 ---
-<div class="photography-layout grid-inherit image-gallery">
-  {% include "components/gallery.njk" %}
-</div>

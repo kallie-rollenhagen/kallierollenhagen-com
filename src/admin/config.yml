@@ -90,7 +90,6 @@ collections:
           - {label: "File", name: "file", widget: "image", required: false}
           - {label: "Alt Text", name: "alt", widget: "string", required: false}
       - *gallery_field
-      # - {label: "Template", name: "body", widget: "markdown", required: false}
       
   - name: art
     label: Art
@@ -110,7 +109,6 @@ collections:
           #     - {label: "Position", name: "position", widget: "select", options: ["full-photo", "half-photo-left", "half-photo-right"]}
           #     - {label: "Alt Text", name: "alt", widget: "string"}
           - *gallery_field
-          - {label: "Template", name: "body", widget: "markdown"}
 
   - name: photography
     label: Photography
@@ -123,4 +121,3 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: "Permalink", name: "permalink", widget: "string" }
           - *gallery_field
-          - { label: "Template", name: "body", widget: "markdown" }

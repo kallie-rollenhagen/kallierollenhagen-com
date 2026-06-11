@@ -1,24 +1,10 @@
 ---
 layout: layouts/base.njk
-title: Kallie Rollenhagen
-permalink: /
-slides:
-  - file: Design-Wayside-all-covers.jpg
-    alt: Wayside cover designs
-
-  - file: Kallie-Rollenhagen-ski-headshot.jpeg
-    alt: Kallie skiing
-
-  - file: Design-Goldenrod-sandwich-board.png
-    alt: Goldenrod sandwich board
-
-  - file: Design-CarletonSustainable-Futures-posters.jpg
-    alt: Sustainable Futures posters
 ---
 <div class="home-slider home-feature grid-inherit" id="home-slider">
   {% for slide in slides %}
     <div class="slide"{% if loop.first %} data-active{% endif %}>
-      <img src="{{ ('/assets/images/' + slide.file) | url }}"
+      <img src="{{ slide.file | url }}"
            alt="{{ slide.alt }}">
     </div>
   {% endfor %}

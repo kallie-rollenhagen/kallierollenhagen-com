@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/design.njk
 title: Design
 permalink: /design.html
 projects:
@@ -45,11 +45,3 @@ projects:
 scripts:
   - "/assets/js/design-projects.js"
 ---
-
-<div class="design-grid grid-inherit">
-
-  {% for project in projects %}
-    {% include "components/project-card.njk" %}
-  {% endfor %}
-
-</div>

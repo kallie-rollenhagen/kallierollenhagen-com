@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/art.njk
 title: Art
 permalink: /art.html
 scripts:
@@ -33,6 +33,3 @@ gallery:
               file: /assets/images/0A9A5598.jpg
               alt:
 ---
-<div class='gallery image-gallery'>
-  {% include "components/gallery.njk" %}
-</div>
