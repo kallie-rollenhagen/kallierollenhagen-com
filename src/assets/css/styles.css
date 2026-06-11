@@ -415,9 +415,15 @@ hr, main {
 }
 
 .gallery-row-element.text {
-    display: flex;
-    align-items: center;
-    font-style: italic;
+    /* display: flex; */
+    /* align-items: center; */
+    /* font-style: italic; */
+    align-content: center;
+
+}
+
+.gallery-row-element.text h3 {
+    margin-top: 0;
 }
 
 .project-card-wrapper {
