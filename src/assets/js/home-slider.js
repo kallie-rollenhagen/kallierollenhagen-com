@@ -65,12 +65,7 @@ slider.addEventListener('click', (e) => {
         isAnimating = false;
         console.log(`timeout done: currentSlide position = ${targetSlide.getBoundingClientRect().left}, ${targetSlide.getBoundingClientRect().right}, classes = ${currentSlide.classList}`)
     }, 300);
-    // currentIndex = nextIndex;
-    // currentSlide = slider.querySelector('.slide[data-active]');
-    // currentIndex = slides.indexOf(currentSlide);
-    // console.log(`currentIndex = ${currentIndex}`)
 });
-const slider = document.querySelector('.slider');
 const cursor = document.getElementById('slider-cursor');
 
 slider.addEventListener('mouseenter', () => {

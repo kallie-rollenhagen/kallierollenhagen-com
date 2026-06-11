@@ -58,7 +58,7 @@ gallery_field: &gallery_field
               name: text
               widget: object
               fields:
-                - { label: Text Content, name: text, widget: richtext }
+                - { label: Text Content, name: text, widget: text }
 
           # fields:
           #   - label: Element Type
