@@ -1,3 +1,4 @@
+const markdownIt = require("markdown-it");
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/.htaccess");
@@ -15,6 +16,15 @@ module.exports = function (eleventyConfig) {
         if (page.url.endsWith(".html")) {
             return page.url.slice(0, -1 * ".html".length);
         }
+    });
+    const md = markdownIt({
+        html: true,
+        breaks: false,
+        linkify: true
+    });
+
+    eleventyConfig.addFilter("markdown", content => {
+        return md.render(content || "");
     });
 
     return {
