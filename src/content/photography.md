@@ -3,6 +3,7 @@ layout: layouts/photography.njk
 title: Photography
 permalink: /photography.html
 scripts:
+  - "assets/js/swipe.js"
   - "assets/js/lightbox.js"
 
 gallery:
