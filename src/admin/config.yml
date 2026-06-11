@@ -60,34 +60,6 @@ gallery_field: &gallery_field
               fields:
                 - { label: Text Content, name: text, widget: 'richtext' }
 
-          # fields:
-          #   - label: Element Type
-          #     name: type
-          #     widget: select
-          #     options:
-          #       - image
-          #       - text
-
-          #   - label: Image File
-          #     name: file
-          #     widget: image
-          #     required: false
-
-          #   - label: Alt Text
-          #     name: alt
-          #     widget: string
-          #     required: false
-
-          #   - label: Caption
-          #     name: caption
-          #     widget: string
-          #     required: false
-
-          #   - label: Text Content
-          #     name: text
-          #     widget: text
-          #     required: false
-
 collections:
 
   - name: "projects"
@@ -103,7 +75,7 @@ collections:
         fields:
           - {label: "Role", name: "role", widget: "string"}
           - {label: "Person", name: "person", widget: "string"}
-      - {label: "Project Description", name: "project_description", widget: "text"}
+      - {label: "Project Description", name: "project_description", widget: "richtext"}
       - label: "Main Image"
         name: "main_image"
         widget: "object"
