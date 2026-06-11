@@ -7,7 +7,7 @@
                 <img src="{{ element.file | url }}" alt="{{ element.alt }}"
                 class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
             {% elif element.type == "text" %}
-                <p>{{ element.text }}</p>
+                <p>{{ element.text | markdown | safe }}</p>
             {% endif %}
             </div>
         {% endfor %}
