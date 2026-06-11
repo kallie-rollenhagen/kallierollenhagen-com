@@ -777,6 +777,10 @@ hr, main {
         grid-column: 1 / 4;
         margin: 0 10px;
     }
+
+    #slider-cursor {
+        display: none;
+    }
 }
 
 @media (max-width: 635px) {
