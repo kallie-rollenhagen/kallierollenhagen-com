@@ -162,6 +162,10 @@ hr, main {
   background-color: var(--light);
 }
 
+#home-slider {
+    cursor: none;
+}
+
 #slider-cursor {
     position: fixed;
     pointer-events: none;
