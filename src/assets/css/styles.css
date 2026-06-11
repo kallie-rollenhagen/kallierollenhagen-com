@@ -178,7 +178,7 @@ hr, main {
         transform 0.3s ease;
 
     /* transform-origin: center center; */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -31%);
 }
 
 #slider-cursor.visible {
