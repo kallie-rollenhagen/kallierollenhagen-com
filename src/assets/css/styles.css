@@ -884,4 +884,11 @@ hr, main {
         grid-column: 1 / 14;
         flex-direction: column;
     }
+
+    .gallery-row {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter_size);
+        margin-bottom: var(--gutter_size);
+    }
 }
