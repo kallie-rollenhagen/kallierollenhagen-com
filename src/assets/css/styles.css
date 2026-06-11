@@ -111,7 +111,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    margin-bottom: -8px;
+    margin-bottom: -,8px;
 }
 
 hr {
@@ -166,25 +166,29 @@ hr, main {
     position: fixed;
     pointer-events: none;
     z-index: 10000;
+    perspective: 800px;
 
     opacity: 0;
     transition:
         opacity 0.2s ease,
-        transform 0.25s ease;
+        transform 0.3s ease;
 
-    transform-origin: center center;
+    /* transform-origin: center center; */
+    transform: translate(-50%, -50%);
 }
 
 #slider-cursor.visible {
     opacity: 1;
 }
 
-.cursor-right {
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 60 60'%3E%3Cpath d='M0 20 h60 L30 55 v-11 L44 27 H0z' fill='%23FAFAFA'/%3E%3C/svg%3E") 60 20, pointer;
+#slider-cursor.left svg {
+    transform: rotateY(180deg);
 }
-.cursor-left {
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M60 20 h-60 L30 55 v-11 L16 27 H100z' fill='%23FAFAFA'/%3E%3C/svg%3E") 0 20, pointer;
+
+#slider-cursor svg {
+    transition: transform 0.3s ease;
 }
+
 .slide {
   position: absolute;
   top: 0;
