@@ -42,7 +42,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### **Inspiration & Visual Direction**
+            ### Inspiration & Visual Direction
 
 
             Adventurous and curious, embodied by bold, editorial photography; modern, slightly quirky typefaces; textural cover photos; and contemporary, contrasting color palettes.
@@ -53,7 +53,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### **Nameplate Iterations**
+            ### Nameplate Iterations
 
 
             I explored a more quirky and adventurous directions vs. something more elegant and classic. I also wanted an option with enough contrast to stand out on a rack.
@@ -64,7 +64,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### **Final Nameplate & Typefaces**
+            ### Final Nameplate & Typefaces
 
 
             The final nameplate is derived from Necto Mono, designed by Marco Condello. The subhead is in the other brand font, Apfel Grotesk.
