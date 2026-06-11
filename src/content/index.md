@@ -12,6 +12,6 @@ slides:
   - file: /assets/images/Design-Goldenrod-sandwich-board.png
     alt: Goldenrod sandwich board
 
-  - file: /assets/images/ Design-CarletonSustainable-Futures-posters.jpg
+  - file: /assets/images/Design-CarletonSustainable-Futures-posters.jpg
     alt: Sustainable Futures posters
 ---
