@@ -81,7 +81,7 @@ collections:
       - label: Publish
         name: publish
         widget: boolean
-        default: true
+        default: false
       - { label: "Roles Played by Kallie", name: "roles_played", widget: "string" }
       - label: "Credits"
         name: "credits"
