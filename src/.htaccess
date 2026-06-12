@@ -35,3 +35,11 @@ RewriteRule ^design$ design.html [NC,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+<IfModule mod_headers.c>
+    <Files "config.yml">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </Files>
+</IfModule>
