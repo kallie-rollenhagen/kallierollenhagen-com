@@ -7,8 +7,8 @@ RewriteEngine On
 
 # 3. ADMIN CMS
 # If someone visits /admin, redirect them to /admin/
-# RewriteRule ^admin$ /admin/ [R=301,L]
-RewriteRule ^admin$ https://google.com [R=302,L]
+RewriteRule ^admin$ /admin/ [R=301,L]
+<!-- RewriteRule ^admin$ https://google.com [R=302,L] -->
 
 # 4. DESIGN CONFLICT FIX
 # If someone explicitly types "design/" with a slash, redirect to clean "/design"
