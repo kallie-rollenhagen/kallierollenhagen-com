@@ -1,7 +1,7 @@
 ---
-title: Bing Bong TESTING
+title: Nice Things
 publish: true
-roles_played: Badass | Boss
+roles_played: Brand System | Designer | Proprietor & Chief Doer
 credits:
   - role: Design
     person: Marty McFly
