@@ -1,32 +1,39 @@
 ---
-title: Wayside Magazine V1
+title: Nice Things
 publish: true
-roles_played: Layout Design | Brand Development
-credits:
-  - role: Brand & Design System
-    person: Kallie Rollenhagen
-  - role: Photography
-    person: Kallie Rollenhagen
-project_description: >
-  <p>A quarterly travel magazine for off-the-road and underrated places, focused
-  on the essence of a place—captured via essays and recommendations from locals
-  and emotive film photography. Featured locations are primarily U.S. based,
-  with more of a Midwest focus, occasionally featuring spots further afield.</p>
+roles_played: Brand System | Designer
+credits: []
+project_description: >-
+  <p>Nice Things is a design retail store located in a smaller community. It
+  will sell curated items for your home, your body, and for those you love. This
+  was developed in my MCAD MAGWD dynamic identities course.</p>
 
-  <h3>Visual Direction</h3>
+  <h3>Brand Position</h3>
 
-  <p>Adventurous and curious, embodied by documentary style photo essays; modern, slightly quirky typefaces; textural cover photos; and contemporary colors.</p>
+  <p>Small places deserve nice things.</p>
 
-  <h3>Brand Voice</h3>
+  <h3>Design Scope</h3>
 
-  <p>An irreverent, sincere and authentic tilt, with a dash of the Monocle (design-forward) personality. A more edited and rural version of Atlas Obscura, content-wise.</p>
+  <p>Establish a dynamic visual identity system.</p>
 
-  <h3>Audience</h3>
+  <h3>Core Values & Beliefs</h3>
 
-  <p>Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place. They are the vinyl hunters, light roast coffee drinkers, and film photographers looking for low-key mini-vacations while they save up to go to Tokyo.</p>
+  <ul>
+
+
+  * Beauty is a necessity, not a luxury. Nice things provide small, daily joys. 
+
+
+  * People should have access to quality, handcrafted, or designed objects that they can use forever. 
+
+
+  * Curating the things in our lives should be a meaningful and delightful practice. 
+
+
+  * Healthy local economies need pathways to support craftspeople and artists.</ul>
 main_image:
-  file: /assets/images/Design-Wayside-all-covers.avif
-  alt: Wayside Magazine covers
+  file: /assets/images/nice-things-sidewalk-side-small.jpg
+  alt: Nice Things sidewalk sign
 side_image:
   file: /assets/images/Design-Wayside-green-mockup.jpg
   alt: Wayside Magazine inner mock up
