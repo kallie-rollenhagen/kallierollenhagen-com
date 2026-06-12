@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # 2. CRITICAL: Stop Apache from automatically forcing trailing slashes on folders
-DirectorySlash Off
+# DirectorySlash Off
 
 
 # 3. ADMIN CMS
