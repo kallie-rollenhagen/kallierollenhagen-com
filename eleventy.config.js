@@ -36,6 +36,6 @@ module.exports = function (eleventyConfig) {
       output: "_site"
     },
     // Injects the Bluehost subfolder path prefix automatically
-    pathPrefix: "website_e1e2df13" 
+    // pathPrefix: "website_e1e2df13" 
   };
 };
