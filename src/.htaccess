@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Tell the server this site lives inside your specific temporary subdirectory
-RewriteBase /website_e1e2df13/
+# RewriteBase /website_e1e2df13/
 
 # RULE 1: THE DESIGN CONFLICT FIX
 # If someone requests exactly "design" or "design/", skip checking the directory
