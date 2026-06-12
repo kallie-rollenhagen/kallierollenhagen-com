@@ -1,14 +1,18 @@
 # 1. Turn on the Apache Rewrite Engine
 RewriteEngine On
 
-# 2. CRITICAL COMBINATION: 
-# Turn off automatic slashes, but allow Apache to step in if a real index file exists.
-# This eliminates the 403 error and cleanly redirects /admin to /admin/
+# 2. CRITICAL: Stop Apache from automatically forcing trailing slashes on folders
 DirectorySlash Off
-DirectoryCheckHandler On
 
 
-# 3. THE DESIGN CONFLICT FIX
+# 3. THE ADMIN CMS FIX (Force Actual Browser Redirect to /admin/)
+# If they request exactly "admin" without a slash...
+RewriteCond %{REQUEST_URI} ^/admin$ [NC]
+# ...force the browser to execute a visible 301 redirect to "/admin/"
+RewriteRule ^(.*)$ /admin/ [R=301,L]
+
+
+# 4. THE DESIGN CONFLICT FIX
 # If someone explicitly types "design/" with a slash, redirect them to clean "/design"
 RewriteCond %{THE_REQUEST} \s/design/ [NC]
 RewriteRule ^design/$ /design [R=301,L]
@@ -17,7 +21,7 @@ RewriteRule ^design/$ /design [R=301,L]
 RewriteRule ^design$ design.html [NC,L]
 
 
-# 4. STANDARD EXTENSIONLESS URLs
+# 5. STANDARD EXTENSIONLESS URLs
 # For Art, About, Photography, and Design Subpages
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
