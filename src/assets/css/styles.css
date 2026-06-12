@@ -461,6 +461,11 @@ hr, main {
     clip-path: inset(0% 0 0% 0);    
 }
 
+.project-card.no-link {
+    pointer-events: none;
+    cursor: default;
+}
+
 .project-card img {
   display: block;
   width: 100%;

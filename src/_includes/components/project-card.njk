@@ -1,7 +1,7 @@
 {% set side = "left" if loop.index0 % 2 == 0 else "right" %}
 <div class='project-card-wrapper half-photo-{{ side }}'>
   <a href="{{ project.url | url }}"
-    class="project-card">
+    class="project-card no-link">
 
     <img src="{{ ('/assets/images/' + project.image) | url }}"
         alt="{{ project.title }}"
