@@ -100,4 +100,7 @@ gallery:
 
 
             The interior layout system features a six-column spread, with the margins slightly wider than the gutters. The folio information lives at the bottom and outer corners of the spread. A full-width image can occasionally override these elements.
+        - type: image
+          file: /assets/images/four-layouts.jpg
+          alt: Grid lines
 ---
