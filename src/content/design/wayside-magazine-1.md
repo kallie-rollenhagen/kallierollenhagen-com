@@ -101,6 +101,17 @@ gallery:
 
             The interior layout system features a six-column spread, with the margins slightly wider than the gutters. The folio information lives at the bottom and outer corners of the spread. A full-width image can occasionally override these elements.
         - type: image
-          file: /assets/images/four-layouts.jpg
+          file: /assets/images/grid-template.jpg
           alt: Grid lines
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Spread Examples
+
+
+            The grid allows for a lot of flexible layouts. Each spread should be a good balance of imagery and text and white space, with full-bleed images used intermittently.
+        - type: image
+          file: /assets/images/four-layouts.jpg
+          alt: Four examples of magazine spreads
 ---
