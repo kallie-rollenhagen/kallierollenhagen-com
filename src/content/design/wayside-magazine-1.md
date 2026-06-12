@@ -22,7 +22,7 @@ project_description: >-
 
   Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place.
 main_image:
-  file: /assets/images/covers-mockup-small.jpg
+  file: /assets/images/covers-mockup-small-3-2.jpg
   alt: Range of Wayside magazine covers
 side_image:
   alt: ""
