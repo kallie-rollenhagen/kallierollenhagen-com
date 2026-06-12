@@ -92,4 +92,12 @@ gallery:
             Each cover calls out the featured geography in the accent color bar, lists three story teasers at the bottom, and includes the issue number and price in the header. The colors change, with the placement of the nameplate and the use of a single photo consistent every issue.
         - type: image
           file: /assets/images/8-covers-small.jpg
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Grid
+
+
+            The interior layout system features a six-column spread, with the margins slightly wider than the gutters. The folio information lives at the bottom and outer corners of the spread. A full-width image can occasionally override these elements.
 ---
