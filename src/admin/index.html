@@ -7,15 +7,10 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <script data-manual-init src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
     <script>
-      CMS.init({
-        config: {
-          config_url: '/admin/config.yml'
-        }
-      });
       CMS.registerCustomFormat('njk', 'njk', {
         fromFile: function(text) {
           const match = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
