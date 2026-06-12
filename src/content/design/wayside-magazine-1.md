@@ -71,4 +71,15 @@ gallery:
         - type: image
           file: /assets/images/nameplate-annotated.jpg
           alt: Annotated nameplate
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Color Approach
+
+
+            Each issue has a simple, bold color palette: An accent color pulled from the cover image and a primary contrasting color, which surrounds the cover image.
+        - type: image
+          file: /assets/images/colors-for-web-small.jpg
+          alt: Four images with accent color circles
 ---
