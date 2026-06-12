@@ -35,8 +35,8 @@ main_image:
   file: /assets/images/nice-things-sidewalk-side-small.jpg
   alt: Nice Things sidewalk sign
 side_image:
-  file: /assets/images/Design-Wayside-green-mockup.jpg
-  alt: Wayside Magazine inner mock up
+  file: ""
+  alt: ""
 gallery:
   type: grid
   lightbox: false
