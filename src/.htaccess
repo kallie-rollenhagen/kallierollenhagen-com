@@ -11,9 +11,7 @@ RewriteRule ^admin$ /admin/ [R=301,L]
 
 
 # 4. DESIGN CONFLICT FIX
-# If someone explicitly types "design/" with a slash, redirect to clean "/design"
-RewriteCond %{THE_REQUEST} \s/design/ [NC]
-RewriteRule ^design/$ /design [R=301,L]
+RewriteRule ^design$ design.html [NC,L]
 
 # If they request exactly "design" (no slash), invisibly serve design.html
 RewriteRule ^design$ design.html [NC,L]
