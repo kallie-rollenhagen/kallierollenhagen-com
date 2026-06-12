@@ -1,5 +1,6 @@
 ---
 title: Wayside Magazine
+publish: true
 roles_played: Brand Development | Layout Design | Photography
 project_description: >-
   A quarterly travel magazine for off-the-road and underrated places, focused on

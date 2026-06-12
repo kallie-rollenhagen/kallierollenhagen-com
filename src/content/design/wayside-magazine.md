@@ -1,5 +1,6 @@
 ---
 title: Wayside Magazine V1
+publish: true
 roles_played: Layout Design | Brand Development
 credits:
   - role: Brand & Design System

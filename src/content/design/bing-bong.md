@@ -1,5 +1,6 @@
 ---
 title: Bing Bong TESTING
+publish: true
 roles_played: Badass | Boss
 credits:
   - role: Design

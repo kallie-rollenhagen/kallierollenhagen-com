@@ -62,12 +62,26 @@ gallery_field: &gallery_field
 
 collections:
 
+  - name: design
+    label: Design
+    files:
+      - label: Design
+        name: design
+        file: src/content/design.md
+        fields:
+          - { label: Title, name: title, widget: string }
+
+
   - name: "projects"
     label: "Design Projects"
     folder: "src/content/design/"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - label: Publish
+        name: publish
+        widget: boolean
+        default: true
       - { label: "Roles Played by Kallie", name: "roles_played", widget: "string" }
       - label: "Credits"
         name: "credits"
@@ -93,31 +107,20 @@ collections:
       
   - name: art
     label: Art
-    format: njk
     files:
       - label: Art
         name: art
-        file: "src/content/art.njk"
+        file: src/content/art.md
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          # - label: "Images"
-          #   name: "images"
-          #   widget: "list"
-          #   fields:
-          #     - {label: "File", name: "file", widget: "image"}
-          #     - {label: "Position", name: "position", widget: "select", options: ["full-photo", "half-photo-left", "half-photo-right"]}
-          #     - {label: "Alt Text", name: "alt", widget: "string"}
           - *gallery_field
 
   - name: photography
     label: Photography
-    format: njk
     files:
       - label: Photography
         name: photography
-        file: src/content/photography.njk
+        file: src/content/photography.md
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: "Permalink", name: "permalink", widget: "string" }
           - *gallery_field

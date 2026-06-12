@@ -3,14 +3,14 @@
   <a href="{{ project.url | url }}"
     class="project-card no-link">
 
-    <img src="{{ ('/assets/images/' + project.image) | url }}"
-        alt="{{ project.title }}"
+    <img src="{{ project.data.main_image.file | url }}"
+        alt="{{ project.data.title }}"
         class="half-photo-{{ side }}">
 
     <div class="project-overlay">
       <div class="project-info">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.subtitle }}</p>
+        <h3>{{ project.data.title }}</h3>
+        <p>{{ project.data.roles_played }}</p>
       </div>
     </div>
   </a>
