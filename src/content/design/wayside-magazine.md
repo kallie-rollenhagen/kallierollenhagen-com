@@ -1,7 +1,7 @@
 ---
 title: Nice Things
 publish: true
-roles_played: Brand System | Designer
+roles_played: Brand Development | Identity System
 credits: []
 project_description: >-
   <p>Nice Things is a design retail store located in a smaller community. It
@@ -41,42 +41,24 @@ gallery:
   type: grid
   lightbox: false
   rows:
-    - layout: left-wide
-      elements:
-        - type: image
-          file: /assets/images/8-covers.png
-          alt: 8 different Wayside covers
-        - type: text
-          text: Some caption text here
-    - layout: right-wide
-      elements:
-        - type: text
-          text: Some caption text here
-        - type: image
-          file: /assets/images/colors-for-web.png
-          alt: colors selected from four photos
-    - layout: halves
-      elements:
-        - type: image
-          file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-        - type: image
-          file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-    - layout: thirds
-      elements:
-        - type: image
-          file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-        - type: image
-          file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
-        - type: image
-          file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
     - layout: full-width
       elements:
         - type: image
-          file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
-          alt: colors selected from four photos
+          file: /assets/images/nice-things-instagram-mockups-small.jpg
+          alt: three phones showing instagram mockup
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Inspiration: Handcrafted Object Library
+
+
+            For a shop selling handcrafted items and art, it was important that the identity also be handcrafted. I physically created the object library using cut paper to preserve a trace of materiality, similar to what you see in potato prints, and lino or wood block prints.\
+
+            \
+
+            This library can be added to over time, based on what new things Nice Things stocks.
+        - type: image
+          file: /assets/images/object-library-moodboard.jpg
+          alt: five inspiration images of different blocky, colorful designs
 ---
