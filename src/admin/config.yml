@@ -93,7 +93,31 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - *gallery_field
-
+      - label: About Page
+        name: about
+        file: src/content/about.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: "Photo"
+            name: "photo"
+            widget: "object"
+            fields:
+              - {label: "File", name: "file", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}
+              - {label: "Credit", name: "credit", widget: "string"}
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+          - {label: "Bio", name: "bio", widget: "richtext"}
 
   - name: "projects"
     label: "Design Projects"
