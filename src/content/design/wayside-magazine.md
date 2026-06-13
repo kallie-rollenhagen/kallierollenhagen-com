@@ -66,4 +66,15 @@ gallery:
         - type: image
           file: /assets/images/object-library.jpg
           alt: black objects of household goods
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Moodboard: Object Library Applied
+
+
+            These varied, colorful brands grounded in images, shapes and colors and playing with scale guided my approach for Nice Things.
+        - type: image
+          file: /assets/images/brand-moodboard.jpg
+          alt: moodboard of colorful graphics and illustrations
 ---
