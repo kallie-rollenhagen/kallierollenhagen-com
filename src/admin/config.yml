@@ -69,7 +69,7 @@ collections:
         file: src/content/index.md
         fields:
           - { label: Title, name: title, widget: string }
-
+          - { label: SEO Description, name: seoDescription, widget: string }
           - label: Slides
             name: slides
             widget: list
