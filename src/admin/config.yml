@@ -59,6 +59,15 @@ gallery_field: &gallery_field
               widget: object
               fields:
                 - { label: Text Content, name: text, widget: 'richtext' }
+            
+            - label: Spacer
+              name: spacer
+              widget: object
+              fields:
+                - label: Spacer
+                  name: spacer
+                  widget: hidden
+                  default: true
 
 collections:
   - name: pages

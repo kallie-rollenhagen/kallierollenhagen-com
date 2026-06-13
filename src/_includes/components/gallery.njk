@@ -8,6 +8,8 @@
                 class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
             {% elif element.type == "text" %}
                 {{ element.text | markdown | safe }}
+            {% elif element.type == "spacer" %}
+                <div></div>
             {% endif %}
             </div>
         {% endfor %}
