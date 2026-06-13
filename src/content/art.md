@@ -17,4 +17,15 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-9.jpg
           alt: sketchbook geometric guache paintings
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/kallie-sketchbook-2.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-8.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-1.jpg
+          alt: sketchbook geometric guache paintings
 ---
