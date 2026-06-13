@@ -102,4 +102,15 @@ gallery:
           file: /assets/images/nice-things-establishing-art-3-small.jpg
           alt: art layout that says "craft is still alive and well, we support
             craftspeople, makers, artists, and creatives."
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/nice-things-establishing-art-4-small.jpg
+          alt: art layout with text "small places deserve nice things."
+        - type: image
+          file: /assets/images/nice-things-establishing-art-6-small.jpg
+          alt: art spread with color shapes and objects
+        - type: image
+          file: /assets/images/nice-things-establishing-art-5-small.jpg
+          alt: art spread talking about donating 3% of projects to nonprofits
 ---
