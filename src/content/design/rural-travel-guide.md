@@ -14,7 +14,7 @@ project_description: >-
 
   **Bonus:** Boost rural economic development efforts.
 main_image:
-  file: /assets/images/hand-holding-book-small.png
+  file: /assets/images/hand-holding-book-small.jpg
   alt: Guidebook prototype being held by a hand against a yellow background
 gallery:
   lightbox: false
