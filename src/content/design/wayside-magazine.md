@@ -16,7 +16,7 @@ project_description: >-
 
   <p>Establish a dynamic visual identity system.</p>
 
-  <h3>Core Values & Beliefs</h3>
+  <h3>Core Values</h3>
 
   <ul><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
 main_image:
@@ -41,7 +41,10 @@ gallery:
             ### Inspiration: Handcrafted Object Library
 
 
-            For a shop selling handcrafted items and art, it was important that the identity also be handcrafted. I physically created the object library using cut paper to preserve a trace of materiality, similar to what you see in potato prints, and lino or wood block prints.\
+            For a shop selling handcrafted items and art, it was important that the identity also be handcrafted. 
+
+
+            I physically created the object library using cut paper to preserve a trace of materiality, similar to what you see in potato prints, and lino or wood block prints.\
 
             \
 
@@ -73,7 +76,7 @@ gallery:
             ### Moodboard: Object Library Applied
 
 
-            These varied, colorful brands grounded in images, shapes and colors and playing with scale guided my approach for Nice Things.
+            These varied, colorful brands grounded in images, shapes, and colors guided my approach for Nice Things. I appreciate the way they play with scale and how central shapes are to their identity.
         - type: image
           file: /assets/images/brand-moodboard.jpg
           alt: moodboard of colorful graphics and illustrations
@@ -81,10 +84,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Moodboard: Object Library Applied
+            ### Static Elements
 
 
-            These varied, colorful brands grounded in images, shapes and colors and playing with scale guided my approach for Nice Things.
+            While the object library can be added to over time and the objects scaled up and down, the logo — derived using the typeface Heiy, fonts, and colors are consistent across assets.
         - type: image
           file: /assets/images/colors-type-logo.png
           alt: logo, typefaces and color palette
@@ -113,12 +116,17 @@ gallery:
         - type: image
           file: /assets/images/nice-things-establishing-art-5-small.jpg
           alt: art spread talking about donating 3% of projects to nonprofits
+    - layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Establishing Art
+
+
+            These assets show, at the most conceptual level, how the Nice Things visual identity can be applied. It features asymmetrical color background blocks, text overlays, and objects scaled to be more descriptive and literal vs. enlarged to serve as patterns.
     - layout: full-width
       elements:
         - type: image
-          file: /assets/images/nice-things-tote-3-2-small.jpg
-        - type: image
-          alt: nice things purple tote bag on sunny stairs
           file: /assets/images/nice-things-tote-3-2-small.jpg
     - layout: thirds
       elements:
