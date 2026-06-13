@@ -22,7 +22,7 @@ layout: layouts/base.njk
         </div>
 
         <div class="design-text-rest">
-            {{ project_description | safe }}
+            {{ project_description | markdown | safe }}
         </div>
 
     </div>
