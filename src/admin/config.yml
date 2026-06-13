@@ -121,7 +121,7 @@ collections:
           - label: "Ideal Clients"
             name: "clients"
             widget: "list"
-            field:
+            fields:
               - label: Client
                 name: client
                 widget: string
