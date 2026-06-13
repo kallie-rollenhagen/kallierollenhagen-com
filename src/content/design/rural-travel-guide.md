@@ -8,11 +8,9 @@ project_description: >-
   template of what a curated, designed travel guide could look like for smaller
   places. 
 
+  <p><strong>The goal:</strong> Encourage people to consider rural places as travel destinations.</p>
 
-  **The goal:** Encourage people to consider rural places as travel destinations. 
-
-
-  **Bonus:** Boost rural economic development efforts.
+  <p><strong>Bonus:</strong> Boost rural economic development efforts.</p>
 main_image:
   file: /assets/images/hand-holding-book-small.jpg
   alt: Guidebook prototype being held by a hand against a yellow background
