@@ -13,8 +13,8 @@ slides:
     alt: wayside magazine covers
   - file: /assets/images/hand-holding-book-small.jpg
     alt: hand holding rural travel guide book
-  - file: /assets/images/nice-things-tote-3-2-small.jpg
-    alt: nice things tote bag
   - file: /assets/images/montana-2026-small-208.jpg
     alt: boat seat covered in pine needles
+  - file: /assets/images/nice-things-sidewalk-side-small.jpg
+    alt: Nice Things sandwich board sign on sidewalk
 ---
