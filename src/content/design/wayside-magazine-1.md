@@ -118,4 +118,20 @@ gallery:
         - type: image
           file: /assets/images/four-layouts.jpg
           alt: Four examples of magazine spreads
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Wayside Website
+
+
+            Designed in React in Programming for Web. The challenge was to repeat the same visual elements — color banner, imagery, nameplate, and type — to create a site that gives teaser content for each Wayside issue, encouraging viewers to buy the magazine.
+        - type: image
+          file: /assets/images/website-mockup-small.jpg
+          alt: Person looking at computer screen with Wayside magazine page pulled up
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/spread-mockup-small.jpg
+          alt: open magazine full spread
 ---
