@@ -1,21 +1,21 @@
 ---
 title: Goldenrod
-publish: false
+publish: true
 roles_played: Brand Development | Designer
 project_description: >-
-  ### Scope + deliverables 
+  ### Scope + deliverables
 
 
   Market research, concept development, name, logo, exterior/outdoor sign, door signage, behind-the-counter menu, table menu, additional assets. 
 
 
-  ### Vibe 
+  ### Vibe
 
 
   Minimal and bright, elegant but laid-back, warm and inviting yet not quaint. Create a sense of fun, surprise, and playfulness. Family-friendly, but a place Twin Cities folks would want to drive to and hang out. 
 
 
-  ### Audience 
+  ### Audience
 
 
   Urban dwellers—including families with young kids—looking for a weekend drive destination and
