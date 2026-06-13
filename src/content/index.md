@@ -1,6 +1,7 @@
 ---
 layout: layouts/home.njk
 title: Kallie Rollenhagen
+seoDescription: Editorial design, branding, photography, and creative work by Kallie Rollenhagen.
 permalink: /
 slides:
   - file: /assets/images/Design-Wayside-all-covers.jpg

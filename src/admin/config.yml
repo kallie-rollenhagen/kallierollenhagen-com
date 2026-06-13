@@ -61,15 +61,38 @@ gallery_field: &gallery_field
                 - { label: Text Content, name: text, widget: 'richtext' }
 
 collections:
-
-  - name: design
-    label: Design
+  - name: pages
+    label: Pages
     files:
-      - label: Design
+      - label: Home Page
+        name: home
+        file: src/content/index.md
+        fields:
+          - { label: Title, name: title, widget: string }
+
+          - label: Slides
+            name: slides
+            widget: list
+            fields:
+              - { label: Image, name: file, widget: image }
+              - { label: Alt Text, name: alt, widget: string }
+      - label: Design Page
         name: design
         file: src/content/design.md
         fields:
           - { label: Title, name: title, widget: string }
+      - label: Art Page
+        name: art
+        file: src/content/art.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - *gallery_field
+      - label: Photography Page
+        name: photography
+        file: src/content/photography.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - *gallery_field
 
 
   - name: "projects"
@@ -104,23 +127,3 @@ collections:
           - {label: "File", name: "file", widget: "image", required: false}
           - {label: "Alt Text", name: "alt", widget: "string", required: false}
       - *gallery_field
-      
-  - name: art
-    label: Art
-    files:
-      - label: Art
-        name: art
-        file: src/content/art.md
-        fields:
-          - { label: Title, name: title, widget: string }
-          - *gallery_field
-
-  - name: photography
-    label: Photography
-    files:
-      - label: Photography
-        name: photography
-        file: src/content/photography.md
-        fields:
-          - { label: Title, name: title, widget: string }
-          - *gallery_field
