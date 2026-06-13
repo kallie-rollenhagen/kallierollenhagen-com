@@ -23,7 +23,7 @@ gallery:
     - layout: full-width
       elements:
         - type: image
-          file: /assets/images/front-back-clipped-corner-small.png
+          file: /assets/images/Design-Travel-Guide-Northfield-covers-mockup.avif
           alt: Northfield travel guide front and back cover
     - layout: halves
       elements:
