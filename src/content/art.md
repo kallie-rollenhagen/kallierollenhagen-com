@@ -50,4 +50,28 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-5.jpg
           alt: sketchbook geometric guache paintings
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/kallie-sketchbook-6.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-10.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-12.jpg
+          alt: sketchbook geometric guache paintings
+    - layout: halves
+      elements:
+        - type: image
+          file: /assets/images/kallie-sketchbook-11.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-13.jpg
+          alt: sketchbook geometric guache paintings
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/big-painting-small.jpg
+          alt: guache geometric paintings laying on a table
 ---
