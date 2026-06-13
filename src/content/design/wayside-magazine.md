@@ -113,4 +113,11 @@ gallery:
         - type: image
           file: /assets/images/nice-things-establishing-art-5-small.jpg
           alt: art spread talking about donating 3% of projects to nonprofits
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/nice-things-tote-3-2-small.jpg
+        - type: image
+          alt: nice things purple tote bag on sunny stairs
+          file: /assets/images/nice-things-tote-3-2-small.jpg
 ---
