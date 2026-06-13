@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
                 });
             }, {
                 root: null,
-                threshold: 0.5
+                threshold: 0.3
             });
 
             cards.forEach(card => observer.observe(card));
