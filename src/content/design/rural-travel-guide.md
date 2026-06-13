@@ -48,6 +48,6 @@ gallery:
     - layout: full-width
       elements:
         - type: image
-          file: /assets/images/rds-guide-3-covers-standing-small.jpg
+          file: /assets/images/rds-guide-3-covers-standing-small-narrow.jpg
           alt: Three different covers of rural travel guide
 ---
