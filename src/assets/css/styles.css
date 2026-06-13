@@ -18,7 +18,7 @@ body {
     font-family: Haskoy;
     font-size: 17px;
     color: var(--dark);
-    margin: 0px;
+    margin: auto;
     background-color: var(--light);
     max-width: 1600px;
 }
