@@ -77,4 +77,15 @@ gallery:
         - type: image
           file: /assets/images/brand-moodboard.jpg
           alt: moodboard of colorful graphics and illustrations
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Moodboard: Object Library Applied
+
+
+            These varied, colorful brands grounded in images, shapes and colors and playing with scale guided my approach for Nice Things.
+        - type: image
+          file: /assets/images/colors-type-logo.png
+          alt: logo, typefaces and color palette
 ---
