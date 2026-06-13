@@ -88,4 +88,18 @@ gallery:
         - type: image
           file: /assets/images/colors-type-logo.png
           alt: logo, typefaces and color palette
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/nice-things-establishing-art-1-small.jpg
+          alt: 'art layout that says "nice tings are: beautiful, functional, durable,
+            delightful, accessible"'
+        - type: image
+          file: /assets/images/nice-things-establishing-art-2-small.jpg
+          alt: art layout that says "in a culture after more and cheaper, we see less and
+            better."
+        - type: image
+          file: /assets/images/nice-things-establishing-art-3-small.jpg
+          alt: art layout that says "craft is still alive and well, we support
+            craftspeople, makers, artists, and creatives."
 ---
