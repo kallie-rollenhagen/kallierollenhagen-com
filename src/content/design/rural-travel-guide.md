@@ -42,4 +42,9 @@ gallery:
         - type: image
           file: /assets/images/guidebook-inspo.jpg
           alt: multiple guide books
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/rds-guide-3-covers-standing-small.jpg
+          alt: Three different covers of rural travel guide
 ---
