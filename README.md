@@ -64,5 +64,6 @@ output_1602.avif
 * [ ] Add spacer elements to Gallery options
 * [ ] Add margin-bottom to h3 in Gallery components (-8px)
 * [ ] Integrate p5.js project into Wada Quilts page
+* [ ] Allow to edit page title and permalink
 * [ ] Google Analytics tracking
 * [ ] Standardize image requirements (size, resolution)
