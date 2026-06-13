@@ -31,4 +31,15 @@ gallery:
         - type: image
           file: /assets/images/kids-menu-mockup-small.jpg
           alt: kids menu mockup on table with cereal
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Inspiration
+
+
+            I drew inspiration from elegant, bright diners and bakeries. I wanted to develop a brand that would evoke the sense of childhood delight you get from finding a toy in a cereal box—the same feeling I get when I find a hidden gem in a rural space.
+        - type: image
+          file: /assets/images/inspiration-web-block.jpg
+          alt: Moodboard for restaurant brand featuring loose, colorful assets
 ---
