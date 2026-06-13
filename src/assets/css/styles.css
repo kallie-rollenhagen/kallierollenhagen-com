@@ -363,7 +363,7 @@ hr, main {
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
-    margin-bottom: 50px;
+    margin-bottom: var(--gutter_size);
 }
 
 /* .design-row.left-wide {
