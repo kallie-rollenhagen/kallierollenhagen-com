@@ -49,4 +49,21 @@ gallery:
         - type: image
           file: /assets/images/object-library-moodboard.jpg
           alt: five inspiration images of different blocky, colorful designs
+    - layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Creative Concept & Approach
+
+
+            Many items stocked in Nice Things will have an element of handcraft, such as hand-sewn garments, hand-spun textiles, hand-thrown pottery, hand-dipped candles, etc. 
+
+
+            For the brand to retain an element of that bespoke, hand-made quality, I cut two-dimensional shapes and then digitized these to form the graphic language. Objects can be used at different scales or in different colors.
+        - type: image
+          file: /assets/images/cutouts-small.jpg
+          alt: paper cut objects
+        - type: image
+          file: /assets/images/object-library.jpg
+          alt: black objects of household goods
 ---
