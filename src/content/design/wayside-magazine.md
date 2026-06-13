@@ -18,19 +18,7 @@ project_description: >-
 
   <h3>Core Values & Beliefs</h3>
 
-  <ul>
-
-
-  * Beauty is a necessity, not a luxury. Nice things provide small, daily joys. 
-
-
-  * People should have access to quality, handcrafted, or designed objects that they can use forever. 
-
-
-  * Curating the things in our lives should be a meaningful and delightful practice. 
-
-
-  * Healthy local economies need pathways to support craftspeople and artists.</ul>
+  <ul><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
 main_image:
   file: /assets/images/nice-things-sidewalk-side-small.jpg
   alt: Nice Things sidewalk sign
