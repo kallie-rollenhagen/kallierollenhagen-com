@@ -3,10 +3,10 @@ title: Rural Travel Guide
 publish: true
 roles_played: Brand Development | Layout Design | Photography
 project_description: >-
-  Whereas city guides require filtering to fight through the overwhelm, rural
+  <p>Whereas city guides require filtering to fight through the overwhelm, rural
   guides require scavengers to surface the gems. This project serves as a
   template of what a curated, designed travel guide could look like for smaller
-  places. 
+  places.</p>
 
   <p><strong>The goal:</strong> Encourage people to consider rural places as travel destinations.</p>
 
