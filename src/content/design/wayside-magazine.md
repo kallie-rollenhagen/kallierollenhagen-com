@@ -120,4 +120,15 @@ gallery:
         - type: image
           alt: nice things purple tote bag on sunny stairs
           file: /assets/images/nice-things-tote-3-2-small.jpg
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/nice-things-tape-mockup-small.jpg
+          alt: box with nice things branded tap
+        - type: image
+          file: /assets/images/nice-things-storefront-small.jpg
+          alt: Nice Things storefront
+        - type: image
+          file: /assets/images/nice-things-tea-towel-small.jpg
+          alt: nice things branded tea towel
 ---
