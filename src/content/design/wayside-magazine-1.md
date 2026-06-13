@@ -8,17 +8,20 @@ project_description: >-
   photography essays. This was designed in my MCAD MAGWD typography course.
 
 
-  Brand Voice
+  ### Brand Voice
+
 
   An irreverent, sincere and authentic tilt, with a dash of the design-forward personality and perspective. 
 
 
-  Design Scope
+  ### Design Scope
+
 
   Research, concept, nameplate, and design template including cover, table of contents, and a feature article.
 
 
-  Audience
+  ### Audience
+
 
   Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place.
 main_image:
