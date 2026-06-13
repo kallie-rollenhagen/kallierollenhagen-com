@@ -28,4 +28,17 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-1.jpg
           alt: sketchbook geometric guache paintings
+    - layout: halves
+      elements:
+        - type: image
+          file: /assets/images/kallie-sketchbook-3.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-14.jpg
+          alt: sketchbook geometric guache paintings
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/watercolor-3-2-small.jpg
+          alt: watercolor painting of different colored squares
 ---
