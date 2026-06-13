@@ -116,7 +116,7 @@ gallery:
         - type: image
           file: /assets/images/nice-things-establishing-art-5-small.jpg
           alt: art spread talking about donating 3% of projects to nonprofits
-    - layout: thirds
+    - layout: halves
       elements:
         - type: text
           text: "### Establishing Art"
@@ -125,8 +125,6 @@ gallery:
             visual identity can be applied. It features asymmetrical color
             background blocks, text overlays, and objects scaled to be more
             descriptive and literal vs. enlarged to serve as patterns.
-        - type: text
-          text: dsada
     - layout: full-width
       elements:
         - type: image
