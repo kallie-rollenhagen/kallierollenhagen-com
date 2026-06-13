@@ -462,8 +462,8 @@ hr, main {
 }
 
 .project-card.no-link {
-    pointer-events: none;
-    cursor: default;
+    /* pointer-events: none;
+    cursor: default; */
 }
 
 .project-card img {
