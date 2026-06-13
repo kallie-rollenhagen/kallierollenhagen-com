@@ -6,11 +6,19 @@ project_description: >-
   <p>Whereas city guides require filtering to fight through the overwhelm, rural
   guides require scavengers to surface the gems. This project serves as a
   template of what a curated, designed travel guide could look like for smaller
-  places.</p>
+  places. It was developed in my MCAD MAGWD Design Studio course.</p>
 
-  <p><strong>The goal:</strong> Encourage people to consider rural places as travel destinations.</p>
 
-  <p><strong>Bonus:</strong> Boost rural economic development efforts.</p>
+  ### The Goal
+
+
+  Encourage people to consider rural places as travel destinations. **Bonus:** Boost rural economic development efforts.
+
+
+  ### Design Scope
+
+
+  Develop a printed guide template and proof of concept that on par visually with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
 main_image:
   file: /assets/images/hand-holding-book-small.jpg
   alt: Guidebook prototype being held by a hand against a yellow background
@@ -33,10 +41,7 @@ gallery:
             Rural places can be harder to navigate without local intel, yet the tourism market in rural places is expected to grow. 
 
 
-            Current tourism information is usually published by local chambers or state agencies, resulting in guides that lack authentic editorial insight, distinct design, and engaging digital content. 
-
-
-            **Design challenge:** Develop a printed guide template and proof of concept that on par visually with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
+            Current tourism information is usually published by local chambers or state agencies, resulting in guides that lack authentic editorial insight, distinct design, and engaging digital content.
         - type: image
           file: /assets/images/guidebook-inspo.jpg
           alt: multiple guide books
