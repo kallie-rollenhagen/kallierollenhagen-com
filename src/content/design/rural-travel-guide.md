@@ -25,4 +25,21 @@ gallery:
         - type: image
           file: /assets/images/front-back-clipped-corner-small.png
           alt: Northfield travel guide front and back cover
+    - layout: halves
+      elements:
+        - type: text
+          text: >-
+            ### Project Statement
+
+
+            Rural places can be harder to navigate without local intel, yet the tourism market in rural places is expected to grow. 
+
+
+            Current tourism information is usually published by local chambers or state agencies, resulting in guides that lack authentic editorial insight, distinct design, and engaging digital content. 
+
+
+            **Design challenge:** Develop a printed guide template and proof of concept that on par visually with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
+        - type: image
+          file: /assets/images/guidebook-inspo.jpg
+          alt: multiple guide books
 ---
