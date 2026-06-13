@@ -118,6 +118,19 @@ collections:
               - {label: "Text", name: "text", widget: "string"}
               - {label: "URL", name: "url", widget: "string"}
           - {label: "Bio", name: "bio", widget: "richtext"}
+          - label: "Ideal Clients"
+            name: "clients"
+            widget: "list"
+            field:
+              - label: Client
+                name: client
+                widget: string
+          - label: "Education"
+            name: "education"
+            widget: list
+            fields:
+              - {label: "School", name: "school", widget: "string"}
+              - {label: "Degree", name: "degree", widget: "string"}
 
   - name: "projects"
     label: "Design Projects"

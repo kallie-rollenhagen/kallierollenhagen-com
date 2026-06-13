@@ -19,10 +19,7 @@ layout: layouts/base.njk
     </div>
     <div class="about-column about-column-2">
         <h3>Bio</h3>
-        <hr>
-        {% for paragraph in bio %}
-        <p>{{ paragraph }}</p>
-        {% endfor%}
+        {{ bio | markdown | safe }}
     </div>
     <div class="about-column about-column-3">
         <h3>Education</h3>
@@ -34,7 +31,7 @@ layout: layouts/base.njk
         <hr>
         <ul>
             {% for client in clients %}
-            <li>{{ client }}</li>
+            <li>{{ client.client }}</li>
             {% endfor %}
         </ul>
     </div>

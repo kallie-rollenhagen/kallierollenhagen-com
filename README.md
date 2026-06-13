@@ -59,11 +59,10 @@ ffmpeg -i input.tif \
 -still-picture 1 \
 output_1602.avif
 
-## To do
-
-* [ ] Design project hover overlays
-* [ ] Mobile responsiveness
-    * [ ] Mobile/accessibility for hover behaviors
-* [ ] Incorporate Decap CMS
+## To Do
+* [ ] Make grid margin-bottoms same as guttersize
+* [ ] Add spacer elements to Gallery options
+* [ ] Add margin-bottom to h3 in Gallery components (-8px)
+* [ ] Integrate p5.js project into Wada Quilts page
 * [ ] Google Analytics tracking
 * [ ] Standardize image requirements (size, resolution)
