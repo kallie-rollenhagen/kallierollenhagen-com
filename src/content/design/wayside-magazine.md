@@ -119,12 +119,15 @@ gallery:
     - layout: halves
       elements:
         - type: text
-          text: "### Establishing Art"
+          text: >-
+            ### Establishing Art
+
+
+            These assets show, at the most conceptual level, how the Nice Things visual identity can be applied.
         - type: text
-          text: These assets show, at the most conceptual level, how the Nice Things
-            visual identity can be applied. It features asymmetrical color
-            background blocks, text overlays, and objects scaled to be more
-            descriptive and literal vs. enlarged to serve as patterns.
+          text: Assets features asymmetrical color background blocks, text overlays, and
+            objects scaled to be more descriptive and literal vs. enlarged to
+            serve as patterns.
     - layout: full-width
       elements:
         - type: image
