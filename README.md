@@ -60,8 +60,8 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
-* [ ] Add spacer elements to Gallery options
 * [ ] Integrate p5.js project into Wada Quilts page
 * [ ] Allow to edit page title and permalink
 * [ ] Google Analytics tracking
 * [ ] Standardize image requirements (size, resolution)
+* [ ] SEO tagging
