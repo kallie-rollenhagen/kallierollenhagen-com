@@ -22,6 +22,9 @@ project_description: >-
 main_image:
   file: /assets/images/nice-things-sidewalk-side-small.jpg
   alt: Nice Things sidewalk sign
+thumbnail_image:
+  file: /assets/images/nice-things-tote-3-2-small.jpg
+  alt: purple "Nice Things" tote bag
 gallery:
   type: grid
   lightbox: false
