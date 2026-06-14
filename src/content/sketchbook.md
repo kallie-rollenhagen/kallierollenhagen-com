@@ -1,6 +1,6 @@
 ---
 layout: layouts/sketchbook.njk
-title: Art
+title: Sketchbook
 permalink: /sketchbook.html
 scripts:
   - assets/js/swipe.js
