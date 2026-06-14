@@ -28,8 +28,8 @@ main_image:
   file: /assets/images/covers-mockup-small-3-2.jpg
   alt: Range of Wayside magazine covers
 thumbnail_image:
-  file: /assets/images/covers-mockup-small-3-2.jpg
-  alt: a range of Wayside magazine covers
+  file: /assets/images/wayside.gif
+  alt: a range of Wayside magazine covers and layout mockups
 gallery:
   lightbox: false
   type: grid
