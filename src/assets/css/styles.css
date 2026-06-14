@@ -329,7 +329,7 @@ hr, main {
     grid-area: first;
     /* align-self: center; */
     margin-top: 26px;
-    height: 100%;
+    height: 95%;
     object-fit: cover;
 }
 
