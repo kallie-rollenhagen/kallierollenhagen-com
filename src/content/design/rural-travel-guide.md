@@ -74,6 +74,6 @@ gallery:
           file: /assets/images/mockup-full-photo-spread-cropped.png
           alt: full image sample spread of rural travel guide
         - type: image
-          file: /assets/images/mockup-2-colum-spread-cropped.png
+          file: /assets/images/mockup-food-spread-cropped.png
           alt: text and image sample spread of rural travel guide
 ---
