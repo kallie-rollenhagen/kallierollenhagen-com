@@ -25,6 +25,20 @@ module.exports = function (eleventyConfig) {
             .filter(item => item.data.publish !== false);
     });
 
+    eleventyConfig.addCollection("publishedDesignMap", function(collectionApi) {
+
+        const map = {};
+
+        collectionApi
+            .getFilteredByGlob("./src/content/design/*.md")
+            .filter(item => item.data.publish !== false)
+            .forEach(item => {
+                map[item.fileSlug] = item;
+            });
+
+        return map;
+    });
+
     const md = markdownIt({
         html: true,
         breaks: false,
