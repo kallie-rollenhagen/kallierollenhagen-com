@@ -22,6 +22,9 @@ project_description: >-
 main_image:
   file: /assets/images/yellow-exterior-sign-small.png
   alt: Goldenrod sandwich board
+thumbnail_image:
+  file: /assets/images/Design-Goldenrod-sandwich-board.avif
+  alt: Goldenrod sandwich board
 gallery:
   lightbox: false
   type: grid
