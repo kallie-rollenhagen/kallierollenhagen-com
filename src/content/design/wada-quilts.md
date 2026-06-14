@@ -26,6 +26,9 @@ main_image:
   file: /assets/images/wada-quilt-grid-3-2.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
     patterns
+thumbnail_image:
+  file: /assets/images/ohio-star-generated.png
+  alt: Ohio star quilt pattern
 gallery:
   lightbox: false
   type: grid
