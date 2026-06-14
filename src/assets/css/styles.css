@@ -447,13 +447,6 @@ hr, main {
     clip-path: inset(50% 0 50% 0);
     transition: clip-path 0.6s ease-out, opacity 0.3s ease-out;
     transition-delay: var(--delay, 0s);
-    /* will-change: clip-path; */
-    /* transform: translateZ(0); */
-    /* opacity: 0;
-    transform: scaleY(0);
-    transform-origin: center;
-    transition: transform 0.6s ease-out, opacity 0.3s ease-out;
-    transition-delay: var(--delay, 0s); */
 }
 
 .project-card.visible {
@@ -469,7 +462,7 @@ hr, main {
 .project-card img {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 2;
   margin-bottom: 16px;
   object-fit: cover;
   transition: transform 0.5s ease;
