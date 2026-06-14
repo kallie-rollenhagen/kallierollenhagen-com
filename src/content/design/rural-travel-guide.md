@@ -26,7 +26,7 @@ thumbnail_image:
   file: /assets/images/Design-Travel-Guide-Northfield-covers-mockup.avif
   alt: Northfield, MN rural travel guide front and back cover
 gallery:
-  lightbox: false
+  lightbox: true
   type: grid
   rows:
     - layout: full-width
