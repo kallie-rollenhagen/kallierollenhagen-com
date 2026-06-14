@@ -11,8 +11,8 @@ project_description: >-
 
   Collaborate with an LLM to create a single-point interaction pattern generator using p5.js that returns quilt block patterns. Each quilt has three colors, based on the 3-color combination section of the Japanese *Dictionary of Color Combinations, Volume 2,* by Sanzo Wada.
 main_image:
-  file: /assets/images/wada-quilts.gif
-  alt: Scrolling images of different 4x4 quilt blocks, all in different colors and
+  file: /assets/images/wada-quilt-grid-3-2.gif
+  alt: Scrolling images of different quilt blocks, all in different colors and
     patterns
 gallery:
   lightbox: false
@@ -21,14 +21,14 @@ gallery:
     - layout: thirds
       elements:
         - type: image
-          file: /assets/images/battleground-quilt.png
+          file: /assets/images/battleground-quilt-generated.png
           alt: battleground quilt block in many colors
         - type: image
-          file: /assets/images/calico-puzzle.png
+          file: /assets/images/calico-puzzle-generated.png
           alt: calico puzzle quilt block
         - type: image
-          file: /assets/images/double-nine-patch-quilt.png
-          alt: double nice patch quilt block
+          file: /assets/images/ohio-star-generated.png
+          alt: ohio star patch quilt block
     - layout: right-wide
       elements:
         - type: text
