@@ -22,6 +22,9 @@ project_description: >-
 main_image:
   file: /assets/images/hand-holding-book-small.jpg
   alt: Guidebook prototype being held by a hand against a yellow background
+thumbnail_image:
+  file: /assets/images/Design-Travel-Guide-Northfield-covers-mockup.avif
+  alt: Northfield, MN rural travel guide front and back cover
 gallery:
   lightbox: false
   type: grid
