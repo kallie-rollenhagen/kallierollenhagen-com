@@ -2,39 +2,6 @@
 layout: layouts/design.njk
 title: Design
 permalink: /design.html
-projects:
-  - title: Wayside Magazine
-    subtitle: Layout Design | Brand Development
-    image: Design-Wayside-all-covers.avif
-    url: /design/wayside-magazine
-  - title: Detour from the Ordinary
-    subtitle: Layout Design | Brand Development
-    image: Design-Carleton-Detour-From-the-Ordinary-36-hr-spread.avif
-    url: /design
-  - title: RIAD Studio
-    subtitle: Layout Design | Brand Development
-    image: Design-RIAD-website.avif
-    url: /design
-  - title: Carleton Sustainable Futures
-    subtitle: Layout Design | Brand Development
-    image: Design-CarletonSustainable-Futures-posters.avif
-    url: /design
-  - title: RDS Travel Guides
-    subtitle: Layout Design | Brand Development
-    image: Design-Travel-Guide-Northfield-covers-mockup.avif
-    url: /design
-  - title: Goldenrod
-    subtitle: Layout Design | Brand Development
-    image: Design-Goldenrod-sandwich-board.avif
-    url: /design
-  - title: Liberal Arts in Action
-    subtitle: Layout Design | Brand Development
-    image: Design-Carleton-Liberal-Arts-in-Action-social-mockups.avif
-    url: /design
-  - title: Carleton College Comic
-    subtitle: Layout Design | Brand Development
-    image: Design-Carleton-Student-comic-unfolded.avif
-    url: /design
 scripts:
   - /assets/js/design-projects.js
 design_projects:
