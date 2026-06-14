@@ -99,7 +99,7 @@ collections:
               widget: relation
               collection: projects
               search_fields: ["title"]
-              value_field: "{{slug}}"
+              value_field: "{{url}}"
               display_fields: ["title"]
       - label: Sketchbook Page
         name: sketchbook
