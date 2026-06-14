@@ -1,6 +1,7 @@
 /* Global definition */
 :root {
   --gutter_size: clamp(12px, 2.4vw, 30px);
+  --side_margins: 35px;
   --dark: #363636;
   --light: #FAFAFA;
   --accent_yellow: #DEEE81;
@@ -133,7 +134,7 @@ img {
 
 #grid-container {
   display: grid;
-  grid-template-columns: 35px repeat(12, minmax(0, 1fr)) 35px;
+  grid-template-columns: var(--side_margins) repeat(12, minmax(0, 1fr)) var(--side_margins);
   gap: 0 var(--gutter_size); 
   box-sizing: border-box;
   margin-bottom: var(--gutter_size)
@@ -784,6 +785,9 @@ hr, main {
 
 @media (max-width: 635px) {
 
+    :root {
+        --side_margins: 5px;
+    }
     header {
         /* margin-bottom: 20px; */
     }
