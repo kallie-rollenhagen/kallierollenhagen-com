@@ -1,6 +1,6 @@
 ---
 title: Rural Design Studio
-publish: false
+publish: true
 roles_played: Brand Development | Web Design
 project_description: >-
   The Rural Design Studio was my MCAD MAGWD Capstone project.
