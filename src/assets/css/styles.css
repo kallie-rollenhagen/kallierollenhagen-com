@@ -326,7 +326,8 @@ hr, main {
 
 .design-img-first {
     grid-area: first;
-    align-self: center;
+    /* align-self: center; */
+    margin-top: 75px;
 }
 
 .design-img-stacked {
