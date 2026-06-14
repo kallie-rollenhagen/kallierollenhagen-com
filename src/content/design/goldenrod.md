@@ -31,13 +31,11 @@ gallery:
         - type: image
           file: /assets/images/final-wall-mockup-small.jpg
           alt: behind the counter menu mockup
-    - layout: thirds
+    - layout: halves
       elements:
         - type: image
           file: /assets/images/menu-mockup-small.jpg
           alt: handheld menu mockup of menu on table
-        - type: spacer
-          spacer: true
         - type: image
           file: /assets/images/kids-menu-mockup-small.jpg
           alt: kids menu mockup on table with cereal
