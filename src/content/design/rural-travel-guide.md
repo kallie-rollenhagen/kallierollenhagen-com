@@ -56,7 +56,7 @@ gallery:
     - layout: thirds
       elements:
         - type: image
-          file: /assets/images/mockup-food-spread-cropped.png
+          file: /assets/images/mockup-2-colum-spread-cropped.png
           alt: text and image sample spread of rural travel guide
         - type: image
           file: /assets/images/mockup-biz-profile-spread-cropped.png
