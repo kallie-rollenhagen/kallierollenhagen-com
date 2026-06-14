@@ -15,7 +15,7 @@ project_description: >-
   ### Scope
 
 
-  Train and provide design direction to an LLM to create a single-point user input interaction using P5.JS that generates and exports graphic elements. 
+  Train and provide design direction to an LLM to create a single-point user input interaction using p5.js that generates and exports graphic elements. 
 
 
   ### Deliverables
@@ -51,7 +51,10 @@ gallery:
             ### Background & Inspiration
 
 
-            I’d been practicing color mixing, inspired by this cult favorite color dictionary. I wanted to use the outputs of this prompt to generate new patterns, inspired by classic quilt block patterns. My mother, grandmothers, and several of my friends are quilters, and this project gave me a way to participate in creative quilting circles, just in another medium.
+            I’d been practicing color mixing, inspired by this cult favorite color dictionary. I wanted to use the outputs of this prompt to generate new patterns, inspired by classic quilt patterns. 
+
+
+            My mother, grandmothers, and several of my friends are quilters. This project gave me a way to participate in creative quilting circles, just in another medium.
         - type: image
           file: /assets/images/inspiration.jpg
           alt: moodboard with barn quilt, sketchbook, and Sanzo Wada Dictionary of Colors
