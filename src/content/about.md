@@ -1,7 +1,17 @@
 ---
+title: About
 contact:
   location: Northfield, Minnesota
   email: kallie.rollenhagen@gmail.com
+links:
+  - text: CV
+    url: /
+  - text: Instagram
+    url: https://www.instagram.com/kallierollenhagen/
+  - text: LinkedIn
+    url: https://www.linkedin.com/in/kallierollenhagen
+  - text: Photography | For Hire
+    url: https://kallierollenhagen.photography/
 bio: >-
   Kallie is a designer, creative director, photographer, and artist. She loves
   working with scrappy entrepreneurs, rural regenerators, and other artists and
@@ -29,18 +39,8 @@ education:
     degree: BA in psychology, minor in architecture
 layout: layouts/about.njk
 permalink: /about.html
-title: About
 photo:
   file: /assets/images/Kallie-Rollenhagen-About.avif
   alt: Kallie Rollenhagen portrait
   credit: Photo by Zoe Prinds-Flash
-links:
-  - text: CV
-    url: /
-  - text: Instagram
-    url: https://www.instagram.com/kallierollenhagen/
-  - text: LinkedIn
-    url: https://www.linkedin.com/in/kallierollenhagen
-  - text: Photography | For Hire
-    url: /
 ---
