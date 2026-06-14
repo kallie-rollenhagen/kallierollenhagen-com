@@ -20,14 +20,14 @@ gallery:
     - layout: thirds
       elements:
         - type: image
-          file: /assets/images/kallie-sketchbook-2.jpg
-          alt: sketchbook geometric guache paintings
+          file: /assets/images/2025-art-10-small.jpg
+          alt: guache geometric paining on purple paper
         - type: image
-          file: /assets/images/kallie-sketchbook-8.jpg
-          alt: sketchbook geometric guache paintings
+          file: /assets/images/2025-art-3-small.jpg
+          alt: guache geometric paining on black paper
         - type: image
-          file: /assets/images/kallie-sketchbook-1.jpg
-          alt: sketchbook geometric guache paintings
+          file: /assets/images/2025-art-2-small.jpg
+          alt: guache geometric paining on purple paper
     - layout: halves
       elements:
         - type: image
@@ -74,4 +74,15 @@ gallery:
         - type: image
           file: /assets/images/big-painting-small.jpg
           alt: guache geometric paintings laying on a table
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/kallie-sketchbook-2.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-8.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-1.jpg
+          alt: sketchbook geometric guache paintings
 ---
