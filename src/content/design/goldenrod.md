@@ -23,8 +23,8 @@ main_image:
   file: /assets/images/yellow-exterior-sign-small.png
   alt: Goldenrod sandwich board
 thumbnail_image:
-  file: /assets/images/Design-Goldenrod-sandwich-board.avif
-  alt: Goldenrod sandwich board
+  file: /assets/images/circle-sign-small.jpg
+  alt: circular external building sign with "goldenrod"
 gallery:
   lightbox: false
   type: grid
