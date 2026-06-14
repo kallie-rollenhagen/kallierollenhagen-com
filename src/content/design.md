@@ -7,6 +7,7 @@ scripts:
 design_projects:
   - wayside-magazine-1
   - wayside-magazine
+  - rural-design-studio
   - rural-travel-guide
   - goldenrod
   - wada-quilts
