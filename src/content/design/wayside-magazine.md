@@ -22,9 +22,6 @@ project_description: >-
 main_image:
   file: /assets/images/nice-things-sidewalk-side-small.jpg
   alt: Nice Things sidewalk sign
-side_image:
-  file: ""
-  alt: ""
 gallery:
   type: grid
   lightbox: false

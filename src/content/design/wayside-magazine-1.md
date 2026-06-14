@@ -27,9 +27,6 @@ project_description: >-
 main_image:
   file: /assets/images/covers-mockup-small-3-2.jpg
   alt: Range of Wayside magazine covers
-side_image:
-  alt: ""
-  file: ""
 gallery:
   lightbox: false
   type: grid
