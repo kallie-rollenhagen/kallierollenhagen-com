@@ -56,24 +56,24 @@ gallery:
     - layout: thirds
       elements:
         - type: image
-          file: /assets/images/mockup-2-colum-spread-small.png
+          file: /assets/images/mockup-food-spread-cropped.png
           alt: text and image sample spread of rural travel guide
         - type: image
-          file: /assets/images/mockup-biz-profile-spread-small.png
+          file: /assets/images/mockup-biz-profile-spread-cropped.png
           alt: text and image sample spread of rural travel guide for a small business
             profile
         - type: image
-          file: /assets/images/mockup-feature-spread-small.png
+          file: /assets/images/mockup-feature-spread-cropped.png
           alt: full image sample spread of rural travel guide
     - layout: thirds
       elements:
         - type: image
-          file: /assets/images/mockup-local-guide-spread-small.png
+          file: /assets/images/mockup-local-guide-spread-cropped.png
           alt: local spotlight sample spread of rural travel guide
         - type: image
-          file: /assets/images/mockup-full-photo-spread-small.png
+          file: /assets/images/mockup-full-photo-spread-cropped.png
           alt: full image sample spread of rural travel guide
         - type: image
-          file: /assets/images/mockup-food-spread-small.png
+          file: /assets/images/mockup-2-colum-spread-cropped.png
           alt: text and image sample spread of rural travel guide
 ---
