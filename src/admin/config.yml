@@ -90,6 +90,17 @@ collections:
         file: src/content/design.md
         fields:
           - { label: Title, name: title, widget: string }
+          - label: Design Projects
+            name: design_projects
+            widget: list
+            field:
+              label: Project
+              name: project
+              widget: relation
+              collection: projects
+              search_fields: ["title"]
+              value_field: "{{slug}}"
+              display_fields: ["title"]
       - label: Sketchbook Page
         name: sketchbook
         file: src/content/sketchbook.md
