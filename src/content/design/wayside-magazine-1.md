@@ -27,6 +27,9 @@ project_description: >-
 main_image:
   file: /assets/images/covers-mockup-small-3-2.jpg
   alt: Range of Wayside magazine covers
+thumbnail_image:
+  file: /assets/images/circle-sign-small.jpg
+  alt: circular external building sign with "goldenrod"
 gallery:
   lightbox: false
   type: grid
