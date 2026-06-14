@@ -59,4 +59,18 @@ gallery:
           file: /assets/images/inspiration.jpg
           alt: moodboard with barn quilt, sketchbook, and Sanzo Wada Dictionary of Colors
             Vol. 2
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Challenge: Pattern recognition 
+
+
+            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. This shows my attempts to prompt the LLMs, using both verbal prompts and image inputs.
+
+
+            *Note: These outputs are from summer 2025.*
+        - type: image
+          file: /assets/images/challenges-web-block.jpg
+          alt: grid of 3 rows and 5 columns showing the progression of block outputs
 ---
