@@ -53,4 +53,27 @@ gallery:
         - type: image
           file: /assets/images/rds-guide-3-covers-standing-small-narrow.jpg
           alt: Three different covers of rural travel guide
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/mockup-2-colum-spread-small.png
+          alt: text and image sample spread of rural travel guide
+        - type: image
+          file: /assets/images/mockup-biz-profile-spread-small.png
+          alt: text and image sample spread of rural travel guide for a small business
+            profile
+        - type: image
+          file: /assets/images/mockup-feature-spread-small.png
+          alt: full image sample spread of rural travel guide
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/mockup-local-guide-spread-small.png
+          alt: local spotlight sample spread of rural travel guide
+        - type: image
+          file: /assets/images/mockup-full-photo-spread-small.png
+          alt: full image sample spread of rural travel guide
+        - type: image
+          file: /assets/images/mockup-food-spread-small.png
+          alt: text and image sample spread of rural travel guide
 ---
