@@ -350,7 +350,7 @@ hr, main {
 
     grid-template-areas:
         "text first first"
-        "text stacked stacked";
+        "text first first";
 }
 
 .gallery {
