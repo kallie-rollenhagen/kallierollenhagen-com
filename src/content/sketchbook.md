@@ -1,7 +1,7 @@
 ---
-layout: layouts/art.njk
+layout: layouts/sketchbook.njk
 title: Art
-permalink: /art.html
+permalink: /sketchbook.html
 scripts:
   - assets/js/swipe.js
   - assets/js/lightbox.js

@@ -9,9 +9,9 @@
       "match": "design"
     },
     {
-      "title": "Art",
-      "url": "/art",
-      "match": "/art"
+      "title": "Sketchbook",
+      "url": "/sketchbook",
+      "match": "/sketchbook"
     },
     {
       "title": "Photography",

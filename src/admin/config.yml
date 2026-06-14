@@ -90,9 +90,9 @@ collections:
         file: src/content/design.md
         fields:
           - { label: Title, name: title, widget: string }
-      - label: Art Page
-        name: art
-        file: src/content/art.md
+      - label: Sketchbook Page
+        name: sketchbook
+        file: src/content/sketchbook.md
         fields:
           - { label: Title, name: title, widget: string }
           - *gallery_field
