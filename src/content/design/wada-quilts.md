@@ -44,6 +44,7 @@ gallery:
         - type: image
           file: /assets/images/ohio-star-generated.png
           alt: ohio star patch quilt block
+      object_fit: cover
     - layout: right-wide
       elements:
         - type: text
@@ -59,6 +60,7 @@ gallery:
           file: /assets/images/inspiration.jpg
           alt: moodboard with barn quilt, sketchbook, and Sanzo Wada Dictionary of Colors
             Vol. 2
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -73,4 +75,5 @@ gallery:
         - type: image
           file: /assets/images/challenges-web-block.jpg
           alt: grid of 3 rows and 5 columns showing the progression of block outputs
+      object_fit: contain
 ---
