@@ -1,6 +1,6 @@
 {% if gallery.type == "grid" %}
     {% for row in gallery.rows %}
-        <div class="gallery-row {{ row.layout }}">
+        <div class="gallery-row {{ row.layout }} fit-{{ row.object_fit | default('contain') }}">
         {% for element in row.elements %}
             <div class="gallery-row-element {{ element.type }}">
             {% if element.type == "image" %}

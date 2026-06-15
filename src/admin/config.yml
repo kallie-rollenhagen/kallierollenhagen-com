@@ -41,6 +41,14 @@ gallery_field: &gallery_field
             - right-wide
             - full-width
 
+        - label: Image Fit
+          name: object_fit
+          widget: select
+          default: contain
+          options:
+            - { label: Contain, value: contain }
+            - { label: Cover, value: cover }
+
         - label: Elements
           name: elements
           widget: list
