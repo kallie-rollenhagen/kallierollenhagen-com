@@ -221,19 +221,6 @@ collections:
             name: body
             widget: markdown
 
-      - label: styles.css
-        name: site_css
-        file: src/assets/css/test.txt
-        delete: false
-        format: json-frontmatter
-        fields:
-          - label: CSS
-            name: body
-            widget: text
-            # default_language: css
-            # allow_language_selection: false
-            # output_code_only: true
-
       - label: Custom CSS
         name: custom_css
         file: src/assets/css/custom-css.md
