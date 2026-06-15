@@ -769,6 +769,7 @@ svg {
     
     .gallery-row {
         margin-bottom: 60px;
+        gap: var(--gutter_size);
     }
     
     .gallery-row-element.text h3 {
@@ -927,7 +928,6 @@ svg {
     .gallery-row {
         display: flex;
         flex-direction: column;
-        gap: var(--gutter_size);
         /* margin-bottom: var(--gutter_size); */
     }
 }
