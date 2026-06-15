@@ -71,7 +71,7 @@ gallery:
         - type: image
           file: /assets/images/object-library.jpg
           alt: black objects of household goods
-      object_fit: contain
+      object_fit: cover
     - layout: right-wide
       elements:
         - type: text
