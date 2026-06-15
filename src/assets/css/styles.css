@@ -771,6 +771,33 @@ hr, main {
         height: auto;
         object-fit: cover;
     }
+    
+    .gallery-row {
+        margin-bottom: 60px;
+    }
+    
+    .gallery-row-element.text h3 {
+        margin-top: 12px;
+    }
+
+    .gallery-row.thirds,
+    .gallery-row.right-wide,
+    .gallery-row.left-wide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-row.thirds .gallery-row-element.image,
+    .gallery-row.right-wide .gallery-row-element.image,
+    .gallery-row.left-wide .gallery-row-element.image  {
+        order: 1;
+    }
+
+    .gallery-row.thirds .gallery-row-element.text,
+    .gallery-row.gallery-row.right-wide .gallery-row-element.text,
+    .gallery-row.gallery-row.left-wide .gallery-row-element.text {
+        order: 2;
+    }
 
     .lightbox-prev, .lightbox-next {
         display: none;
@@ -906,6 +933,6 @@ hr, main {
         display: flex;
         flex-direction: column;
         gap: var(--gutter_size);
-        margin-bottom: var(--gutter_size);
+        /* margin-bottom: var(--gutter_size); */
     }
 }

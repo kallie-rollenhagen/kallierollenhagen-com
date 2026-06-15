@@ -60,6 +60,8 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
+* [ ] Option to make gallery row use object-fit: cover for the images
+    * For when there are two or more images in a row
 * [ ] Integrate p5.js project into Wada Quilts page
 * [ ] Allow to edit page title and permalink
 * [ ] Google Analytics tracking
