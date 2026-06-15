@@ -1,4 +1,6 @@
-{ "title": "Site CSS" }
+{
+    "title": "Site CSS"
+}
 /* Global definition */
 :root {
   --gutter_size: clamp(12px, 2.4vw, 30px);

@@ -229,7 +229,7 @@ collections:
         fields:
           - label: CSS
             name: body
-            widget: code
-            default_language: css
-            allow_language_selection: false
-            output_code_only: true
+            widget: text
+            # default_language: css
+            # allow_language_selection: false
+            # output_code_only: true
