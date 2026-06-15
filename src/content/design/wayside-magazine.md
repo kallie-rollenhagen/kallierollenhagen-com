@@ -34,6 +34,7 @@ gallery:
         - type: image
           file: /assets/images/nice-things-instagram-mockups-small.jpg
           alt: three phones showing instagram mockup
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -52,6 +53,7 @@ gallery:
         - type: image
           file: /assets/images/object-library-moodboard.jpg
           alt: five inspiration images of different blocky, colorful designs
+      object_fit: contain
     - layout: thirds
       elements:
         - type: text
@@ -69,6 +71,7 @@ gallery:
         - type: image
           file: /assets/images/object-library.jpg
           alt: black objects of household goods
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -80,6 +83,7 @@ gallery:
         - type: image
           file: /assets/images/brand-moodboard.jpg
           alt: moodboard of colorful graphics and illustrations
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -91,6 +95,7 @@ gallery:
         - type: image
           file: /assets/images/colors-type-logo.png
           alt: logo, typefaces and color palette
+      object_fit: contain
     - layout: thirds
       elements:
         - type: image
@@ -105,6 +110,7 @@ gallery:
           file: /assets/images/nice-things-establishing-art-3-small.jpg
           alt: art layout that says "craft is still alive and well, we support
             craftspeople, makers, artists, and creatives."
+      object_fit: cover
     - layout: thirds
       elements:
         - type: image
@@ -116,6 +122,7 @@ gallery:
         - type: image
           file: /assets/images/nice-things-establishing-art-5-small.jpg
           alt: art spread talking about donating 3% of projects to nonprofits
+      object_fit: cover
     - layout: halves
       elements:
         - type: text
@@ -128,10 +135,12 @@ gallery:
           text: Assets features asymmetrical color background blocks, text overlays, and
             objects scaled to be more descriptive and literal vs. enlarged to
             serve as patterns.
+      object_fit: contain
     - layout: full-width
       elements:
         - type: image
           file: /assets/images/nice-things-tote-3-2-small.jpg
+      object_fit: contain
     - layout: thirds
       elements:
         - type: image
@@ -143,4 +152,5 @@ gallery:
         - type: image
           file: /assets/images/nice-things-tea-towel-small.jpg
           alt: nice things branded tea towel
+      object_fit: cover
 ---
