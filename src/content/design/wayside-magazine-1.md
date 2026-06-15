@@ -42,6 +42,7 @@ gallery:
         - type: image
           file: /assets/images/purple-mockup-small.jpg
           alt: Wayside cover mockup
+      object_fit: cover
     - layout: right-wide
       elements:
         - type: text
@@ -53,6 +54,7 @@ gallery:
         - type: image
           file: /assets/images/moodboard-images-small.jpg
           alt: Moodboard of several magazines
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -64,6 +66,7 @@ gallery:
         - type: image
           file: /assets/images/nameplate-sketches-small.jpg
           alt: Three different nameplate mockups
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -75,6 +78,7 @@ gallery:
         - type: image
           file: /assets/images/nameplate-annotated.jpg
           alt: Annotated nameplate
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -86,6 +90,7 @@ gallery:
         - type: image
           file: /assets/images/colors-for-web-small.jpg
           alt: Four images with accent color circles
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -96,6 +101,7 @@ gallery:
             Each cover calls out the featured geography in the accent color bar, lists three story teasers at the bottom, and includes the issue number and price in the header. The colors change, with the placement of the nameplate and the use of a single photo consistent every issue.
         - type: image
           file: /assets/images/8-covers-small.jpg
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -107,6 +113,7 @@ gallery:
         - type: image
           file: /assets/images/grid-template.jpg
           alt: Grid lines
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -118,6 +125,7 @@ gallery:
         - type: image
           file: /assets/images/four-layouts.jpg
           alt: Four examples of magazine spreads
+      object_fit: contain
     - layout: right-wide
       elements:
         - type: text
@@ -129,9 +137,11 @@ gallery:
         - type: image
           file: /assets/images/website-mockup-small.jpg
           alt: Person looking at computer screen with Wayside magazine page pulled up
+      object_fit: contain
     - layout: full-width
       elements:
         - type: image
           file: /assets/images/spread-mockup-small.jpg
           alt: open magazine full spread
+      object_fit: contain
 ---
