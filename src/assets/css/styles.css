@@ -730,6 +730,87 @@ svg {
     /* .design-column-1 {
         grid-column: 1 / 14;
     } */
+
+    .nav-toggle {
+        display: block;
+        margin: auto 0 auto auto;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 12px 0 12px 12px;
+        z-index: 3000; /* Keeps it on top of the menu when opened */
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background: var(--dark);
+        transition: background 0.2s ease;
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background: var(--dark);
+        transition: transform 0.3s ease, top 0.3s ease;
+    }
+    .hamburger::before { top: -8px; }
+    .hamburger::after { top: 8px; }
+
+    nav .nav-links {
+        position: fixed;
+        top: 0;
+        right: 100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--accent_yellow);
+        z-index: 2500;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        /* gap: 24px; */
+        /* transform: translateX(100%); */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        /* transition: none; */
+    }
+    
+    nav .nav-links a {
+        font-size: 22px;
+        padding: 12px 24px 12px 50px;
+    }
+    nav .nav-links a:nth-child(1),
+    nav .nav-links a:last-child {
+        padding-left: 50px;
+        padding-right: 24px;
+        font-size: 22px;
+    }
+    
+    nav.menu-open .nav-links {
+        /* transform: translateX(0); Glides directly into viewport */
+        right: 0;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Morph the hamburger icon into an 'X' close button */
+    nav.menu-open .hamburger {
+        background: transparent;
+    }
+    nav.menu-open .hamburger::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    nav.menu-open .hamburger::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
     .about-column-1 {
         grid-column: 1 / 14;
         flex-direction: row;
@@ -816,85 +897,7 @@ svg {
     header {
         /* margin-bottom: 20px; */
     }
-    .nav-toggle {
-        display: block;
-        margin: auto 0 auto auto;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 12px 0 12px 12px;
-        z-index: 3000; /* Keeps it on top of the menu when opened */
-    }
-
-    .hamburger {
-        display: block;
-        position: relative;
-        width: 24px;
-        height: 2px;
-        background: var(--dark);
-        transition: background 0.2s ease;
-    }
-    .hamburger::before,
-    .hamburger::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 24px;
-        height: 2px;
-        background: var(--dark);
-        transition: transform 0.3s ease, top 0.3s ease;
-    }
-    .hamburger::before { top: -8px; }
-    .hamburger::after { top: 8px; }
-
-    nav .nav-links {
-        position: fixed;
-        top: 0;
-        right: 100vw;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--accent_yellow);
-        z-index: 2500;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        /* gap: 24px; */
-        /* transform: translateX(100%); */
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        /* transition: none; */
-    }
     
-    nav .nav-links a {
-        font-size: 22px;
-        padding: 12px 24px 12px 50px;
-    }
-    nav .nav-links a:nth-child(1),
-    nav .nav-links a:last-child {
-        padding-left: 50px;
-        padding-right: 24px;
-        font-size: 22px;
-    }
-    
-    nav.menu-open .nav-links {
-        /* transform: translateX(0); Glides directly into viewport */
-        right: 0;
-        opacity: 1;
-        transition: opacity 0.3s ease;
-    }
-
-    /* Morph the hamburger icon into an 'X' close button */
-    nav.menu-open .hamburger {
-        background: transparent;
-    }
-    nav.menu-open .hamburger::before {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    nav.menu-open .hamburger::after {
-        top: 0;
-        transform: rotate(-45deg);
-    }
 
     .home-layout #grid-container > hr {
         /* display: none; */
