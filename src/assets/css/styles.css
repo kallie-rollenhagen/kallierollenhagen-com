@@ -572,20 +572,20 @@ hr, main {
     border-top: 1px solid var(--dark);
 }
 
-.about-layout ul {
+ul {
     list-style: none;
     padding-left: 0;
     line-height: 160%;
     /* list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 60 60'%3E%3Cpath d='M0 20 h60 L30 55 v-11 L44 27 H0z' fill='black'/%3E%3C/svg%3E"); */
 }
 
-.about-layout ul li {
+ul li {
     display: flex;
     align-items: flex-start; /* 2. Vertically centers the SVG bullet and the text perfectly */
     gap: 7px;           /* 3. Clean, uniform space between icon and words */
     margin-bottom: 8px;  /* Spacing between list rows */
 }
-.about-layout ul li::before {
+ul li::before {
     content: "";
     display: inline-block;
     width: 13px;  /* Easily scale the size of the bullet icon right here */
@@ -600,7 +600,7 @@ hr, main {
     margin-top: 7px;
 }
 
-.about-layout svg {
+svg {
     vertical-align: center;
 }
 .about-column {
