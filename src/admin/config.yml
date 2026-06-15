@@ -207,3 +207,28 @@ collections:
           - {label: "File", name: "file", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
       - *gallery_field
+
+  - name: admin
+    label: Site Administration
+    files:
+
+      - label: README.md
+        name: readme
+        file: README.md
+        delete: false
+        fields:
+          - label: Content
+            name: body
+            widget: markdown
+
+      - label: styles.css
+        name: site_css
+        file: src/assets/css/styles.css
+        delete: false
+        fields:
+          - label: CSS
+            name: body
+            widget: code
+            default_language: css
+            allow_language_selection: false
+            output_code_only: true

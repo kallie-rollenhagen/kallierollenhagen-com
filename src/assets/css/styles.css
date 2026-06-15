@@ -810,7 +810,7 @@ svg {
         top: 0;
         transform: rotate(-45deg);
     }
-    
+
     .about-column-1 {
         grid-column: 1 / 14;
         flex-direction: row;

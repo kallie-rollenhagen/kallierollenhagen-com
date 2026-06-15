@@ -60,10 +60,9 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
-* Fix nav menu when About gets pushed to the right
-* Integrate p5.js project into Wada Quilts page
 * Make README.md editable in Decap
+* Integrate p5.js project into Wada Quilts page
 * Allow to edit page title and permalink
+* SEO tagging
 * Google Analytics tracking
 * Standardize image requirements (size, resolution)
-* SEO tagging
