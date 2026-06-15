@@ -60,7 +60,7 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
-* Make README.md editable in Decap
+* Set img focal points for object-fit: cover behavior
 * Integrate p5.js project into Wada Quilts page
 * Allow to edit page title and permalink
 * SEO tagging
