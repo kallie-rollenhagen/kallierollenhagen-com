@@ -101,6 +101,7 @@ collections:
         file: src/content/design.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: SEO Description, name: seoDescription, widget: string }
           - label: Design Projects
             name: design_projects
             widget: list
@@ -117,6 +118,7 @@ collections:
         file: src/content/mcad.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: SEO Description, name: seoDescription, widget: string }
           - label: Design Projects
             name: design_projects
             widget: list
@@ -133,18 +135,21 @@ collections:
         file: src/content/sketchbook.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: SEO Description, name: seoDescription, widget: string }
           - *gallery_field
       - label: Photography Page
         name: photography
         file: src/content/photography.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: SEO Description, name: seoDescription, widget: string }
           - *gallery_field
       - label: About Page
         name: about
         file: src/content/about.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: SEO Description, name: seoDescription, widget: string }
           - label: "Photo"
             name: "photo"
             widget: "object"
@@ -185,6 +190,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: SEO Description, name: seoDescription, widget: string }
       - label: Publish
         name: publish
         widget: boolean
