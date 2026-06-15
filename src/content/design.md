@@ -5,8 +5,8 @@ permalink: /design.html
 scripts:
   - /assets/js/design-projects.js
 design_projects:
-  - wayside-magazine-1
   - wayside-magazine
+  - nice-things
   - rural-travel-guide
   - rural-design-studio
   - wada-quilts
