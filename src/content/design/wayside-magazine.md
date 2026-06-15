@@ -1,156 +1,147 @@
 ---
-title: Nice Things
+title: Wayside Magazine
 publish: true
-roles_played: Brand Development | Identity System
-credits: []
+roles_played: Brand Development | Layout Design | Photography | Web Design
 project_description: >-
-  <p>Nice Things is a design retail store located in a smaller community. It
-  will sell curated items for your home, your body, and for those you love. This
-  was developed in my MCAD MAGWD dynamic identities course.</p>
+  A quarterly travel magazine for off-the-road and underrated places, focused on
+  the essence of a place—captured via essays and recommendations from locals and
+  photography essays. This was designed in my MCAD MAGWD typography course.
 
-  <h3>Brand Position</h3>
 
-  <p>Small places deserve nice things.</p>
+  ### Brand Voice
 
-  <h3>Design Scope</h3>
 
-  <p>Establish a dynamic visual identity system.</p>
+  An irreverent, sincere and authentic tilt, with a dash of the design-forward personality and perspective. 
 
-  <h3>Core Values</h3>
 
-  <ul><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
+  ### Design Scope
+
+
+  Research, concept, nameplate, and design template including cover, table of contents, and a feature article.
+
+
+  ### Audience
+
+
+  Wayside appeals to folks who travel to live like locals and are interested in hidden gems, hanging out at the local cafe, and getting to know the people who live in a place.
 main_image:
-  file: /assets/images/nice-things-sidewalk-side-small.jpg
-  alt: Nice Things sidewalk sign
+  file: /assets/images/covers-mockup-small-3-2.jpg
+  alt: Range of Wayside magazine covers
 thumbnail_image:
-  file: /assets/images/nice-things-tote-3-2-small.jpg
-  alt: purple "Nice Things" tote bag
+  file: /assets/images/wayside.gif
+  alt: a range of Wayside magazine covers and layout mockups
 gallery:
-  type: grid
   lightbox: false
+  type: grid
   rows:
+    - layout: left-wide
+      elements:
+        - type: image
+          file: /assets/images/final-mockup-marginsfixed-small.jpg
+          alt: Wayside magazine cover and flatlay
+        - type: image
+          file: /assets/images/purple-mockup-small.jpg
+          alt: Wayside cover mockup
+      object_fit: cover
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Inspiration & Visual Direction
+
+
+            Adventurous and curious, embodied by bold, editorial photography; modern, slightly quirky typefaces; textural cover photos; and contemporary, contrasting color palettes.
+        - type: image
+          file: /assets/images/moodboard-images-small.jpg
+          alt: Moodboard of several magazines
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Nameplate Iterations
+
+
+            I explored a more quirky and adventurous directions vs. something more elegant and classic. I also wanted an option with enough contrast to stand out on a rack.
+        - type: image
+          file: /assets/images/nameplate-sketches-small.jpg
+          alt: Three different nameplate mockups
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Final Nameplate & Typefaces
+
+
+            The final nameplate is derived from Necto Mono, designed by Marco Condello. The subhead is in the other brand font, Apfel Grotesk.
+        - type: image
+          file: /assets/images/nameplate-annotated.jpg
+          alt: Annotated nameplate
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Color Approach
+
+
+            Each issue has a simple, bold color palette: An accent color pulled from the cover image and a primary contrasting color, which surrounds the cover image.
+        - type: image
+          file: /assets/images/colors-for-web-small.jpg
+          alt: Four images with accent color circles
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Cover System
+
+
+            Each cover calls out the featured geography in the accent color bar, lists three story teasers at the bottom, and includes the issue number and price in the header. The colors change, with the placement of the nameplate and the use of a single photo consistent every issue.
+        - type: image
+          file: /assets/images/8-covers-small.jpg
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Grid
+
+
+            The interior layout system features a six-column spread, with the margins slightly wider than the gutters. The folio information lives at the bottom and outer corners of the spread. A full-width image can occasionally override these elements.
+        - type: image
+          file: /assets/images/grid-template.jpg
+          alt: Grid lines
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Spread Examples
+
+
+            The grid allows for a lot of flexible layouts. Each spread should be a good balance of imagery and text and white space, with full-bleed images used intermittently.
+        - type: image
+          file: /assets/images/four-layouts.jpg
+          alt: Four examples of magazine spreads
+      object_fit: contain
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Wayside Website
+
+
+            Designed in React in Programming for Web. The challenge was to repeat the same visual elements — color banner, imagery, nameplate, and type — to create a site that gives teaser content for each Wayside issue, encouraging viewers to buy the magazine.
+        - type: image
+          file: /assets/images/website-mockup-small.jpg
+          alt: Person looking at computer screen with Wayside magazine page pulled up
+      object_fit: contain
     - layout: full-width
       elements:
         - type: image
-          file: /assets/images/nice-things-instagram-mockups-small.jpg
-          alt: three phones showing instagram mockup
+          file: /assets/images/spread-mockup-small.jpg
+          alt: open magazine full spread
       object_fit: contain
-    - layout: right-wide
-      elements:
-        - type: text
-          text: >-
-            ### Inspiration: Handcrafted Object Library
-
-
-            For a shop selling handcrafted items and art, it was important that the identity also be handcrafted. 
-
-
-            I physically created the object library using cut paper to preserve a trace of materiality, similar to what you see in potato prints, and lino or wood block prints.\
-
-            \
-
-            This library can be added to over time, based on what new things Nice Things stocks.
-        - type: image
-          file: /assets/images/object-library-moodboard.jpg
-          alt: five inspiration images of different blocky, colorful designs
-      object_fit: contain
-    - layout: thirds
-      elements:
-        - type: text
-          text: >-
-            ### Creative Concept & Approach
-
-
-            Many items stocked in Nice Things will have an element of handcraft, such as hand-sewn garments, hand-spun textiles, hand-thrown pottery, hand-dipped candles, etc. 
-
-
-            For the brand to retain an element of that bespoke, hand-made quality, I cut two-dimensional shapes and then digitized these to form the graphic language. Objects can be used at different scales or in different colors.
-        - type: image
-          file: /assets/images/cutouts-small.jpg
-          alt: paper cut objects
-        - type: image
-          file: /assets/images/object-library.jpg
-          alt: black objects of household goods
-      object_fit: cover
-    - layout: right-wide
-      elements:
-        - type: text
-          text: >-
-            ### Moodboard: Object Library Applied
-
-
-            These varied, colorful brands grounded in images, shapes, and colors guided my approach for Nice Things. I appreciate the way they play with scale and how central shapes are to their identity.
-        - type: image
-          file: /assets/images/brand-moodboard.jpg
-          alt: moodboard of colorful graphics and illustrations
-      object_fit: contain
-    - layout: right-wide
-      elements:
-        - type: text
-          text: >-
-            ### Static Elements
-
-
-            While the object library can be added to over time and the objects scaled up and down, the logo — derived using the typeface Heiy, fonts, and colors are consistent across assets.
-        - type: image
-          file: /assets/images/colors-type-logo.png
-          alt: logo, typefaces and color palette
-      object_fit: contain
-    - layout: thirds
-      elements:
-        - type: image
-          file: /assets/images/nice-things-establishing-art-1-small.jpg
-          alt: 'art layout that says "nice tings are: beautiful, functional, durable,
-            delightful, accessible"'
-        - type: image
-          file: /assets/images/nice-things-establishing-art-2-small.jpg
-          alt: art layout that says "in a culture after more and cheaper, we see less and
-            better."
-        - type: image
-          file: /assets/images/nice-things-establishing-art-3-small.jpg
-          alt: art layout that says "craft is still alive and well, we support
-            craftspeople, makers, artists, and creatives."
-      object_fit: cover
-    - layout: thirds
-      elements:
-        - type: image
-          file: /assets/images/nice-things-establishing-art-4-small.jpg
-          alt: art layout with text "small places deserve nice things."
-        - type: image
-          file: /assets/images/nice-things-establishing-art-6-small.jpg
-          alt: art spread with color shapes and objects
-        - type: image
-          file: /assets/images/nice-things-establishing-art-5-small.jpg
-          alt: art spread talking about donating 3% of projects to nonprofits
-      object_fit: cover
-    - layout: halves
-      elements:
-        - type: text
-          text: >-
-            ### Establishing Art
-
-
-            These assets show, at the most conceptual level, how the Nice Things visual identity can be applied.
-        - type: text
-          text: Assets features asymmetrical color background blocks, text overlays, and
-            objects scaled to be more descriptive and literal vs. enlarged to
-            serve as patterns.
-      object_fit: contain
-    - layout: full-width
-      elements:
-        - type: image
-          file: /assets/images/nice-things-tote-3-2-small.jpg
-      object_fit: contain
-    - layout: thirds
-      elements:
-        - type: image
-          file: /assets/images/nice-things-tape-mockup-small.jpg
-          alt: box with nice things branded tap
-        - type: image
-          file: /assets/images/nice-things-storefront-small.jpg
-          alt: Nice Things storefront
-        - type: image
-          file: /assets/images/nice-things-tea-towel-small.jpg
-          alt: nice things branded tea towel
-      object_fit: cover
 ---

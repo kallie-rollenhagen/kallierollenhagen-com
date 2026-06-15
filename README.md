@@ -64,5 +64,6 @@ output_1602.avif
 * Integrate p5.js project into Wada Quilts page
 * Allow to edit page title and permalink
 * SEO tagging
+* Edit _data/site.json fields in Decap
 * Google Analytics tracking
 * Standardize image requirements (size, resolution)
