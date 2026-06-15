@@ -225,6 +225,7 @@ collections:
         name: site_css
         file: src/assets/css/styles.css
         delete: false
+        frontmatter_delimiter: ["{", "}"]
         fields:
           - label: CSS
             name: body
