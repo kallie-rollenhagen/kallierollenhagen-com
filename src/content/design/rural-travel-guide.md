@@ -34,6 +34,7 @@ gallery:
         - type: image
           file: /assets/images/Design-Travel-Guide-Northfield-covers-mockup.avif
           alt: Northfield travel guide front and back cover
+      object_fit: contain
     - layout: halves
       elements:
         - type: text
@@ -48,11 +49,13 @@ gallery:
         - type: image
           file: /assets/images/guidebook-inspo.jpg
           alt: multiple guide books
+      object_fit: contain
     - layout: full-width
       elements:
         - type: image
           file: /assets/images/rds-guide-3-covers-standing-small-narrow.jpg
           alt: Three different covers of rural travel guide
+      object_fit: contain
     - layout: thirds
       elements:
         - type: image
@@ -65,6 +68,7 @@ gallery:
         - type: image
           file: /assets/images/mockup-feature-spread-cropped.png
           alt: full image sample spread of rural travel guide
+      object_fit: cover
     - layout: thirds
       elements:
         - type: image
@@ -76,4 +80,5 @@ gallery:
         - type: image
           file: /assets/images/mockup-food-spread-cropped.png
           alt: text and image sample spread of rural travel guide
+      object_fit: cover
 ---
