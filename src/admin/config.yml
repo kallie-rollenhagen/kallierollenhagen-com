@@ -8,6 +8,9 @@ backend:
 media_folder: "src/assets/images/"
 public_folder: "/assets/images"
 site_url: "https://kallierollenhagen.com"
+logo:
+  src: "/assets/images/Kallie-Rollenhagen-ski-headshot.jpeg"
+  show_in_header: true
 
 gallery_field: &gallery_field
   label: Gallery
