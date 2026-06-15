@@ -1,4 +1,6 @@
-{ "title": "Test" }
+{
+    "title": "Test"
+}
 
 body {
     color: red;
