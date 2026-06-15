@@ -4,5 +4,7 @@ title: Custom CSS
 permalink: /assets/css/custom.css
 templateEngineOverride: njk
 ---
-/* Add custom CSS here */
-
+/* --------------------------------------------------
+   Custom CSS
+   These styles override the default theme.
+-------------------------------------------------- */
