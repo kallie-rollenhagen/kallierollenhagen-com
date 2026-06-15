@@ -34,6 +34,7 @@ gallery:
         - type: image
           file: /assets/images/final-wall-mockup-small.jpg
           alt: behind the counter menu mockup
+      object_fit: contain
     - layout: halves
       elements:
         - type: image
@@ -42,6 +43,7 @@ gallery:
         - type: image
           file: /assets/images/kids-menu-mockup-small.jpg
           alt: kids menu mockup on table with cereal
+      object_fit: cover
     - layout: right-wide
       elements:
         - type: text
@@ -53,4 +55,5 @@ gallery:
         - type: image
           file: /assets/images/inspiration-web-block.jpg
           alt: Moodboard for restaurant brand featuring loose, colorful assets
+      object_fit: cover
 ---
