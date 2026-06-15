@@ -1,0 +1,5 @@
+{ "title": "Test" }
+
+body {
+    color: red;
+}
