@@ -858,7 +858,7 @@ svg {
     }
     
     .gallery-row {
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
         gap: var(--gutter_size);
     }
     
@@ -895,6 +895,12 @@ svg {
 
     #slider-cursor {
         display: none;
+    }
+
+    .gallery-row {
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: var(--gutter_size); */
     }
 }
 
@@ -935,11 +941,5 @@ svg {
     .about-column-1, .about-column-2, .about-column-3 {
         grid-column: 1 / 14;
         flex-direction: column;
-    }
-
-    .gallery-row {
-        display: flex;
-        flex-direction: column;
-        /* margin-bottom: var(--gutter_size); */
     }
 }
