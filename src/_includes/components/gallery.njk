@@ -5,7 +5,8 @@
             <div class="gallery-row-element {{ element.type }}">
             {% if element.type == "image" %}
                 <img src="{{ element.file | url }}" alt="{{ element.alt }}"
-                class="{% if gallery.lightbox %}lightbox-trigger{% endif %}">
+                class="{% if gallery.lightbox %}lightbox-trigger{% endif %}"
+                style="object-position: {{ element.focal_x or 50 }}% {{ element.focal_y or 50 }}%">
             {% elif element.type == "text" %}
                 {{ element.text | markdown | safe }}
             {% elif element.type == "spacer" %}

@@ -12,6 +12,28 @@ logo:
   src: "/assets/images/Kallie-Rollenhagen-ski-headshot.jpeg"
   show_in_header: true
 
+image_fields: &image_fields
+  - { label: File, name: file, widget: image }
+  - { label: Alt Text, name: alt, widget: string, required: false }
+  - { label: Caption, name: caption, widget: string, required: false }
+  - label: Cropping Focal Point - X
+    name: focal_x
+    widget: number
+    value_type: int
+    min: 0
+    max: 100
+    default: 50
+    required: false
+    hint: Left = 0 %, right = 100% (only applies if Image Fit = Cover)
+  - label: Cropping Focal Point - Y
+    name: focal_y
+    widget: number
+    value_type: int
+    min: 0
+    max: 100
+    default: 50
+    required: false
+    hint: Top = 0%, bottom = 100% (only applies if Image Fit = Cover)
 gallery_field: &gallery_field
   label: Gallery
   name: gallery
@@ -36,21 +58,28 @@ gallery_field: &gallery_field
         - label: Layout
           name: layout
           widget: select
-          required: false
           options:
             - halves
             - thirds
             - left-wide
             - right-wide
             - full-width
-
         - label: Image Fit
           name: object_fit
           widget: select
           default: contain
           options:
-            - { label: Contain, value: contain }
-            - { label: Cover, value: cover }
+            - { label: Contain - fit entire images inside cells (image height my not align), value: contain }
+            - { label: Cover - fill entire cells with images (images may be cropped), value: cover }
+        - label: Row Bottom Margin
+          name: row_bottom_margin
+          widget: select
+          default: large
+          required: false
+          options:
+            - { label: Large, value: large }
+            - { label: Small, value: small }
+
 
         - label: Elements
           name: elements
@@ -60,10 +89,8 @@ gallery_field: &gallery_field
             - label: Image
               name: image
               widget: object
-              fields:
-                - { label: File, name: file, widget: image }
-                - { label: Alt Text, name: alt, widget: string, required: false }
-                - { label: Caption, name: caption, widget: string, required: false }
+              fields: *image_fields
+                
 
             - label: Text
               name: text
