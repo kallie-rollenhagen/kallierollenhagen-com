@@ -1,12 +1,13 @@
 ---
 title: Rural Travel Guide
+seoDescription: Travel guide concepts for rural exploration.
 publish: true
 roles_played: Brand Development | Layout Design | Photography
 project_description: >-
-  <p>Whereas city guides require filtering to fight through the overwhelm, rural
+  Whereas city guides require filtering to fight through the overwhelm, rural
   guides require scavengers to surface the gems. This project serves as a
   template of what a curated, designed travel guide could look like for smaller
-  places. It was developed in my MCAD MAGWD Design Studio course.</p>
+  places. It was developed in my MCAD MAGWD Design Studio course.
 
 
   ### The Goal
@@ -69,6 +70,7 @@ gallery:
           file: /assets/images/mockup-feature-spread-cropped.png
           alt: full image sample spread of rural travel guide
       object_fit: cover
+      row_margin_bottom: small
     - layout: thirds
       elements:
         - type: image
