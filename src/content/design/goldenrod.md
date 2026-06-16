@@ -1,5 +1,6 @@
 ---
 title: Goldenrod
+seoDescription: Goldenrod restaurant design concepts.
 publish: true
 roles_played: Brand Development | Designer
 project_description: >-
@@ -40,6 +41,8 @@ gallery:
         - type: image
           file: /assets/images/menu-mockup-small.jpg
           alt: handheld menu mockup of menu on table
+          focal_x: 25
+          focal_y: 50
         - type: image
           file: /assets/images/kids-menu-mockup-small.jpg
           alt: kids menu mockup on table with cereal
