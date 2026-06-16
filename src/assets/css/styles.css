@@ -368,6 +368,7 @@ hr, main {
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
+    margin-bottom: var(--gutter_size);
 }
 
 .design-project-gallery .gallery-row.row-margin-bottom-large {
