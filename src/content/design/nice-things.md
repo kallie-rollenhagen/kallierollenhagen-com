@@ -125,7 +125,7 @@ gallery:
           file: /assets/images/nice-things-establishing-art-5-small.jpg
           alt: art spread talking about donating 3% of projects to nonprofits
       object_fit: cover
-      row_bottom_margin: small
+      row_margin_bottom: small
     - layout: halves
       elements:
         - type: text
