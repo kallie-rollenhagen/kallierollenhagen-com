@@ -36,6 +36,7 @@ gallery:
           file: /assets/images/nice-things-instagram-mockups-small.jpg
           alt: three phones showing instagram mockup
       object_fit: contain
+      row_margin_bottom: small
     - layout: right-wide
       elements:
         - type: text
@@ -144,6 +145,7 @@ gallery:
         - type: image
           file: /assets/images/nice-things-tote-3-2-small.jpg
       object_fit: contain
+      row_margin_bottom: small
     - layout: thirds
       elements:
         - type: image
