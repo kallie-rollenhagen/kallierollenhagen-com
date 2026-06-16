@@ -36,6 +36,7 @@ gallery:
           file: /assets/images/final-wall-mockup-small.jpg
           alt: behind the counter menu mockup
       object_fit: contain
+      row_margin_bottom: small
     - layout: halves
       elements:
         - type: image
