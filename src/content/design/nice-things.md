@@ -1,5 +1,6 @@
 ---
 title: Nice Things
+seoDescription: Nice Things homegoods shop concepts.
 publish: true
 roles_played: Brand Development | Identity System
 credits: []
@@ -111,6 +112,7 @@ gallery:
           alt: art layout that says "craft is still alive and well, we support
             craftspeople, makers, artists, and creatives."
       object_fit: cover
+      row_bottom_margin: small
     - layout: thirds
       elements:
         - type: image
@@ -123,6 +125,7 @@ gallery:
           file: /assets/images/nice-things-establishing-art-5-small.jpg
           alt: art spread talking about donating 3% of projects to nonprofits
       object_fit: cover
+      row_bottom_margin: small
     - layout: halves
       elements:
         - type: text
