@@ -370,11 +370,11 @@ hr, main {
     grid-template-columns: subgrid;
 }
 
-.design-project-grid .gallery-row.row-margin-bottom-large {
+.design-project-gallery .gallery-row.row-margin-bottom-large {
     margin-bottom: var(--gallery_row_margin_bottom);
 }
 
-.design-project-grid .gallery-row.row-margin-bottom-small {
+.design-project-gallery .gallery-row.row-margin-bottom-small {
     margin-bottom: var(--gutter_size);
 }
 
