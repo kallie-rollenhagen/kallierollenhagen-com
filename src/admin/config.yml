@@ -72,7 +72,7 @@ gallery_field: &gallery_field
             - { label: Contain - fit entire images inside cells (image height my not align), value: contain }
             - { label: Cover - fill entire cells with images (images may be cropped), value: cover }
         - label: Row Bottom Margin
-          name: row_bottom_margin
+          name: row_margin_bottom
           widget: select
           default: large
           required: false
