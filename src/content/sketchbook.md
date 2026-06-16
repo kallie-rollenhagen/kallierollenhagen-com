@@ -5,6 +5,7 @@ permalink: /sketchbook.html
 scripts:
   - assets/js/swipe.js
   - assets/js/lightbox.js
+seoDescription: Sketchbook paintings by Kallie Rollenhagen.
 gallery:
   type: grid
   lightbox: true
@@ -17,6 +18,7 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-9.jpg
           alt: sketchbook geometric guache paintings
+      object_fit: cover
     - layout: thirds
       elements:
         - type: image
@@ -28,6 +30,7 @@ gallery:
         - type: image
           file: /assets/images/2025-art-2-small.jpg
           alt: guache geometric paining on purple paper
+      object_fit: cover
     - layout: halves
       elements:
         - type: image
@@ -36,11 +39,13 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-14.jpg
           alt: sketchbook geometric guache paintings
+      object_fit: cover
     - layout: full-width
       elements:
         - type: image
           file: /assets/images/watercolor-3-2-small.jpg
           alt: watercolor painting of different colored squares
+      object_fit: cover
     - layout: halves
       elements:
         - type: image
@@ -50,6 +55,7 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-5.jpg
           alt: sketchbook geometric guache paintings
+      object_fit: cover
     - layout: thirds
       elements:
         - type: image
@@ -61,6 +67,7 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-12.jpg
           alt: sketchbook geometric guache paintings
+      object_fit: cover
     - layout: halves
       elements:
         - type: image
@@ -69,11 +76,13 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-13.jpg
           alt: sketchbook geometric guache paintings
+      object_fit: cover
     - layout: full-width
       elements:
         - type: image
           file: /assets/images/big-painting-small.jpg
           alt: guache geometric paintings laying on a table
+      object_fit: cover
     - layout: thirds
       elements:
         - type: image
@@ -85,4 +94,5 @@ gallery:
         - type: image
           file: /assets/images/kallie-sketchbook-1.jpg
           alt: sketchbook geometric guache paintings
+      object_fit: cover
 ---
