@@ -112,7 +112,7 @@ gallery:
           alt: art layout that says "craft is still alive and well, we support
             craftspeople, makers, artists, and creatives."
       object_fit: cover
-      row_bottom_margin: small
+      row_margin_bottom: small
     - layout: thirds
       elements:
         - type: image
