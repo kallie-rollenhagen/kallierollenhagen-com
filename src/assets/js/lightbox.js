@@ -75,12 +75,30 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn.addEventListener("click", showNext);
   prevBtn.addEventListener("click", showPrev);
 
-  // Close when clicking empty dark backdrop space safely
+  const imgWrapper = lightbox.querySelector(".lightbox-img-wrapper");
+
+  imgWrapper.addEventListener("click", (e) => {
+    const rect = imgWrapper.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+
+    if (x < rect.width / 2) {
+      showPrev();
+    } else {
+      showNext();
+    }
+  });
+
   lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox || e.target === lightbox.querySelector(".lightbox-img-wrapper")) {
+    if (e.target === lightbox) {
       closeLightbox();
     }
   });
+  // Close when clicking empty dark backdrop space safely
+  // lightbox.addEventListener("click", (e) => {
+  //   if (e.target === lightbox || e.target === lightbox.querySelector(".lightbox-img-wrapper")) {
+  //     closeLightbox();
+  //   }
+  // });
 
   // 5. Add Keyboard Accessibility Bindings
   document.addEventListener("keydown", (e) => {

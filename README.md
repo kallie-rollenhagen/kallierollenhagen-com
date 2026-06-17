@@ -63,6 +63,8 @@ output_1602.avif
 * Set img focal points for object-fit: cover behavior
 * Allow to edit page title and permalink
 * Edit _data/site.json fields in Decap
+* Mobile taps in lightbox
+* Arrow indicators in mobile lightbox
 * SEO tagging
 * Integrate p5.js project into Wada Quilts page
 * Google Analytics tracking
