@@ -7,6 +7,11 @@ function addSwipeNavigation(element, {
     let startX = 0;
     let startY = 0;
 
+    function shouldIgnoreSwipe() {
+        return window.visualViewport &&
+            window.visualViewport.scale > 1;
+    }
+
     element.addEventListener("touchstart", (e) => {
         startX = e.touches[0].clientX;
         startY = e.touches[0].clientY;
@@ -24,6 +29,8 @@ function addSwipeNavigation(element, {
         if (Math.abs(deltaY) > Math.abs(deltaX)) return;
 
         if (Math.abs(deltaX) < threshold) return;
+
+        if (shouldIgnoreSwipe()) return;
 
         if (deltaX > 0) {
             onPrev();
