@@ -490,6 +490,7 @@ hr, main {
   width: 100%;
   /* height: 100%; */
   color: var(--dark);
+  margin-bottom: 36px;
   /* background-color: color-mix(in srgb, var(--accent_blue), transparent 10%);   */
   display: flex;
   /* justify-content: center; */
