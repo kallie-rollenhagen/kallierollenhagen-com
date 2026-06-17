@@ -171,6 +171,12 @@ hr, main {
     cursor: none;
 }
 
+@media (pointer: coarse) {
+  .home-layout #slider-cursor {
+    display: none;
+  }
+}
+
 #slider-cursor {
     position: fixed;
     pointer-events: none;
