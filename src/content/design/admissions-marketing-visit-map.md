@@ -6,6 +6,7 @@ roles_played: Creative + Art Direction | Marketing Strategy
 credits:
   - role: Design
     person: Beth Elzer
+    url: https://bethelzer.wixsite.com/elzerdesignlab
   - role: Illustration
     person: Raymond Biesinger & Beth Elzer
 project_description: >-
