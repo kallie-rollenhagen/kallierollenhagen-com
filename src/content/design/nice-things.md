@@ -28,7 +28,7 @@ thumbnail_image:
   alt: purple "Nice Things" tote bag
 gallery:
   type: grid
-  lightbox: false
+  lightbox: true
   rows:
     - layout: full-width
       elements:
@@ -36,7 +36,7 @@ gallery:
           file: /assets/images/nice-things-instagram-mockups-small.jpg
           alt: three phones showing instagram mockup
       object_fit: contain
-      row_margin_bottom: small
+      row_margin_bottom: large
     - layout: right-wide
       elements:
         - type: text
@@ -56,6 +56,7 @@ gallery:
           file: /assets/images/object-library-moodboard.jpg
           alt: five inspiration images of different blocky, colorful designs
       object_fit: contain
+      row_margin_bottom: large
     - layout: thirds
       elements:
         - type: text
@@ -74,6 +75,7 @@ gallery:
           file: /assets/images/object-library.jpg
           alt: black objects of household goods
       object_fit: cover
+      row_margin_bottom: large
     - layout: right-wide
       elements:
         - type: text
@@ -86,6 +88,7 @@ gallery:
           file: /assets/images/brand-moodboard.jpg
           alt: moodboard of colorful graphics and illustrations
       object_fit: contain
+      row_margin_bottom: large
     - layout: right-wide
       elements:
         - type: text
@@ -98,6 +101,7 @@ gallery:
           file: /assets/images/colors-type-logo.png
           alt: logo, typefaces and color palette
       object_fit: contain
+      row_margin_bottom: large
     - layout: thirds
       elements:
         - type: image
