@@ -14,4 +14,5 @@ design_projects:
   - visual-identity-sustainable-futures
   - wada-quilts
   - admissions-marketing-visit-map
+  - goldenrod
 ---
