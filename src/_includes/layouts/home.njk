@@ -5,7 +5,8 @@ layout: layouts/base.njk
   {% for slide in slides %}
     <div class="slide"{% if loop.first %} data-active{% endif %}>
       <img src="{{ slide.file | url }}"
-           alt="{{ slide.alt }}">
+           alt="{{ slide.alt }}"
+           style="object-position: {{ slide.focal_x or 50 }}% {{ slide.focal_y or 50 }}%">
     </div>
   {% endfor %}
 </div>
