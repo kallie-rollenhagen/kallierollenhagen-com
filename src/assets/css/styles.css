@@ -208,7 +208,7 @@ hr, main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   opacity: 0;
   pointer-events: none;
@@ -218,12 +218,13 @@ hr, main {
   /* left: 100%; */
   /* transform: translateX(100vw); */
   display: grid;
-  grid-template-columns: 25px repeat(12, minmax(0, 1fr));
-  gap: var(--gutter_size); 
+  /* grid-template-columns: 25px repeat(12, minmax(0, 1fr));
+  gap: var(--gutter_size);  */
+  grid-column: 1/ 15;
 }
 
 .slide img {
-  width: 100%;
+  /* width: 100%; */
   height: calc(100vh - var(--header_height));
   object-fit: cover;
   object-position: center;
