@@ -212,9 +212,10 @@ hr, main {
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  /* transition: opacity 0.4s ease; */
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+  transition: left 0.5s ease, opacity 0.4s ease;
+  /* transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease; */
   will-change: transform;
+  left: 100%;
   /* transform: translateX(100vw); */
   display: grid;
   grid-template-columns: 25px repeat(12, minmax(0, 1fr));
@@ -229,20 +230,21 @@ hr, main {
   grid-column: 1 / 14;
   
   transform-origin: 0 0;
-  transform: translateX(100vw);
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+  /* transform: translateX(100vw);
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease; */
 }
 
 .slide[data-active] {
   opacity: 1;
   /* transform: translateX(0); */
+  left: 0;
   pointer-events: auto;
 }
 
-.slide[data-active] img {
+/* .slide[data-active] img {
     opacity: 1;
   transform: translateX(0);
-}
+} */
 
 .slide.next-stage {
     transition: none;
