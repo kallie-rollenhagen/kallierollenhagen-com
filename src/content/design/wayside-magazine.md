@@ -1,5 +1,6 @@
 ---
 title: Wayside Magazine
+seoDescription: Project overview of branding and design of a travel magazine
 publish: true
 roles_played: Brand Development | Layout Design | Photography | Web Design
 project_description: >-
@@ -28,7 +29,7 @@ main_image:
   file: /assets/images/covers-mockup-small-3-2.jpg
   alt: Range of Wayside magazine covers
 thumbnail_image:
-  file: /assets/images/wayside.gif
+  file: /assets/images/Design-Wayside-all-covers.avif
   alt: a range of Wayside magazine covers and layout mockups
 gallery:
   lightbox: false
