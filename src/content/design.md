@@ -12,5 +12,5 @@ design_projects:
   - carleton-college-strategic-direction
   - rural-design-studio
   - wada-quilts
-  - goldenrod
+  - admissions-marketing-visit-map
 ---
