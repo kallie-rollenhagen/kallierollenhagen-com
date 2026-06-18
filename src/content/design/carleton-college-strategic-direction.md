@@ -34,7 +34,7 @@ thumbnail_image:
   file: /assets/images/Design-Carleton-Liberal-Arts-in-Action-social-mockups.avif
   alt: Three phone screens showing design and messaging of strategic plan
 gallery:
-  lightbox: false
+  lightbox: true
   rows:
     - object_fit: contain
       row_margin_bottom: small
