@@ -37,7 +37,7 @@ gallery:
   lightbox: false
   rows:
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: full-width
       elements:
         - type: image
@@ -46,7 +46,7 @@ gallery:
           file: /assets/images/report-mockup-small.jpg
           alt: Cover and inside spread of printed strategic plan report
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: full-width
       elements:
         - type: image
@@ -55,7 +55,7 @@ gallery:
           file: /assets/images/1-pagers-mockup-small.jpg
           alt: mockup of various audience 1-pages of the strategic plan overview
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: full-width
       elements:
         - type: image
