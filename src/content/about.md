@@ -1,11 +1,16 @@
 ---
 title: About
+seoDescription: About Kallie Rollenhagen
+photo:
+  file: /assets/images/Kallie-Rollenhagen-About.avif
+  alt: Kallie Rollenhagen portrait
+  credit: Photo by Zoe Prinds-Flash
 contact:
   location: Northfield, Minnesota
   email: kallie.rollenhagen@gmail.com
 links:
   - text: CV
-    url: /
+    url: https://drive.google.com/file/d/12eQF9KxtuRjUF2gkAwVPmFXTjwmLHP8Z/view?usp=sharing
   - text: Instagram
     url: https://www.instagram.com/kallierollenhagen/
   - text: LinkedIn
@@ -39,8 +44,4 @@ education:
     degree: BA in psychology, minor in architecture
 layout: layouts/about.njk
 permalink: /about.html
-photo:
-  file: /assets/images/Kallie-Rollenhagen-About.avif
-  alt: Kallie Rollenhagen portrait
-  credit: Photo by Zoe Prinds-Flash
 ---
