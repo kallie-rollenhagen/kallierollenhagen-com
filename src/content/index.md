@@ -23,6 +23,8 @@ slides:
     alt: 3 posters on a wall with a blurry person walking in front
   - file: /assets/images/big-painting-small.jpg
     alt: guache painting of green triangles on dark paper
+    focal_x: 63
+    focal_y: 50
   - file: /assets/images/diner-menu-mockup-small.jpg
     alt: Rural Design Studio menu of services
 ---
