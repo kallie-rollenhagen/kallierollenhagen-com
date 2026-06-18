@@ -9,8 +9,8 @@ design_projects:
   - wayside-magazine
   - nice-things
   - rural-travel-guide
+  - carleton-college-strategic-direction
   - rural-design-studio
   - wada-quilts
   - goldenrod
-  - carleton-college-strategic-direction
 ---
