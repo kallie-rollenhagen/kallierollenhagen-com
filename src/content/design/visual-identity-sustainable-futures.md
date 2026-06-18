@@ -2,7 +2,7 @@
 title: "Visual Identity: Sustainable Futures"
 seoDescription: Design overview of visual identity for Carleton College's
   sustainable futures initiatives
-publish: false
+publish: true
 roles_played: Creative + Art Direction | Design
 credits:
   - role: Photography
