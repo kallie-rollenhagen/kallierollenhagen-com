@@ -933,12 +933,12 @@ svg {
     }
 
     .lightbox-prev {
-        margin-right: 250px;
+        margin-right: 30vw;
         justify-self: center;
     }
 
     .lightbox-next {
-        margin-left: 250px;
+        margin-left: 30vw;
         justify-self: center;
     }
 
