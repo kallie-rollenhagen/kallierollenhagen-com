@@ -112,6 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
   addSwipeNavigation(lightbox, {
     onPrev: showPrev,
     onNext: showNext
-});
+  });
 });
 

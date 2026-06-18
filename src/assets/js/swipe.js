@@ -9,7 +9,7 @@ function addSwipeNavigation(element, {
 
     function shouldIgnoreSwipe() {
         return window.visualViewport &&
-            window.visualViewport.scale > 1;
+            window.visualViewport.scale > 1.05;
     }
 
     element.addEventListener("touchstart", (e) => {
