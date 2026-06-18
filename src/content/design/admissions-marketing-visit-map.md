@@ -97,7 +97,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/back-of-map-held-small.jpg
+          file: /assets/images/hands-holding-map-small.jpg
           caption: Large map allows for exploration
           alt: full campus map on the back of the mailing piece
         - type: image
