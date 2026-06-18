@@ -106,56 +106,7 @@ slider.addEventListener('click', (e) => {
 
 });
 
-// slider.addEventListener('click', (e) => {
-//     // 1. Calculate the indices
-//     var direction
-//     var nextIndex
-//     if (isAnimating) return;
-//     isAnimating = true;
-//     var currentSlide = slider.querySelector('.slide[data-active]');
-//     var currentIndex = slides.indexOf(currentSlide);
-//     var viewWidth = window.innerWidth;
-//     var clickX = e.clientX;
-//     if (clickX < viewWidth / 2) {
-//         direction = "prev"
-//         nextIndex = (currentIndex - 1 + slides.length) % slides.length
-//         console.log(`Clicked left: ${currentSlide}, ${currentIndex}, ${nextIndex}.`);
-//         slider.classList.add('cursor-left');
-//         slider.classList.remove('cursor-right');
-//         // navigatePrev()
-//     } else {
-//         direction = "next"
-//         nextIndex = (currentIndex + 1) % slides.length;
-//         console.log(`Clicked right: ${currentSlide.getAttribute('data-active')}, ${currentIndex}, ${direction   }, ${nextIndex}.`);
-//         slider.classList.add('cursor-right');
-//         slider.classList.remove('cursor-left');
-//         // navigateNext()
-//     }
-//     var targetSlide = slides[nextIndex]
-//     if (direction === "next") {
-//         targetSlide.classList.add("next-stage");
-//         console.log(`targetSlide to next-stage, ${targetSlide.getBoundingClientRect().left}, ${targetSlide.getBoundingClientRect().right}`)
-//     } else {
-//         targetSlide.classList.add("prev-stage");
-//     }
-//     targetSlide.offsetWidth;
-//     targetSlide.classList.remove("next-stage", "prev-stage");
-//     targetSlide.setAttribute("data-active", "true");
-//     currentSlide.removeAttribute("data-active");
-//     if (direction === "next") {
-//         currentSlide.classList.add("exit-left");
-//     } else {
-//         currentSlide.classList.add("exit-right");
-//     }
-//     console.log(`currentSlide classes = ${currentSlide.classList}`)
-//     setTimeout(() => {
-//         currentSlide.classList.remove("exit-left", "exit-right");
-//         isAnimating = false;
-//         console.log(`timeout done: currentSlide position = ${targetSlide.getBoundingClientRect().left}, ${targetSlide.getBoundingClientRect().right}, classes = ${currentSlide.classList}`)
-//     }, 300);
+// addSwipeNavigation(slider, {
+//     onPrev: navigatePrev,
+//     onNext: navigateNext
 // });
-
-addSwipeNavigation(slider, {
-    onPrev: navigatePrev,
-    onNext: navigateNext
-});
