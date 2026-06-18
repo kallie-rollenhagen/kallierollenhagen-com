@@ -1,5 +1,7 @@
 ---
 title: Wada Quilts
+seoDescription: Project overview of a P5.js sketch to generate class quilt
+  blocks using the colors of the Dictionary of Color
 publish: true
 roles_played: Designer | p5.js
 credits:
@@ -27,8 +29,8 @@ main_image:
   alt: Scrolling images of different quilt blocks, all in different colors and
     patterns
 thumbnail_image:
-  file: /assets/images/wada-quilt-grid-3-2.gif
-  alt: rotation of quilt grids in different colors and patterns
+  file: /assets/images/ohio-star-generated.png
+  alt: Ohio quilt block, digitally rendered
 gallery:
   lightbox: false
   type: grid
