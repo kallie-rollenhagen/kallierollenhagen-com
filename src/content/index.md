@@ -7,6 +7,8 @@ permalink: /
 slides:
   - file: /assets/images/Kallie-Rollenhagen-ski-headshot.jpeg
     alt: Kallie skiing
+    focal_x: 48
+    focal_y: 50
   - file: /assets/images/covers-mockup-small-3-2.jpg
     alt: wayside magazine covers
   - file: /assets/images/hand-holding-book-small.jpg
