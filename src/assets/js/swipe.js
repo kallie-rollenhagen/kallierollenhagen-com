@@ -30,7 +30,7 @@ function addSwipeNavigation(element, {
 
         if (Math.abs(deltaX) < threshold) return;
 
-        // if (shouldIgnoreSwipe()) return;
+        if (shouldIgnoreSwipe()) return;
 
         if (deltaX > 0) {
             onPrev();

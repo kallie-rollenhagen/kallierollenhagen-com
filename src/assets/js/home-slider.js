@@ -106,7 +106,7 @@ slider.addEventListener('click', (e) => {
 
 });
 
-// addSwipeNavigation(slider, {
-//     onPrev: navigatePrev,
-//     onNext: navigateNext
-// });
+addSwipeNavigation(slider, {
+    onPrev: navigatePrev,
+    onNext: navigateNext
+});
