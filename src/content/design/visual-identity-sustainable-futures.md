@@ -45,7 +45,17 @@ gallery:
           file: /assets/images/sustainable-futures-social-socila.jpg
           alt: 5 phones with social mockups of Sustainable Futures imagery
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: >-
+            ### Photography 
+
+
+            Ackerman + Gruber captured many of the people who drive Carleton’s sustainability efforts, including students, faculty, and staff. These populated the new website and social assets.
+    - object_fit: contain
+      row_margin_bottom: small
       layout: thirds
       elements:
         - type: image
@@ -63,5 +73,24 @@ gallery:
           focal_y: 50
           file: /assets/images/student-farm-2024-small.jpg
           alt: students harvesting vegetables from student farm
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/amanda-sames-farm-2024-small.jpg
+          alt: farm manager harvesting peppers
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/dan-maxbauer-teaching-soils-lab-2024-small.jpg
+          alt: professor talking with students in arboretum
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/sarah-fortner-olin-small.jpg
+          alt: sustainability director portrait in front of college building
   type: grid
 ---
