@@ -1,5 +1,6 @@
 ---
 title: Rural Design Studio
+seoDescription: Brand development and web design of the Rural Design Studio
 publish: true
 roles_played: Brand Development | Web Design
 project_description: >-
@@ -23,8 +24,8 @@ main_image:
   file: /assets/images/rds-egg-carton-small.jpg
   alt: Egg carton branded with Rural Design Stuio
 thumbnail_image:
-  file: /assets/images/rds.gif
-  alt: rotating mockups of Rural Design Studio assets
+  file: /assets/images/diner-menu-mockup-small.jpg
+  alt: Rural Design Studio menu of services
 gallery:
   lightbox: false
   type: grid
