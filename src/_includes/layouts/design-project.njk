@@ -15,7 +15,14 @@ layout: layouts/base.njk
             <p>
                 {% for credit in credits %}
                     <span class="uppercase">{{ credit.role }}</span>:
-                    {{ credit.person }}<br>
+                    {% if credit.url %}
+                        <a href="{{ credit.url }}" target="_blank" rel="noopener noreferrer">
+                            {{ credit.person }}
+                        </a>
+                    {% else %}
+                        {{ credit.person }}
+                    {% endif %}
+                    <br>
                 {% endfor %}
             </p>
             {% endif %}

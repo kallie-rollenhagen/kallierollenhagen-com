@@ -236,7 +236,8 @@ collections:
         widget: "list"
         fields:
           - {label: "Role", name: "role", widget: "string"}
-          - {label: "Person", name: "person", widget: "string"}
+          - {label: "Person or Organization", name: "person", widget: "string"}
+          - {label: "URL", name: "url", widget: "string"}
       - {label: "Project Description", name: "project_description", widget: "richtext"}
       - label: "Main Image"
         name: "main_image"
