@@ -70,5 +70,41 @@ gallery:
           focal_y: 50
           file: /assets/images/map-gif.gif
           alt: map unfolding
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bx6a6642-small.jpg
+          alt: detail of map
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bx6a6655-small.jpg
+          alt: back side of map
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bifold-2-3-cropped-small.jpg
+          caption: Bold call-to-action panel
+          alt: Map partially unfolded
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/back-of-map-held-small.jpg
+          caption: Large map allows for exploration
+          alt: full campus map on the back of the mailing piece
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bx6a6656.jpg
+          caption: Proximity to Twin Cities clear
+          alt: 36 hours spread in Twin Cities and Northfield
   type: grid
 ---
