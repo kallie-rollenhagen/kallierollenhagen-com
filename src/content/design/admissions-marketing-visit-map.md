@@ -12,7 +12,7 @@ project_description: >-
   ### Audience 
 
 
-  Prospective recruits, specifically U.S. high-achieving high school seniors. 
+  Prospective students for Carleton College, specifically U.S. high-achieving high school seniors. 
 
 
   ### Goal 
@@ -46,12 +46,29 @@ gallery:
           caption: "Inspiration: Vintage travel maps + New York Time’s 36 Hours features"
     - object_fit: contain
       row_margin_bottom: large
-      layout: full-width
+      layout: thirds
       elements:
+        - type: text
+          text: >-
+            ### Inspiration 
+
+
+            Vintage travel maps + *New York Time’s* 36 Hours features.
+
+
+            ### Strategy 
+
+
+            Connect Northfield to the Twin Cities, feature first-hand intel and experiences from current students, and offer a unique format.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bx6a6645.jpg
+          alt: hands holding admissions map
         - type: image
           focal_x: 50
           focal_y: 50
           file: /assets/images/map-gif.gif
-          alt: Rotating images of map unfolding
+          alt: map unfolding
   type: grid
 ---
