@@ -667,10 +667,10 @@ svg {
   z-index: 2000; /* Floats above everything, including your navigation */
   
   display: grid;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   grid-template-columns: 85px 1fr 85px;
+  grid-template-rows: 5vh 1fr 5vh;
 
   opacity: 0;
   pointer-events: none;
@@ -696,6 +696,7 @@ svg {
   justify-self: center;
   align-items: center;
   grid-column: 2 / 3;
+  grid-row: 2 / 2;
   width: fit-content;
   height: fit-content;
 }
@@ -710,40 +711,44 @@ svg {
 
 /* CONTROLS & CAPTIONS */
 .lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 27px;
-  padding: 0;
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 27px; */
+  /* padding: 0; */
   background: none;
   border: none;
   color: var(--light);
   font-size: 44px;
   cursor: pointer;
-  grid-column-start: 3;
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+  margin: -4px 0 0 0;
+  /* justify-self: left; */
 }
 
 .lightbox-nav {
-  position: absolute;
-  top: 50%;
+  /* position: absolute; */
+  /* top: 50%; */
   transform: translateY(-50%);
   background: none;
   border: none;
   color: #fff;
   font-size: 40px;
   cursor: pointer;
+  grid-row: 2 / 2;
   /* padding: 20px; */
   /* justify-self: center; */
 }
 
 .lightbox-prev { 
     grid-column: 1 / 2;
-    justify-self: right;
-    padding-right: 14px;
+    /* justify-self: right; */
+    /* padding-right: 14px; */
 }
 .lightbox-next {
     grid-column: 3 / 4;
-    justify-self: left;
-    padding-left: 14px;
+    /* justify-self: left; */
+    /* padding-left: 14px; */
 }
 
 .lightbox-caption {
@@ -905,12 +910,36 @@ svg {
         order: 2;
     }
 
-    .lightbox-prev, .lightbox-next {
-        display: none;
-    }
     .lightbox-img-wrapper {
         grid-column: 1 / 4;
         margin: 0 10px;
+    }
+
+    .lightbox-nav {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        margin-top: 47px;
+        /* padding: 20px; */
+        /* justify-self: center; */
+    }
+
+    .lightbox-nav svg {
+        width: 32px;
+    }
+
+    .lightbox-prev, .lightbox-next {
+        /* justify-self: right; */
+        width: 50px;
+    }
+
+    .lightbox-prev {
+        margin-right: 250px;
+        justify-self: center;
+    }
+
+    .lightbox-next {
+        margin-left: 250px;
+        justify-self: center;
     }
 
     #slider-cursor {
