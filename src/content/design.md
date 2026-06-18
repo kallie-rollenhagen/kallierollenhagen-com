@@ -11,6 +11,7 @@ design_projects:
   - rural-travel-guide
   - carleton-college-strategic-direction
   - rural-design-studio
+  - visual-identity-sustainable-futures
   - wada-quilts
   - admissions-marketing-visit-map
 ---
