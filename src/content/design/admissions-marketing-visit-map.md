@@ -36,7 +36,7 @@ thumbnail_image:
 gallery:
   lightbox: false
   rows:
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: full-width
       elements:
