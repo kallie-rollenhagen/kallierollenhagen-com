@@ -10,6 +10,9 @@ project_description: >-
   the Cannon River. It is free and open to the public. 
 
 
+  MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
+
+
   ### Why It Matters 
 
 
