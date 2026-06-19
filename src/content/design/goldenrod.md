@@ -64,6 +64,31 @@ gallery:
           file: /assets/images/logo-sketches-web-block-white.jpg
           alt: logo sketches of "goldenrod"
     - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "### Final Logo, Marks, & Typefaces"
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/final-logos-web-block.jpg
+          alt: final Goldenrod logos
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/petal-elements-web-block.jpg
+          alt: flower petal graphics
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/typefaces-web-block.jpg
+          alt: branded typefaces
+    - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
       elements:
