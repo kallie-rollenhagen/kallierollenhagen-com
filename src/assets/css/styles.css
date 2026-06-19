@@ -514,25 +514,14 @@ img+p {
 }
 
 .project-overlay {
-    /* position: absolute; */
-    /* top: 0;
-  left: 0; */
     width: 100%;
-    /* height: 100%; */
     color: var(--dark);
     margin-bottom: 36px;
-    /* background-color: color-mix(in srgb, var(--accent_blue), transparent 10%);   */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* text-align: center; */
-    /* opacity: 0;
-  transition: opacity 0.4s ease; */
 }
 
-/* --- THE TYPOGRAPHY TEXT INSIDE --- */
 .project-info h3 {
-    /* color: var(--light); */
     font-size: 17px;
     margin: 0 0 0px 0;
     font-weight: 600;
@@ -541,23 +530,38 @@ img+p {
 }
 
 .project-info p {
-    /* color: var(--light); */
     font-size: 15px;
     margin: 0;
     letter-spacing: 5%;
     font-weight: 400;
 }
 
-/* --- THE HOVER ACTIONS --- */
-
-/* 1. Fade the overlay smoothly into view */
-/* .project-card:hover .project-overlay {
-  opacity: 1;
-} */
-
-/* 2. Optional: Slightly scales up the background photography image on hover for depth */
 .project-card:hover img {
     transform: scale(1.05);
+}
+
+#more-projects {
+    display:grid;
+    grid-template-columns:subgrid;
+    grid-column:2/14;
+}
+
+#more-projects > h3 {
+    display: grid;
+    grid-column: 1 / 13;
+    margin-bottom: 16px;
+}
+
+#more-projects div:nth-of-type(1) {
+    grid-column: 1 / 5;
+}
+
+#more-projects div:nth-of-type(2) {
+    grid-column: 5 / 9;
+}
+
+#more-projects div:nth-of-type(3) {
+    grid-column: 9 / 13;
 }
 
 .full-photo {

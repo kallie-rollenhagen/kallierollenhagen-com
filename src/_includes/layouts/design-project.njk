@@ -42,3 +42,18 @@ layout: layouts/base.njk
 <div class="gallery design-project-gallery">
     {% include "components/gallery.njk" %}
 </div>
+
+{% set projects = collections.orderedPublishedDesign %}
+{% set currentIndex = projects | findProjectIndex(page.fileSlug) %}
+{% set total = projects.length %}
+
+<div id="more-projects">
+    <h3>More Design Projects</h3>
+{% for offset in [1,2,3] %}
+    {% set project = projects[(currentIndex + offset) % total] %}
+
+    {% include "components/project-card.njk" %}
+
+{% endfor %}
+</div>
+<script src="{{ '/assets/js/design-projects.js' | url }}"></script>

@@ -39,6 +39,33 @@ module.exports = function (eleventyConfig) {
         return map;
     });
 
+    eleventyConfig.addCollection("orderedPublishedDesign", function(collectionApi) {
+
+        // Find the Design landing page
+        const designPage = collectionApi
+            .getFilteredByGlob("./src/content/design.md")[0];
+
+        // Build a lookup table
+        const projectMap = {};
+
+        collectionApi
+            .getFilteredByGlob("./src/content/design/*.md")
+            .filter(item => item.data.publish !== false)
+            .forEach(item => {
+                projectMap[item.fileSlug] = item;
+            });
+
+        // Return the projects in the order specified by design.md
+        return designPage.data.design_projects
+            .map(slug => projectMap[slug])
+            .filter(Boolean);
+
+    });
+
+    eleventyConfig.addFilter("findProjectIndex", function(projects, fileSlug) {
+        return projects.findIndex(project => project.fileSlug === fileSlug);
+    });
+
     const md = markdownIt({
         html: true,
         breaks: false,
