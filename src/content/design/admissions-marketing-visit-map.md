@@ -8,7 +8,8 @@ credits:
     person: Beth Elzer
     url: https://bethelzer.wixsite.com/elzerdesignlab
   - role: Illustration
-    person: Raymond Biesinger & Beth Elzer
+    person: Raymond Biesinger
+    url: https://www.fifteen.ca/
 project_description: >-
   ### Audience 
 
