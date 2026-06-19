@@ -23,7 +23,7 @@ slides:
     focal_y: 50
   - file: /assets/images/diner-menu-mockup-small.jpg
     alt: Rural Design Studio menu of services
-  - focal_x: 50
+  - focal_x: 45
     focal_y: 50
     file: /assets/images/hand-holding-book.jpg
     alt: hand holding travel guide book in front of yellow backdrop
