@@ -12,4 +12,5 @@ design_projects:
   - rural-travel-guide
   - wada-quilts
   - goldenrod
+  - arb-centennial
 ---
