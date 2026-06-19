@@ -133,7 +133,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/typefaces-web-block-travel.jpg
+          file: /assets/images/typefaces-web-block-travel-narrow.jpg
           alt: typography selections for the guide
           caption: Two classic typefaces balance the more extensive, modern color palette
     - layout: thirds
