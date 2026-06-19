@@ -41,11 +41,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            Carleton College stewards an 800-acre arboretum — “the Arb” —
-            directly adjacent to its campus in Northfield, Minnesota. The Arb is
-            located on a natural border between prairie and forest habitat,
-            partly on the floodplain of the Cannon River. It is free and open to
-            the public. 
+            ### Context
+
+
+            Carleton College stewards an 800-acre arboretum — “the Arb” — directly adjacent to its campus in Northfield, Minnesota. The Arb is located on a natural border between prairie and forest habitat, partly on the floodplain of the Cannon River. It is free and open to the public. 
 
 
             ### Why It Matters 
