@@ -5,28 +5,23 @@ seoDescription: Visual identity for centennial celebration of Carleton College's
 publish: true
 roles_played: Brand Identity + Design
 project_description: >-
-  Carleton College stewards an 800 acre arboretum — “the Arb” — directly
-  adjacent to its campus in Northfield, Minnesota. The Arb is located on a
-  natural border between prairie and forest habitat, partly on the floodplain of
-  the Cannon River. It is free and open to the public. 
+  Enhanced environmental design project to help celebrate the 100th anniversary
+  of Carleton College's Cowling Arboretum in 2026–2027.
 
 
   MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
 
 
-  ### Why It Matters 
+  ### Scope & Deliverables
 
 
-  The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. 
+  Graphic identity that complements the College's parent brand, wayfinding signage, and a series of place-based engagement installations that engage and educate visitors to the Arb.
 
 
-  Personally, the Arb is part of why we moved to Northfield. I’m there weekly. It’s prairie expanses feel like a second home. 
+  ### Design Challenges
 
 
-  ### Why Now 
-
-
-  In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
+  Keep the main focus on the beauty of the Arb itself, align efforts with the College's brand, and consider the longevity and materiality of installations from a sustainability perspective.
 main_image:
   focal_x: 50
   focal_y: 50
@@ -42,10 +37,17 @@ gallery:
   rows:
     - object_fit: contain
       row_margin_bottom: large
-      layout: halves
+      layout: right-wide
       elements:
         - type: text
           text: >-
+            Carleton College stewards an 800-acre arboretum — “the Arb” —
+            directly adjacent to its campus in Northfield, Minnesota. The Arb is
+            located on a natural border between prairie and forest habitat,
+            partly on the floodplain of the Cannon River. It is free and open to
+            the public. 
+
+
             ### Why It Matters 
 
 
