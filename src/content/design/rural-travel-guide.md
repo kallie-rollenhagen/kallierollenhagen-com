@@ -55,6 +55,29 @@ gallery:
       row_margin_bottom: large
       layout: thirds
       elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/monocle.jpg
+          alt: Multiple Monocle Travel guidebooks
+          caption: 'Monocle Travel Guide Series: Replicate the size (5.5" x 8.3"), similar
+            tone'
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/maine-way.jpg
+          alt: Maine the Way guidebooks
+          caption: "Maine the Way: Similar geographical approach, photo-forward"
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/cq-covers.jpg
+          alt: Collective Quarterly magazines
+          caption: "Collective Quarterly: Audience overlap, photo essays, local intel"
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
         - type: text
           text: >-
             ### Page Templates
