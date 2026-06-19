@@ -39,6 +39,65 @@ thumbnail_image:
   alt: decorative "bus" stop in Arb
 gallery:
   lightbox: false
-  rows: []
+  rows:
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: text
+          text: >-
+            ### Why It Matters 
+
+
+            The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. 
+
+
+            Personally, the Arb is part of why we moved to Northfield. I’m there weekly. Its prairie expanses feel like a second home. 
+
+
+            ### Why Now 
+
+
+            In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-collage-web-block.jpg
+          alt: collage of photos from different seasons in the Arb
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Inspiration & Design Parameters
+
+
+            * The beauty of the landscape should always be the focal point, merely enhanced by signage and installations.
+
+            * When possible, educate visitors about the importance of this space and how it is a model living classroom.
+
+            * Find opportunities to get people to view a familiar space with new appreciation, in collaboration with artists, educators, and environmentalists.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-inspo-web-block.jpg
+          alt: Examples of place based art installations
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Creative Strategy
+
+
+            **Frame the space, tread lightly.** The Arb is beloved for its calming vistas, uncluttered by development. With any installation, the goal is to frame the natural beauty of the space. Materials will be selected to have a minimal environmental footprint.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/conceptual-collage.jpg
+          caption: Conceptual collage pulling in points of inspiration
+          alt: Conceptual collage pulling in points of inspiration
   type: grid
 ---
