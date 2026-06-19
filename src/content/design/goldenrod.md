@@ -93,7 +93,7 @@ gallery:
           focal_y: 50
           file: /assets/images/asset-sketches-web-block.jpg
           alt: Asset sketches of Goldenrod signage and menus
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
