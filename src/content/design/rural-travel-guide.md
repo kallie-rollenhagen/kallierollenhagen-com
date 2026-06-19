@@ -7,7 +7,10 @@ project_description: >-
   Whereas city guides require filtering to fight through the overwhelm, rural
   guides require scavengers to surface the gems. This project serves as a
   template of what a curated, designed travel guide could look like for smaller
-  places. It was developed in my MCAD MAGWD Design Studio course.
+  places. 
+
+
+  MCAD MA in Graphic & Web Design Course: **Design Studio**
 
 
   ### The Goal
