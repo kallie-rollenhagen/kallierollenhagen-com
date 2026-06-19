@@ -162,6 +162,11 @@ hr, main {
     grid-column: 1 / 15;
 }
 
+img + p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
 .home-slider {
   position: relative;
   background-color: var(--light);
