@@ -3,15 +3,17 @@ title: Wada Quilts
 seoDescription: Project overview of a P5.js sketch to generate class quilt
   blocks using the colors of the Dictionary of Color
 publish: true
-roles_played: Designer | p5.js
+roles_played: Concept & Design Direction | p5.js
 credits:
   - role: LLM for Coding Assistance
-    person: Chat GPT
+    person: ChatGPT & Google Gemini
 project_description: >-
-  For my MCAD MAGWD Experimental Interaction Course, I created a pattern
-  generator using p5.js that returns quilt block patterns. Each quilt has three
-  colors, based on the 3-color combination section of the Japanese *Dictionary
-  of Color Combinations, Volume 2,* by Sanzo Wada.
+  I created a pattern generator using p5.js that returns quilt block patterns.
+  Each quilt has three colors, based on the 3-color combination section of the
+  Japanese *Dictionary of Color Combinations, Volume 2,* by Sanzo Wada.
+
+
+  MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
 
 
   ### Scope
@@ -23,7 +25,7 @@ project_description: >-
   ### Deliverables
 
 
-  At least 16 cohesive graphic element outputs (images, audio files, text strings, stories, etc.) created by a collaboration between myself as designer and my trained AI system: Google Gemini. Documentation of my process.
+  At least 16 cohesive graphic element outputs (images, audio files, text strings, stories, etc.) created by a collaboration between myself as designer and my trained AI system. Documentation of my process.
 main_image:
   file: /assets/images/wada-quilt-grid-3-2.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
