@@ -1,5 +1,6 @@
 ---
 title: Arb Centennial
+slug: arb-centennial
 seoDescription: Visual identity for centennial celebration of Carleton College's arboretum
 publish: true
 roles_played: Brand Identity + Design
