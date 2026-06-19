@@ -37,7 +37,8 @@ layout: layouts/base.njk
     <img
         class="design-img-first"
         src="{{ main_image.file | url }}"
-        alt="{{ main_image.alt }}">
+        alt="{{ main_image.alt }}"
+        style="object-position: {{ main_image.focal_x or 50 }}% {{ main_image.focal_y or 50 }}%">
 
 </div>
 
