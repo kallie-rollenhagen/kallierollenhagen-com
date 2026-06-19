@@ -83,4 +83,19 @@ gallery:
           file: /assets/images/mockup-food-spread-cropped.png
           alt: text and image sample spread of rural travel guide
       object_fit: cover
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Sample Spread: Buy Guide
+
+
+            This spread is intended to spotlight unique food, drink, and retail offerings of a particular region, inspired by the Monocle Guidebooks.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/buy-guide-mockup.jpg
+          alt: Mockup of guidebook buy guide
 ---
