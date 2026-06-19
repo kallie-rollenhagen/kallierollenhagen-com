@@ -37,17 +37,6 @@ gallery:
           alt: behind the counter menu mockup
       object_fit: contain
       row_margin_bottom: small
-    - layout: halves
-      elements:
-        - type: image
-          file: /assets/images/menu-mockup-small.jpg
-          alt: handheld menu mockup of menu on table
-          focal_x: 25
-          focal_y: 50
-        - type: image
-          file: /assets/images/kids-menu-mockup-small.jpg
-          alt: kids menu mockup on table with cereal
-      object_fit: cover
     - layout: right-wide
       elements:
         - type: text
@@ -78,6 +67,28 @@ gallery:
           focal_y: 50
           file: /assets/images/logo-sketches-web-block-white.jpg
           alt: logo sketches of "goldenrod"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "### Color"
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/color-inspo-web-block.jpg
+          alt: two cereal boxes
+          caption: Color inspiration sources
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/color-web-block.jpg
+          alt: color palette for Goldenrod
+          caption: Final color palette
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
@@ -112,4 +123,15 @@ gallery:
           focal_y: 50
           file: /assets/images/cups.logos_v1.jpg
           alt: cup with goldenrod on it
+    - layout: halves
+      elements:
+        - type: image
+          file: /assets/images/menu-mockup-small.jpg
+          alt: handheld menu mockup of menu on table
+          focal_x: 25
+          focal_y: 50
+        - type: image
+          file: /assets/images/kids-menu-mockup-small.jpg
+          alt: kids menu mockup on table with cereal
+      object_fit: cover
 ---
