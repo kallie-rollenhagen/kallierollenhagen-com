@@ -1,5 +1,6 @@
 ---
 title: "Visual Identity: Sustainable Futures"
+slug: visual-identity-sustainable-futures
 seoDescription: Design overview of visual identity for Carleton College's
   sustainable futures initiatives
 publish: true

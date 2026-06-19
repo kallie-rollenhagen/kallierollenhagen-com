@@ -1,5 +1,6 @@
 ---
 title: Nice Things
+slug: nice-things
 seoDescription: Nice Things homegoods shop concepts.
 publish: true
 roles_played: Brand Development | Identity System

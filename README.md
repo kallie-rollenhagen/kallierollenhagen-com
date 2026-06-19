@@ -60,10 +60,10 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
+* Revise About full width layout
 * Allow to edit page title and permalink
 * Edit _data/site.json fields in Decap
 * SEO tagging
 * Integrate p5.js project into Wada Quilts page
-* Google Analytics tracking
 * Remove excessive spacing from HTML output
 * Standardize image requirements (size, resolution)

@@ -225,6 +225,7 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page URL, e.g. 'example' becomes example.html" }
       - { label: SEO Description, name: seoDescription, widget: string }
       - label: Publish
         name: publish

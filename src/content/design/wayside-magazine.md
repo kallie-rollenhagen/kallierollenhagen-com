@@ -1,5 +1,6 @@
 ---
 title: Wayside Magazine
+slug: wayside-magazine
 seoDescription: Project overview of branding and design of a travel magazine
 publish: true
 roles_played: Brand Development | Publication Design | Web Design

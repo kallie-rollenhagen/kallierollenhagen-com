@@ -1,5 +1,6 @@
 ---
 title: Carleton College Strategic Direction
+slug: carleton-college-strategic-direction
 seoDescription: Design overview of college strategic plan launch
 publish: true
 roles_played: Creative + Art Direction

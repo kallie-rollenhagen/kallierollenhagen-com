@@ -1,5 +1,6 @@
 ---
 title: Wada Quilts
+slug: wada-quilts
 seoDescription: Project overview of a P5.js sketch to generate class quilt
   blocks using the colors of the Dictionary of Color
 publish: true

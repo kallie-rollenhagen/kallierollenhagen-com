@@ -1,5 +1,6 @@
 ---
 title: Rural Design Studio
+slug: rural-design-studio
 seoDescription: Brand development and web design of the Rural Design Studio
 publish: true
 roles_played: Brand Development | Web Design

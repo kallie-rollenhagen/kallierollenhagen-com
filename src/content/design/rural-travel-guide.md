@@ -1,5 +1,6 @@
 ---
 title: Rural Travel Guide
+slug: rural-travel-guide
 seoDescription: Travel guide concepts for rural exploration.
 publish: true
 roles_played: Brand Development | Layout Design | Photography
