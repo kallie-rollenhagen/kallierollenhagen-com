@@ -60,10 +60,8 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
-* Design projects navigation
 * Allow to edit page title and permalink
 * Edit _data/site.json fields in Decap
-* Reposition X in lightbox to not overlap images
 * SEO tagging
 * Integrate p5.js project into Wada Quilts page
 * Google Analytics tracking
