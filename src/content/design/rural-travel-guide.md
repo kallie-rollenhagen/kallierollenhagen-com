@@ -108,6 +108,34 @@ gallery:
           alt: Template filled out with actual images and text
           caption: Layouts should leave some room for white space; it's okay to break
             margins for full-bleed images
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "### Color, Graphics, & Typography"
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/color-web-block-travel.jpg
+          alt: color blocks
+          caption: Color palette for the series
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/toc-web-block.jpg
+          alt: table of contents
+          caption: A cropped square is a repeated graphical element
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/typefaces-web-block-travel.jpg
+          alt: typography selections for the guide
+          caption: Two classic typefaces balance the more extensive, modern color palette
     - layout: thirds
       elements:
         - type: image
