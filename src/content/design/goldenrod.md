@@ -30,13 +30,6 @@ gallery:
   lightbox: false
   type: grid
   rows:
-    - layout: full-width
-      elements:
-        - type: image
-          file: /assets/images/final-wall-mockup-small.jpg
-          alt: behind the counter menu mockup
-      object_fit: contain
-      row_margin_bottom: small
     - layout: right-wide
       elements:
         - type: text
@@ -68,6 +61,21 @@ gallery:
           file: /assets/images/logo-sketches-web-block-white.jpg
           alt: logo sketches of "goldenrod"
     - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Asset Sketches 
+
+
+            For assets and overall brand, I sketched options along the spectrum of playful and bold to minimal and elegant, settling in the middle.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/asset-sketches-web-block.jpg
+          alt: Asset sketches of Goldenrod signage and menus
+    - object_fit: contain
       row_margin_bottom: small
       layout: full-width
       elements:
@@ -89,21 +97,6 @@ gallery:
           file: /assets/images/color-web-block.jpg
           alt: color palette for Goldenrod
           caption: Final color palette
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: right-wide
-      elements:
-        - type: text
-          text: >-
-            ### Asset Sketches 
-
-
-            For assets and overall brand, I sketched options along the spectrum of playful and bold to minimal and elegant, settling in the middle.
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/asset-sketches-web-block.jpg
-          alt: Asset sketches of Goldenrod signage and menus
     - object_fit: cover
       row_margin_bottom: large
       layout: thirds
@@ -134,4 +127,11 @@ gallery:
           file: /assets/images/kids-menu-mockup-small.jpg
           alt: kids menu mockup on table with cereal
       object_fit: cover
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/final-wall-mockup-small.jpg
+          alt: behind the counter menu mockup
+      object_fit: contain
+      row_margin_bottom: small
 ---
