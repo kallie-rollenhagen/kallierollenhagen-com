@@ -10,7 +10,7 @@ project_description: >-
   the Cannon River. It is free and open to the public. 
 
 
-  **Why It Matters** 
+  ### Why It Matters 
 
 
   The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. 
@@ -19,7 +19,7 @@ project_description: >-
   Personally, the Arb is part of why we moved to Northfield. I’m there weekly. It’s prairie expanses feel like a second home. 
 
 
-  **Why Now** 
+  ### Why Now 
 
 
   In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
