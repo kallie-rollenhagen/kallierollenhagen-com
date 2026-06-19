@@ -1,6 +1,6 @@
 ---
 title: Goldenrod
-slug: goldenrod
+slug: goldenrod-test
 seoDescription: Goldenrod restaurant design concepts.
 publish: true
 roles_played: Brand Development | Designer
