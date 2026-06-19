@@ -61,6 +61,8 @@ output_1602.avif
 
 ## To Do
 * Set img focal points for object-fit: cover behavior
+* Image captions
+* Design projects navigation
 * Allow to edit page title and permalink
 * Edit _data/site.json fields in Decap
 * Arrow indicators in mobile lightbox

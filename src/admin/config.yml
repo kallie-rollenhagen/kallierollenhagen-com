@@ -242,15 +242,11 @@ collections:
       - label: "Main Image"
         name: "main_image"
         widget: "object"
-        fields:
-          - {label: "File", name: "file", widget: "image"}
-          - {label: "Alt Text", name: "alt", widget: "string"}
+        fields: *image_fields
       - label: "Thumbnail Image"
         name: "thumbnail_image"
         widget: "object"
-        fields:
-          - {label: "File", name: "file", widget: "image"}
-          - {label: "Alt Text", name: "alt", widget: "string"}
+        fields: *image_fields
       - *gallery_field
 
   - name: admin
