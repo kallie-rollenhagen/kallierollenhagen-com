@@ -1,7 +1,7 @@
 ---
 layout: layouts/sketchbook.njk
 title: Sketchbook
-permalink: /sketchbook.html
+slug: sketchbook
 scripts:
   - assets/js/swipe.js
   - assets/js/lightbox.js

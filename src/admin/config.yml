@@ -136,6 +136,7 @@ collections:
         file: src/content/design.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page URL, e.g. 'example' becomes example.html" }
           - { label: SEO Description, name: seoDescription, widget: string }
           - label: Design Projects
             name: design_projects
@@ -153,6 +154,7 @@ collections:
         file: src/content/mcad.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page URL, e.g. 'example' becomes example.html" }
           - { label: SEO Description, name: seoDescription, widget: string }
           - label: Design Projects
             name: design_projects
@@ -170,6 +172,7 @@ collections:
         file: src/content/sketchbook.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page URL, e.g. 'example' becomes example.html" }
           - { label: SEO Description, name: seoDescription, widget: string }
           - *gallery_field
       - label: Photography Page
@@ -177,6 +180,7 @@ collections:
         file: src/content/photography.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page URL, e.g. 'example' becomes example.html" }
           - { label: SEO Description, name: seoDescription, widget: string }
           - *gallery_field
       - label: About Page
@@ -184,6 +188,7 @@ collections:
         file: src/content/about.md
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: "URL Slug", name: "slug", widget: "string", hint: "Used in the page URL, e.g. 'example' becomes example.html" }
           - { label: SEO Description, name: seoDescription, widget: string }
           - label: "Photo"
             name: "photo"

@@ -1,7 +1,7 @@
 ---
 layout: layouts/photography.njk
 title: Photography
-permalink: /photography.html
+slug: photography
 scripts:
   - assets/js/swipe.js
   - assets/js/lightbox.js

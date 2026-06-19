@@ -1,7 +1,7 @@
 ---
 layout: layouts/design.njk
 title: Design
-permalink: /design.html
+slug: design
 scripts:
   - /assets/js/design-projects.js
 seoDescription: Thumbnails and descriptions of design projects designed by Kallie Rollenhagen

@@ -1,7 +1,7 @@
 ---
 layout: layouts/design.njk
 title: MCAD
-permalink: /mcad.html
+slug: mcad
 scripts:
   - /assets/js/design-projects.js
 seoDescription: design project cards for MCAD designs

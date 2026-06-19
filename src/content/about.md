@@ -43,5 +43,5 @@ education:
   - school: University of Wisconsin-Milwaukee
     degree: BA in psychology, minor in architecture
 layout: layouts/about.njk
-permalink: /about.html
+slug: about
 ---
