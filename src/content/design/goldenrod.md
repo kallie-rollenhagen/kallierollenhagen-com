@@ -7,6 +7,9 @@ project_description: >-
   Brand development for a rural destination diner.
 
 
+  MCAD MA in Graphic & Web Design Course: **Typography**
+
+
   ### Scope + Deliverables
 
 
