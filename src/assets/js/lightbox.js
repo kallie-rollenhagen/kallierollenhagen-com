@@ -29,18 +29,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Gather arrays of all available group images on the project page
   const triggers = Array.from(document.querySelectorAll(".lightbox-trigger"));
+
+  const lightboxMQ = window.matchMedia("(min-width: 636px)");
   
   // NOTE: Speaking of Closures! This index variable lives out here 
   // in the outer block so all the inner functions can change and track it!
   let currentIndex = 0; 
 
   // 2. Open function setup
-  function openLightbox(index) {
+  function openLightbox(index) {  
+    if (!lightboxMQ.matches) return;
+
     currentIndex = index;
     updateLightboxContent();
     lightbox.classList.add("is-open");
     document.body.style.overflow = "hidden"; // Freeze background layout viewport scroll
   }
+
+  lightboxMQ.addEventListener("change", (e) => {
+    if (!e.matches && lightbox.classList.contains("is-open")) {
+      closeLightbox();
+    }
+  });
 
   // 3. Update Image Frame View Content State
   function updateLightboxContent() {
