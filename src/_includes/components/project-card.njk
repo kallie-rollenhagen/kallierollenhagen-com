@@ -4,7 +4,7 @@
     class="project-card no-link">
   
     {% from "macros/image.njk" import image %}
-    {{ image( project.data.thumbnail_image, half-photo-{{ side }}) }}
+    {{ image( project.data.thumbnail_image, "half-photo-{{ side }}") }}
 
     <div class="project-overlay">
       <div class="project-info">
