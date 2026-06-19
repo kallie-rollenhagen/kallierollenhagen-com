@@ -11,10 +11,6 @@ slides:
     focal_y: 50
   - file: /assets/images/covers-mockup-small-3-2.jpg
     alt: wayside magazine covers
-  - file: /assets/images/hand-holding-book-small.jpg
-    alt: hand holding rural travel guide book
-    focal_x: 46
-    focal_y: 50
   - file: /assets/images/nice-things-sidewalk-side-small.jpg
     alt: Nice Things sandwich board sign on sidewalk
     focal_x: 48
@@ -27,4 +23,8 @@ slides:
     focal_y: 50
   - file: /assets/images/diner-menu-mockup-small.jpg
     alt: Rural Design Studio menu of services
+  - focal_x: 50
+    focal_y: 50
+    file: /assets/images/hand-holding-book.jpg
+    alt: hand holding travel guide book in front of yellow backdrop
 ---
