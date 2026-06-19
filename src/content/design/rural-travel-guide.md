@@ -57,6 +57,30 @@ gallery:
           file: /assets/images/rds-guide-3-covers-standing-small-narrow.jpg
           alt: Three different covers of rural travel guide
       object_fit: contain
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Page Templates
+
+
+            I established a set of templates for the different sections, using a mix of 6-column and 4-column grids and full bleed spreads. Here is one example, used for business profiles.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/6-column-template-small.png
+          alt: mockup showing how content can be laid out within the grid
+          caption: 6-column profile spreads allow for a mix of images, pull quotes, and
+            copy
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/eastvold-spread.jpg
+          alt: Template filled out with actual images and text
+          caption: Layouts should leave some room for white space; it's okay to break
+            margins for full-bleed images
     - layout: thirds
       elements:
         - type: image
