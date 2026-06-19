@@ -52,6 +52,12 @@ gallery:
           alt: multiple guide books
       object_fit: contain
     - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "### Inspiration"
+    - object_fit: contain
       row_margin_bottom: large
       layout: thirds
       elements:
