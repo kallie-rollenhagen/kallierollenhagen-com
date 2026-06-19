@@ -83,6 +83,20 @@ gallery:
           file: /assets/images/mockup-food-spread-cropped.png
           alt: text and image sample spread of rural travel guide
       object_fit: cover
+      row_margin_bottom: small
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: text
+          text: >-
+            ### Final Spreads
+
+
+            The 96-page proof of concept travel guide booklet is comprised of 6-column and 4-column spreads and full bleed photo spreads for section intros.
+        - type: text
+          text: These examples show how these page templates can flex, and how they offer
+            a visual cadence to the guide book.
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
