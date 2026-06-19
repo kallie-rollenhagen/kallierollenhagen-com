@@ -114,7 +114,7 @@ gallery:
       elements:
         - type: text
           text: "### Color, Graphics, & Typography"
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
