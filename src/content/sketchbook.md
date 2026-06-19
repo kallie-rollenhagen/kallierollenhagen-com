@@ -1,7 +1,7 @@
 ---
 layout: layouts/sketchbook.njk
 title: Sketchbook
-slug: sketchbook-test
+slug: sketchbook
 scripts:
   - assets/js/swipe.js
   - assets/js/lightbox.js
