@@ -34,11 +34,8 @@ layout: layouts/base.njk
 
     </div>
 
-    <img
-        class="design-img-first"
-        src="{{ main_image.file | url }}"
-        alt="{{ main_image.alt }}"
-        style="object-position: {{ main_image.focal_x or 50 }}% {{ main_image.focal_y or 50 }}%">
+    {% from "macros/image.njk" import image %}
+    {{ image( main_image, "design-img-first") }}
 
 </div>
 
