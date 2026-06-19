@@ -1,8 +1,7 @@
 ---
 title: Arb Centennial
-slug: arb-centennial
 seoDescription: Visual identity for centennial celebration of Carleton College's arboretum
-publish: false
+publish: true
 roles_played: Brand Identity + Design
 project_description: >-
   Carleton College stewards an 800 acre arboretum — “the Arb” — directly
