@@ -76,7 +76,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/logo-sketches-web-block.jpg
+          file: /assets/images/logo-sketches-web-block-white.jpg
           alt: logo sketches of "goldenrod"
     - object_fit: contain
       row_margin_bottom: large
