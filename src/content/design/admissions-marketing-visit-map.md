@@ -86,7 +86,7 @@ gallery:
           focal_y: 50
           file: /assets/images/bx6a6655-small.jpg
           alt: back side of map
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
