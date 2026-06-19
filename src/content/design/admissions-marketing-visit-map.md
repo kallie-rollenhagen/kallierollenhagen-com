@@ -100,13 +100,13 @@ gallery:
           focal_x: 50
           focal_y: 50
           file: /assets/images/hands-holding-map-small.jpg
-          caption: Large map allows for exploration
-          alt: full campus map on the back of the mailing piece
+          caption: Proximity to Twin Cities clear
+          alt: "36 hours spread in Twin Cities and Northfield "
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/bx6a6656.jpg
-          caption: Proximity to Twin Cities clear
-          alt: 36 hours spread in Twin Cities and Northfield
+          file: /assets/images/back-of-map-held-small.jpg
+          caption: Large map allows for meandering exploration
+          alt: full campus map on the back of the mailing piece
   type: grid
 ---
