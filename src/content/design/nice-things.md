@@ -5,21 +5,23 @@ publish: true
 roles_played: Brand Development | Identity System
 credits: []
 project_description: >-
-  <p>Nice Things is a design retail store located in a smaller community. It
-  will sell curated items for your home, your body, and for those you love. This
-  was developed in my MCAD MAGWD dynamic identities course.</p>
+  Nice Things is a design retail store located in a smaller community, intended
+  to sell curated home goods and gifts.
 
-  <h3>Brand Position</h3>
 
-  <p>Small places deserve nice things.</p>
+  MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
 
-  <h3>Design Scope</h3>
 
-  <p>Establish a dynamic visual identity system.</p>
+  ### Design Scope
 
-  <h3>Core Values</h3>
 
-  <ul><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
+  Develop a dynamic visual identity system.
+
+
+  ### Core Values
+
+
+  <ul><li>Small places deserve nice things.</li><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
 main_image:
   file: /assets/images/nice-things-sidewalk-side-small.jpg
   alt: Nice Things sidewalk sign
