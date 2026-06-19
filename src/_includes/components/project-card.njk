@@ -2,11 +2,9 @@
 <div class='project-card-wrapper half-photo-{{ side }}'>
   <a href="{{ project.url | url }}"
     class="project-card no-link">
-
-    <img src="{{ project.data.thumbnail_image.file | url }}"
-        alt="{{ project.data.title }}"
-        class="half-photo-{{ side }}"
-        style="object-position: {{ project.data.thumbnail_image.focal_x or 50 }}% {{ project.data.thumbnail_image.focal_y or 50 }}%">
+  
+    {% from "macros/image.njk" import image %}
+    {{ image( project.data.thumbnail_image, half-photo-{{ side }}) }}
 
     <div class="project-overlay">
       <div class="project-info">
