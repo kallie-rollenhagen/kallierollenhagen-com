@@ -29,6 +29,8 @@ project_description: >-
 main_image:
   file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
   alt: three posters for sustainable futures
+  focal_x: 47
+  focal_y: 50
 thumbnail_image:
   file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
   alt: three posters for sustainable futures
