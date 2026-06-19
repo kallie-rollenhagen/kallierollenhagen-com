@@ -2,6 +2,9 @@
 <img
   src="{{ element.file | url }}"
   alt="{{ element.alt }}"
-  class="{{ classes }} {% if gallery.lightbox %} lightbox-trigger {% endif %}"
+  class="{{ classes }}"
   style="object-position: {{ element.focal_x or 50 }}% {{ element.focal_y or 50 }}%">
+{% if element.caption %}
+<p>{{element.caption}}</p>
+{% endif %}
 {% endmacro %}
