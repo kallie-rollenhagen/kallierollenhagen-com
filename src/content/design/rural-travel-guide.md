@@ -51,12 +51,6 @@ gallery:
           file: /assets/images/guidebook-inspo.jpg
           alt: multiple guide books
       object_fit: contain
-    - layout: full-width
-      elements:
-        - type: image
-          file: /assets/images/rds-guide-3-covers-standing-small-narrow.jpg
-          alt: Three different covers of rural travel guide
-      object_fit: contain
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
@@ -136,4 +130,10 @@ gallery:
           focal_y: 50
           file: /assets/images/buy-guide-mockup.jpg
           alt: Mockup of guidebook buy guide
+    - layout: full-width
+      elements:
+        - type: image
+          file: /assets/images/rds-guide-3-covers-standing-small-narrow.jpg
+          alt: Three different covers of rural travel guide
+      object_fit: contain
 ---
