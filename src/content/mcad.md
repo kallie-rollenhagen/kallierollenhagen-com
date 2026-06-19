@@ -4,8 +4,8 @@ title: MCAD
 permalink: /mcad.html
 scripts:
   - /assets/js/design-projects.js
+seoDescription: design project cards for MCAD designs
 design_projects:
-  - wayside-magazine-1
   - wayside-magazine
   - rural-design-studio
   - rural-travel-guide
