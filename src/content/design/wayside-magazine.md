@@ -6,7 +6,10 @@ roles_played: Brand Development | Layout Design | Photography | Web Design
 project_description: >-
   A quarterly travel magazine for off-the-road and underrated places, focused on
   the essence of a place—captured via essays and recommendations from locals and
-  photography essays. This was designed in my MCAD MAGWD typography course.
+  photography essays.
+
+
+  MCAD MA in Graphic & Web Design Course: **Typography**
 
 
   ### Brand Voice
