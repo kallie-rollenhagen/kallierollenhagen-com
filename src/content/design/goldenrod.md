@@ -60,4 +60,56 @@ gallery:
           file: /assets/images/inspiration-web-block.jpg
           alt: Moodboard for restaurant brand featuring loose, colorful assets
       object_fit: cover
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Name & Logo Exploration 
+
+
+            From over a dozen names, I settled on “goldenrod.” The ‘o’s mirrored the shape of the ‘g’ and ‘d’s well, plus, goldenrods dot the ditches of the backroads one would presumably take to get to this diner. A golden yellow became a primary color to enhance the name, paired with a cornflower blue. 
+
+
+            The handdrawn logo carries a sense of child-like ease, elegance, and playfulness. I explored script vs. lettering, incorporating a flower element and playing with the alignment of type.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/logo-sketches-web-block.jpg
+          alt: logo sketches of "goldenrod"
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Asset Sketches 
+
+
+            For assets and overall brand, I sketched options along the spectrum of playful and bold to minimal and elegant, settling in the middle.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/asset-sketches-web-block.jpg
+          alt: Asset sketches of Goldenrod signage and menus
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bag-mockup-small.jpg
+          alt: goldenrod bag
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/circle-sign-small.jpg
+          alt: exterior building sign with Goldenrod on it
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/cups.logos_v1.jpg
+          alt: cup with goldenrod on it
 ---
