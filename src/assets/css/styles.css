@@ -952,7 +952,7 @@ svg {
         order: 2;
     }
 
-    .lightbox-img-wrapper {
+    /* .lightbox-img-wrapper {
         grid-column: 1 / 4;
         margin: 0 10px;
     }
@@ -961,8 +961,6 @@ svg {
         grid-column: 2 / 2;
         grid-row: 1 / 1;
         margin-top: 47px;
-        /* padding: 20px; */
-        /* justify-self: center; */
     }
 
     .lightbox-nav svg {
@@ -971,7 +969,6 @@ svg {
 
     .lightbox-prev,
     .lightbox-next {
-        /* justify-self: right; */
         width: 50px;
     }
 
@@ -983,7 +980,7 @@ svg {
     .lightbox-next {
         margin-left: 30vw;
         justify-self: center;
-    }
+    } */
 
     #slider-cursor {
         /* display: none; */
