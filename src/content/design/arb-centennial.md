@@ -100,7 +100,7 @@ gallery:
           file: /assets/images/conceptual-collage.jpg
           caption: Conceptual collage pulling in points of inspiration
           alt: Conceptual collage pulling in points of inspiration
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
