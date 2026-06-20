@@ -100,5 +100,30 @@ gallery:
           file: /assets/images/conceptual-collage.jpg
           caption: Conceptual collage pulling in points of inspiration
           alt: Conceptual collage pulling in points of inspiration
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Site Overview: Carleton College | Northfield, MN
+
+
+            The Arb is adjacent to Carleton’s campus on the northeast side of Northfield. It contains wetland (adjacent to the Cannon River), prairie, and forests.
+
+
+            ### Land History 
+
+
+            Carleton’s campus is on the ancestral homelands of the Wahpekute and Mdewakanton* bands of the Dakota Nation. While there is no evidence of permanent Dakota dwellings in Northfield or the Arb, it was an important hunting and fishing pathway for the nomadic Wahpekute band.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-google-map.jpg
+          alt: Aerial view of the Arb
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-map-annotated.png
   type: grid
 ---
