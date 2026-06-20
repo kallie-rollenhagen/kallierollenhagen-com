@@ -115,7 +115,7 @@ gallery:
             ### Land History 
 
 
-            Carleton’s campus is on the ancestral homelands of the Wahpekute and Mdewakanton* bands of the Dakota Nation. While there is no evidence of permanent Dakota dwellings in Northfield or the Arb, it was an important hunting and fishing pathway for the nomadic Wahpekute band.
+            Carleton’s campus is on the ancestral homelands of the Wahpekute and Mdewakanton bands of the Dakota Nation. While there is no evidence of permanent Dakota dwellings in Northfield or the Arb, it was an important hunting and fishing pathway for the nomadic Wahpekute band.
         - type: image
           focal_x: 50
           focal_y: 50
