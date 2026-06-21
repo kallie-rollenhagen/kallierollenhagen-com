@@ -81,4 +81,24 @@ gallery:
           focal_y: 50
           file: /assets/images/rural-design-web-block.jpg
           alt: 12 images of rural design and places
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Moodboard
+
+
+            Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-moodboard-web-block.jpg
+          alt: Moodboard images of geometric quilts and hand-painted signs
+          text: >-
+            ### Moodboard
+
+
+            Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
 ---
