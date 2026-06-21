@@ -273,7 +273,7 @@ collections:
             name: email
             widget: string
           - label: Navigation Menu
-            name: navigation
+            name: navigation_menu
             widget: list
             field:
               label: Page
