@@ -622,7 +622,7 @@ img+p {
 ul {
     list-style: none;
     padding-left: 0;
-    line-height: 160%;
+    /* line-height: 160%; */
     /* list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 60 60'%3E%3Cpath d='M0 20 h60 L30 55 v-11 L44 27 H0z' fill='black'/%3E%3C/svg%3E"); */
 }
 
