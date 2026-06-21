@@ -3,6 +3,10 @@
   "description": "Editorial design, branding, photography, and creative work by Kallie Rollenhagen.",
   "email": "hello@kallierollenhagen.com",
   "analyticsId": "G-PW79KJEVBF",
-
-  "navigation_menu": ["design", "sketchbook", "photography", "about"]
+  "navigation_menu": [
+    "design",
+    "sketchbook",
+    "photography",
+    "about"
+  ]
 }
