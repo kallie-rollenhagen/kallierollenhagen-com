@@ -14,7 +14,7 @@ project_description: >-
   ### Deliverables
 
 
-  Brand development, visual identity system, and website design.
+  Research, brand development, visual identity system, and website design.
 
 
   ### Brand position
