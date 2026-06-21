@@ -7,6 +7,7 @@ roles_played: Creative + Art Direction
 credits:
   - role: Visual Identity
     person: Neuger Communications
+    url: https://neuger.com/
   - role: Report Layout Design
     person: Nancy Eato
   - role: Web Design
