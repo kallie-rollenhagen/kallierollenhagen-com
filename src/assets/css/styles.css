@@ -450,6 +450,10 @@ main {
     grid-column: 1 / 5;
 }
 
+.gallery-row-element.image {
+    display: flex;
+}
+
 .gallery-row.thirds .gallery-row-element {
     grid-column: 5 / 9;
 }
