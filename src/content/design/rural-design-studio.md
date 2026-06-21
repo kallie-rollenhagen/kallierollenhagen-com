@@ -107,10 +107,13 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Final Logo
+            ### Primary Logo
 
 
-            To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font that “looks like it stepped out of a 1920s billboard. We hand-drew each letter, inspired by old shop signs and billboards.”
+            To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font that inspired by old shop signs and billboards.
+
+
+            I also incorporated triangles, each a bit asymmetrical and imperfect, to nod toward the pieced-together nature of quilts and the handmade quality of many vernacular signs.
         - type: image
           focal_x: 50
           focal_y: 50
