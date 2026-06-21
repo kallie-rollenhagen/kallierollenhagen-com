@@ -142,7 +142,7 @@ gallery:
           alt: color palette for Goldenrod
           caption: Final color palette
     - object_fit: cover
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: thirds
       elements:
         - type: image
@@ -171,6 +171,7 @@ gallery:
           file: /assets/images/kids-menu-mockup-small.jpg
           alt: kids menu mockup on table with cereal
       object_fit: cover
+      row_margin_bottom: small
     - layout: full-width
       elements:
         - type: image
