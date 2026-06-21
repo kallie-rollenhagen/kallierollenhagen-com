@@ -1,9 +1,11 @@
 {% macro image(element, classes="") %}
-<img
-  src="{{ element.file | url }}"
-  alt="{{ element.alt }}"
-  class="{{ classes }}"
-  style="object-position: {{ element.focal_x or 50 }}% {{ element.focal_y or 50 }}%">
+<div class="image-wrapper">
+  <img
+    src="{{ element.file | url }}"
+    alt="{{ element.alt }}"
+    class="{{ classes }}"
+    style="object-position: {{ element.focal_x or 50 }}% {{ element.focal_y or 50 }}%">
+</div>
 {% if element.caption %}
 <p>{{element.caption}}</p>
 {% endif %}
