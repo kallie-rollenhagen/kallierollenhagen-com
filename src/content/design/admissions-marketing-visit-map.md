@@ -74,7 +74,7 @@ gallery:
           file: /assets/images/map-gif.gif
           alt: map unfolding
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: halves
       elements:
         - type: image
