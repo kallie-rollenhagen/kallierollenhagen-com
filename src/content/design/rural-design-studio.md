@@ -14,7 +14,7 @@ project_description: >-
   ### Deliverables
 
 
-  Brand development, visual identity system, and website design.
+  Research, brand development, visual identity system, and website design.
 
 
   ### Brand position
@@ -40,4 +40,65 @@ gallery:
           focal_y: 50
           file: /assets/images/diner-menu-mockup-small-cropped.jpg
           alt: Rural Design Studio menu of services, front and back
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### What problem was I trying to solve? 
+
+
+            Rural places are filled with creative people. Yet there is lack of resources — both people and money — for contemporary graphic design, web design, and branding services in rural communities.\
+
+            \
+
+            Rural doers, makers, and innovators deserve creative design partners who can help elevate the third spaces they’re creating, the businesses they’re launching, the policies they’re advocating for, and the plans they’re making for continued vitality.\
+
+            \
+
+            **They need an agency on the inside.**
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/yankon-sd.jpg
+          alt: Yankton, SD
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Why is this important to me?
+
+
+            I grew up in a rural community, live in one today, and seek out rural places when I travel. I've seen firsthand that creativity isn't limited by geography—but access to design services (and resources for professional design) often is.
+
+
+            I want to help close that gap by bringing thoughtful branding, web design, and placemaking strategies to rural communities while also creating more onramps into design careers and a shared recognition of the role design can play in strengthening local businesses and communities.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rural-design-web-block.jpg
+          alt: 12 images of rural design and places
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Moodboard
+
+
+            Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-moodboard-web-block.jpg
+          alt: Moodboard images of geometric quilts and hand-painted signs
+          text: >-
+            ### Moodboard
+
+
+            Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
 ---
