@@ -37,6 +37,15 @@ gallery:
   lightbox: false
   type: grid
   rows:
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/cup-colored-small.jpg
+          alt: hand holding Goldenrod-branded to-go cup
     - layout: right-wide
       elements:
         - type: text
