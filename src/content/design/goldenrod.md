@@ -58,10 +58,13 @@ gallery:
             ### Name & Logo Exploration 
 
 
-            From over a dozen names, I settled on “goldenrod.” The ‘o’s mirrored the shape of the ‘g’ and ‘d’s well, plus, goldenrods dot the ditches of the backroads one would presumably take to get to this diner. A golden yellow became a primary color to enhance the name, paired with a cornflower blue. 
+            From over a dozen names, I settled on “goldenrod.” The ‘o’s mirrored the shape of the ‘g’ and ‘d’s well, plus, goldenrods dot the ditches of the backroads one would presumably take to get to this diner. 
 
 
-            The handdrawn logo carries a sense of child-like ease, elegance, and playfulness. I explored script vs. lettering, incorporating a flower element and playing with the alignment of type.
+            A golden yellow became a primary color to enhance the name, paired with a cornflower blue. 
+
+
+            The hand-drawn logo carries a sense of child-like ease, elegance, and playfulness. I explored script vs. lettering, incorporating a flower element and playing with the alignment of type.
         - type: image
           focal_x: 50
           focal_y: 50
