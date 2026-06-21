@@ -9,7 +9,7 @@ layout: layouts/base.njk
         </figure>
         <div>
             <p>{{ contact.location }}<br/>
-            {{ contact.email }}</p>
+            {{ site.email }}</p>
             <ul>
                 {% for link in links %}
                 <li><a href='{{ link.url }}'>{{ link.text }}</a></li>
