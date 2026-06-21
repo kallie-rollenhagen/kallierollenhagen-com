@@ -101,4 +101,24 @@ gallery:
 
 
             Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Final Logo
+
+
+            To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font that “looks like it stepped out of a 1920s billboard. We hand-drew each letter, inspired by old shop signs and billboards.”
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo_primary-3-color.png
+          alt: 3-color Rural Design Studio logo
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo_primary-blue.png
+          alt: Single color (blue) Rural Design Studio logo
 ---
