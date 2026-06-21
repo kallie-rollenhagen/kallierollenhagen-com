@@ -131,15 +131,6 @@ gallery:
           file: /assets/images/colors-type-logo-arb.jpg
           alt: logo, type, and color palette for event visual identity
     - object_fit: contain
-      row_margin_bottom: large
-      layout: full-width
-      elements:
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/stops-signage.jpg
-          alt: Mockup of the four signs, including a person to show scale
-    - object_fit: contain
       row_margin_bottom: small
       layout: thirds
       elements:
@@ -163,5 +154,14 @@ gallery:
             restored.
 
             * **Seed Stop:** This decorative "bus" stop encases native prairie seeds and plants, captured in resin, and invites visitors to sit and learn.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/stops-signage.jpg
+          alt: Mockup of the four signs, including a person to show scale
   type: grid
 ---
