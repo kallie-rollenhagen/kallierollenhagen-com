@@ -135,7 +135,7 @@ gallery:
             using “RDS,” the patchworking of triangles, and brand colors.
         - type: text
           text: This brand mark can be used individually or to create a pattern.
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
