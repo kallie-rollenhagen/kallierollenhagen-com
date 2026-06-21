@@ -121,4 +121,34 @@ gallery:
           focal_y: 50
           file: /assets/images/rds-logo_primary-blue.png
           alt: Single color (blue) Rural Design Studio logo
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: thirds
+      elements:
+        - type: text
+          text: "### Dynamic Logo Mark"
+        - type: text
+          text: The logo mark is meant to have an infinite number of combinations, always
+            using “RDS,” the patchworking of triangles, and brand colors.
+        - type: text
+          text: This brand mark can be used individually or to create a pattern.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/grid-of-brand-marks-grey-3x3.jpg
+          alt: 3 by 3 grid of Rural Design Studio dynamic brandmark
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/brand-mark.gif
+          alt: rotation of RDS dynamic brand mark
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/tray-mockup-small-800x820.jpg
+          alt: lunch tray with RDS pattern sheet of paper on it
 ---
