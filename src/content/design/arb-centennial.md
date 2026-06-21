@@ -145,7 +145,6 @@ gallery:
             * **Arb Entry:** Positioned next to the tapestry entrance at the top
             prairie in the lower Arb.
 
-
             * **Bur Oak Photo Frame:** Frames the most photographed tree in the Arb and encourages visitors to add their own photos.
         - type: text
           text: >-
