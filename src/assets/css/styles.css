@@ -451,7 +451,7 @@ main {
 }
 
 .gallery-row-element.image {
-    display: flex;
+    display: grid;
 }
 
 .gallery-row.thirds .gallery-row-element {
