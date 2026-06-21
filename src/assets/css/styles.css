@@ -488,7 +488,7 @@ main {
 
 }
 
-.gallery-row-element.text h3 {
+.gallery-row-element.text h3:first-of-type {
     margin-top: 0;
 }
 
