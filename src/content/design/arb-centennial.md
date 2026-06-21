@@ -163,5 +163,28 @@ gallery:
           focal_y: 50
           file: /assets/images/stops-signage.jpg
           alt: Mockup of the four signs, including a person to show scale
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
+        - type: text
+          text: "### Wayfinding Signage"
+        - type: text
+          text: A series of wayfinding signs support the event branding and guide users to
+            the interactive stops within the Arb.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wayfinding-signs.jpg
+          alt: Arb wayfinding signs at scale
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wayfinding-signs-mockups.jpg
+          alt: Arb wayfinding signs mocked up
   type: grid
 ---
