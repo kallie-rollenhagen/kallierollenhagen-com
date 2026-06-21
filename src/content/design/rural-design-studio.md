@@ -110,7 +110,7 @@ gallery:
             ### Primary Logo
 
 
-            To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font that is inspired by old shop signs and billboards.
+            To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font inspired by old shop signs and billboards.
 
 
             I also incorporated triangles, each a bit asymmetrical and imperfect, to nod toward the pieced-together nature of quilts and the handmade quality of many vernacular signs.
