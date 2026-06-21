@@ -146,7 +146,7 @@ gallery:
     - layout: full-width
       elements:
         - type: image
-          file: /assets/images/spread-mockup-small.jpg
+          file: /assets/images/spread-mockup-small-3-2.jpg
           alt: open magazine full spread
       object_fit: contain
 ---
