@@ -47,7 +47,7 @@ gallery:
           file: /assets/images/map-flat-lat-small.jpg
           alt: Flat lay of admissions marketing map
           caption: "Inspiration: Vintage travel maps + New York Time’s 36 Hours features"
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
