@@ -23,7 +23,7 @@ project_description: >-
   ### Design Scope
 
 
-  Develop a printed guide template and proof of concept that on par visually with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
+  Develop a printed guide template and proof of concept that is visually on par with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
 main_image:
   file: /assets/images/hand-holding-book-small.jpg
   alt: Guidebook prototype being held by a hand against a yellow background
