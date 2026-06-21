@@ -62,6 +62,18 @@ module.exports = function (eleventyConfig) {
 
     });
 
+    eleventyConfig.addCollection("pagesById", function(collectionApi) {
+        const pages = {};
+
+        collectionApi.getAll().forEach(item => {
+            if (item.data.id) {
+            pages[item.data.id] = item;
+            }
+        });
+
+        return pages;
+    });
+
     eleventyConfig.addFilter("findProjectIndex", function(projects, fileSlug) {
         return projects.findIndex(project => project.fileSlug === fileSlug);
     });

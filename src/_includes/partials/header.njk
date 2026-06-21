@@ -7,10 +7,11 @@
         <span class="hamburger"></span>
     </button>
     <div class="nav-links">
-      {% for item in site.navigation %}
+      {% for id in site.navigation_menu %}
+        {% set item = collections.pagesById[id] %}
         <a href="{{ item.url | url }}"
-           class="{% if item.match in page.url %}active{% endif %}">
-          {{ item.title }}
+          class="{% if item.url in page.url %}active{% endif %}">
+          {{ item.data.title }}
         </a>
       {% endfor %}
     </div>

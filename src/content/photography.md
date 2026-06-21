@@ -1,4 +1,5 @@
 ---
+id: photography
 layout: layouts/photography.njk
 title: Photography
 slug: photography

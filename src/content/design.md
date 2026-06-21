@@ -1,4 +1,5 @@
 ---
+id: design
 layout: layouts/design.njk
 title: Design
 slug: design

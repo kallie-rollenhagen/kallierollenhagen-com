@@ -4,26 +4,5 @@
   "email": "hello@kallierollenhagen.com",
   "analyticsId": "G-PW79KJEVBF",
 
-  "navigation": [
-    {
-      "title": "Design",
-      "url": "/design",
-      "match": "design"
-    },
-    {
-      "title": "Sketchbook",
-      "url": "/sketchbook",
-      "match": "/sketchbook"
-    },
-    {
-      "title": "Photography",
-      "url": "/photography",
-      "match": "/photography"
-    },
-    {
-      "title": "About",
-      "url": "/about",
-      "match": "/about"
-    }
-  ]
+  "navigation_menu": ["design", "sketchbook", "photography", "about"]
 }

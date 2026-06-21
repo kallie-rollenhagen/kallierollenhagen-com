@@ -61,7 +61,7 @@ output_1602.avif
 
 ## To Do
 * Revise About full width layout
-* Allow to edit page title and permalink
+* Changes to core page slug automatically update in nav menu links
 * Edit _data/site.json fields in Decap
 * SEO tagging
 * Integrate p5.js project into Wada Quilts page

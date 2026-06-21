@@ -1,4 +1,5 @@
 ---
+id: sketchbook
 layout: layouts/sketchbook.njk
 title: Sketchbook
 slug: sketchbook

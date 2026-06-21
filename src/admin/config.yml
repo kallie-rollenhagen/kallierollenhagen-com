@@ -259,6 +259,34 @@ collections:
     label: Site Administration
     files:
 
+      - label: Site Settings
+        name: site_settings
+        file: src/_data/site.json
+        fields:
+          - label: Site Title
+            name: title
+            widget: string
+          - label: Site Description
+            name: description
+            widget: string
+          - label: Site Email
+            name: email
+            widget: string
+          - label: Navigation Menu
+            name: navigation
+            widget: list
+            field:
+              label: Page
+              name: page
+              widget: relation
+              collection: pages
+              search_fields: ["title"]
+              value_field: "id"
+              display_fields: ["title"]
+          - label: Google Analytics ID
+            name: analyticsId
+            widget: string
+
       - label: README
         name: readme
         file: README.md
