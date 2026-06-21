@@ -109,5 +109,26 @@ gallery:
           focal_x: 50
           focal_y: 50
           file: /assets/images/arb-map-annotated.png
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Event Visual Identity
+
+
+            **Logo:** Apply type to an icon developed for Carleton’s Sustainable Futures initiative by Cody Hudson of Struggle, Inc. 
+
+
+            ### Align With Carleton's Parent Brand 
+
+
+            The logo and assets will use Carleton’s primary sans serif typeface — Gotham— as well as one of its primary colors (maize) and a secondary palette color (green). It will also pull from Carleton’s neutral palette.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/colors-type-logo-arb.jpg
+          alt: logo, type, and color palette for event visual identity
   type: grid
 ---
