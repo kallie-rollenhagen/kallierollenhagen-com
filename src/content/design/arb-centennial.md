@@ -131,25 +131,6 @@ gallery:
           file: /assets/images/colors-type-logo-arb.jpg
           alt: logo, type, and color palette for event visual identity
     - object_fit: contain
-      row_margin_bottom: small
-      layout: full-width
-      elements:
-        - type: text
-          text: >-
-            ### Engagement Stops Signage
-
-
-            There will be four engagement stops located in the Arb, each with a bold maize design. 
-
-
-            1. **Arb Entry:** Positioned next to the tapestry entrance at the top prairie in the lower Arb. 
-
-            2. **Bur Oak Photo Frame:** Frames the most photographed tree in the Arb and encourages visitors to add their own photos. 
-
-            3. **Prairie Restoration Visualization:** Visitors can scan the QR code for an interactive rendering showing how the prairie has been restored.
-
-            4. **Seed Stop:** This decorative "bus" stop encases native prairie seeds and plants, captured in resin, and invites visitors to sit and learn.
-    - object_fit: contain
       row_margin_bottom: large
       layout: full-width
       elements:
@@ -158,5 +139,29 @@ gallery:
           focal_y: 50
           file: /assets/images/stops-signage.jpg
           alt: Mockup of the four signs, including a person to show scale
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Engagement Stops Signage
+
+
+            There will be four engagement stops located in the Arb, each with a bold maize design.
+        - type: text
+          text: >-
+            * **Arb Entry:** Positioned next to the tapestry entrance at the top
+            prairie in the lower Arb.
+
+
+            * **Bur Oak Photo Frame:** Frames the most photographed tree in the Arb and encourages visitors to add their own photos.
+        - type: text
+          text: >-
+            * **Prairie Restoration Visualization:** Visitors can scan the QR
+            code for an interactive rendering showing how the prairie has been
+            restored.
+
+            * **Seed Stop:** This decorative "bus" stop encases native prairie seeds and plants, captured in resin, and invites visitors to sit and learn.
   type: grid
 ---
