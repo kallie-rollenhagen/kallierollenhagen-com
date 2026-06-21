@@ -40,4 +40,27 @@ gallery:
           focal_y: 50
           file: /assets/images/diner-menu-mockup-small-cropped.jpg
           alt: Rural Design Studio menu of services, front and back
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### What problem was I trying to solve? 
+
+
+            Rural places are filled with creative people. Yet there is lack of resources — both people and money — for contemporary graphic design, web design, and branding services in rural communities.\
+
+            \
+
+            Rural doers, makers, and innovators deserve creative design partners who can help elevate the third spaces they’re creating, the businesses they’re launching, the policies they’re advocating for, and the plans they’re making for continued vitality.\
+
+            \
+
+            **They need an agency on the inside.**
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/yankon-sd.jpg
+          alt: Yankton, SD
 ---
