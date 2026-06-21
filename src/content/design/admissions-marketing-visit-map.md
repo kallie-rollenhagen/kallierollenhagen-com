@@ -66,7 +66,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/bx6a6645.jpg
+          file: /assets/images/bx6a6645-cropped.jpg
           alt: hands holding admissions map
         - type: image
           focal_x: 50
