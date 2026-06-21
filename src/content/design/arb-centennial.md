@@ -149,12 +149,11 @@ gallery:
             **Bur Oak Photo Frame:** Frames the most photographed tree in the Arb and encourages visitors to add their own photos.
         - type: text
           text: >-
-            **Prairie Restoration Visualization:** Visitors can scan the QR code
-            for an interactive rendering showing how the prairie has been
-            restored.
+            **Prairie Restoration Visualization:** The QR code opens an
+            interactive rendering that shows how the prairie has been restored.
 
 
-            **Seed Stop:** This decorative "bus" stop encases native prairie seeds and plants, captured in resin, and invites visitors to sit and learn.
+            **Seed Stop:** This decorative "bus" stop features native prairie seeds and plants, captured in resin. It invites visitors to pause.
     - object_fit: contain
       row_margin_bottom: large
       layout: full-width
