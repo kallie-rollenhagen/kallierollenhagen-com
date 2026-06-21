@@ -16,4 +16,5 @@ design_projects:
   - wada-quilts
   - admissions-marketing-visit-map
   - goldenrod
+  - arb-centennial
 ---

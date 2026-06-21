@@ -6,6 +6,7 @@ slug: photography
 scripts:
   - assets/js/swipe.js
   - assets/js/lightbox.js
+seoDescription: Travel and editorial photos taken by Kallie Rollenhagen
 gallery:
   type: masonry
   lightbox: true
@@ -54,4 +55,42 @@ gallery:
         - type: image
           file: /assets/images/decorah-luna-valley.jpg
           alt: field in Decorah, Iowa
+    - object_fit: contain
+      row_margin_bottom: null
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/lilacs-iceland.jpg
+          alt: lilacs against clapboard building
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/teddy-roosevelt3.jpg
+          alt: horse on a ridge line
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/orange-house-iceland.jpg
+          alt: orange building on a ridge line
+    - object_fit: contain
+      row_margin_bottom: null
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/torekov2.jpg
+          alt: patio of restaurant in Torekov, Sweden
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/horse-iceland.jpg
+          alt: Icelandic horse walking through water
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/philadelphia-2025-453.jpg
+          alt: Calder Gardens exterior
 ---

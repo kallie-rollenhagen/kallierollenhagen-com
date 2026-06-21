@@ -5,28 +5,23 @@ seoDescription: Visual identity for centennial celebration of Carleton College's
 publish: true
 roles_played: Brand Identity + Design
 project_description: >-
-  Carleton College stewards an 800 acre arboretum — “the Arb” — directly
-  adjacent to its campus in Northfield, Minnesota. The Arb is located on a
-  natural border between prairie and forest habitat, partly on the floodplain of
-  the Cannon River. It is free and open to the public. 
+  Enhanced environmental design project to help celebrate the 100th anniversary
+  of Carleton College's Cowling Arboretum in 2026–2027.
 
 
   MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
 
 
-  ### Why It Matters 
+  ### Scope & Deliverables
 
 
-  The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. 
+  Graphic identity that complements the College's parent brand, wayfinding signage, and a series of place-based engagement installations that engage and educate visitors to the Arb.
 
 
-  Personally, the Arb is part of why we moved to Northfield. I’m there weekly. It’s prairie expanses feel like a second home. 
+  ### Design Challenges
 
 
-  ### Why Now 
-
-
-  In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
+  Keep the main focus on the beauty of the Arb itself, align efforts with the College's brand, and consider the longevity and materiality of installations from a sustainability perspective.
 main_image:
   focal_x: 50
   focal_y: 50
@@ -39,6 +34,80 @@ thumbnail_image:
   alt: decorative "bus" stop in Arb
 gallery:
   lightbox: false
-  rows: []
+  rows:
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Context
+
+
+            Carleton College stewards an 800-acre arboretum — “the Arb” — directly adjacent to its campus in Northfield, Minnesota. The Arb is located on a natural border between prairie and forest habitat, partly on the floodplain of the Cannon River. It is free and open to the public. 
+
+
+            ### Why It Matters 
+
+
+            The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. 
+
+
+            Personally, the Arb is part of why we moved to Northfield. I’m there weekly. Its prairie expanses feel like a second home. 
+
+
+            ### Why Now 
+
+
+            In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-collage-web-block.jpg
+          alt: collage of photos from different seasons in the Arb
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Inspiration & Design Parameters
+
+
+            * The beauty of the landscape should always be the focal point, merely enhanced by signage and installations.
+
+            * When possible, educate visitors about the importance of this space and how it is a model living classroom.
+
+            * Find opportunities to get people to view a familiar space with new appreciation, in collaboration with artists, educators, and environmentalists.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-inspo-web-block.jpg
+          alt: Examples of place based art installations
+    - object_fit: cover
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Site Overview: Carleton College | Northfield, MN
+
+
+            The Arb is adjacent to Carleton’s campus on the northeast side of Northfield. It contains wetland (adjacent to the Cannon River), prairie, and forests.
+
+
+            ### Land History 
+
+
+            Carleton’s campus is on the ancestral homelands of the Wahpekute and Mdewakanton bands of the Dakota Nation. While there is no evidence of permanent Dakota dwellings in Northfield or the Arb, it was an important hunting and fishing pathway for the nomadic Wahpekute band.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-google-map.jpg
+          alt: Aerial view of the Arb
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-map-annotated.png
   type: grid
 ---
