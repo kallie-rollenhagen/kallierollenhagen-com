@@ -8,8 +8,10 @@ roles_played: Creative + Art Direction | Design
 credits:
   - role: Photography
     person: Ackerman + Gruber
+    url: https://www.ackermangruber.com/
   - role: lllustration
     person: Struggle Inc. (Cody Hudson)
+    url: https://www.struggleinc.com/
   - role: Website
     person: Doug Bratland
 project_description: >-
