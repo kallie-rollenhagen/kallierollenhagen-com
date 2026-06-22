@@ -232,7 +232,7 @@ gallery:
           focal_y: 50
           file: /assets/images/frame-v3-no-photos-mockup-number.jpg
           alt: Mockup of yellow frame around bur oak with a person taking a photo
-    - object_fit: cover
+    - object_fit: contain
       row_margin_bottom: large
       layout: thirds
       elements:
@@ -253,7 +253,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/praire-restoration-mockups-number.jpg
+          file: /assets/images/praire-restoration-mockups-number-cropped2.jpg
           alt: Mockup of virtual reality interaction in action
   type: grid
 ---
