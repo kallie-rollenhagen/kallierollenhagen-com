@@ -253,7 +253,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/praire-restoration-mockups-number.jpg
+          file: /assets/images/praire-restoration-mockups-number-cropped.jpg
           alt: Mockup of virtual reality interaction in action
   type: grid
 ---
