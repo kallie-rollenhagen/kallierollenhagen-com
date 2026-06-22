@@ -1,6 +1,6 @@
 ---
-id: about
 title: About
+slug: about
 seoDescription: About Kallie Rollenhagen
 photo:
   file: /assets/images/Kallie-Rollenhagen-About.avif
@@ -19,13 +19,12 @@ links:
   - text: Photography | For Hire
     url: https://kallierollenhagen.photography/
 bio: >-
-  Kallie is a designer, creative director, photographer, and artist. She loves
-  working with scrappy entrepreneurs, rural regenerators, and other artists and
-  designers. She partners with doers and makers to elevate their work (and make
-  new friends).
+  Kallie is a designer, creative director, photographer, and artist. She works
+  with scrappy entrepreneurs, rural regenerators, and a range of doers and
+  makers to elevate their work (and make new friends).
 
 
-  Raised on a corn farm on the flat, fertile soil of south central Minnesota, she has a deep love of prairie places and people, with a special attraction to the less-flat topography of the driftless region. One of her core beliefs is that small places deserve nice things.
+  Raised on a corn farm in south central Minnesota, she has a deep love of prairie places and people, with a special attraction to the less-flat topography of the driftless region. One of her core beliefs is that small places deserve nice things.
 
 
   Kallie is currently the director of design and user experience at Carleton College.
@@ -44,5 +43,5 @@ education:
   - school: University of Wisconsin-Milwaukee
     degree: BA in psychology, minor in architecture
 layout: layouts/about.njk
-slug: about
+id: about
 ---

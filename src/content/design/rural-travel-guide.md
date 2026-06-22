@@ -70,8 +70,7 @@ gallery:
           focal_y: 50
           file: /assets/images/monocle.jpg
           alt: Multiple Monocle Travel guidebooks
-          caption: 'Monocle Travel Guide Series: Replicate the size (5.5" x 8.3"), similar
-            tone'
+          caption: 'Monocle Travel Guides: Similar size (5.5" x 8.3"), tone'
         - type: image
           focal_x: 50
           focal_y: 50

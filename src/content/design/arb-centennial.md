@@ -255,5 +255,37 @@ gallery:
           focal_y: 50
           file: /assets/images/praire-restoration-mockups-number-cropped2.jpg
           alt: Mockup of virtual reality interaction in action
+    - object_fit: cover
+      row_margin_bottom: small
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/seed-stop-mocked-up-v1.jpg
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/seed-stop-images.jpg
+          alt: Hands gathering native seeds
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/seed-stop-assets-number.jpg
+          alt: art displays of plants and seeds
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: "### Stop 4: Seed Stop With Native Plants"
+        - type: text
+          text: Carleton’s restored Arb prairies support approximately 80 different native
+            prairie plant species. Community volunteers collect native seeds,
+            which then repopulate a monoculture field.
+        - type: text
+          text: "**Artist partner:** Mary Jo Hoffman could lay out the collected seeds,
+            which would then be set in resin and used to construct a seed stop
+            from bus stop infrastructure."
   type: grid
 ---
