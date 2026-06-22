@@ -60,7 +60,6 @@ ffmpeg -i input.tif \
 output_1602.avif
 
 ## To Do
-* Center hamburger menu links
 * Revise About full width layout
 * SEO tagging
 * Integrate p5.js project into Wada Quilts page

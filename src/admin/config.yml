@@ -105,6 +105,12 @@ gallery_field: &gallery_field
               widget: object
               fields:
                 - { label: Text Content, name: text, widget: 'richtext' }
+
+            - label: p5.js Sketch
+              name: p5js
+              widget: object
+              fields:
+                - { label: Sketch, name: sketch, widget: 'string' }
             
             - label: Spacer
               name: spacer

@@ -78,6 +78,11 @@ module.exports = function (eleventyConfig) {
         return projects.findIndex(project => project.fileSlug === fileSlug);
     });
 
+    eleventyConfig.setNunjucksEnvironmentOptions({
+        trimBlocks: true,
+        lstripBlocks: true
+    });
+
     const md = markdownIt({
         html: true,
         breaks: false,
