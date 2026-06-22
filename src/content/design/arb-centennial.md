@@ -195,10 +195,7 @@ gallery:
             ### Stop 1: Upper Arb Entrance
 
 
-            ##### Tapestry entrance 
-
-
-            **Artist:** Commission Rachel Hayes 
+            **Artist:** Commission Rachel Hayes for a tapestry entrance installation
 
 
             **Canopy materials:** Upcycled fabrics (e.g., sheets left by students at the end of the year) dyed in Carleton brand colors, hung from painted wooden posts.
