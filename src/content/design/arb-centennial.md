@@ -232,5 +232,28 @@ gallery:
           focal_y: 50
           file: /assets/images/frame-v3-no-photos-mockup-number.jpg
           alt: Mockup of yellow frame around bur oak with a person taking a photo
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Stop 3: Prairie Restoration Educational Display
+
+
+            This stop shows the transformation of a monoculture corn field to a native prairie.
+
+
+            A stationary slab sign with a transparent frame will include a QR code where visitors can scan to get a virtual reality view of how the prairie has transformed from corn field to native plants over the past decade.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/restoration-field.jpg
+          alt: Field with flowers
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/praire-restoration-mockups.jpg
+          alt: Mockup of virtual reality interaction in action
   type: grid
 ---
