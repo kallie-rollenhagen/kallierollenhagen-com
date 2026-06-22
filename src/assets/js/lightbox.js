@@ -26,9 +26,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = lightbox.querySelector(".lightbox-close");
   const prevBtn = lightbox.querySelector(".lightbox-prev");
   const nextBtn = lightbox.querySelector(".lightbox-next");
-
+  var triggers = [];
   // Gather arrays of all available group images on the project page
-  const triggers = Array.from(document.querySelectorAll(".lightbox-trigger"));
+  if (document.querySelector(".photography-column")) {
+    const columns = Array.from(document.querySelectorAll(".photography-column"))
+      .map(col => Array.from(col.querySelectorAll(".lightbox-trigger")));
+
+    const maxLength = Math.max(...columns.map(col => col.length));
+
+    for (let i = 0; i < maxLength; i++) {
+      for (const column of columns) {
+        if (column[i]) {
+          triggers.push(column[i]);
+        }
+      }
+    }
+  } else {
+    // Sketchbook page: DOM order is already correct
+    triggers = Array.from(document.querySelectorAll(".lightbox-trigger"));
+  }
+  // const triggers = Array.from(document.querySelectorAll(".lightbox-trigger"));
 
   const lightboxMQ = window.matchMedia("(min-width: 636px)");
   
