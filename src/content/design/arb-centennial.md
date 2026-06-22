@@ -132,6 +132,15 @@ gallery:
           alt: logo, type, and color palette for event visual identity
     - object_fit: contain
       row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/stops-signage.jpg
+          alt: Mockup of the four signs, including a person to show scale
+    - object_fit: contain
+      row_margin_bottom: large
       layout: thirds
       elements:
         - type: text
@@ -155,25 +164,7 @@ gallery:
 
             **Seed Stop:** This decorative "bus" stop features native prairie seeds and plants, captured in resin. It invites visitors to pause.
     - object_fit: contain
-      row_margin_bottom: large
-      layout: full-width
-      elements:
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/stops-signage.jpg
-          alt: Mockup of the four signs, including a person to show scale
-    - object_fit: contain
       row_margin_bottom: small
-      layout: halves
-      elements:
-        - type: text
-          text: "### Wayfinding Signage"
-        - type: text
-          text: A series of wayfinding signs support the event branding and guide users to
-            the interactive stops within the Arb.
-    - object_fit: contain
-      row_margin_bottom: large
       layout: halves
       elements:
         - type: image
@@ -186,5 +177,14 @@ gallery:
           focal_y: 50
           file: /assets/images/wayfinding-signs-mockups.jpg
           alt: Arb wayfinding signs mocked up
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: text
+          text: "### Wayfinding Signage"
+        - type: text
+          text: A series of wayfinding signs support the event branding and guide users to
+            the interactive stops within the Arb.
   type: grid
 ---
