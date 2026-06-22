@@ -19,7 +19,7 @@ project_description: >-
   Develop a dynamic visual identity system.
 
 
-  ### Core Values
+  ### Business Core Values
 
 
   <ul><li>Small places deserve nice things.</li><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
