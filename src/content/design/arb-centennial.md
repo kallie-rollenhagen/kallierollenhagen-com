@@ -212,5 +212,28 @@ gallery:
           focal_y: 50
           file: /assets/images/tapestry-mockup-v2-flattened-number.jpg
           alt: Mockup of canopy entrance to Arb
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Stop 2: Photo Moment of Big Bur Oak 
+
+
+            The bur oak tree on the hillside prairie is one of the most photographed trees in the Arboretum. It is one of Senior Lecturer in Biology Sarah Deel’s favorites: “This is a spot where I feel surrounded by nature—the sky is large, the prairie is soothing, and the bur oaks are majestic. The wind turbine on the horizon is the only sign of humanity, and reminds me that we are striving to make positive changes in our treatment of the natural world.” 
+
+
+            This stop encourages visitors to take and submit a photo, and see how others have photographed this tree over the years via the QR code link. The large frame sits at a distance from the tree to leave an unobstructed experience closer to the tree itself.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bur-oak-sky-expanded-wide.jpg
+          alt: Bur oak in Carleton's Arb
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/frame-v3-no-photos-mockup-number.jpg
+          alt: Mockup of yellow frame around bur oak with a person taking a photo
   type: grid
 ---
