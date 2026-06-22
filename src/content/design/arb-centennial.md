@@ -131,7 +131,7 @@ gallery:
           file: /assets/images/colors-type-logo-arb.jpg
           alt: logo, type, and color palette for event visual identity
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: full-width
       elements:
         - type: image
