@@ -109,5 +109,151 @@ gallery:
           focal_x: 50
           focal_y: 50
           file: /assets/images/arb-map-annotated.png
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Event Visual Identity
+
+
+            **Logo:** Apply type to an icon developed for Carleton’s Sustainable Futures initiative by Cody Hudson of Struggle, Inc. 
+
+
+            ### Align With Carleton's Parent Brand 
+
+
+            The logo and assets will use Carleton’s primary sans serif typeface — Gotham— as well as one of its primary colors (maize) and a secondary palette color (green). It will also pull from Carleton’s neutral palette.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/colors-type-logo-arb.jpg
+          alt: logo, type, and color palette for event visual identity
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/stops-signage.jpg
+          alt: Mockup of the four signs, including a person to show scale
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Engagement Stops Signage
+
+
+            There will be four engagement stops located in the Arb, each with a bold maize design.
+        - type: text
+          text: >-
+            **Arb Entry:** Positioned next to the tapestry entrance at the top
+            prairie in the lower Arb.
+
+
+            **Bur Oak Photo Frame:** Frames the most photographed tree in the Arb and encourages visitors to add their own photos.
+        - type: text
+          text: >-
+            **Prairie Restoration Visualization:** The QR code opens an
+            interactive rendering that shows how the prairie has been restored.
+
+
+            **Seed Stop:** This decorative "bus" stop features native prairie seeds and plants, captured in resin. It invites visitors to pause.
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wayfinding-signs.jpg
+          alt: Arb wayfinding signs at scale
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wayfinding-signs-mockups.jpg
+          alt: Arb wayfinding signs mocked up
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: text
+          text: "### Wayfinding Signage"
+        - type: text
+          text: A series of wayfinding signs support the event branding and guide users to
+            the interactive stops within the Arb.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Stop 1: Upper Arb Entrance
+
+
+            **Artist:** Commission Rachel Hayes for a tapestry entrance installation
+
+
+            **Canopy materials:** Upcycled fabrics (e.g., sheets left by students at the end of the year) dyed in Carleton brand colors, hung from painted wooden posts.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-entrance-cropped.jpg
+          alt: black and white photo of trail to prairie path
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/tapestry-mockup-v2-flattened-number.jpg
+          alt: Mockup of canopy entrance to Arb
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Stop 2: Photo Moment of Big Bur Oak 
+
+
+            The bur oak tree on the hillside prairie is one of the most photographed trees in the Arboretum. 
+
+
+            This stop encourages visitors to take and submit a photo, and see how others have photographed this tree over the years via the QR code link. The large frame sits at a distance from the tree to leave an unobstructed experience closer to the tree itself.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/bur-oak-sky-expanded-wide.jpg
+          alt: Bur oak in Carleton's Arb
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/frame-v3-no-photos-mockup-number.jpg
+          alt: Mockup of yellow frame around bur oak with a person taking a photo
+    - object_fit: cover
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Stop 3: Prairie Restoration Educational Display
+
+
+            This stop shows the transformation of a monoculture corn field to a native prairie.
+
+
+            A stationary slab sign with a transparent frame will include a QR code where visitors can scan to get a virtual reality view of how the prairie has transformed from corn field to native plants over the past decade.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/restoration-field.jpg
+          alt: Field with flowers
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/praire-restoration-mockups-number.jpg
+          alt: Mockup of virtual reality interaction in action
   type: grid
 ---
