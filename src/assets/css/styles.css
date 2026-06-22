@@ -859,7 +859,7 @@ svg {
         z-index: 2500;
         flex-direction: column;
         justify-content: center;
-        align-items: stretch;
+        /* align-items: stretch; */
         /* gap: 24px; */
         /* transform: translateX(100%); */
         opacity: 0;
@@ -869,12 +869,12 @@ svg {
 
     nav .nav-links a {
         font-size: 22px;
-        padding: 12px 24px 12px 50px;
+        /* padding: 12px 24px 12px 50px; */
     }
 
     nav .nav-links a:nth-child(1),
     nav .nav-links a:last-child {
-        padding-left: 50px;
+        /* padding-left: 50px; */
         padding-right: 24px;
         font-size: 22px;
     }
