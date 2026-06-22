@@ -81,4 +81,10 @@ gallery:
           file: /assets/images/challenges-web-block.jpg
           alt: grid of 3 rows and 5 columns showing the progression of block outputs
       object_fit: contain
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: full-width
+      elements:
+        - type: p5js
+          sketch: wada-quilt-pattern.js
 ---
