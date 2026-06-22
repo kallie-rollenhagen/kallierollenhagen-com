@@ -17,7 +17,7 @@ project_description: >-
   Research, brand development, visual identity system, and website design.
 
 
-  ### Brand position
+  ### About Rural Design Studio
 
 
   The Rural Design Studio collaborates with community partners and a network of fellow creatives to provide accessible, place-based design to rural people, places, initiatives, and businesses.
