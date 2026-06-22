@@ -218,7 +218,7 @@ gallery:
             ### Stop 2: Photo Moment of Big Bur Oak 
 
 
-            The bur oak tree on the hillside prairie is one of the most photographed trees in the Arboretum. It is one of Senior Lecturer in Biology Sarah Deel’s favorites: “This is a spot where I feel surrounded by nature—the sky is large, the prairie is soothing, and the bur oaks are majestic. The wind turbine on the horizon is the only sign of humanity, and reminds me that we are striving to make positive changes in our treatment of the natural world.” 
+            The bur oak tree on the hillside prairie is one of the most photographed trees in the Arboretum. 
 
 
             This stop encourages visitors to take and submit a photo, and see how others have photographed this tree over the years via the QR code link. The large frame sits at a distance from the tree to leave an unobstructed experience closer to the tree itself.
