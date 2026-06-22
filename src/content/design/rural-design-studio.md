@@ -125,7 +125,7 @@ gallery:
           file: /assets/images/rds-logo_primary-blue.png
           alt: Single color (blue) Rural Design Studio logo
     - object_fit: cover
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: thirds
       elements:
         - type: image
