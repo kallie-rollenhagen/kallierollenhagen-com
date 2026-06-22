@@ -232,7 +232,7 @@ gallery:
           focal_y: 50
           file: /assets/images/frame-v3-no-photos-mockup-number.jpg
           alt: Mockup of yellow frame around bur oak with a person taking a photo
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: thirds
       elements:
