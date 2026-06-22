@@ -186,5 +186,31 @@ gallery:
         - type: text
           text: A series of wayfinding signs support the event branding and guide users to
             the interactive stops within the Arb.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ### Stop 1: Upper Arb Entrance
+
+
+            ##### Tapestry entrance 
+
+
+            **Artist:** Commission Rachel Hayes 
+
+
+            **Canopy materials:** Upcycled fabrics (e.g., sheets left by students at the end of the year) dyed in Carleton brand colors, hung from painted wooden posts.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-entrance-cropped.jpg
+          alt: black and white photo of trail to prairie path
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/tapestry-mockup-v2-flattened-number.jpg
+          alt: Mockup of canopy entrance to Arb
   type: grid
 ---
