@@ -115,6 +115,7 @@ canvas {
 
 /* Styles for all buttons, maintaining consistency */
 #main-content-wrapper button {
+    font-family: Haskoy;
     padding: 12px 20px;
     /* Consistent padding for all buttons */
     font-size: 1em;
@@ -129,8 +130,8 @@ canvas {
     /* Allow text to wrap if needed */
     text-align: center;
     /* Center text within buttons */
-    width: 100%;
-    max-width: 260px;
+    width: 80%;
+    /* max-width: 260px; */
     /* Consistent max-width for buttons */
     box-sizing: border-box;
     line-height: 1.2;
@@ -163,6 +164,7 @@ canvas {
 
 /* New wrapper for bottom buttons */
 #bottom-buttons-wrapper {
+    text-align: center;
     /* display: flex;
     flex-direction: column;
     align-items: flex-start;
