@@ -154,4 +154,22 @@ gallery:
             using “RDS,” the patchworking of triangles, and brand colors.
         - type: text
           text: This brand mark can be used individually or to create a pattern.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: text
+          text: >-
+            ### Who does RDS work with?
+
+
+            On the client end, RDS partners with economic development agencies, small businesses, nonprofits, foundations, tourism bureaus, and community organizations.
+
+
+            It collaborates with graphic and web designers, branding experts, artists, event professionals, storytellers, and marketing strategists, depending on the project needs and goals.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/who-we-work-with.png
+          alt: diagram showing clients and collaborations
 ---
