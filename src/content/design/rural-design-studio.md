@@ -166,7 +166,7 @@ gallery:
             On the client end, RDS partners with economic development agencies, small businesses, nonprofits, foundations, tourism bureaus, and community organizations.
 
 
-            It collaborates with graphic and web designers, branding experts, artists, event professionals, storytellers, and marketing strategists, depending on the project needs and goals.
+            It collaborates with graphic and web designers, branding experts, artists, event professionals, storytellers, and marketing strategists, depending on the project's needs and goals.
         - type: image
           focal_x: 50
           focal_y: 50
