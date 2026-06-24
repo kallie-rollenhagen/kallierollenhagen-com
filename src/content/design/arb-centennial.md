@@ -36,35 +36,40 @@ gallery:
   lightbox: false
   rows:
     - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/arb-collage-web-block-wide.jpg
+          alt: collage of Arb images
+    - object_fit: contain
       row_margin_bottom: large
-      layout: right-wide
+      layout: thirds
       elements:
         - type: text
           text: >-
             ### Context
 
 
-            Carleton College stewards an 800-acre arboretum — “the Arb” — directly adjacent to its campus in Northfield, Minnesota. The Arb is located on a natural border between prairie and forest habitat, partly on the floodplain of the Cannon River. It is free and open to the public. 
-
-
+            Carleton College stewards an 800-acre arboretum — “the Arb” — directly adjacent to its campus in Northfield, Minnesota. The Arb is located on a natural border between prairie and forest habitat, partly on the floodplain of the Cannon River. It is free and open to the public.
+        - type: text
+          text: >-
             ### Why It Matters 
 
 
-            The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. 
-
-
-            Personally, the Arb is part of why we moved to Northfield. I’m there weekly. Its prairie expanses feel like a second home. 
+            The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite.
+        - type: text
+          text: >-
+            Personally, the Arb is part of why we moved to Northfield. I’m there
+            weekly. Its prairie expanses feel like a second home. 
 
 
             ### Why Now 
 
 
             In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/arb-collage-web-block.jpg
-          alt: collage of photos from different seasons in the Arb
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
