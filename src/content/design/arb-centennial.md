@@ -59,17 +59,13 @@ gallery:
             ### Why It Matters 
 
 
-            The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite.
+            The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. Personally, the Arb is a second home and a big reason I live in this place.
         - type: text
           text: >-
-            Personally, the Arb is part of why we moved to Northfield. I’m there
-            weekly. Its prairie expanses feel like a second home. 
-
-
             ### Why Now 
 
 
-            In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place.
+            In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place by asking visitors to engage with it and learn more about the restoration work happening within it.
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
