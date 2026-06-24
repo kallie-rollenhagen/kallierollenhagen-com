@@ -166,13 +166,13 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/rds-tote-mockup-small.jpg
-          alt: Rural Design Studio branded tote
+          file: /assets/images/rds-business-card-small.jpg
+          alt: Rural Design Studio business card mockup
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/rds-business-card-small.jpg
-          alt: Rural Design Studio business card mockup
+          file: /assets/images/rds-tote-mockup-small-3x2.jpg
+          alt: Rural Design Studio branded tote
     - object_fit: contain
       row_margin_bottom: large
       layout: full-width
