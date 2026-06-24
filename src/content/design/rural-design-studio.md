@@ -154,4 +154,13 @@ gallery:
             using “RDS,” the patchworking of triangles, and brand colors.
         - type: text
           text: This brand mark can be used individually or to create a pattern.
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
+            height="450"
+            src="https://embed.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=2130-2166&p=f&viewport=78%2C94%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&page-id=2123%3A1698&embed-host=share"
+            allowfullscreen></iframe>'
 ---
