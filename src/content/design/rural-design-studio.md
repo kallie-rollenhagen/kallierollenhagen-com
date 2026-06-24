@@ -179,7 +179,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/website-homepage-on-grey.jpg
+          file: /assets/images/website-homepage-blank.png
           alt: Mockup of Rural Design Studio site on a laptop
     - object_fit: contain
       row_margin_bottom: large
