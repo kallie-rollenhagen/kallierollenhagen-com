@@ -159,33 +159,8 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: >-
-            <iframe
-
-              src="https://embed.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=6396-2284&p=f&viewport=78%2C94%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&page-id=2123%3A1698&show-proto-sidebar=0&embed-host=share"
-
-              style="
-
-            \    display: block;
-
-
-            \    width: 100%;
-
-
-            \    max-width: 1400px;
-
-
-            \    height: 800px;
-
-
-            \    margin: 0 auto;
-
-
-            \    border: none;
-
-              "
-
-              allowfullscreen>
-
-            </iframe>
+          text: <iframe style=width="100%" max-width="1400" height="800" margin="0 auto"
+            border="non"
+            src="https://embed.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=6396-2284&p=f&viewport=78%2C94%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&page-id=2123%3A1698&show-proto-sidebar=0&embed-host=share"
+            allowfullscreen></iframe>
 ---
