@@ -156,14 +156,6 @@ gallery:
           text: This brand mark can be used individually or to create a pattern.
     - object_fit: contain
       row_margin_bottom: small
-      layout: full-width
-      elements:
-        - type: text
-          text: '<iframe style="border: none" width="100%" height="800"
-            src="https://embed.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=6396-2284&p=f&viewport=78%2C94%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&page-id=2123%3A1698&show-proto-sidebar=0&embed-host=share"
-            allowfullscreen></iframe>'
-    - object_fit: contain
-      row_margin_bottom: small
       layout: thirds
       elements:
         - type: image
@@ -181,4 +173,21 @@ gallery:
           focal_y: 50
           file: /assets/images/rds-business-card-small.jpg
           alt: Rural Design Studio business card mockup
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-sidewalk-sign-mockup-narrow.jpg
+          alt: Rural Design Studio sidewalk sign
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: '<iframe style="border: none" width="100%" height="800"
+            src="https://embed.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=6396-2284&p=f&viewport=78%2C94%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&page-id=2123%3A1698&show-proto-sidebar=0&embed-host=share"
+            allowfullscreen></iframe>'
 ---
