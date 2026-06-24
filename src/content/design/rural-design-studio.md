@@ -144,7 +144,7 @@ gallery:
           file: /assets/images/tray-mockup-small-800x820.jpg
           alt: lunch tray with RDS pattern sheet of paper on it
     - object_fit: contain
-      row_margin_bottom: small
+      row_margin_bottom: large
       layout: thirds
       elements:
         - type: text
