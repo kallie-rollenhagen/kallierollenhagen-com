@@ -192,7 +192,7 @@ gallery:
             Studio, I incorporated user feedback on what would be useful to see
             on a studio website.
         - type: text
-          text: I mocked up a [prototype in
-            Figma](https://www.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=2123-1698&p=f&viewport=78%2C94%2C0.02&t=qtHud0TRbsnadNE3-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&show-proto-sidebar=1).
+          text: I mocked up a **[prototype in
+            Figma](https://www.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=2123-1698&p=f&viewport=78%2C94%2C0.02&t=qtHud0TRbsnadNE3-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&show-proto-sidebar=1)**.
             I continued to refine this prototype based on user feedback.
 ---
