@@ -173,21 +173,26 @@ gallery:
           file: /assets/images/who-we-work-with.png
           alt: diagram showing clients and collaborations
     - object_fit: contain
-      row_margin_bottom: large
-      layout: right-wide
+      row_margin_bottom: small
+      layout: full-width
       elements:
-        - type: text
-          text: >-
-            ### Designing the Site
-
-
-            Once I established a brand identity and platform for the Rural Design Studio, I incorporated user feedback on what would be useful to see on a studio website.
-
-
-            I mocked up a [prototype in Figma](https://www.figma.com/proto/6qsqt22lbveu6Z11EoLJSu/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?page-id=2123%3A1698&node-id=6396-2284&viewport=-465%2C71%2C0.07&t=kHeRUVTyXW6XciPq-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&show-proto-sidebar=1). I continued to refine this prototype based on user feedback.
         - type: image
           focal_x: 50
           focal_y: 50
           file: /assets/images/website-homepage-on-green.jpg
-          alt: Mockup up Rural Design Studio website on laptop
+          alt: Mockup of Rural Design Studio site on a laptop
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: "### Designing the Site"
+        - type: text
+          text: Once I established a brand identity and platform for the Rural Design
+            Studio, I incorporated user feedback on what would be useful to see
+            on a studio website.
+        - type: text
+          text: I mocked up a [prototype in
+            Figma](https://www.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=2123-1698&p=f&viewport=78%2C94%2C0.02&t=qtHud0TRbsnadNE3-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&show-proto-sidebar=1).
+            I continued to refine this prototype based on user feedback.
 ---
