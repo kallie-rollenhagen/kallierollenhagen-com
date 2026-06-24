@@ -1,0 +1,347 @@
+.p5js {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+#main-content-wrapper {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / 13;
+    /* gap: 35px; */
+    width: 100%;
+    max-width: 1400px;
+    background-color: transparent;
+    /* No background color here */
+    box-shadow: none;
+    /* No shadow */
+    align-items: flex-start;
+    /* Ensure panels align at the top */
+}
+
+#left-panel,
+#center-panel,
+#right-panel {
+    /* Added right-panel back here */
+    background-color: transparent;
+    /* Panels blend into the white background */
+    border-radius: 8px;
+    box-shadow: none;
+    /* No shadow on panels */
+    /* display: flex; */
+    /* display: grid; */
+    /* flex-direction: column; */
+    align-items: flex-start;
+    /* Left align content */
+    justify-content: flex-start;
+    /* Align content to the top */
+}
+
+#left-panel {
+    /* flex: 1; */
+    /* min-width: 250px;
+    max-width: 300px; */
+    grid-column: 1 / 5;
+
+    /* Constrain left panel width for better layout */
+    /* min-height calculated to match center-panel's content height for bottom alignment */
+    min-height: calc($ {
+            quiltSize
+        }
+
+        px + 15px + 24px);
+    /* quiltSize + quiltNameElement margin-top + quiltNameElement height */
+}
+
+#center-panel {
+    /* flex: 2; */
+    align-items: center;
+    /* Center canvas horizontally */
+    /* min-width: 300px; */
+    justify-content: flex-start;
+    /* Align content to the top within center panel */
+    padding-top: 0;
+    grid-column: 5 / 9;
+    /* Make canvas flush with left-panel's h1 */
+}
+
+#right-panel {
+    /* Re-added right panel styles */
+    /* flex: 0 0 250px; Fixed width for right panel */
+    /* display: flex; */
+    /* flex-direction: column; */
+    grid-column: 9 / 13;
+    align-items: center;
+    /* Center content in right panel */
+    justify-content: flex-start;
+    /* Top align content */
+    /* padding: 20px; Padding inside the right panel */
+    box-shadow: none;
+    /* Removed shadow */
+    background-color: transparent;
+    /* Changed to transparent background */
+}
+
+#intro-paragraph {}
+
+#quilt-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    /* Margin above text below canvas */
+    margin-bottom: 0;
+    /* No margin below if it's the last element after canvas */
+    text-align: center;
+    width: 100%;
+    color: #333;
+    /* Static color */
+}
+
+#wada-quilts-canvas {
+    width: 100%;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
+    object-fit: contain;
+}
+
+/* Styles for all buttons, maintaining consistency */
+#main-content-wrapper button {
+    padding: 12px 20px;
+    /* Consistent padding for all buttons */
+    font-size: 1em;
+    /* Consistent font size for all buttons */
+    margin: 5px 0;
+    /* Vertical margin */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: normal;
+    /* Allow text to wrap if needed */
+    text-align: center;
+    /* Center text within buttons */
+    width: 100%;
+    max-width: 260px;
+    /* Consistent max-width for buttons */
+    box-sizing: border-box;
+    line-height: 1.2;
+    min-height: 50px;
+    /* Adjust line height for wrapped text */
+}
+
+/* Specific overrides for button text fitting */
+#generateButton {
+    /* font-size: 1.1em; */
+}
+
+#generateGridButton,
+#downloadButton {
+    /* Apply same text size to these two */
+    /* font-size: 1.0em; */
+}
+
+/* Custom styles for generate button */
+#generateButton {
+    /* margin-top: 10px; Space from intro text */
+    /* background-color: var(--generate-button-bg); Now dynamic */
+    /* color: var(--generate-button-color); Now dynamic */
+}
+
+#generateButton:hover {
+    /* background-color: var(--generate-button-hover-bg);
+    color: var(--generate-button-hover-color); */
+}
+
+/* New wrapper for bottom buttons */
+#bottom-buttons-wrapper {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: auto; Pushes this wrapper to the bottom of left-panel */
+}
+
+/* Custom styles for generate grid button */
+#generateGridButton {
+    /* background-color: var(--generate-grid-button-bg); /* Now dynamic */
+    /* color: var(--generate-grid-button-color); Now dynamic */
+    /* margin-top: 15px; Space from generate button (if not in wrapper) or other content */
+}
+
+#generateGridButton:hover {
+    /* background-color: var(--generate-grid-button-hover-bg);
+    color: var(--generate-grid-button-hover-color); */
+}
+
+/* Custom styles for download button - now in left-panel */
+#downloadButton {
+    /* background-color: var(--download-button-bg); /* Now dynamic */
+    /* color: var(--download-button-color); Now dynamic */
+    /* margin-top: 5px; Small space between single quilt button and download button */
+}
+
+#downloadButton:hover {
+    /* background-color: var(--download-button-hover-bg);
+    color: var(--download-button-hover-color); */
+}
+
+/* Styles for color swatch display */
+#combination-info {
+    /* font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px; */
+    text-align: center;
+    width: 100%;
+    transition: color 0.5s ease;
+    color: #333;
+    /* Static color for readability on transparent background */
+}
+
+#color-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.color-swatch {
+    width: 80%;
+    /* Smaller swatch size for better fit */
+    height: 50px;
+    /* border: 1px solid #aaa; */
+    border-radius: 4px;
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.3;
+    padding: 10px;
+    /* Adjusted padding */
+    box-sizing: border-box;
+    white-space: normal;
+    /* Allow text to wrap */
+    word-break: break-word;
+    /* Break long words */
+}
+
+.color-text {
+    margin: 2px 0;
+    /* Space between name and hex */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+    #main-content-wrapper {
+        /* flex-direction: column;
+        align-items: center;
+        gap: 20px; */
+    }
+
+    #left-panel,
+    #center-panel,
+    #right-panel {
+        /* Include right-panel for mobile stacking */
+        width: 100%;
+        margin-bottom: var(--gutter_size);
+        /* max-width: 600px; */
+        /* padding: 15px; */
+        /* Re-introduce some padding for mobile panels */
+        box-shadow: none;
+        align-items: center;
+        /* Center content within panels on mobile */
+        min-height: auto;
+        grid-column: 1 / -1;
+        /* Remove fixed min-height for mobile */
+    }
+
+    h1,
+    #intro-paragraph,
+    #generateButton,
+    #generateGridButton,
+    #downloadButton,
+    #combination-info {
+        /* Include combination-info */
+        /* text-align: center; */
+        /* align-self: center; */
+        /* max-width: 90%; */
+    }
+
+    #generateButton,
+    #generateGridButton,
+    #downloadButton {
+        /* margin-top: 15px; */
+        /* Add margin when stacked on mobile */
+    }
+
+    #bottom-buttons-wrapper {
+        /* margin-top: 20px; */
+        /* Add some space when stacked on mobile */
+        /* align-items: center; */
+        margin: 30px 0;
+        text-align: center;
+        display: flex;
+        gap: 10px;
+        /* Center buttons within wrapper on mobile */
+    }
+
+    #color-display {
+        flex-direction: row;
+        /* Display swatches in a row on mobile */
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 10px;
+        /* Smaller gap for mobile */
+        width: auto;
+        /* Allow content to dictate width */
+    }
+
+    .color-swatch {
+        /* width: 90px;  */
+        height: 64px;
+        /* font-size: 0.7em; */
+        /* padding: 5px; */
+    }
+}
+
+/* @media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #intro-paragraph {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+        max-width: 95%;
+    }
+
+    #generateButton {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #quilt-name {
+        font-size: 1.2em;
+    }
+} */

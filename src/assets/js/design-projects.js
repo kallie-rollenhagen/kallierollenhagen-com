@@ -5,10 +5,7 @@ window.addEventListener('load', function() {
             const observer = new IntersectionObserver((entries) => {
                 // Filter to only the newly intersecting cards in this batch
                 const visibleEntries = entries.filter(entry => entry.isIntersecting);
-                entries.forEach(entry => {
-                    console.log("Chrome check:", entry.target, entry.isIntersecting, entry.intersectionRatio);
-                });
-                
+
                 visibleEntries.forEach((entry, batchIndex) => {
                     const card = entry.target.querySelector('.project-card');
                     card.style.setProperty('--delay', `${batchIndex * 0.1}s`);

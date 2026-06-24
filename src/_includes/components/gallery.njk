@@ -14,6 +14,8 @@
                 {{ element.text | markdown | safe }}
             {% elif element.type == "spacer" %}
                 <div></div>
+            {% elif element.type == "p5js" %}
+                {% include "components/wada-quilts.njk" %}
             {% endif %}
             </div>
         {% endfor %}
