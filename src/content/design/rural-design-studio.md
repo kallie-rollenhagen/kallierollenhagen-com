@@ -40,7 +40,7 @@ gallery:
           focal_y: 50
           file: /assets/images/diner-menu-mockup-small-cropped.jpg
           alt: Rural Design Studio menu of services, front and back
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: right-wide
       elements:
@@ -63,7 +63,7 @@ gallery:
           focal_y: 50
           file: /assets/images/yankon-sd.jpg
           alt: Yankton, SD
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: right-wide
       elements:
@@ -154,53 +154,4 @@ gallery:
             using “RDS,” the patchworking of triangles, and brand colors.
         - type: text
           text: This brand mark can be used individually or to create a pattern.
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: halves
-      elements:
-        - type: text
-          text: >-
-            ### Who does RDS work with?
-
-
-            On the client end, RDS partners with economic development agencies, small businesses, nonprofits, foundations, tourism bureaus, and community organizations.
-
-
-            It collaborates with graphic and web designers, branding experts, artists, event professionals, storytellers, and marketing strategists, depending on the project's needs and goals.
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/who-we-work-with.png
-          alt: diagram showing clients and collaborations
-    - object_fit: contain
-      row_margin_bottom: small
-      layout: full-width
-      elements:
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/website-homepage-blank.png
-          alt: Mockup of Rural Design Studio site on a laptop
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: thirds
-      elements:
-        - type: text
-          text: "### Designing the Site"
-        - type: text
-          text: Once I established a brand identity and platform for the Rural Design
-            Studio, I incorporated user feedback on what would be useful to see
-            on a studio website.
-        - type: text
-          text: I mocked up a **[prototype in
-            Figma](https://www.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=2123-1698&p=f&viewport=78%2C94%2C0.02&t=qtHud0TRbsnadNE3-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&show-proto-sidebar=1)**.
-            I continued to refine this prototype based on user feedback.
-    - object_fit: contain
-      row_margin_bottom: large
-      elements:
-        - type: text
-          text: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
-            height="450"
-            src="https://embed.figma.com/proto/ubz1E16IXOjNbYh7vrHFVl/Rollenhagen-Kallie_Capstone_Rural-Design-Studio_website?node-id=6396-2284&p=f&viewport=78%2C94%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6396%3A2284&show-proto-sidebar=1&embed-host=share"
-            allowfullscreen></iframe>'
 ---
