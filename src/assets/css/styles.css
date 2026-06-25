@@ -386,11 +386,11 @@ main {
     display: grid;
     gap: var(--gutter_size);
     grid-column: 2 / 14;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 
     grid-template-areas:
-        "text first first"
-        "text first first";
+        "text first"
+        "text first";
 }
 
 .design-project-grid .image-wrapper {

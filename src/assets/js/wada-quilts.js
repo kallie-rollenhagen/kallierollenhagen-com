@@ -1,19 +1,18 @@
 // --- 1. Global Variables and Color Palettes ---
 let wadaColorsData;
-let generateButton;
+generateButton = document.getElementById("generateButton");
 let downloadButton;
 let singleQuiltButton; // Removed from previous version, now effectively "Generate Quilt Grids" button
 let quiltBlockCanvas; // Reference to the p5.js canvas
 let quiltSize;
 
 function calculateQuiltSize() {
-//   return min(windowWidth * 0.9, 672);
     const container = document.getElementById("wada-quilts-canvas");
-    // console.log(`calulateQuiltSize = ${container.clientWidth}`)
-    // return container.clientWidth;
-    console.log(`calculateQuiltSize: ${container.clientWidth}`);
-
-    return container.getBoundingClientRect().width;
+    // console.log(`calculateQuiltSize: ${container.clientWidth}`);
+    const canvasSize = container.getBoundingClientRect().width;
+    padding = canvasSize * 0.03;
+    individualQuiltBlockSize = (canvasSize - (5 * padding)) / 4;
+    return {"canvasSize": canvasSize, "padding": padding, blockSize: individualQuiltBlockSize}
 }
 
 let mainContentWrapper;
@@ -28,10 +27,17 @@ let quiltNameElement = document.getElementById("quilt-name");
 let colorSwatches = Array.from(document.querySelectorAll('.color-swatch'));
 let combinationInfoSpan = document.getElementById("combination-info");
 
-let currentCombination;
-let currentPattern;
 let currentCombinationId;
+let currentCombination;
 let currentShuffledColors;
+let currentPattern;
+let currentBlocksGrid = [];
+let display_text = '';
+let display_swatches = true;
+
+const modeToggle = document.getElementById("modeToggle");
+const gridOptionsWrapper = document.getElementById("grid-options-wrapper")
+let currentMode = "single";
 
 // Array of patterns with names and functions
 const quiltPatterns = [
@@ -43,8 +49,74 @@ const quiltPatterns = [
   { name: "Calico Puzzle", func: drawCalicoPuzzle },
   { name: "Battleground Quilt", func: drawBattlegroundQuilt },
   { name: "Double Nine Patch", func: drawDoubleNinePatch },
-  { name: "Ohio Star", func: drawOhioStar }
+  { name: "Ohio Star", func: drawOhioStar },
+  { name: "54-40 or Fight", func: drawFiftyFourForty },
+  { name: "Apple Pie", func: drawApplePie },
+  { name: "Dutchman's Puzzle", func: drawDutchmansPuzzle },
+  { name: "Hovering Hawks", func: drawHoveringHawks },
+  { name: "Grandmother's Puzzle", func: drawGrandmothersPuzzle },
+  { name: "Clay's Choice", func: drawClaysChoice },
+  { name: "Corn and Beans", func: drawCornAndBeans }
 ];
+
+document
+    .getElementById("grid-options")
+    .addEventListener("change", event => {
+
+        const size = Number(event.target.value);
+
+        console.log("Grid size:", size);
+
+        // redraw quilt grid
+        // drawGrid(size);
+
+    });
+
+function setMode(mode) {
+    currentMode = mode;
+
+    modeToggle.classList.toggle("grid", mode === "grid");
+
+    gridOptionsWrapper.classList.toggle("grid-mode", mode === "grid");
+
+    modeToggle.querySelectorAll(".mode-option")
+        .forEach(button => {
+            button.classList.toggle(
+                "active",
+                button.dataset.mode === mode
+            );
+        });
+    
+        if (mode == "grid") {
+            generateButton.textContent = "Generate Quilt Block Grid";
+        } else {
+            generateButton.textContent = "Generate Quilt Block";
+        }
+
+    console.log("Mode:", mode);
+
+    // Your quilt generator logic here
+    // drawSingleQuilt();
+    // drawQuiltGrid();
+}
+
+// Clicking the labels
+modeToggle.querySelectorAll(".mode-option")
+    .forEach(button => {
+        button.addEventListener("click", () => {
+            setMode(button.dataset.mode);
+        });
+    });
+
+// Clicking the switch itself
+modeToggle.querySelector(".toggle-track")
+    .addEventListener("click", () => {
+        setMode(
+            currentMode === "single"
+                ? "grid"
+                : "single"
+        );
+    });
 
 // --- 2. Utility Functions (WCAG contrast and Color Manipulation) ---
 
@@ -122,100 +194,46 @@ function darkenColor(p5Color, amount) {
 }
 
 // Updates the small color swatches below the canvas with names and hex codes
-function updateColorDisplay(combinationId, currentCombination) {
+function updateColorDisplay() {
     if (!combinationInfoSpan) {
         console.error("combinationInfoSpan not found for combination number update.");
         return;
     }
-    combinationInfoSpan.innerHTML = `${currentPattern.name}<br>(Combination: ${currentCombinationId})`;
+    combinationInfoSpan.innerHTML = display_text;
+    const color_display = document.getElementById('color-display');
 
-    for (let i = 0; i < currentCombination.length; i++) {
-        const swatch = colorSwatches[i];
-        const colorData = wadaColorsData.colors[currentCombination[i]];
+    color_display.classList.toggle("active", display_swatches == true);
 
-        if (!swatch) {
-            console.error(`Color swatch element at index ${i} is null or undefined.`);
-            continue;
+    if (display_swatches == true) {
+        for (let i = 0; i < currentCombination.length; i++) {
+            const swatch = colorSwatches[i];
+            const colorData = wadaColorsData.colors[currentCombination[i]];
+    
+            if (!swatch) {
+                console.error(`Color swatch element at index ${i} is null or undefined.`);
+                continue;
+            }
+    
+            swatch.style.backgroundColor = colorData.hex;
+    
+            const textColorForSwatch = getAccessibleTextColor(colorData.hex, 4.5);
+            swatch.textContent = ''; // Clear previous content
+    
+            const nameSpan = createElement('span', colorData.name);
+            nameSpan.class('color-text');
+            nameSpan.style('color', textColorForSwatch);
+            nameSpan.parent(swatch);
+    
+            const hexSpan = createElement('span', colorData.hex.toUpperCase());
+            hexSpan.class('color-text');
+            hexSpan.style('color', textColorForSwatch);
+            hexSpan.parent(swatch);
         }
 
-        swatch.style.backgroundColor = colorData.hex;
+    } else {
 
-        const textColorForSwatch = getAccessibleTextColor(colorData.hex, 4.5);
-        swatch.textContent = ''; // Clear previous content
-
-        const nameSpan = createElement('span', colorData.name);
-        nameSpan.class('color-text');
-        nameSpan.style('color', textColorForSwatch);
-        nameSpan.parent(swatch);
-
-        const hexSpan = createElement('span', colorData.hex.toUpperCase());
-        hexSpan.class('color-text');
-        hexSpan.style('color', textColorForSwatch);
-        hexSpan.parent(swatch);
-    }
-}
-
-// Function to update button colors, including hover states
-function updateDynamicStyling(currentCombination) {
-    console.log(currentCombination)
-    const c1_hex = wadaColorsData.colors[currentCombination[0]].hex;
-    const c2_hex = wadaColorsData.colors[currentCombination[1]].hex; // Used for download button
-    const c3_hex = wadaColorsData.colors[currentCombination[2]].hex; // Used for right panel background and info text
-
-    // Apply background color to the main content wrapper
-    const mainContentWrapper = select('#main-content-wrapper');
-    if (mainContentWrapper) mainContentWrapper.style('background-color', 'transparent'); // Kept transparent as body is white
-
-    // Left panel text (static colors)
-    if (h1Element) h1Element.style('color', '#333');
-    if (introParagraphElement) introParagraphElement.style('color', '#555');
-    if (quiltNameElement) quiltNameElement.style.color = '#333';
-
-    // Right panel: Combination Info (removed background color from right panel)
-    const rightPanel = select('#right-panel');
-    if (rightPanel) {
-        rightPanel.style('background-color', 'transparent'); // Make background transparent
-        rightPanel.style('box-shadow', 'none'); // Remove shadow
     }
 
-    const combinationInfoElement = select('#combination-info');
-    if (combinationInfoElement) {
-        const infoTextColor = '#333'; // Static color for readability on white background
-        combinationInfoElement.style('color', infoTextColor);
-        combinationInfoElement.style('text-shadow', 'none'); // Ensure no text shadow
-    }
-
-    // Generate Button styling (orange)
-    if (generateButton) {
-        const generateBtnColor = c1_hex; // Dynamic color
-        generateButton.style.backgroundColor = generateBtnColor;
-        const generateButtonTextColor = getAccessibleTextColor(generateBtnColor, 4.5);
-        generateButton.style.color = generateButtonTextColor;
-        document.documentElement.style.setProperty('--generate-button-hover-bg', darkenColor(color(generateBtnColor), 30).toString());
-        document.documentElement.style.setProperty('--generate-button-hover-color', getAccessibleTextColor(darkenColor(color(generateBtnColor), 30).toString(), 4.5));
-    }
-
-    // Generate Quilt Grids Button styling (newly added button)
-    const generateGridButton = select('#generateGridButton'); // Need to select it by ID
-    if (generateGridButton) {
-        const generateGridBtnColor = c2_hex; // Dynamic color
-        generateGridButton.style('background-color', generateGridBtnColor);
-        const generateGridButtonTextColor = getAccessibleTextColor(generateGridBtnColor, 4.5);
-        generateGridButton.style('color', generateGridButtonTextColor);
-        document.documentElement.style.setProperty('--generate-grid-button-hover-bg', darkenColor(color(generateGridBtnColor), 30).toString());
-        document.documentElement.style.setProperty('--generate-grid-button-hover-color', getAccessibleTextColor(darkenColor(color(generateGridBtnColor), 30).toString(), 4.5));
-    }
-    
-    // Download Button styling (blue-grey)
-    const downloadButton = select('#downloadButton'); // Need to select it by ID
-    if (downloadButton) {
-        const downloadBtnColor = c3_hex; // Dynamic color
-        downloadButton.style('background-color', downloadBtnColor);
-        const downloadButtonTextColor = getAccessibleTextColor(downloadBtnColor, 4.5);
-        downloadButton.style('color', downloadButtonTextColor);
-        document.documentElement.style.setProperty('--download-button-hover-bg', darkenColor(color(downloadBtnColor), 30).toString());
-        document.documentElement.style.setProperty('--download-button-hover-color', getAccessibleTextColor(darkenColor(color(downloadBtnColor), 30).toString(), 4.5));
-    }
 }
 
 // Function to download the canvas as a PNG image
@@ -242,9 +260,9 @@ function shuffleArray(array) {
 // --- 3. Barn Quilt Pattern Functions ---
 
 // Barn Quilt Pattern: Economy Block
-function drawEconomyBlock(colors) {
+function drawEconomyBlock(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let quarter = s / 4;
     let half = s / 2;
 
@@ -266,9 +284,9 @@ function drawEconomyBlock(colors) {
 }
 
 // Barn Quilt Pattern: Shoofly
-function drawShoofly(colors) {
+function drawShoofly(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let third = s / 3;
 
     noStroke();
@@ -292,9 +310,9 @@ function drawShoofly(colors) {
 }
 
 // Barn Quilt Pattern: Nine Patch
-function drawNinePatch(colors) {
+function drawNinePatch(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let third = s / 3;
 
     noStroke();
@@ -316,14 +334,15 @@ function drawNinePatch(colors) {
 }
 
 // Barn Quilt Pattern: Rail Fence
-function drawRailFence(colors) {
+function drawRailFence(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let blockDim = s / 3;
     let stripDim = blockDim / 3;
 
-    const cell = quiltSize / 9;
-    background(c2);
+    const cell = s / 9;
+    fill(c2);
+    rect(0, 0, s, s);
     noStroke();
     fill(c1);
     beginShape();
@@ -401,9 +420,9 @@ function drawRailFence(colors) {
 }
 
 // Barn Quilt Pattern: Calico Puzzle
-function drawCalicoPuzzle(colors) {
+function drawCalicoPuzzle(colors, size) {
     let [c1, c2, c3] = colors; // c1 = corner background, c2 = cross, c3 = center
-    let s = quiltSize;
+    let s = size;
     let third = s / 3;
 
     noStroke();
@@ -453,9 +472,9 @@ function drawCalicoPuzzle(colors) {
 }
 
 // Barn Quilt Pattern: Broken Dishes
-function drawBrokenDishes(colors) {
+function drawBrokenDishes(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let cell = s / 4;
 
     noStroke();
@@ -486,9 +505,9 @@ function drawBrokenDishes(colors) {
 }
 
 // Barn Quilt Pattern: Battleground Quilt
-function drawBattlegroundQuilt(colors) {
+function drawBattlegroundQuilt(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let cellSize = s / 6;
 
     noStroke();
@@ -531,9 +550,9 @@ function drawTwoColorNinePatch(xOffset, yOffset, size, cA, cB) {
 }
 
 // Barn Quilt Pattern: Double Nine Patch
-function drawDoubleNinePatch(colors) {
+function drawDoubleNinePatch(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let third = s / 3;
 
     noStroke();
@@ -558,9 +577,9 @@ function drawDoubleNinePatch(colors) {
 }
 
 // Barn Quilt Pattern: Ohio Star
-function drawOhioStar(colors) {
+function drawOhioStar(colors, size) {
     let [c1, c2, c3] = colors;
-    let s = quiltSize;
+    let s = size;
     let third = s / 3;
     let halfThird = third / 2;
 
@@ -603,37 +622,224 @@ function drawOhioStar(colors) {
     }
 }
 
-// --- 4. Core Logic Functions (generateQuilt updated for pattern names) ---
+function drawApplePie(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 6;
 
-// Function to choose a random pattern and draw it
-function generateQuilt() {
-    quiltSize = calculateQuiltSize();
-    resizeCanvas(quiltSize, quiltSize);
+    noStroke();
+    
+    fill(c1);
+    rect(0, 0, s, s);
 
-    combinationId = random(Object.keys(wadaColorsData.combinations));
-    // console.log(`combinationId: ${combinationId}`)
-    currentCombination = wadaColorsData.combinations[combinationId];
-    // console.log(`currentCombination: ${currentCombination}`)
-    // const colorsForDrawing = currentCombination.colors.map(c => color(c.hex));
-    // Shuffle the colors before passing them to the pattern function
-    const shuffledColors = shuffleArray([...currentCombination]);
-    // console.log(`shuffledColors: ${shuffledColors}`)
-
-    const selectedPattern = random(quiltPatterns);
-
-    const shuffledColorsHex = shuffledColors.map(id => wadaColorsData.colors[id].hex);
-    background(255); // White background for the single block
-    selectedPattern.func(shuffledColorsHex); // Draw the block with shuffled colors
-
-    if (quiltNameElement) {
-        quiltNameElement.textContent = `${selectedPattern.name} (Combo: ${combinationId})`;
-    }
-
-    updateColorDisplay(combinationId, shuffledColors);
-    updateDynamicStyling(shuffledColors);
+    fill(c2);
+    rect(2*cell, cell, 2*cell, cell);
+    rect(2*cell, 4*cell, 2*cell, cell);
+    rect(cell, 2*cell, cell, 2*cell);
+    rect(4*cell, 2*cell, cell, 2*cell);
+    
+    fill(c3);
+    triangle(0, 0, cell, cell, 0, 2*cell);
+    triangle(cell, 0, 2*cell, cell, cell, 2*cell);
+    triangle(4*cell, 0, 6*cell, 0, 5*cell, cell);
+    triangle(4*cell, cell, 6*cell, cell, 5*cell, 2*cell);
+    triangle(cell, 4*cell, 2*cell, 5*cell, 0, 5*cell);
+    triangle(cell, 5*cell, 2*cell, 6*cell, 0, 6*cell);
+    triangle(5*cell, 4*cell, 5*cell, 6*cell, 4*cell, 5*cell);
+    triangle(6*cell, 4*cell, 6*cell, 6*cell, 5*cell, 5*cell);
+    rect(2*cell, 2*cell, 2*cell, 2*cell);
 }
 
-function generateNewQuilt() {
+function drawFiftyFourForty(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 6;
+
+    noStroke();
+    
+    fill(c1);
+    rect(0, 0, s, s);
+
+    fill(c2);
+    rect(cell, 0, cell, cell);
+    rect(4* cell, 0, cell, cell);
+    rect(0, cell, cell, cell);
+    rect(5*cell, cell, cell, cell);
+    rect(3*cell, 2*cell, cell, cell);
+    rect(2*cell, 3*cell, cell, cell);
+    rect(0, 4*cell, cell, cell);
+    rect(5*cell, 4*cell, cell, cell);
+    rect(cell, 5*cell, cell, cell);
+    rect(4*cell, 5*cell, cell, cell);
+    
+    fill(c3);
+    triangle(2*cell, 0, 3*cell, 2*cell, 2*cell, 2*cell);
+    triangle(4*cell, 0, 4*cell, 2*cell, 3*cell, 2*cell);
+    triangle(0, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
+    triangle(4*cell, 2*cell, 6*cell, 2*cell, 4*cell, 3*cell);
+    triangle(2*cell, 3*cell, 2*cell, 4*cell, 0, 4*cell);
+    triangle(4*cell, 3*cell, 6*cell, 4*cell, 4*cell, 4*cell);
+    triangle(2*cell, 4*cell, 3*cell, 4*cell, 2*cell, 6*cell);
+    triangle(3*cell, 4*cell, 4*cell, 4*cell, 4*cell, 6*cell);
+}
+
+function drawDutchmansPuzzle(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 4;
+
+    noStroke();
+    
+    fill(c1);
+    rect(0, 0, s, s);
+
+    fill(c2);
+    triangle(cell, 0, 2*cell, cell, 0, cell);
+    triangle(3*cell, 0, 4*cell, cell, 3*cell, 2*cell);
+    triangle(cell, 2*cell, cell, 4*cell, 0, 3*cell);
+    triangle(2*cell, 3*cell, 4*cell, 3*cell, 3*cell, 4*cell);
+    
+    fill(c3);
+    triangle(2*cell, 0, 3*cell, cell, 2*cell, 2*cell);
+    triangle(cell, cell, 2*cell, 2*cell, 0, 2*cell);
+    triangle(2*cell, 2*cell, 4*cell, 2*cell, 3*cell, 3*cell);
+    triangle(2*cell, 2*cell, 2*cell, 4*cell, cell, 3*cell);
+}
+
+function drawHoveringHawks(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 4;
+
+    noStroke();
+    
+    fill(c1);
+    rect(0, 0, s, s);
+
+    fill(c2);
+    triangle(cell, 0, 2*cell, cell, cell, cell);
+    triangle(2*cell, cell, 3*cell, 2*cell, 2*cell, 2*cell);
+    triangle(3*cell, 2*cell, 4*cell, 3*cell, 3*cell, 3*cell);
+    triangle(0, cell, cell, cell, cell, 2*cell);
+    triangle(cell, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
+    triangle(2*cell, 3*cell, 3*cell, 3*cell, 3*cell, 4*cell);
+    
+    fill(c3);
+    triangle(2*cell, 0, 3*cell, cell, 2*cell, cell);
+    triangle(3*cell, cell, 4*cell, 2*cell, 3*cell, 2*cell);
+    triangle(0, 2*cell, cell, 2*cell, cell, 3*cell);
+    triangle(cell, 3*cell, 2*cell, 3*cell, 2*cell, 4*cell);
+}
+
+function drawGrandmothersPuzzle(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 5;
+
+    noStroke();
+    
+    fill(c2);
+    rect(0, 0, s, s);
+
+    fill(c1);
+    rect(0, 0, cell, cell);
+    rect(4*cell, 0, cell, cell);
+    rect(2*cell, 2*cell, cell, cell);
+    rect(0, 4*cell, cell, cell);
+    rect(4*cell, 4*cell, cell, cell);
+
+    fill(c3);
+    triangle(2*cell, 0, 2*cell, 2*cell, 0, 2*cell);
+    triangle(2*cell, cell, 4*cell, cell, 4*cell, 3*cell);
+    triangle(cell, 2*cell, 3*cell, 4*cell, cell, 4*cell);
+    triangle(3*cell, 3*cell, 5*cell, 3*cell, 3*cell, 5*cell);
+}
+
+function drawClaysChoice(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 4;
+
+    noStroke();
+    
+    fill(c3);
+    rect(0, 0, s, s);
+
+    fill(c1);
+    rect(0, 0, cell, cell);
+    rect(3*cell, 0, cell, cell);
+    rect(0, 3*cell, cell, cell);
+    rect(3*cell, 3*cell, cell, cell);
+    triangle(cell, cell, 2*cell, 2*cell, cell, 2*cell);
+    triangle(2*cell, cell, 3*cell, cell, 2*cell, 2*cell);
+    triangle(2*cell, 2*cell, 2*cell, 3*cell, cell, 3*cell);
+    triangle(2*cell, 2*cell, 3*cell, 2*cell, 3*cell, 3*cell);
+
+    fill(c2);
+    beginShape();
+    vertex(cell, 0);
+    vertex(2*cell, cell);
+    vertex(2*cell, 2*cell);
+    vertex(cell, cell);
+    endShape(CLOSE);
+    
+    beginShape();
+    vertex(3*cell, cell);
+    vertex(4*cell, cell);
+    vertex(3*cell, 2*cell);
+    vertex(2*cell, 2*cell);
+    endShape(CLOSE);
+    
+    beginShape();
+    vertex(cell, 2*cell);
+    vertex(2*cell, 2*cell);
+    vertex(cell, 3*cell);
+    vertex(0, 3*cell);
+    endShape(CLOSE);
+    
+    beginShape();
+    vertex(2*cell, 2*cell);
+    vertex(3*cell, 3*cell);
+    vertex(3*cell, 4*cell);
+    vertex(2*cell, 3*cell);
+    endShape(CLOSE);
+}
+
+function drawCornAndBeans(colors, size) {
+    let [c1, c2, c3] = colors;
+    let s = size;
+    let cell = s / 6;
+
+    noStroke();
+    
+    fill(c1);
+    rect(0, 0, s, s);
+
+    fill(c2);
+    triangle(2*cell, 0, 2*cell, cell, cell, cell);
+    triangle(4*cell, 0, 5*cell, cell, 4*cell, cell);
+    triangle(cell, cell, cell, 2*cell, 0, 2*cell);
+    triangle(5*cell, cell, 6*cell, 2*cell, 5*cell, 2*cell);
+    triangle(3*cell, cell, 5*cell, 3*cell, 3*cell, 3*cell);
+    triangle(cell, 3*cell, 3*cell, 3*cell, 3*cell, 5*cell);
+    triangle(0, 4*cell, cell, 4*cell, cell, 5*cell);
+    triangle(5*cell, 4*cell, 6*cell, 4*cell, 5*cell, 5*cell);
+    triangle(cell, 5*cell, 2*cell, 5*cell, 2*cell, 6*cell);
+    triangle(4*cell, 5*cell, 5*cell, 5*cell, 4*cell, 6*cell);
+
+    fill(c3);
+    triangle(3*cell, 0, 4*cell, cell, 2*cell, cell);
+    triangle(2*cell, cell, 2*cell, 2*cell, cell, 2*cell);
+    triangle(4*cell, cell, 5*cell, 2*cell, 4*cell, 2*cell);
+    triangle(cell, 2*cell, cell, 4*cell, 0, 3*cell);
+    triangle(5*cell, 2*cell, 6*cell, 3*cell, 5*cell, 4*cell);
+    triangle(cell, 4*cell, 2*cell, 4*cell, 2*cell, 5*cell);
+    triangle(4*cell, 4*cell, 5*cell, 4*cell, 4*cell, 5*cell);
+    triangle(2*cell, 5*cell, 4*cell, 5*cell, 3*cell, 6*cell);
+}
+// --- 4. Core Logic Functions (generateQuilt updated for pattern names) ---
+
+function generateQuilt() {
 
     currentCombinationId = random(Object.keys(wadaColorsData.combinations));
     currentCombination = wadaColorsData.combinations[currentCombinationId];
@@ -648,7 +854,7 @@ function generateNewQuilt() {
 }
 
 function drawCurrentQuilt() {
-    quiltSize = calculateQuiltSize();
+    quiltSize = calculateQuiltSize().canvasSize;
     resizeCanvas(quiltSize, quiltSize);
 
     background(255);
@@ -661,17 +867,101 @@ function drawCurrentQuilt() {
         // quiltNameElement.textContent = `${currentPattern.name} (Combo: ${currentCombinationId})`;
     }
 
-    currentPattern.func(currentShuffledColorsHex);
+    currentPattern.func(currentShuffledColorsHex, quiltSize);
 
-    updateColorDisplay(currentCombinationId, currentShuffledColors);
-    updateDynamicStyling(currentShuffledColors);
+    display_text = `${currentPattern.name}<br>(Combination: ${currentCombinationId})`;
+    display_swatches = true;
+
+    updateColorDisplay();
 }
 
-// function resizeQuilt() {
-//     quiltSize = calculateQuiltSize();
-//     resizeCanvas(quiltSize, quiltSize);
-//     drawCurrentQuilt();
-// }
+function generateQuiltGridData() {
+    const currentGridOption = document.getElementById("grid-options").value;
+    let displayText = '';
+    currentBlocksGrid.length = 0;
+    
+    if (currentGridOption == 1) {
+        // Select random color
+        currentCombinationId = random(Object.keys(wadaColorsData.combinations));
+        currentCombination = wadaColorsData.combinations[currentCombinationId];
+        currentShuffledColors = shuffleArray([...currentCombination]);
+        const shuffledColorsHex = currentShuffledColors.map(id => wadaColorsData.colors[id].hex)
+        const shuffledPatterns = shuffleArray(quiltPatterns);
+        
+        for (let i = 0; i < 16; i++) {
+            const patternIndex = i % quiltPatterns.length;
+            currentBlocksGrid.push({
+                drawFunc: shuffledPatterns[patternIndex].func,
+                colors: shuffledColorsHex
+            });
+        }
+        display_text = `Color Combination: ${currentCombinationId}`;
+        display_swatches = true;
+
+    } else if (currentGridOption == 2) {
+        const pattern = random(quiltPatterns);
+        const shuffledCombinations = shuffleArray(Object.keys(wadaColorsData.combinations));
+        console.log(shuffledCombinations)
+        for (let i = 0; i < 16; i++) {
+            const comboIndex = i;
+            const combo = shuffledCombinations[comboIndex];
+            const comboHex = wadaColorsData.combinations[combo].map(id => wadaColorsData.colors[id].hex)
+            currentBlocksGrid.push({
+                drawFunc: pattern.func,
+                colors: comboHex
+            });
+        }
+
+        display_text = `Pattern: ${currentPattern.name}`;
+        display_swatches = false;
+
+    } else {
+        const shuffledPatterns = shuffleArray(quiltPatterns);
+        const shuffledCombinations = shuffleArray(Object.keys(wadaColorsData.combinations));
+        for (let i = 0; i < 16; i++) {
+            const patternIndex = i % quiltPatterns.length;
+            const comboIndex = i;
+            const combo = shuffledCombinations[comboIndex];
+            const comboHex = wadaColorsData.combinations[combo].map(id => wadaColorsData.colors[id].hex)
+            currentBlocksGrid.push({
+                drawFunc: shuffledPatterns[patternIndex].func,
+                colors: comboHex
+            });
+        }
+        display_text = `Mixed colors and patterns`;
+        display_swatches = false
+    }
+}
+
+function drawQuiltGrid() {
+
+    sizeData = calculateQuiltSize();
+    quiltSize = sizeData.canvasSize;
+    const padding = sizeData.padding;
+    const blockSize = sizeData.blockSize;
+    resizeCanvas(quiltSize, quiltSize);
+
+    console.log(`sizeData: ${quiltSize}, ${blockSize}, ${padding}`);
+    
+    let blockIndex = 0;
+    for (let row = 0; row < 4; row++) {
+        for (let col = 0; col < 4; col++) {
+            let x = padding + col * (blockSize + padding);
+            let y = padding + row * (blockSize + padding);
+
+            push();
+            translate(x, y);
+            
+            let blockData = currentBlocksGrid[blockIndex];
+            blockData.drawFunc(blockData.colors, blockSize);
+            
+            pop();
+            blockIndex++;
+        }
+    }
+
+    updateColorDisplay();
+}
 
 // --- 5. p5.js setup() and draw() (updated for new element) ---
 
@@ -681,10 +971,16 @@ function preload() {
 
 function setup() {
 
-    generateButton = document.getElementById("generateButton")
-    generateButton.addEventListener("click", generateNewQuilt);
+    generateButton.addEventListener("click", () => {
+        if (currentMode === "single") {
+            generateQuilt();
+        } else {
+            generateQuiltGridData();
+            drawQuiltGrid();
+        }
+    });
 
-    quiltSize = calculateQuiltSize();
+    // quiltSize = calculateQuiltSize().canvasSize;
     quiltBlockCanvas = createCanvas();
     const canvas_container = document.getElementById("wada-quilts-canvas");
     
@@ -694,18 +990,17 @@ function setup() {
     
     noLoop(); // Ensure draw() is called only when needed
     
-    generateNewQuilt();
+    generateQuilt();
 
     new ResizeObserver(entries => {
         const w = entries[0].contentRect.width;
         console.log("observer", w);
-
-        // resizeCanvas(w, w);
-        // generateQuilt();
-        drawCurrentQuilt();
-        // resizeQuilt();
+        if (currentMode === "single") {
+            drawCurrentQuilt();
+        } else {
+            drawQuiltGrid();
+        }
     }).observe(canvas_container);
-    // generateNewQuilt();
 }
 
 // draw() function is now empty as generateQuilt() handles drawing and is called on demand.

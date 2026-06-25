@@ -3,7 +3,7 @@
     grid-template-columns: subgrid;
 }
 
-h3 {
+.p5js h3 {
     margin-top: 0;
 }
 
@@ -23,8 +23,20 @@ h3 {
     /* Ensure panels align at the top */
 }
 
+#control-panel {
+    grid-column: 1 / 6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#left-panel > h3 {
+    grid-column: 1 / 13;
+    margin-bottom: 10px;
+}
+
 #left-panel,
-#center-panel,
+#canvas-panel,
 #right-panel {
     /* Added right-panel back here */
     background-color: transparent;
@@ -41,14 +53,18 @@ h3 {
     /* Align content to the top */
 }
 
+#text-panel {
+    grid-column: 1 / 6;
+}
+
 #left-panel {
     /* flex: 1; */
     /* min-width: 250px;
     max-width: 300px; */
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
 
     /* Constrain left panel width for better layout */
-    /* min-height calculated to match center-panel's content height for bottom alignment */
+    /* min-height calculated to match canvas-panel's content height for bottom alignment */
     min-height: calc($ {
             quiltSize
         }
@@ -57,7 +73,7 @@ h3 {
     /* quiltSize + quiltNameElement margin-top + quiltNameElement height */
 }
 
-#center-panel {
+#canvas-panel {
     /* flex: 2; */
     align-items: center;
     /* Center canvas horizontally */
@@ -65,7 +81,7 @@ h3 {
     justify-content: flex-start;
     /* Align content to the top within center panel */
     padding-top: 0;
-    grid-column: 5 / 9;
+    grid-column: 7 / 13;
     /* Make canvas flush with left-panel's h1 */
 }
 
@@ -84,9 +100,13 @@ h3 {
     /* Removed shadow */
     background-color: transparent;
     /* Changed to transparent background */
+    margin-top: auto;
 }
 
-#intro-paragraph {}
+#intro-paragraph {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
 #quilt-name {
     font-size: 1.5em;
@@ -114,13 +134,14 @@ canvas {
 }
 
 /* Styles for all buttons, maintaining consistency */
-#main-content-wrapper button {
+#main-content-wrapper button, #main-content-wrapper select {
     font-family: Haskoy;
-    padding: 12px 20px;
+    padding: 6px 20px;
+    background-color: #ddd;
     /* Consistent padding for all buttons */
     font-size: 1em;
     /* Consistent font size for all buttons */
-    margin: 5px 0;
+    margin: 9px 0;
     /* Vertical margin */
     cursor: pointer;
     border: none;
@@ -130,31 +151,38 @@ canvas {
     /* Allow text to wrap if needed */
     text-align: center;
     /* Center text within buttons */
-    width: 80%;
+    width: 100%;
     /* max-width: 260px; */
     /* Consistent max-width for buttons */
     box-sizing: border-box;
     line-height: 1.2;
-    min-height: 50px;
+    /* min-height: 50px; */
     /* Adjust line height for wrapped text */
+}
+
+#main-content-wrapper button:hover {
+    background-color: #aaa;
+}
+
+#generate-download {
+    display: flex;
+    gap: 10px;
 }
 
 /* Specific overrides for button text fitting */
 #generateButton {
     /* font-size: 1.1em; */
+    flex: 6;
+}
+
+#downloadButton {
+    flex: 1;
 }
 
 #generateGridButton,
 #downloadButton {
     /* Apply same text size to these two */
     /* font-size: 1.0em; */
-}
-
-/* Custom styles for generate button */
-#generateButton {
-    /* margin-top: 10px; Space from intro text */
-    /* background-color: var(--generate-button-bg); Now dynamic */
-    /* color: var(--generate-button-color); Now dynamic */
 }
 
 #generateButton:hover {
@@ -165,6 +193,7 @@ canvas {
 /* New wrapper for bottom buttons */
 #bottom-buttons-wrapper {
     text-align: center;
+    /* margin-bottom: 24px; */
     /* display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -203,6 +232,7 @@ canvas {
     margin-bottom: 10px; */
     text-align: center;
     width: 100%;
+    margin-top: 10px;
     transition: color 0.5s ease;
     color: #333;
     /* Static color for readability on transparent background */
@@ -210,17 +240,23 @@ canvas {
 
 #color-display {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
     gap: 10px;
     margin-top: 20px;
     width: 100%;
+    opacity: 0;
+    transition:  0.25s ease;
+}
+
+#color-display.active {
+    opacity: 1;
 }
 
 .color-swatch {
     width: 80%;
     /* Smaller swatch size for better fit */
-    height: 50px;
+    /* min-height: 50px; */
     /* border: 1px solid #aaa; */
     border-radius: 4px;
     /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
@@ -231,13 +267,14 @@ canvas {
     font-size: 0.8em;
     text-align: center;
     line-height: 1.3;
-    padding: 10px;
+    padding: 5px;
     /* Adjusted padding */
     box-sizing: border-box;
     white-space: normal;
     /* Allow text to wrap */
     word-break: break-word;
     /* Break long words */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .color-text {
@@ -245,16 +282,129 @@ canvas {
     /* Space between name and hex */
 }
 
+.mode-toggle {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    width: 100%;
+}
+
+#main-content-wrapper button.mode-option {
+    background: none;
+    border: none;
+    width: 100%;
+    font: inherit;
+    cursor: pointer;
+    color: var(--dark);
+    background-color: #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#main-content-wrapper button.mode-option:hover {
+    background-color: #aaa;
+}
+
+#main-content-wrapper button.mode-option.active {
+    background-color: var(--dark);
+    color: var(--light);
+    font-weight: 500;
+}
+
+.toggle-track {
+    position: relative;
+    width: 60px;
+    height: 32px;
+    border-radius: 80px;
+    background: var(--dark);
+    cursor: pointer;
+}
+
+.toggle-thumb {
+    margin-top: 4px;
+    margin-left: 4px;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    background: var(--light);
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.mode-toggle.grid .toggle-thumb {
+    transform: translateX(28px);
+}
+
+.mode-toggle.grid .toggle-track {
+    background: #444;
+}
+
+.mode-option {
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+#grid-options-wrapper {
+    width: 100%;
+    max-height: 0;
+    margin: auto;
+    overflow: hidden;
+    opacity: 0;
+
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease;
+}
+
+#grid-options-wrapper select {
+    width: 100%;
+    background-color: #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#grid-options-wrapper select:hover {
+    background-color: #aaa;
+}
+
+#grid-options-wrapper.grid-mode {
+    max-height: 100px;
+    opacity: 1;
+}
+
 /* Media Queries for Responsiveness */
-@media (max-width: 800px) {
-    #main-content-wrapper {
-        /* flex-direction: column;
-        align-items: center;
-        gap: 20px; */
+/* @media (max-width: 1130px) {
+    #control-panel {
+        display: contents;
     }
 
+    #left-panel {
+        grid-area: top;
+    }
+    #canvas-panel {
+        grid-area: middle;
+    }
+    #right-panel {
+        grid-area: bottom;
+    }
+
+    #main-content-wrapper {
+        grid-template-areas: 
+            "top"
+            "middle"
+            "bottom";
+    }
+} */
+
+@media (max-width: 800px) {
+
     #left-panel,
-    #center-panel,
+    #canvas-panel,
     #right-panel {
         /* Include right-panel for mobile stacking */
         width: 100%;
@@ -270,6 +420,28 @@ canvas {
         /* Remove fixed min-height for mobile */
     }
 
+     #control-panel {
+        display: contents;
+    }
+
+    #left-panel {
+        grid-area: top;
+    }
+    #canvas-panel {
+        grid-area: middle;
+    }
+    #right-panel {
+        grid-area: bottom;
+    }
+
+
+    #main-content-wrapper {
+        grid-template-areas: 
+            "top"
+            "middle"
+            "bottom";
+    }
+
     h1,
     #intro-paragraph,
     #generateButton,
@@ -280,6 +452,10 @@ canvas {
         /* text-align: center; */
         /* align-self: center; */
         /* max-width: 90%; */
+    }
+
+    #intro-paragraph {
+        margin-bottom: 0;
     }
 
     #generateButton,
@@ -295,7 +471,7 @@ canvas {
         /* align-items: center; */
         margin: 30px 0;
         text-align: center;
-        display: flex;
+        /* display: flex; */
         gap: 10px;
         /* Center buttons within wrapper on mobile */
     }
@@ -318,6 +494,8 @@ canvas {
         /* padding: 5px; */
     }
 }
+
+
 
 /* @media (max-width: 600px) {
     body {

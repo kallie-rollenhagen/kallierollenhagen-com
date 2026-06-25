@@ -1,33 +1,63 @@
 <link rel="stylesheet" href="/assets/css/wada-quilts.css">
 <div id='main-content-wrapper'>
-  <div id="left-panel">
-    <h3>Wada Quilt Block Generator</h3>
-    <p id="intro-paragraph">This design tool pulls on classic quilt patterns and overlays
-      color patterns from Sanzo Wada's Dictionary of Color Combinations, Volume 2. It was created by Kallie Rollenhagen,
-      with generous assistance by Google Gemini.</p>
-    <div id="bottom-buttons-wrapper">
-      <button id="generateButton">Generate Quilt Block</button>
-      {# <button id="generateGridButton">Generate Quilt Grids</button> #}
-      <button id="downloadButton">Download Quilt Block</button>
+  {# <h3>Wada Quilt Block Generator</h3> #}
+  <div id="control-panel">
+
+    <div id="left-panel">
+      <h3>Wada Quilt Block Generator</h3>
+      <p id="intro-paragraph">This design tool pulls on classic quilt patterns and overlays
+        color patterns from Sanzo Wada's Dictionary of Color Combinations, Volume 2. It was created by Kallie Rollenhagen,
+        with generous assistance by Google Gemini.</p>
+      <div id="bottom-buttons-wrapper">
+        <div class="mode-toggle" id="modeToggle">
+          <button class="mode-option active" data-mode="single">
+              Single
+          </button>
+
+          <div class="toggle-track">
+              <div class="toggle-thumb"></div>
+          </div>
+
+          <button class="mode-option" data-mode="grid">
+              Grid
+          </button>
+        </div>
+        <div id="grid-options-wrapper">
+          <select id="grid-options">
+              <option value="1" selected>Same colors, mixed patterns</option>
+              <option value="2">Mixed colors, same pattern</option>
+              <option value="3">Mixed colors and patterns</option>
+          </select>
+        </div>
+        <div id="generate-download">
+          <button id="generateButton">Generate Quilt Block</button>
+          {# <button id="generateGridButton">Generate Quilt Grids</button> #}
+          <button id="downloadButton">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11L12 15M12 15L8 11M12 15V3M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="right-panel">
+      <h3 id="combination-info"></h3>
+      <div id="color-display">
+        <div class="color-swatch">
+          <span class="color-text"></span><span class="color-text"></span>
+        </div>
+        <div class="color-swatch">
+          <span class="color-text"></span><span class="color-text"></span>
+        </div>
+        <div class="color-swatch">
+          <span class="color-text"></span><span class="color-text"></span>
+        </div>
+      </div>
     </div>
   </div>
-  <div id="center-panel">
-    <div id="wada-quilts-canvas">
-    </div>
-  </div>
-  <div id="right-panel">
-    <h3 id="combination-info"></h3>
-    <div id="color-display">
-      <div class="color-swatch">
-        <span class="color-text"></span><span class="color-text"></span>
-      </div>
-      <div class="color-swatch">
-        <span class="color-text"></span><span class="color-text"></span>
-      </div>
-      <div class="color-swatch">
-        <span class="color-text"></span><span class="color-text"></span>
-      </div>
-    </div>
+  <div id="canvas-panel">
+    <div id="wada-quilts-canvas"></div>
   </div>
 </div>
 
