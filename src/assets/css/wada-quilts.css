@@ -168,6 +168,7 @@ canvas {
 #generateButton {
     /* font-size: 1.1em; */
     flex: 6;
+    color: var(--dark);
 }
 
 #downloadButton {
