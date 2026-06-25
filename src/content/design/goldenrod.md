@@ -8,9 +8,6 @@ project_description: >-
   Brand development for a rural destination diner.
 
 
-  MCAD MA in Graphic & Web Design Course: **Typography**
-
-
   ### Scope + Deliverables
 
 
@@ -26,7 +23,7 @@ project_description: >-
   ### Audience
 
 
-  Urban dwellers—including families with young kids—looking for a weekend drive destination, as well as rural neighbors looking for more dining options.
+  Urban dwellers—including families with young kids—who are looking for a weekend drive destination, as well as rural neighbors looking for more dining options.
 main_image:
   file: /assets/images/yellow-exterior-sign-small.png
   alt: Goldenrod sandwich board
