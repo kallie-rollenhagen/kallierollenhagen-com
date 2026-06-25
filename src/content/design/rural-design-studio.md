@@ -8,9 +8,6 @@ project_description: >-
   A design studio of and for rural communities.
 
 
-  MCAD MA in Graphic & Web Design Course: **Capstone**
-
-
   ### Deliverables
 
 
@@ -46,7 +43,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### What problem was I trying to solve? 
+            ## What problem was I trying to solve?
 
 
             Rural places are filled with creative people. Yet there is lack of resources — both people and money — for contemporary graphic design, web design, and branding services in rural communities.\
@@ -69,7 +66,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Why is this important to me?
+            ## Why is this important to me?
 
 
             I grew up in a rural community, live in one today, and seek out rural places when I travel. I've seen firsthand that creativity isn't limited by geography—but access to design services (and resources for professional design) often is.
@@ -87,7 +84,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Moodboard
+            ## Moodboard
 
 
             Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
@@ -107,7 +104,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Primary Logo
+            ## Primary Logo
 
 
             To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font inspired by old shop signs and billboards.
@@ -148,7 +145,7 @@ gallery:
       layout: thirds
       elements:
         - type: text
-          text: "### Dynamic Logo Mark"
+          text: "## Dynamic Logo Mark"
         - type: text
           text: The logo mark is meant to have an infinite number of combinations, always
             using “RDS,” the patchworking of triangles, and brand colors.
@@ -182,6 +179,24 @@ gallery:
           focal_y: 50
           file: /assets/images/rds-sidewalk-sign-mockup-narrow.jpg
           alt: Rural Design Studio sidewalk sign
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Website Design
+
+
+            Once I established a brand identity and platform for the Rural Design Studio, I incorporated user feedback on what would be useful to see on a studio website.
+
+
+            I mocked up a prototype in Figma (below). I continued to refine this prototype based on user feedback.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/website-homepage-blank.png
+          alt: Mockup of Rural Design Studio homepage
     - object_fit: contain
       row_margin_bottom: small
       layout: full-width

@@ -8,9 +8,6 @@ project_description: >-
   Brand development for a rural destination diner.
 
 
-  MCAD MA in Graphic & Web Design Course: **Typography**
-
-
   ### Scope + Deliverables
 
 
@@ -26,7 +23,7 @@ project_description: >-
   ### Audience
 
 
-  Urban dwellers—including families with young kids—looking for a weekend drive destination, as well as rural neighbors looking for more dining options.
+  Urban dwellers—including families with young kids—who are looking for a weekend drive destination, as well as rural neighbors looking for more dining options.
 main_image:
   file: /assets/images/yellow-exterior-sign-small.png
   alt: Goldenrod sandwich board
@@ -50,7 +47,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Inspiration
+            ## Inspiration
 
 
             I drew inspiration from elegant, bright diners and bakeries. I wanted to develop a brand that would evoke the sense of childhood delight you get from finding a toy in a cereal box—the same feeling I get when I find a hidden gem in a rural space.
@@ -64,7 +61,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Name & Logo Exploration 
+            ## Name & Logo Exploration 
 
 
             From over a dozen names, I settled on “goldenrod.” The ‘o’s mirrored the shape of the ‘g’ and ‘d’s well, plus, goldenrods dot the ditches of the backroads one would presumably take to get to this diner. 
@@ -110,7 +107,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Asset Sketches 
+            ## Asset Sketches 
 
 
             For assets and overall brand, I sketched options along the spectrum of playful and bold to minimal and elegant, settling in the middle.
