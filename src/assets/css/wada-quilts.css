@@ -7,7 +7,7 @@
     margin-top: 0;
 }
 
-#main-content-wrapper {
+#wada-quilt-wrapper {
     /* display: flex; */
     display: grid;
     grid-template-columns: subgrid;
@@ -30,15 +30,15 @@
     height: 100%;
 }
 
-#left-panel > h3 {
+#text-panel > h3 {
     grid-column: 1 / 13;
     margin-bottom: 10px;
 }
 
-#left-panel,
+#text-panel,
 #canvas-panel,
-#right-panel {
-    /* Added right-panel back here */
+#info-panel {
+    /* Added info-panel back here */
     background-color: transparent;
     /* Panels blend into the white background */
     border-radius: 8px;
@@ -55,22 +55,34 @@
 
 #text-panel {
     grid-column: 1 / 6;
+    flex: 1;
 }
 
-#left-panel {
-    /* flex: 1; */
-    /* min-width: 250px;
-    max-width: 300px; */
-    grid-column: 1 / 6;
+#button-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-    /* Constrain left panel width for better layout */
-    /* min-height calculated to match canvas-panel's content height for bottom alignment */
-    min-height: calc($ {
-            quiltSize
-        }
-
-        px + 15px + 24px);
-    /* quiltSize + quiltNameElement margin-top + quiltNameElement height */
+#info-panel {
+    /* Re-added right panel styles */
+    /* flex: 0 0 250px; Fixed width for right panel */
+    /* display: flex; */
+    /* flex-direction: column; */
+    grid-column: 9 / 13;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content in right panel */
+    justify-content: flex-start;
+    /* Top align content */
+    /* padding: 20px; Padding inside the right panel */
+    box-shadow: none;
+    /* Removed shadow */
+    background-color: transparent;
+    /* Changed to transparent background */
+    margin-top: auto;
 }
 
 #canvas-panel {
@@ -82,25 +94,7 @@
     /* Align content to the top within center panel */
     padding-top: 0;
     grid-column: 7 / 13;
-    /* Make canvas flush with left-panel's h1 */
-}
-
-#right-panel {
-    /* Re-added right panel styles */
-    /* flex: 0 0 250px; Fixed width for right panel */
-    /* display: flex; */
-    /* flex-direction: column; */
-    grid-column: 9 / 13;
-    align-items: center;
-    /* Center content in right panel */
-    justify-content: flex-start;
-    /* Top align content */
-    /* padding: 20px; Padding inside the right panel */
-    box-shadow: none;
-    /* Removed shadow */
-    background-color: transparent;
-    /* Changed to transparent background */
-    margin-top: auto;
+    /* Make canvas flush with text-panel's h1 */
 }
 
 #intro-paragraph {
@@ -135,7 +129,7 @@ canvas {
 }
 
 /* Styles for all buttons, maintaining consistency */
-#main-content-wrapper button, #main-content-wrapper select {
+#wada-quilt-wrapper button, #wada-quilt-wrapper select {
     font-family: Haskoy;
     padding: 6px 20px;
     background-color: #ddd;
@@ -161,7 +155,7 @@ canvas {
     /* Adjust line height for wrapped text */
 }
 
-#main-content-wrapper button:hover {
+#wada-quilt-wrapper button:hover {
     background-color: #aaa;
 }
 
@@ -192,14 +186,14 @@ canvas {
 }
 
 /* New wrapper for bottom buttons */
-#bottom-buttons-wrapper {
+#buttons-panel {
     text-align: center;
     /* margin-bottom: 24px; */
     /* display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin-top: auto; Pushes this wrapper to the bottom of left-panel */
+    margin-top: auto; Pushes this wrapper to the bottom of text-panel */
 }
 
 /* Custom styles for generate grid button */
@@ -214,7 +208,7 @@ canvas {
     color: var(--generate-grid-button-hover-color); */
 }
 
-/* Custom styles for download button - now in left-panel */
+/* Custom styles for download button - now in text-panel */
 #downloadButton {
     /* background-color: var(--download-button-bg); /* Now dynamic */
     /* color: var(--download-button-color); Now dynamic */
@@ -292,7 +286,7 @@ canvas {
     width: 100%;
 }
 
-#main-content-wrapper button.mode-option {
+#wada-quilt-wrapper button.mode-option {
     background: none;
     border: none;
     width: 100%;
@@ -303,11 +297,11 @@ canvas {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#main-content-wrapper button.mode-option:hover {
+#wada-quilt-wrapper button.mode-option:hover {
     background-color: #aaa;
 }
 
-#main-content-wrapper button.mode-option.active {
+#wada-quilt-wrapper button.mode-option.active {
     background-color: var(--dark);
     color: var(--light);
     font-weight: 500;
@@ -384,17 +378,17 @@ canvas {
         display: contents;
     }
 
-    #left-panel {
+    #text-panel {
         grid-area: top;
     }
     #canvas-panel {
         grid-area: middle;
     }
-    #right-panel {
+    #info-panel {
         grid-area: bottom;
     }
 
-    #main-content-wrapper {
+    #wada-quilt-wrapper {
         grid-template-areas: 
             "top"
             "middle"
@@ -404,10 +398,10 @@ canvas {
 
 @media (max-width: 800px) {
 
-    #left-panel,
+    #text-panel,
     #canvas-panel,
-    #right-panel {
-        /* Include right-panel for mobile stacking */
+    #info-panel {
+        /* Include info-panel for mobile stacking */
         width: 100%;
         margin-bottom: var(--gutter_size);
         /* max-width: 600px; */
@@ -421,25 +415,30 @@ canvas {
         /* Remove fixed min-height for mobile */
     }
 
-     #control-panel {
+    #control-panel {
         display: contents;
     }
 
-    #left-panel {
+    #text-panel {
         grid-area: top;
     }
     #canvas-panel {
-        grid-area: middle;
+        grid-area: middle1;
     }
-    #right-panel {
+    #button-panel {
+        grid-area: middle2;
+        margin-bottom: 20px;
+    }
+    #info-panel {
         grid-area: bottom;
     }
 
 
-    #main-content-wrapper {
+    #wada-quilt-wrapper {
         grid-template-areas: 
             "top"
-            "middle"
+            "middle2"
+            "middle1"
             "bottom";
     }
 
@@ -466,7 +465,7 @@ canvas {
         /* Add margin when stacked on mobile */
     }
 
-    #bottom-buttons-wrapper {
+    #buttons-panel {
         /* margin-top: 20px; */
         /* Add some space when stacked on mobile */
         /* align-items: center; */
@@ -484,7 +483,7 @@ canvas {
         justify-content: center;
         gap: 10px;
         /* Smaller gap for mobile */
-        width: auto;
+        /* width: auto; */
         /* Allow content to dictate width */
     }
 
