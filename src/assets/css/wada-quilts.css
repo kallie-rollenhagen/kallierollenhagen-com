@@ -336,7 +336,7 @@ canvas {
 }
 
 .mode-toggle.grid .toggle-track {
-    background: #444;
+    background: var(--dark);
 }
 
 .mode-option {
