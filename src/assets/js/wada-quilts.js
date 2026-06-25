@@ -88,7 +88,7 @@ function setMode(mode) {
         });
     
         if (mode == "grid") {
-            generateButton.textContent = "Generate Quilt Block Grid";
+            generateButton.textContent = "Generate Quilt Blocks";
         } else {
             generateButton.textContent = "Generate Quilt Block";
         }
