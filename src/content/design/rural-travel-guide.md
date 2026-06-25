@@ -5,19 +5,14 @@ seoDescription: Travel guide concepts for rural exploration.
 publish: true
 roles_played: Brand Development | Layout Design | Photography
 project_description: >-
-  Whereas city guides require filtering to fight through the overwhelm, rural
-  guides require scavengers to surface the gems. This project serves as a
-  template of what a curated, designed travel guide could look like for smaller
-  places. 
-
-
-  MCAD MA in Graphic & Web Design Course: **Design Studio**
+  Design for a rural travel guide series that encourages more people to consider
+  rural travel destinations.
 
 
   ### The Goal
 
 
-  Encourage people to consider rural places as travel destinations. **Bonus:** Boost rural economic development efforts.
+  Whereas city guides require filtering to fight through the overwhelm, rural guides require scavengers to surface the gems. This project serves as a template of what a curated, designed travel guide could look like for smaller places. **Bonus:** Boost rural economic development efforts.
 
 
   ### Design Scope
@@ -44,7 +39,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Project Statement
+            ## Project Statement
 
 
             Rural places can be harder to navigate without local intel, yet the tourism market in rural places is expected to grow. 
@@ -60,7 +55,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: "### Inspiration"
+          text: "## Inspiration"
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
@@ -89,10 +84,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Page Templates
+            ## Page Templates
 
 
-            I established a set of templates for the different sections, using a mix of 6-column and 4-column grids and full bleed spreads. Here is one example, used for business profiles.
+            I established a set of templates for the different sections, using a mix of 6-column and 4-column grids and full-bleed spreads. Here is one example, used for business profiles.
         - type: image
           focal_x: 50
           focal_y: 50
@@ -112,7 +107,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: "### Color, Graphics, & Typography"
+          text: "## Color, Graphics, & Typography"
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
@@ -168,10 +163,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Final Spreads
+            ## Final Spreads
 
 
-            The 96-page proof of concept travel guide booklet is comprised of 6-column and 4-column spreads and full bleed photo spreads for section intros.
+            The 96-page proof of concept travel guide booklet is comprised of 6-column and 4-column spreads and full-bleed photo spreads for section intros.
         - type: text
           text: These examples show how these page templates can flex, and how they offer
             a visual cadence to the guide book.
@@ -181,7 +176,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Sample Spread: Buy Guide
+            ## Sample Spread: Buy Guide
 
 
             This spread is intended to spotlight unique food, drink, and retail offerings of a particular region, inspired by the Monocle Guidebooks.
