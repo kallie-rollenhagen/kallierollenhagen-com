@@ -899,7 +899,7 @@ function generateQuiltGridData() {
         display_swatches = true;
 
     } else if (currentGridOption == 2) {
-        const pattern = random(quiltPatterns);
+        currentPattern = random(quiltPatterns);
         const shuffledCombinations = shuffleArray(Object.keys(wadaColorsData.combinations));
         console.log(shuffledCombinations)
         for (let i = 0; i < 16; i++) {
@@ -907,7 +907,7 @@ function generateQuiltGridData() {
             const combo = shuffledCombinations[comboIndex];
             const comboHex = wadaColorsData.combinations[combo].map(id => wadaColorsData.colors[id].hex)
             currentBlocksGrid.push({
-                drawFunc: pattern.func,
+                drawFunc: currentPattern.func,
                 colors: comboHex
             });
         }
