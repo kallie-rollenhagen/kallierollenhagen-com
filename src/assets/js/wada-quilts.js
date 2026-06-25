@@ -11,7 +11,7 @@ function calculateQuiltSize() {
     // console.log(`calculateQuiltSize: ${container.clientWidth}`);
     const canvasSize = container.getBoundingClientRect().width;
     padding = canvasSize * 0.03;
-    individualQuiltBlockSize = (canvasSize - (5 * padding)) / 4;
+    individualQuiltBlockSize = (canvasSize - (3 * padding)) / 4;
     return {"canvasSize": canvasSize, "padding": padding, blockSize: individualQuiltBlockSize}
 }
 
@@ -946,8 +946,8 @@ function drawQuiltGrid() {
     let blockIndex = 0;
     for (let row = 0; row < 4; row++) {
         for (let col = 0; col < 4; col++) {
-            let x = padding + col * (blockSize + padding);
-            let y = padding + row * (blockSize + padding);
+            let x = + col * (blockSize + padding);
+            let y = + row * (blockSize + padding);
 
             push();
             translate(x, y);
