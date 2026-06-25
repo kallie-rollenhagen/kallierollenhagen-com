@@ -10,19 +10,16 @@ project_description: >-
   photography essays.
 
 
-  MCAD MA in Graphic & Web Design Course: **Typography**
-
-
   ### Brand Voice
 
 
-  An irreverent, sincere and authentic tilt, with a dash of the design-forward personality and perspective. 
+  An irreverent, sincere, and authentic with a dash of the design-forward personality and perspective. 
 
 
   ### Design Scope
 
 
-  Research, concept, nameplate, and design template including cover, table of contents, and a feature article.
+  Research, concept, nameplate, and design template, including cover, table of contents, and a feature article.
 
 
   ### Audience
