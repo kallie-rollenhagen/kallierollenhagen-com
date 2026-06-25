@@ -8,9 +8,6 @@ project_description: >-
   A design studio of and for rural communities.
 
 
-  MCAD MA in Graphic & Web Design Course: **Capstone**
-
-
   ### Deliverables
 
 
