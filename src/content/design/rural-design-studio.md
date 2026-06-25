@@ -107,7 +107,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Primary Logo
+            ## Primary Logo
 
 
             To create the bespoke, vernacular, and bold aesthetic I wanted, I used the hand-drawn typeface Flapjack, by Taylor Penton, a font inspired by old shop signs and billboards.
@@ -148,7 +148,7 @@ gallery:
       layout: thirds
       elements:
         - type: text
-          text: "### Dynamic Logo Mark"
+          text: "## Dynamic Logo Mark"
         - type: text
           text: The logo mark is meant to have an infinite number of combinations, always
             using “RDS,” the patchworking of triangles, and brand colors.
@@ -188,7 +188,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Website Design
+            ## Website Design
 
 
             Once I established a brand identity and platform for the Rural Design Studio, I incorporated user feedback on what would be useful to see on a studio website.
