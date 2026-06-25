@@ -7,10 +7,7 @@ publish: true
 roles_played: Concept & Design Direction
 credits: []
 project_description: >-
-  I created a quilt block pattern generator using p5.js that returns quilt block
-  patterns. Each quilt has three colors, based on the 3-color combination
-  section of the Japanese *Dictionary of Color Combinations, Volume 2* by Sanzo
-  Wada.
+  Quilt block pattern generator that uses p5.js to sketch quilt block patterns. 
 
 
   ### Scope
@@ -21,7 +18,7 @@ project_description: >-
 
   ### Output
 
-   In the quilt block generation embedded below, users can see randomized classic quilt blocks, either single blocks or a 4 by 4 grid. Users can also download images.
+   In the quilt block generation embedded below, users can see randomized classic quilt blocks, either single blocks or a 4 by 4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combination section of the Japanese *Dictionary of Color Combinations, Volume 2* by Sanzo Wada.
 main_image:
   file: /assets/images/wada-quilt-grid-3-2.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
