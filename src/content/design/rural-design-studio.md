@@ -183,6 +183,24 @@ gallery:
           file: /assets/images/rds-sidewalk-sign-mockup-narrow.jpg
           alt: Rural Design Studio sidewalk sign
     - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ### Website Design
+
+
+            Once I established a brand identity and platform for the Rural Design Studio, I incorporated user feedback on what would be useful to see on a studio website.
+
+
+            I mocked up a prototype in Figma (below). I continued to refine this prototype based on user feedback.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/website-homepage-blank.png
+          alt: Mockup of Rural Design Studio homepage
+    - object_fit: contain
       row_margin_bottom: small
       layout: full-width
       elements:
