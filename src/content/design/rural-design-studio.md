@@ -46,7 +46,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### What problem was I trying to solve? 
+            ## What problem was I trying to solve?
 
 
             Rural places are filled with creative people. Yet there is lack of resources — both people and money — for contemporary graphic design, web design, and branding services in rural communities.\
@@ -69,7 +69,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Why is this important to me?
+            ## Why is this important to me?
 
 
             I grew up in a rural community, live in one today, and seek out rural places when I travel. I've seen firsthand that creativity isn't limited by geography—but access to design services (and resources for professional design) often is.
@@ -87,7 +87,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Moodboard
+            ## Moodboard
 
 
             Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
