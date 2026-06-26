@@ -40,6 +40,19 @@ body.home-layout {
     overflow: hidden;
 }
 
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: -8px;
+}
+
+h1, h2, h3 {
+    font-weight: 550;
+}
+
 nav {
     display: flex;
     align-items: baseline;
@@ -111,10 +124,6 @@ nav>a:hover {
 
 .nav-toggle {
     display: none;
-}
-
-h2 {
-    font-size: 24px;
 }
 
 h3 {

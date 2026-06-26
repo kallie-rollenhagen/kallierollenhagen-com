@@ -5,7 +5,7 @@ layout: layouts/base.njk
     <div class="design-text-container">
 
         <div class="design-text-top">
-            <h2>{{ title }}</h2>
+            <h1>{{ title }}</h1>
 
             {% if roles_played %}
                 <span>{{ roles_played }}</span>
@@ -48,7 +48,7 @@ layout: layouts/base.njk
 {% set total = projects.length %}
 
 <div id="more-projects">
-    <h3>More Design Projects</h3>
+    <h2>More Design Projects</h2>
 {% for offset in [1,2,3] %}
     {% set project = projects[(currentIndex + offset) % total] %}
 

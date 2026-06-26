@@ -125,7 +125,6 @@ canvas {
     aspect-ratio: 1 / 1;
     display: block;
     object-fit: contain;
-    border-radius: 5px;
 }
 
 /* Styles for all buttons, maintaining consistency */
