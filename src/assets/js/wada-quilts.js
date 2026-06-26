@@ -81,6 +81,8 @@ function setMode(mode) {
     modeToggle.classList.toggle("grid", mode === "grid");
 
     gridOptionsWrapper.classList.toggle("grid-mode", mode === "grid");
+    
+    document.getElementById('downloadButton').classList.toggle("grid-mode", mode === "grid");
 
     modeToggle.querySelectorAll(".mode-option")
         .forEach(button => {

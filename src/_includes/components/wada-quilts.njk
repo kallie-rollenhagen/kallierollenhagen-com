@@ -1,45 +1,50 @@
 <link rel="stylesheet" href="/assets/css/wada-quilts.css">
 <div id='wada-quilt-wrapper'>
-  {# <h3>Wada Quilt Block Generator</h3> #}
-  <div id="control-panel">
 
-    <div id="text-panel">
-      <h2>Wada Quilt Block Generator</h2>
-      <p id="intro-paragraph">This p5.js design tool generates classic quilt block patterns and overlays color combinations from Sanzo Wada's <em>Dictionary of Color Combinations</em>. You can generate a single block or a 4x4 quilt grid, then download the image.</p>
+  <div id="text-panel">
+    <h2>Wada Quilt Block Generator</h2>
+    <p id="intro-paragraph">This p5.js design tool generates classic quilt block patterns and overlays color combinations from Sanzo Wada's <em>Dictionary of Color Combinations</em>. You can generate a single block or a 4x4 quilt grid, then download the image.</p>
+  </div>
+
+  <div id="button-panel">
+    <div id="generate-download">
+      <button id="generateButton">Generate Quilt Block</button>
     </div>
-    <div id="button-panel">
-      <div id="generate-download">
-        <button id="generateButton">Generate Quilt Block</button>
-      </div>
-      <div class="mode-toggle" id="modeToggle">
-        <button class="mode-option active" data-mode="single">
-            Single
-        </button>
+    <div class="mode-toggle" id="modeToggle">
+      <button class="mode-option active" data-mode="single">
+          Single
+      </button>
 
-        <div class="toggle-track">
-            <div class="toggle-thumb"></div>
-        </div>
+      <div class="toggle-track">
+          <div class="toggle-thumb"></div>
+      </div>
 
-        <button class="mode-option" data-mode="grid">
-            Grid
-        </button>
-      </div>
-      <div id="options-download-wrapper">
-        <div id="grid-options-wrapper">
-          <select id="grid-options">
-              <option value="1" selected>Same colors, mixed patterns</option>
-              <option value="2">Mixed colors, same pattern</option>
-              <option value="3">Mixed colors and patterns</option>
-          </select>
-        </div>
-        <button id="downloadButton">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 11L12 15M12 15L8 11M12 15V3M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
+      <button class="mode-option" data-mode="grid">
+          Grid
+      </button>
     </div>
+    <div id="options-download-wrapper">
+      <div id="grid-options-wrapper">
+        <select id="grid-options">
+            <option value="1" selected>Same colors, mixed patterns</option>
+            <option value="2">Mixed colors, same pattern</option>
+            <option value="3">Mixed colors and patterns</option>
+        </select>
+      </div>
+      <button id="downloadButton">
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 11L12 15M12 15L8 11M12 15V3M21 15V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+</div>
 
+  <div id="canvas-info-wrapper">
+
+    <div id="canvas-panel">
+      <div id="wada-quilts-canvas"></div>
+    </div>
+    
     <div id="info-panel">
       <h3 id="combination-info"></h3>
       <div id="color-display">
@@ -54,10 +59,9 @@
         </div>
       </div>
     </div>
+
   </div>
-  <div id="canvas-panel">
-    <div id="wada-quilts-canvas"></div>
-  </div>
+
 </div>
 
 <script src="/assets/js/p5.min.js"></script>
