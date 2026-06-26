@@ -91,7 +91,7 @@ function setMode(mode) {
         });
     
         if (mode == "grid") {
-            generateButton.textContent = "Generate Quilt Blocks";
+            generateButton.textContent = "Generate Quilt Grid";
         } else {
             generateButton.textContent = "Generate Quilt Block";
         }
@@ -907,7 +907,7 @@ function drawCurrentQuilt() {
     background(100);
     currentPattern.func(currentShuffledColorsHex, quiltSize * scaleSize);
 
-    display_text = `${currentPattern.name}<br>(Combination: ${currentCombinationId})`;
+    display_text = `${currentPattern.name}<br>Color Combo: ${currentCombinationId}`;
     display_swatches = true;
     fileName = `wada_quilt_combo_${currentCombinationId}_${currentPattern.name.toLowerCase()}`
 
@@ -934,7 +934,7 @@ function generateQuiltGridData() {
                 colors: shuffledColorsHex
             });
         }
-        display_text = `Color Combination: ${currentCombinationId}`;
+        display_text = `Color Combo: ${currentCombinationId}`;
         display_swatches = true;
         fileName = `wada_quilt_combo_${currentCombinationId}_mixed_patterns`
 
