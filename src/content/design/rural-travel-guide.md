@@ -5,8 +5,8 @@ seoDescription: Travel guide concepts for rural exploration.
 publish: true
 roles_played: Brand Development | Layout Design | Photography
 project_description: >-
-  Design for a rural travel guide series that encourages more people to consider
-  rural travel destinations.
+  Rural travel guide series that encourages more people to consider rural travel
+  destinations.
 
 
   ## The Goal
