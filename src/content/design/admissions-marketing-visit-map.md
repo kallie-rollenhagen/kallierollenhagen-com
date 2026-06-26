@@ -12,22 +12,22 @@ credits:
     person: Raymond Biesinger
     url: https://www.fifteen.ca/
 project_description: >-
-  ### Audience 
+  ## Audience 
 
 
   Prospective students for Carleton College, specifically U.S. high-achieving high school seniors. 
 
 
-  ### Goal 
+  ## Goal 
 
 
   Encourage students and their parents to consider visiting Carleton, knowing that location is a primary barrier. 
 
 
-  ### Design challenge 
+  ## Design Challenge 
 
 
-  Create a self-mailer that stands out in the crowd and weaves in student voices.
+  Create a self-mailer that stands out from the crowd and weaves in student voices.
 main_image:
   file: /assets/images/admissions-map-cover-small.jpg
   alt: Cover of Detour From the Ordinary
@@ -53,13 +53,13 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Inspiration 
+            ## Inspiration 
 
 
-            Vintage travel maps + *New York Time’s* 36 Hours features.
+            Vintage travel maps + *New York Times'* 36 Hours features.
 
 
-            ### Strategy 
+            ## Strategy 
 
 
             Connect Northfield to the Twin Cities, feature first-hand intel and experiences from current students, and offer a unique format.
