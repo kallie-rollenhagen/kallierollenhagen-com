@@ -30,10 +30,12 @@ let combinationInfoSpan = document.getElementById("combination-info");
 let currentCombinationId;
 let currentCombination;
 let currentShuffledColors;
+let currentShuffledColorsHex;
 let currentPattern;
 let currentBlocksGrid = [];
 let display_text = '';
 let display_swatches = true;
+let fileName = '';
 
 const modeToggle = document.getElementById("modeToggle");
 const gridOptionsWrapper = document.getElementById("grid-options-wrapper")
@@ -238,14 +240,11 @@ function updateColorDisplay() {
 
 // Function to download the canvas as a PNG image
 function downloadQuilt() {
-  const comboNum = currentCombination
-    ? currentCombination.comboNumber
-    : 'unknown';
 
-  saveCanvas(
-    `barn_quilt_combo_${comboNum}`,
-    'png'
-  );
+    const scaleSize = 4000;
+    const g = createGraphics(scaleSize, scaleSize);
+    currentPattern.func(currentShuffledColorsHex, scaleSize, g);
+    g.save(`${fileName}.png`);
 }
 
 // Function to shuffle an array (Fisher-Yates algorithm)
@@ -260,172 +259,183 @@ function shuffleArray(array) {
 // --- 3. Barn Quilt Pattern Functions ---
 
 // Barn Quilt Pattern: Economy Block
-function drawEconomyBlock(colors, size) {
+function drawEconomyBlock(colors, size, g) {
+
+    g = g || window;
+
     let [c1, c2, c3] = colors;
     let s = size;
     let quarter = s / 4;
     let half = s / 2;
 
-    noStroke();
+    g.noStroke();
 
-    fill(c1);
-    rect(0, 0, s, s);
+    g.fill(c1);
+    g.rect(0, 0, s, s);
 
-    fill(c2);
-    beginShape();
-    vertex(half, 0);
-    vertex(s, half);
-    vertex(half, s);
-    vertex(0, half);
-    endShape(CLOSE);
+    g.fill(c2);
+    g.beginShape();
+    g.vertex(half, 0);
+    g.vertex(s, half);
+    g.vertex(half, s);
+    g.vertex(0, half);
+    g.endShape(CLOSE);
 
-    fill(c3);
-    rect(quarter, quarter, half, half);
+    g.fill(c3);
+    g.rect(quarter, quarter, half, half);
 }
 
 // Barn Quilt Pattern: Shoofly
-function drawShoofly(colors, size) {
+function drawShoofly(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let third = s / 3;
 
-    noStroke();
-    fill(c1);
-    rect(0, 0, s, s);
+    g.noStroke();
+    g.fill(c1);
+    g.rect(0, 0, s, s);
 
-    fill(c3);
-    rect(third, third, third, third);
+    g.fill(c3);
+    g.rect(third, third, third, third);
 
-    fill(c2);
-    triangle(0, 0, third, 0, 0, third);
-    triangle(s - third, 0, s, 0, s, third);
-    triangle(s - third, s, s, s, s, s - third);
-    triangle(0, s - third, 0, s, third, s);
+    g.fill(c2);
+    g.triangle(0, 0, third, 0, 0, third);
+    g.triangle(s - third, 0, s, 0, s, third);
+    g.triangle(s - third, s, s, s, s, s - third);
+    g.triangle(0, s - third, 0, s, third, s);
 
-    fill(c2);
-    rect(third, 0, third, third);
-    rect(s - third, third, third, third);
-    rect(third, s - third, third, third);
-    rect(0, third, third, third);
+    g.fill(c2);
+    g.rect(third, 0, third, third);
+    g.rect(s - third, third, third, third);
+    g.rect(third, s - third, third, third);
+    g.rect(0, third, third, third);
 }
 
 // Barn Quilt Pattern: Nine Patch
-function drawNinePatch(colors, size) {
+function drawNinePatch(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let third = s / 3;
 
-    noStroke();
+    g.noStroke();
 
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
             let x = j * third;
             let y = i * third;
             if (i === 1 && j === 1) {
-                fill(c3);
+                g.fill(c3);
             } else if ((i === 0 || i === 2) && (j === 0 || j === 2)) {
-                fill(c1);
+                g.fill(c1);
             } else {
-                fill(c2);
+                g.fill(c2);
             }
-            rect(x, y, third, third);
+            g.rect(x, y, third, third);
         }
     }
 }
 
 // Barn Quilt Pattern: Rail Fence
-function drawRailFence(colors, size) {
+function drawRailFence(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let blockDim = s / 3;
     let stripDim = blockDim / 3;
 
     const cell = s / 9;
-    fill(c2);
-    rect(0, 0, s, s);
-    noStroke();
-    fill(c1);
-    beginShape();
-    vertex(0*cell, 0);
-    vertex(1*cell, 0);
-    vertex(1*cell, 3*cell);
-    vertex(4*cell, 3*cell);
-    vertex(4*cell, 6*cell);
-    vertex(7*cell, 6*cell);
-    vertex(7*cell, 9*cell);
-    vertex(6*cell, 9*cell);
-    vertex(6*cell, 7*cell);
-    vertex(3*cell, 7*cell);
-    vertex(3*cell, 4*cell);
-    vertex(0, 4*cell);
-    vertex(0, 0);
-    endShape(CLOSE);
+    g.fill(c2);
+    g.rect(0, 0, s, s);
+    g.noStroke();
+    g.fill(c1);
+    g.beginShape();
+    g.vertex(0*cell, 0);
+    g.vertex(1*cell, 0);
+    g.vertex(1*cell, 3*cell);
+    g.vertex(4*cell, 3*cell);
+    g.vertex(4*cell, 6*cell);
+    g.vertex(7*cell, 6*cell);
+    g.vertex(7*cell, 9*cell);
+    g.vertex(6*cell, 9*cell);
+    g.vertex(6*cell, 7*cell);
+    g.vertex(3*cell, 7*cell);
+    g.vertex(3*cell, 4*cell);
+    g.vertex(0, 4*cell);
+    g.vertex(0, 0);
+    g.endShape(CLOSE);
     
-    beginShape();
-    vertex(3*cell, 0);
-    vertex(7*cell, 0);
-    vertex(7*cell, 3*cell);
-    vertex(9*cell, 3*cell);
-    vertex(9*cell, 4*cell);
-    vertex(6*cell, 4*cell);
-    vertex(6*cell, 1*cell);
-    vertex(3*cell, 1*cell);
-    vertex(3*cell, 0);
-    endShape(CLOSE);
+    g.beginShape();
+    g.vertex(3*cell, 0);
+    g.vertex(7*cell, 0);
+    g.vertex(7*cell, 3*cell);
+    g.vertex(9*cell, 3*cell);
+    g.vertex(9*cell, 4*cell);
+    g.vertex(6*cell, 4*cell);
+    g.vertex(6*cell, 1*cell);
+    g.vertex(3*cell, 1*cell);
+    g.vertex(3*cell, 0);
+    g.endShape(CLOSE);
     
-    beginShape();
-    vertex(0, 6*cell);
-    vertex(1*cell, 6*cell);
-    vertex(1*cell, 9*cell);
-    vertex(0*cell, 9*cell);
-    vertex(0*cell, 6*cell);
-    endShape(CLOSE);
+    g.beginShape();
+    g.vertex(0, 6*cell);
+    g.vertex(1*cell, 6*cell);
+    g.vertex(1*cell, 9*cell);
+    g.vertex(0*cell, 9*cell);
+    g.vertex(0*cell, 6*cell);
+    g.endShape(CLOSE);
 
-    fill(c3);
-    beginShape();
-    vertex(2*cell, 0);
-    vertex(3*cell, 0);
-    vertex(3*cell, 2*cell);
-    vertex(6*cell, 2*cell);
-    vertex(6*cell, 5*cell);
-    vertex(9*cell, 5*cell);
-    vertex(9*cell, 9*cell);
-    vertex(8*cell, 9*cell);
-    vertex(8*cell, 6*cell);
-    vertex(5*cell, 6*cell);
-    vertex(5*cell, 3*cell);
-    vertex(2*cell, 3*cell);
-    vertex(2*cell, 0*cell);
-    endShape(CLOSE);
-    
-    beginShape();
-    vertex(0, 5*cell);
-    vertex(3*cell, 5*cell);
-    vertex(3*cell, 8*cell);
-    vertex(6*cell, 8*cell);
-    vertex(6*cell, 9*cell);
-    vertex(2*cell, 9*cell);
-    vertex(2*cell, 6*cell);
-    vertex(0*cell, 6*cell);
-    vertex(0*cell, 5*cell);
-    endShape(CLOSE);
+    g.fill(c3);
+    g.beginShape();
+    g.vertex(2*cell, 0);
+    g.vertex(3*cell, 0);
+    g.vertex(3*cell, 2*cell);
+    g.vertex(6*cell, 2*cell);
+    g.vertex(6*cell, 5*cell);
+    g.vertex(9*cell, 5*cell);
+    g.vertex(9*cell, 9*cell);
+    g.vertex(8*cell, 9*cell);
+    g.vertex(8*cell, 6*cell);
+    g.vertex(5*cell, 6*cell);
+    g.vertex(5*cell, 3*cell);
+    g.vertex(2*cell, 3*cell);
+    g.vertex(2*cell, 0*cell);
+    g.endShape(CLOSE);
+   
+    g.beginShape();
+    g.vertex(0, 5*cell);
+    g.vertex(3*cell, 5*cell);
+    g.vertex(3*cell, 8*cell);
+    g.vertex(6*cell, 8*cell);
+    g.vertex(6*cell, 9*cell);
+    g.vertex(2*cell, 9*cell);
+    g.vertex(2*cell, 6*cell);
+    g.vertex(0*cell, 6*cell);
+    g.vertex(0*cell, 5*cell);
+    g.endShape(CLOSE);
 
-    beginShape();
-    vertex(8*cell, 0);
-    vertex(9*cell, 0);
-    vertex(9*cell, 3*cell);
-    vertex(8*cell, 3*cell);
-    vertex(8*cell, 0*cell);
-    endShape(CLOSE);    
+    g.beginShape();
+    g.vertex(8*cell, 0);
+    g.vertex(9*cell, 0);
+    g.vertex(9*cell, 3*cell);
+    g.vertex(8*cell, 3*cell);
+    g.vertex(8*cell, 0*cell);
+    g.endShape(CLOSE);    
 }
 
 // Barn Quilt Pattern: Calico Puzzle
-function drawCalicoPuzzle(colors, size) {
+function drawCalicoPuzzle(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors; // c1 = corner background, c2 = cross, c3 = center
     let s = size;
     let third = s / 3;
 
-    noStroke();
+    g.noStroke();
 
     for (let row = 0; row < 3; row++) {
         for (let col = 0; col < 3; col++) {
@@ -434,104 +444,110 @@ function drawCalicoPuzzle(colors, size) {
 
             // Center square
             if (row === 1 && col === 1) {
-                fill(c3); // center color
-                rect(x, y, third, third);
+                g.fill(c3); // center color
+                g.rect(x, y, third, third);
             }
             // Side squares (middle of top, bottom, left, right)
             else if (row === 1 || col === 1) {
-                fill(c2); // cross color
-                rect(x, y, third, third);
+                g.fill(c2); // cross color
+                g.rect(x, y, third, third);
             }
             // Corner squares: background + correctly rotated triangle
             else {
-                fill(c1);
-                rect(x, y, third, third);
+                g.fill(c1);
+                g.rect(x, y, third, third);
 
-                fill(c3);
-                push();
-                translate(x, y);
+                g.fill(c3);
+                g.push();
+                g.translate(x, y);
 
                 if (row === 0 && col === 0) {
                     // top-left — rotate triangle 90° CCW
-                    triangle(0, 0, third, 0, third, third);
+                    g.triangle(0, 0, third, 0, third, third);
                 } else if (row === 0 && col === 2) {
                     // top-right — rotate triangle 90° CW
-                    triangle(third, 0, third, third, 0, third);
+                    g.triangle(third, 0, third, third, 0, third);
                 } else if (row === 2 && col === 2) {
                     // bottom-right — rotate triangle 270° CW (or 90° CCW from top-right)
-                    triangle(third, third, 0, third, 0, 0);
+                    g.triangle(third, third, 0, third, 0, 0);
                 } else if (row === 2 && col === 0) {
                     // bottom-left — rotate triangle 270° CCW (or 90° CW from top-left)
-                    triangle(0, third, 0, 0, third, 0);
+                    g.triangle(0, third, 0, 0, third, 0);
                 }
 
-                pop();
+                g.pop();
             }
         }
     }
 }
 
 // Barn Quilt Pattern: Broken Dishes
-function drawBrokenDishes(colors, size) {
+function drawBrokenDishes(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 4;
 
-    noStroke();
-    
-    fill(c2);
-    rect(0, 0, s, s);
+    g.noStroke();
+ 
+    g.fill(c2);
+    g.rect(0, 0, s, s);
 
-    fill(c1);
-    triangle(0, 0, cell, 0, 0, cell);
-    triangle(2*cell, 0, 3*cell, 0, 2*cell, cell);
-    triangle(cell, cell, 2*cell, cell, cell, 2*cell);
-    triangle(3*cell, cell, 4*cell, cell, 3*cell, 2*cell);
-    triangle(0, 2*cell, cell, 2*cell, 0, 3*cell);
-    triangle(2*cell, 2*cell, 3*cell, 2*cell, 2*cell, 3*cell);
-    triangle(cell, 3*cell, 2*cell, 3*cell, cell, 4*cell);
-    triangle(3*cell, 3*cell, 4*cell, 3*cell, 3*cell, 4*cell);
-    
-    fill(c3);
-    triangle(3*cell, 0, 4*cell, 0, 4*cell, cell);
-    triangle(1*cell, 0, 2*cell, 0, 2*cell, cell);
-    triangle(3*cell, 0, 4*cell, 0, 4*cell, cell);
-    triangle(0, 1*cell, 1*cell, 1*cell, 1*cell, 2*cell);
-    triangle(2*cell, 1*cell, 3*cell, 1*cell, 3*cell, 2*cell);
-    triangle(1*cell, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
-    triangle(3*cell, 2*cell, 4*cell, 2*cell, 4*cell, 3*cell);
-    triangle(0, 3*cell, 1*cell, 3*cell, 1*cell, 4*cell);
-    triangle(2*cell, 3*cell, 3*cell, 3*cell, 3*cell, 4*cell);
+    g.fill(c1);
+    g.triangle(0, 0, cell, 0, 0, cell);
+    g.triangle(2*cell, 0, 3*cell, 0, 2*cell, cell);
+    g.triangle(cell, cell, 2*cell, cell, cell, 2*cell);
+    g.triangle(3*cell, cell, 4*cell, cell, 3*cell, 2*cell);
+    g.triangle(0, 2*cell, cell, 2*cell, 0, 3*cell);
+    g.triangle(2*cell, 2*cell, 3*cell, 2*cell, 2*cell, 3*cell);
+    g.triangle(cell, 3*cell, 2*cell, 3*cell, cell, 4*cell);
+    g.triangle(3*cell, 3*cell, 4*cell, 3*cell, 3*cell, 4*cell);
+
+    g.fill(c3);
+    g.triangle(3*cell, 0, 4*cell, 0, 4*cell, cell);
+    g.triangle(1*cell, 0, 2*cell, 0, 2*cell, cell);
+    g.triangle(3*cell, 0, 4*cell, 0, 4*cell, cell);
+    g.triangle(0, 1*cell, 1*cell, 1*cell, 1*cell, 2*cell);
+    g.triangle(2*cell, 1*cell, 3*cell, 1*cell, 3*cell, 2*cell);
+    g.triangle(1*cell, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
+    g.triangle(3*cell, 2*cell, 4*cell, 2*cell, 4*cell, 3*cell);
+    g.triangle(0, 3*cell, 1*cell, 3*cell, 1*cell, 4*cell);
+    g.triangle(2*cell, 3*cell, 3*cell, 3*cell, 3*cell, 4*cell);
 }
 
 // Barn Quilt Pattern: Battleground Quilt
-function drawBattlegroundQuilt(colors, size) {
+function drawBattlegroundQuilt(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cellSize = s / 6;
 
-    noStroke();
+    g.noStroke();
 
     for (let row = 0; row < 6; row++) {
         for (let col = 0; col < 6; col++) {
             let x = col * cellSize;
             let y = row * cellSize;
 
-            fill(c1);
-            triangle(x, y, x + cellSize, y, x, y + cellSize);
+            g.fill(c1);
+            g.triangle(x, y, x + cellSize, y, x, y + cellSize);
 
             if ((row + col) % 2 === 0) {
-                fill(c2);
+                g.fill(c2);
             } else {
-                fill(c3);
+                g.fill(c3);
             }
-            triangle(x + cellSize, y, x + cellSize, y + cellSize, x, y + cellSize);
+            g.triangle(x + cellSize, y, x + cellSize, y + cellSize, x, y + cellSize);
         }
     }
 }
 
 // Helper function to draw a 3x3 Nine Patch with two alternating colors
-function drawTwoColorNinePatch(xOffset, yOffset, size, cA, cB) {
+function drawTwoColorNinePatch(xOffset, yOffset, size, cA, cB, g) {
+
+    g = g || window;
     let subThird = size / 3;
 
     for (let i = 0; i < 3; i++) {
@@ -540,22 +556,24 @@ function drawTwoColorNinePatch(xOffset, yOffset, size, cA, cB) {
             let sy = yOffset + (i * subThird);
 
             if ((i + j) % 2 === 0) {
-                fill(cA);
+                g.fill(cA);
             } else {
-                fill(cB);
+                g.fill(cB);
             }
-            rect(sx, sy, subThird, subThird);
+            g.rect(sx, sy, subThird, subThird);
         }
     }
 }
 
 // Barn Quilt Pattern: Double Nine Patch
-function drawDoubleNinePatch(colors, size) {
+function drawDoubleNinePatch(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let third = s / 3;
 
-    noStroke();
+    g.noStroke();
 
     for (let row = 0; row < 3; row++) {
         for (let col = 0; col < 3; col++) {
@@ -567,23 +585,25 @@ function drawDoubleNinePatch(colors, size) {
                 (row === 2 && col === 0) ||
                 (row === 2 && col === 2) ||
                 (row === 1 && col === 1)) {
-                drawTwoColorNinePatch(x, y, third, c2, c3);
+                drawTwoColorNinePatch(x, y, third, c2, c3, g);
             } else {
-                fill(c1);
-                rect(x, y, third, third);
+                g.fill(c1);
+                g.rect(x, y, third, third);
             }
         }
     }
 }
 
 // Barn Quilt Pattern: Ohio Star
-function drawOhioStar(colors, size) {
+function drawOhioStar(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let third = s / 3;
     let halfThird = third / 2;
 
-    noStroke();
+    g.noStroke();
 
     for (let row = 0; row < 3; row++) {
         for (let col = 0; col < 3; col++) {
@@ -591,251 +611,265 @@ function drawOhioStar(colors, size) {
             let y = row * third;
 
             if (row === 1 && col === 1) {
-                fill(c1);
-                rect(x, y, third, third);
+                g.fill(c1);
+                g.rect(x, y, third, third);
             }
             else if ((row === 0 && col === 0) ||
                      (row === 0 && col === 2) ||
                      (row === 2 && col === 0) ||
                      (row === 2 && col === 2)) {
-                fill(c3);
-                rect(x, y, third, third);
+                g.fill(c3);
+                g.rect(x, y, third, third);
             }
             else {
                 let cellCx = x + halfThird;
                 let cellCy = y + halfThird;
 
-                fill(c3);
-                rect(x, y, third, third);
+                g.fill(c3);
+                g.rect(x, y, third, third);
 
                 if (row === 0 || row === 2) {
-                    fill(c2);
-                    triangle(x, y, x, y + third, cellCx, cellCy);
-                    triangle(x + third, y, x + third, y + third, cellCx, cellCy);
+                    g.fill(c2);
+                    g.triangle(x, y, x, y + third, cellCx, cellCy);
+                    g.triangle(x + third, y, x + third, y + third, cellCx, cellCy);
                 } else {
-                    fill(c2);
-                    triangle(x, y, x + third, y, cellCx, cellCy);
-                    triangle(x, y + third, x + third, y + third, cellCx, cellCy);
+                    g.fill(c2);
+                    g.triangle(x, y, x + third, y, cellCx, cellCy);
+                    g.triangle(x, y + third, x + third, y + third, cellCx, cellCy);
                 }
             }
         }
     }
 }
 
-function drawApplePie(colors, size) {
+function drawApplePie(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 6;
 
-    noStroke();
-    
-    fill(c1);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c2);
-    rect(2*cell, cell, 2*cell, cell);
-    rect(2*cell, 4*cell, 2*cell, cell);
-    rect(cell, 2*cell, cell, 2*cell);
-    rect(4*cell, 2*cell, cell, 2*cell);
-    
-    fill(c3);
-    triangle(0, 0, cell, cell, 0, 2*cell);
-    triangle(cell, 0, 2*cell, cell, cell, 2*cell);
-    triangle(4*cell, 0, 6*cell, 0, 5*cell, cell);
-    triangle(4*cell, cell, 6*cell, cell, 5*cell, 2*cell);
-    triangle(cell, 4*cell, 2*cell, 5*cell, 0, 5*cell);
-    triangle(cell, 5*cell, 2*cell, 6*cell, 0, 6*cell);
-    triangle(5*cell, 4*cell, 5*cell, 6*cell, 4*cell, 5*cell);
-    triangle(6*cell, 4*cell, 6*cell, 6*cell, 5*cell, 5*cell);
-    rect(2*cell, 2*cell, 2*cell, 2*cell);
+    g.fill(c1);
+    g.rect(0, 0, s, s);
+
+    g.fill(c2);
+    g.rect(2*cell, cell, 2*cell, cell);
+    g.rect(2*cell, 4*cell, 2*cell, cell);
+    g.rect(cell, 2*cell, cell, 2*cell);
+    g.rect(4*cell, 2*cell, cell, 2*cell);
+
+    g.fill(c3);
+    g.triangle(0, 0, cell, cell, 0, 2*cell);
+    g.triangle(cell, 0, 2*cell, cell, cell, 2*cell);
+    g.triangle(4*cell, 0, 6*cell, 0, 5*cell, cell);
+    g.triangle(4*cell, cell, 6*cell, cell, 5*cell, 2*cell);
+    g.triangle(cell, 4*cell, 2*cell, 5*cell, 0, 5*cell);
+    g.triangle(cell, 5*cell, 2*cell, 6*cell, 0, 6*cell);
+    g.triangle(5*cell, 4*cell, 5*cell, 6*cell, 4*cell, 5*cell);
+    g.triangle(6*cell, 4*cell, 6*cell, 6*cell, 5*cell, 5*cell);
+    g.rect(2*cell, 2*cell, 2*cell, 2*cell);
 }
 
-function drawFiftyFourForty(colors, size) {
+function drawFiftyFourForty(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 6;
 
-    noStroke();
-    
-    fill(c1);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c2);
-    rect(cell, 0, cell, cell);
-    rect(4* cell, 0, cell, cell);
-    rect(0, cell, cell, cell);
-    rect(5*cell, cell, cell, cell);
-    rect(3*cell, 2*cell, cell, cell);
-    rect(2*cell, 3*cell, cell, cell);
-    rect(0, 4*cell, cell, cell);
-    rect(5*cell, 4*cell, cell, cell);
-    rect(cell, 5*cell, cell, cell);
-    rect(4*cell, 5*cell, cell, cell);
-    
-    fill(c3);
-    triangle(2*cell, 0, 3*cell, 2*cell, 2*cell, 2*cell);
-    triangle(4*cell, 0, 4*cell, 2*cell, 3*cell, 2*cell);
-    triangle(0, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
-    triangle(4*cell, 2*cell, 6*cell, 2*cell, 4*cell, 3*cell);
-    triangle(2*cell, 3*cell, 2*cell, 4*cell, 0, 4*cell);
-    triangle(4*cell, 3*cell, 6*cell, 4*cell, 4*cell, 4*cell);
-    triangle(2*cell, 4*cell, 3*cell, 4*cell, 2*cell, 6*cell);
-    triangle(3*cell, 4*cell, 4*cell, 4*cell, 4*cell, 6*cell);
+    g.fill(c1);
+    g.rect(0, 0, s, s);
+
+    g.fill(c2);
+    g.rect(cell, 0, cell, cell);
+    g.rect(4* cell, 0, cell, cell);
+    g.rect(0, cell, cell, cell);
+    g.rect(5*cell, cell, cell, cell);
+    g.rect(3*cell, 2*cell, cell, cell);
+    g.rect(2*cell, 3*cell, cell, cell);
+    g.rect(0, 4*cell, cell, cell);
+    g.rect(5*cell, 4*cell, cell, cell);
+    g.rect(cell, 5*cell, cell, cell);
+    g.rect(4*cell, 5*cell, cell, cell);
+
+    g.fill(c3);
+    g.triangle(2*cell, 0, 3*cell, 2*cell, 2*cell, 2*cell);
+    g.triangle(4*cell, 0, 4*cell, 2*cell, 3*cell, 2*cell);
+    g.triangle(0, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
+    g.triangle(4*cell, 2*cell, 6*cell, 2*cell, 4*cell, 3*cell);
+    g.triangle(2*cell, 3*cell, 2*cell, 4*cell, 0, 4*cell);
+    g.triangle(4*cell, 3*cell, 6*cell, 4*cell, 4*cell, 4*cell);
+    g.triangle(2*cell, 4*cell, 3*cell, 4*cell, 2*cell, 6*cell);
+    g.triangle(3*cell, 4*cell, 4*cell, 4*cell, 4*cell, 6*cell);
 }
 
-function drawDutchmansPuzzle(colors, size) {
+function drawDutchmansPuzzle(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 4;
 
-    noStroke();
-    
-    fill(c1);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c2);
-    triangle(cell, 0, 2*cell, cell, 0, cell);
-    triangle(3*cell, 0, 4*cell, cell, 3*cell, 2*cell);
-    triangle(cell, 2*cell, cell, 4*cell, 0, 3*cell);
-    triangle(2*cell, 3*cell, 4*cell, 3*cell, 3*cell, 4*cell);
-    
-    fill(c3);
-    triangle(2*cell, 0, 3*cell, cell, 2*cell, 2*cell);
-    triangle(cell, cell, 2*cell, 2*cell, 0, 2*cell);
-    triangle(2*cell, 2*cell, 4*cell, 2*cell, 3*cell, 3*cell);
-    triangle(2*cell, 2*cell, 2*cell, 4*cell, cell, 3*cell);
+    g.fill(c1);
+    g.rect(0, 0, s, s);
+
+    g.fill(c2);
+    g.triangle(cell, 0, 2*cell, cell, 0, cell);
+    g.triangle(3*cell, 0, 4*cell, cell, 3*cell, 2*cell);
+    g.triangle(cell, 2*cell, cell, 4*cell, 0, 3*cell);
+    g.triangle(2*cell, 3*cell, 4*cell, 3*cell, 3*cell, 4*cell);
+
+    g.fill(c3);
+    g.triangle(2*cell, 0, 3*cell, cell, 2*cell, 2*cell);
+    g.triangle(cell, cell, 2*cell, 2*cell, 0, 2*cell);
+    g.triangle(2*cell, 2*cell, 4*cell, 2*cell, 3*cell, 3*cell);
+    g.triangle(2*cell, 2*cell, 2*cell, 4*cell, cell, 3*cell);
 }
 
-function drawHoveringHawks(colors, size) {
+function drawHoveringHawks(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 4;
 
-    noStroke();
-    
-    fill(c1);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c2);
-    triangle(cell, 0, 2*cell, cell, cell, cell);
-    triangle(2*cell, cell, 3*cell, 2*cell, 2*cell, 2*cell);
-    triangle(3*cell, 2*cell, 4*cell, 3*cell, 3*cell, 3*cell);
-    triangle(0, cell, cell, cell, cell, 2*cell);
-    triangle(cell, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
-    triangle(2*cell, 3*cell, 3*cell, 3*cell, 3*cell, 4*cell);
-    
-    fill(c3);
-    triangle(2*cell, 0, 3*cell, cell, 2*cell, cell);
-    triangle(3*cell, cell, 4*cell, 2*cell, 3*cell, 2*cell);
-    triangle(0, 2*cell, cell, 2*cell, cell, 3*cell);
-    triangle(cell, 3*cell, 2*cell, 3*cell, 2*cell, 4*cell);
+    g.fill(c1);
+    g.rect(0, 0, s, s);
+
+    g.fill(c2);
+    g.triangle(cell, 0, 2*cell, cell, cell, cell);
+    g.triangle(2*cell, cell, 3*cell, 2*cell, 2*cell, 2*cell);
+    g.triangle(3*cell, 2*cell, 4*cell, 3*cell, 3*cell, 3*cell);
+    g.triangle(0, cell, cell, cell, cell, 2*cell);
+    g.triangle(cell, 2*cell, 2*cell, 2*cell, 2*cell, 3*cell);
+    g.triangle(2*cell, 3*cell, 3*cell, 3*cell, 3*cell, 4*cell);
+
+    g.fill(c3);
+    g.triangle(2*cell, 0, 3*cell, cell, 2*cell, cell);
+    g.triangle(3*cell, cell, 4*cell, 2*cell, 3*cell, 2*cell);
+    g.triangle(0, 2*cell, cell, 2*cell, cell, 3*cell);
+    g.triangle(cell, 3*cell, 2*cell, 3*cell, 2*cell, 4*cell);
 }
 
-function drawGrandmothersPuzzle(colors, size) {
+function drawGrandmothersPuzzle(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 5;
 
-    noStroke();
-    
-    fill(c2);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c1);
-    rect(0, 0, cell, cell);
-    rect(4*cell, 0, cell, cell);
-    rect(2*cell, 2*cell, cell, cell);
-    rect(0, 4*cell, cell, cell);
-    rect(4*cell, 4*cell, cell, cell);
+    g.fill(c2);
+    g.rect(0, 0, s, s);
 
-    fill(c3);
-    triangle(2*cell, 0, 2*cell, 2*cell, 0, 2*cell);
-    triangle(2*cell, cell, 4*cell, cell, 4*cell, 3*cell);
-    triangle(cell, 2*cell, 3*cell, 4*cell, cell, 4*cell);
-    triangle(3*cell, 3*cell, 5*cell, 3*cell, 3*cell, 5*cell);
+    g.fill(c1);
+    g.rect(0, 0, cell, cell);
+    g.rect(4*cell, 0, cell, cell);
+    g.rect(2*cell, 2*cell, cell, cell);
+    g.rect(0, 4*cell, cell, cell);
+    g.rect(4*cell, 4*cell, cell, cell);
+
+    g.fill(c3);
+    g.triangle(2*cell, 0, 2*cell, 2*cell, 0, 2*cell);
+    g.triangle(2*cell, cell, 4*cell, cell, 4*cell, 3*cell);
+    g.triangle(cell, 2*cell, 3*cell, 4*cell, cell, 4*cell);
+    g.triangle(3*cell, 3*cell, 5*cell, 3*cell, 3*cell, 5*cell);
 }
 
-function drawClaysChoice(colors, size) {
+function drawClaysChoice(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 4;
 
-    noStroke();
-    
-    fill(c3);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c1);
-    rect(0, 0, cell, cell);
-    rect(3*cell, 0, cell, cell);
-    rect(0, 3*cell, cell, cell);
-    rect(3*cell, 3*cell, cell, cell);
-    triangle(cell, cell, 2*cell, 2*cell, cell, 2*cell);
-    triangle(2*cell, cell, 3*cell, cell, 2*cell, 2*cell);
-    triangle(2*cell, 2*cell, 2*cell, 3*cell, cell, 3*cell);
-    triangle(2*cell, 2*cell, 3*cell, 2*cell, 3*cell, 3*cell);
+    g.fill(c3);
+    g.rect(0, 0, s, s);
 
-    fill(c2);
-    beginShape();
-    vertex(cell, 0);
-    vertex(2*cell, cell);
-    vertex(2*cell, 2*cell);
-    vertex(cell, cell);
-    endShape(CLOSE);
-    
-    beginShape();
-    vertex(3*cell, cell);
-    vertex(4*cell, cell);
-    vertex(3*cell, 2*cell);
-    vertex(2*cell, 2*cell);
-    endShape(CLOSE);
-    
-    beginShape();
-    vertex(cell, 2*cell);
-    vertex(2*cell, 2*cell);
-    vertex(cell, 3*cell);
-    vertex(0, 3*cell);
-    endShape(CLOSE);
-    
-    beginShape();
-    vertex(2*cell, 2*cell);
-    vertex(3*cell, 3*cell);
-    vertex(3*cell, 4*cell);
-    vertex(2*cell, 3*cell);
-    endShape(CLOSE);
+    g.fill(c1);
+    g.rect(0, 0, cell, cell);
+    g.rect(3*cell, 0, cell, cell);
+    g.rect(0, 3*cell, cell, cell);
+    g.rect(3*cell, 3*cell, cell, cell);
+    g.triangle(cell, cell, 2*cell, 2*cell, cell, 2*cell);
+    g.triangle(2*cell, cell, 3*cell, cell, 2*cell, 2*cell);
+    g.triangle(2*cell, 2*cell, 2*cell, 3*cell, cell, 3*cell);
+    g.triangle(2*cell, 2*cell, 3*cell, 2*cell, 3*cell, 3*cell);
+
+    g.fill(c2);
+    g.beginShape();
+    g.vertex(cell, 0);
+    g.vertex(2*cell, cell);
+    g.vertex(2*cell, 2*cell);
+    g.vertex(cell, cell);
+    g.endShape(CLOSE);
+
+    g.beginShape();
+    g.vertex(3*cell, cell);
+    g.vertex(4*cell, cell);
+    g.vertex(3*cell, 2*cell);
+    g.vertex(2*cell, 2*cell);
+    g.endShape(CLOSE);
+
+    g.beginShape();
+    g.vertex(cell, 2*cell);
+    g.vertex(2*cell, 2*cell);
+    g.vertex(cell, 3*cell);
+    g.vertex(0, 3*cell);
+    g.endShape(CLOSE);
+
+    g.beginShape();
+    g.vertex(2*cell, 2*cell);
+    g.vertex(3*cell, 3*cell);
+    g.vertex(3*cell, 4*cell);
+    g.vertex(2*cell, 3*cell);
+    g.endShape(CLOSE);
 }
 
-function drawCornAndBeans(colors, size) {
+function drawCornAndBeans(colors, size, g) {
+
+    g = g || window;
     let [c1, c2, c3] = colors;
     let s = size;
     let cell = s / 6;
 
-    noStroke();
-    
-    fill(c1);
-    rect(0, 0, s, s);
+    g.noStroke();
 
-    fill(c2);
-    triangle(2*cell, 0, 2*cell, cell, cell, cell);
-    triangle(4*cell, 0, 5*cell, cell, 4*cell, cell);
-    triangle(cell, cell, cell, 2*cell, 0, 2*cell);
-    triangle(5*cell, cell, 6*cell, 2*cell, 5*cell, 2*cell);
-    triangle(3*cell, cell, 5*cell, 3*cell, 3*cell, 3*cell);
-    triangle(cell, 3*cell, 3*cell, 3*cell, 3*cell, 5*cell);
-    triangle(0, 4*cell, cell, 4*cell, cell, 5*cell);
-    triangle(5*cell, 4*cell, 6*cell, 4*cell, 5*cell, 5*cell);
-    triangle(cell, 5*cell, 2*cell, 5*cell, 2*cell, 6*cell);
-    triangle(4*cell, 5*cell, 5*cell, 5*cell, 4*cell, 6*cell);
+    g.fill(c1);
+    g.rect(0, 0, s, s);
 
-    fill(c3);
-    triangle(3*cell, 0, 4*cell, cell, 2*cell, cell);
-    triangle(2*cell, cell, 2*cell, 2*cell, cell, 2*cell);
-    triangle(4*cell, cell, 5*cell, 2*cell, 4*cell, 2*cell);
-    triangle(cell, 2*cell, cell, 4*cell, 0, 3*cell);
-    triangle(5*cell, 2*cell, 6*cell, 3*cell, 5*cell, 4*cell);
-    triangle(cell, 4*cell, 2*cell, 4*cell, 2*cell, 5*cell);
-    triangle(4*cell, 4*cell, 5*cell, 4*cell, 4*cell, 5*cell);
-    triangle(2*cell, 5*cell, 4*cell, 5*cell, 3*cell, 6*cell);
+    g.fill(c2);
+    g.triangle(2*cell, 0, 2*cell, cell, cell, cell);
+    g.triangle(4*cell, 0, 5*cell, cell, 4*cell, cell);
+    g.triangle(cell, cell, cell, 2*cell, 0, 2*cell);
+    g.triangle(5*cell, cell, 6*cell, 2*cell, 5*cell, 2*cell);
+    g.triangle(3*cell, cell, 5*cell, 3*cell, 3*cell, 3*cell);
+    g.triangle(cell, 3*cell, 3*cell, 3*cell, 3*cell, 5*cell);
+    g.triangle(0, 4*cell, cell, 4*cell, cell, 5*cell);
+    g.triangle(5*cell, 4*cell, 6*cell, 4*cell, 5*cell, 5*cell);
+    g.triangle(cell, 5*cell, 2*cell, 5*cell, 2*cell, 6*cell);
+    g.triangle(4*cell, 5*cell, 5*cell, 5*cell, 4*cell, 6*cell);
+
+    g.fill(c3);
+    g.triangle(3*cell, 0, 4*cell, cell, 2*cell, cell);
+    g.triangle(2*cell, cell, 2*cell, 2*cell, cell, 2*cell);
+    g.triangle(4*cell, cell, 5*cell, 2*cell, 4*cell, 2*cell);
+    g.triangle(cell, 2*cell, cell, 4*cell, 0, 3*cell);
+    g.triangle(5*cell, 2*cell, 6*cell, 3*cell, 5*cell, 4*cell);
+    g.triangle(cell, 4*cell, 2*cell, 4*cell, 2*cell, 5*cell);
+    g.triangle(4*cell, 4*cell, 5*cell, 4*cell, 4*cell, 5*cell);
+    g.triangle(2*cell, 5*cell, 4*cell, 5*cell, 3*cell, 6*cell);
 }
 // --- 4. Core Logic Functions (generateQuilt updated for pattern names) ---
 
@@ -859,7 +893,7 @@ function drawCurrentQuilt() {
 
     background(255);
 
-    const currentShuffledColorsHex = currentShuffledColors.map(
+    currentShuffledColorsHex = currentShuffledColors.map(
         id => wadaColorsData.colors[id].hex
     );
 
@@ -871,6 +905,7 @@ function drawCurrentQuilt() {
 
     display_text = `${currentPattern.name}<br>(Combination: ${currentCombinationId})`;
     display_swatches = true;
+    fileName = `wada_quilt_combo_${currentCombinationId}_${currentPattern.name.toLowerCase()}`
 
     updateColorDisplay();
 }
@@ -897,6 +932,7 @@ function generateQuiltGridData() {
         }
         display_text = `Color Combination: ${currentCombinationId}`;
         display_swatches = true;
+        fileName = `wada_quilt_combo_${currentCombinationId}_mixed_patterns`
 
     } else if (currentGridOption == 2) {
         currentPattern = random(quiltPatterns);
@@ -914,6 +950,7 @@ function generateQuiltGridData() {
 
         display_text = `Pattern: ${currentPattern.name}`;
         display_swatches = false;
+        fileName = `wada_quilt_mixed_colors_${currentPattern.name.toLowerCase()}`
 
     } else {
         const shuffledPatterns = shuffleArray(quiltPatterns);
@@ -930,6 +967,7 @@ function generateQuiltGridData() {
         }
         display_text = `Mixed colors and patterns`;
         display_swatches = false
+        fileName = 'wada_quilt_mixed_colors_patterns'
     }
 }
 
