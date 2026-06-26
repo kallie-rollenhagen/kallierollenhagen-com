@@ -47,16 +47,20 @@ gallery:
           file: /assets/images/watercolor-3-2-small.jpg
           alt: watercolor painting of different colored squares
       object_fit: cover
-    - layout: halves
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
       elements:
         - type: image
-          file: /assets/images/kallie-sketchbook-4.jpg
-          alt: sketchbook geometric guache paintings
-          caption: ""
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-collage-1.jpg
+          alt: collage in sketchbook
         - type: image
-          file: /assets/images/kallie-sketchbook-5.jpg
-          alt: sketchbook geometric guache paintings
-      object_fit: cover
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-collage-2.jpg
+          alt: collage in sketchbook
     - layout: thirds
       elements:
         - type: image
@@ -72,10 +76,11 @@ gallery:
     - layout: halves
       elements:
         - type: image
-          file: /assets/images/kallie-sketchbook-11.jpg
+          file: /assets/images/kallie-sketchbook-4.jpg
           alt: sketchbook geometric guache paintings
+          caption: ""
         - type: image
-          file: /assets/images/kallie-sketchbook-13.jpg
+          file: /assets/images/kallie-sketchbook-5.jpg
           alt: sketchbook geometric guache paintings
       object_fit: cover
     - layout: full-width
@@ -83,6 +88,15 @@ gallery:
         - type: image
           file: /assets/images/big-painting-small.jpg
           alt: guache geometric paintings laying on a table
+      object_fit: cover
+    - layout: halves
+      elements:
+        - type: image
+          file: /assets/images/kallie-sketchbook-11.jpg
+          alt: sketchbook geometric guache paintings
+        - type: image
+          file: /assets/images/kallie-sketchbook-13.jpg
+          alt: sketchbook geometric guache paintings
       object_fit: cover
     - layout: thirds
       elements:
@@ -96,4 +110,27 @@ gallery:
           file: /assets/images/kallie-sketchbook-1.jpg
           alt: sketchbook geometric guache paintings
       object_fit: cover
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-small-blue-lines.jpg
+          alt: blue line landscape in sketchbook
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-diebenkorn-studies.jpg
+          alt: colored pencil sketch of Diebenkorn studies in sketchbook
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-color-pencil-sketches.jpg
+          alt: sketchbook with color pencil sketches
 ---

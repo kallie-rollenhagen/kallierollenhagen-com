@@ -18,7 +18,7 @@ project_description: >-
 
   ### Output
 
-   In the quilt block generation embedded below, users can see randomized classic quilt blocks, either single blocks or a 4 by 4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combination section of the Japanese *Dictionary of Color Combinations, Volume 2* by Sanzo Wada.
+   In the quilt block generator embedded below, users can create randomized classic quilt blocks, either single blocks or a 4-by-4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combinations in Sanzo Wada's Japanese *Dictionary of Color Combinations, Volume 2.*
 main_image:
   file: /assets/images/wada-quilts-gif-2.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
@@ -30,6 +30,28 @@ gallery:
   lightbox: false
   type: grid
   rows:
+    - layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Background & Inspiration
+
+
+            I’d been practicing color mixing, inspired by this cult favorite color dictionary. I wanted to use the outputs of this prompt to generate new patterns, inspired by classic quilt patterns. 
+
+
+            My mother, grandmothers, and several of my friends are quilters. This project gave me a way to participate in creative quilting circles, just in another medium.
+        - type: image
+          file: /assets/images/inspiration.jpg
+          alt: moodboard with barn quilt, sketchbook, and Sanzo Wada Dictionary of Colors
+            Vol. 2
+      object_fit: contain
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: full-width
+      elements:
+        - type: p5js
+          sketch: wada-quilt-pattern.js
     - layout: thirds
       elements:
         - type: image
@@ -46,22 +68,6 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Background & Inspiration
-
-
-            I’d been practicing color mixing, inspired by this cult favorite color dictionary. I wanted to use the outputs of this prompt to generate new patterns, inspired by classic quilt patterns. 
-
-
-            My mother, grandmothers, and several of my friends are quilters. This project gave me a way to participate in creative quilting circles, just in another medium.
-        - type: image
-          file: /assets/images/inspiration.jpg
-          alt: moodboard with barn quilt, sketchbook, and Sanzo Wada Dictionary of Colors
-            Vol. 2
-      object_fit: contain
-    - layout: right-wide
-      elements:
-        - type: text
-          text: >-
             ## Challenge: Pattern Recognition 
 
 
@@ -73,10 +79,4 @@ gallery:
           file: /assets/images/challenges-web-block.jpg
           alt: grid of 3 rows and 5 columns showing the progression of block outputs
       object_fit: contain
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: full-width
-      elements:
-        - type: p5js
-          sketch: wada-quilt-pattern.js
 ---
