@@ -18,7 +18,7 @@ project_description: >-
 
   ### Output
 
-   In the quilt block generation embedded below, users can see randomized classic quilt blocks, either single blocks or a 4 by 4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combination section of the Japanese *Dictionary of Color Combinations, Volume 2* by Sanzo Wada.
+   In the quilt block generator embedded below, users can create randomized classic quilt blocks, either single blocks or a 4-by-4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combinations in Sanzo Wada's Japanese *Dictionary of Color Combinations, Volume 2.*
 main_image:
   file: /assets/images/wada-quilts-gif-2.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
