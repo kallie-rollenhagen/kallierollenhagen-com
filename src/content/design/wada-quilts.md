@@ -62,10 +62,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Challenge: Pattern recognition 
+            ## Challenge: Pattern Recognition 
 
 
-            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. This shows my attempts to prompt the LLMs, using both verbal prompts and image inputs.
+            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. This shows my attempts to prompt the LLMs, using both verbal prompts and image inputs. Ultimately, several blocks had to be manually coded.
 
 
             *Note: These outputs are from summer 2025.*
