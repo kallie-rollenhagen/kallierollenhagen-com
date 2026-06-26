@@ -36,6 +36,7 @@ let currentBlocksGrid = [];
 let display_text = '';
 let display_swatches = true;
 let fileName = '';
+let scaleSize = 5;
 
 const modeToggle = document.getElementById("modeToggle");
 const gridOptionsWrapper = document.getElementById("grid-options-wrapper")
@@ -241,10 +242,11 @@ function updateColorDisplay() {
 // Function to download the canvas as a PNG image
 function downloadQuilt() {
 
-    const scaleSize = 4000;
-    const g = createGraphics(scaleSize, scaleSize);
-    currentPattern.func(currentShuffledColorsHex, scaleSize, g);
-    g.save(`${fileName}.png`);
+    saveCanvas(fileName, 'png');
+    // const scaleSize = 4000;
+    // const g = createGraphics(scaleSize, scaleSize);
+    // currentPattern.func(currentShuffledColorsHex, scaleSize, g);
+    // g.save(`${fileName}.png`);
 }
 
 // Function to shuffle an array (Fisher-Yates algorithm)
@@ -889,7 +891,9 @@ function generateQuilt() {
 
 function drawCurrentQuilt() {
     quiltSize = calculateQuiltSize().canvasSize;
-    resizeCanvas(quiltSize, quiltSize);
+    resizeCanvas(quiltSize * scaleSize, quiltSize * scaleSize);
+    quiltBlockCanvas.canvas.style.width = quiltSize + "px";
+    quiltBlockCanvas.canvas.style.height = quiltSize + "px";
 
     background(255);
 
@@ -900,8 +904,8 @@ function drawCurrentQuilt() {
     if (quiltNameElement) {
         // quiltNameElement.textContent = `${currentPattern.name} (Combo: ${currentCombinationId})`;
     }
-
-    currentPattern.func(currentShuffledColorsHex, quiltSize);
+    background(100);
+    currentPattern.func(currentShuffledColorsHex, quiltSize * scaleSize);
 
     display_text = `${currentPattern.name}<br>(Combination: ${currentCombinationId})`;
     display_swatches = true;
@@ -975,17 +979,19 @@ function drawQuiltGrid() {
 
     sizeData = calculateQuiltSize();
     quiltSize = sizeData.canvasSize;
-    const padding = sizeData.padding;
-    const blockSize = sizeData.blockSize;
-    resizeCanvas(quiltSize, quiltSize);
+    const padding = sizeData.padding * scaleSize;
+    const blockSize = sizeData.blockSize * scaleSize;
+    resizeCanvas(quiltSize * scaleSize, quiltSize * scaleSize);
+    quiltBlockCanvas.canvas.style.width = quiltSize + "px";
+    quiltBlockCanvas.canvas.style.height = quiltSize + "px";
 
     console.log(`sizeData: ${quiltSize}, ${blockSize}, ${padding}`);
     
     let blockIndex = 0;
     for (let row = 0; row < 4; row++) {
         for (let col = 0; col < 4; col++) {
-            let x = + col * (blockSize + padding);
-            let y = + row * (blockSize + padding);
+            let x = col * (blockSize + padding);
+            let y = row * (blockSize + padding);
 
             push();
             translate(x, y);
