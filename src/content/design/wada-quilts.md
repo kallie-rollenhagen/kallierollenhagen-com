@@ -20,7 +20,7 @@ project_description: >-
 
    In the quilt block generation embedded below, users can see randomized classic quilt blocks, either single blocks or a 4 by 4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combination section of the Japanese *Dictionary of Color Combinations, Volume 2* by Sanzo Wada.
 main_image:
-  file: /assets/images/wada-quilt-grid-3-2.gif
+  file: /assets/images/wada-quilts-gif-2.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
     patterns
 thumbnail_image:
@@ -62,10 +62,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Challenge: Pattern recognition 
+            ## Challenge: Pattern Recognition 
 
 
-            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. This shows my attempts to prompt the LLMs, using both verbal prompts and image inputs.
+            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. This shows my attempts to prompt the LLMs, using both verbal prompts and image inputs. Ultimately, several blocks had to be manually coded.
 
 
             *Note: These outputs are from summer 2025.*
