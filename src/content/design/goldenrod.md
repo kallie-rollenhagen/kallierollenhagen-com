@@ -81,7 +81,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: "### Final Logo, Marks, & Typefaces"
+          text: "## Final Logo, Marks, & Typefaces"
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
@@ -121,7 +121,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: "### Color"
+          text: "## Color"
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
