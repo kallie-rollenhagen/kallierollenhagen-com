@@ -3,22 +3,19 @@ title: Arb Centennial
 slug: arb-centennial
 seoDescription: Visual identity for centennial celebration of Carleton College's arboretum
 publish: true
-roles_played: Brand Identity + Design
+roles_played: Brand Identity |  Environmental Graphics Design
 project_description: >-
   Enhanced environmental design project to help celebrate the 100th anniversary
   of Carleton College's Cowling Arboretum in 2026–2027.
 
 
-  MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
-
-
-  ### Scope & Deliverables
+  ## Scope & Deliverables
 
 
   Graphic identity that complements the College's parent brand, wayfinding signage, and a series of place-based engagement installations that engage and educate visitors to the Arb.
 
 
-  ### Design Challenges
+  ## Design Challenges
 
 
   Keep the main focus on the beauty of the Arb itself, align efforts with the College's brand, and consider the longevity and materiality of installations from a sustainability perspective.
@@ -50,19 +47,19 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Context
+            ## Context
 
 
             Carleton College stewards an 800-acre arboretum — “the Arb” — directly adjacent to its campus in Northfield, Minnesota. The Arb is located on a natural border between prairie and forest habitat, partly on the floodplain of the Cannon River. It is free and open to the public.
         - type: text
           text: >-
-            ### Why It Matters 
+            ## Why It Matters 
 
 
             The Arb is beloved by many: Northfielders, birders, cross-country skiers, generations of Carleton students and staff, fisherpeople, and countless visitors. It’s both a classroom and a respite. Personally, the Arb is a second home and a big reason I live in this place.
         - type: text
           text: >-
-            ### Why Now 
+            ## Why Now 
 
 
             In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place by asking visitors to engage with it and learn more about the restoration work happening within it.
@@ -72,7 +69,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Inspiration & Design Parameters
+            ## Inspiration & Design Parameters
 
 
             * The beauty of the landscape should always be the focal point, merely enhanced by signage and installations.
@@ -91,13 +88,13 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Site Overview: Carleton College | Northfield, MN
+            ## Site Overview: Carleton College | Northfield, MN
 
 
             The Arb is adjacent to Carleton’s campus on the northeast side of Northfield. It contains wetland (adjacent to the Cannon River), prairie, and forests.
 
 
-            ### Land History 
+            ## Land History 
 
 
             Carleton’s campus is on the ancestral homelands of the Wahpekute and Mdewakanton bands of the Dakota Nation. While there is no evidence of permanent Dakota dwellings in Northfield or the Arb, it was an important hunting and fishing pathway for the nomadic Wahpekute band.
@@ -116,16 +113,16 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Event Visual Identity
+            ## Event Visual Identity
 
 
             **Logo:** Apply type to an icon developed for Carleton’s Sustainable Futures initiative by Cody Hudson of Struggle, Inc. 
 
 
-            ### Align With Carleton's Parent Brand 
+            ## Alignment With Carleton's Parent Brand 
 
 
-            The logo and assets will use Carleton’s primary sans serif typeface — Gotham— as well as one of its primary colors (maize) and a secondary palette color (green). It will also pull from Carleton’s neutral palette.
+            The logo and assets uses Carleton’s primary sans serif typeface — Gotham — as well as one of its primary colors (maize) and a secondary palette color (green). It also pulls from Carleton’s neutral palette.
         - type: image
           focal_x: 50
           focal_y: 50
@@ -146,7 +143,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Engagement Stops Signage
+            ## Engagement Stops Signage
 
 
             There will be four engagement stops located in the Arb, each with a bold maize design.
@@ -183,7 +180,7 @@ gallery:
       layout: halves
       elements:
         - type: text
-          text: "### Wayfinding Signage"
+          text: "## Wayfinding Signage"
         - type: text
           text: A series of wayfinding signs support the event branding and guide users to
             the interactive stops within the Arb.
@@ -193,7 +190,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Stop 1: Upper Arb Entrance
+            ## Stop 1: Upper Arb Entrance
 
 
             **Artist:** Commission Rachel Hayes for a tapestry entrance installation
@@ -216,7 +213,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Stop 2: Photo Moment of Big Bur Oak 
+            ## Stop 2: Photo Moment of Big Bur Oak 
 
 
             The bur oak tree on the hillside prairie is one of the most photographed trees in the Arboretum. 
@@ -239,7 +236,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Stop 3: Prairie Restoration Educational Display
+            ## Stop 3: Prairie Restoration Educational Display
 
 
             This stop shows the transformation of a monoculture corn field to a native prairie.
@@ -279,7 +276,7 @@ gallery:
       layout: thirds
       elements:
         - type: text
-          text: "### Stop 4: Seed Stop With Native Plants"
+          text: "## Stop 4: Seed Stop With Native Plants"
         - type: text
           text: Carleton’s restored Arb prairies support approximately 80 different native
             prairie plant species. Community volunteers collect native seeds,

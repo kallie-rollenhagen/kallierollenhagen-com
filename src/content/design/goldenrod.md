@@ -3,7 +3,7 @@ title: Goldenrod
 slug: goldenrod
 seoDescription: Goldenrod restaurant design concepts.
 publish: true
-roles_played: Brand Development | Designer
+roles_played: Brand Development | Design
 project_description: >-
   Brand development for a rural destination diner.
 
@@ -81,7 +81,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: "### Final Logo, Marks, & Typefaces"
+          text: "## Final Logo, Marks, & Typefaces"
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
@@ -121,7 +121,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: "### Color"
+          text: "## Color"
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide

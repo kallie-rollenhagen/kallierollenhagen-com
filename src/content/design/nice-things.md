@@ -10,16 +10,13 @@ project_description: >-
   to sell curated home goods and gifts.
 
 
-  MCAD MA in Graphic & Web Design Course: **Experimental Interaction**
-
-
-  ### Design Scope
+  ## Design Scope
 
 
   Develop a dynamic visual identity system.
 
 
-  ### Business Core Values
+  ## Business Core Values
 
 
   <ul><li>Small places deserve nice things.</li><li>Beauty is a necessity, not a luxury. Nice things provide small, daily joys.</li><li>People should have access to quality, handcrafted, or designed objects that they can use forever.</li><li>Curating the things in our lives should be a meaningful and delightful practice.</li><li>Healthy local economies need pathways to support craftspeople and artists.</li></ul>
@@ -44,7 +41,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Inspiration: Handcrafted Object Library
+            ## Inspiration: Handcrafted Object Library
 
 
             For a shop selling handcrafted items and art, it was important that the identity also be handcrafted. 
@@ -64,13 +61,13 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Creative Concept & Approach
+            ## Creative Concept & Approach
 
 
             Many items stocked in Nice Things will have an element of handcraft, such as hand-sewn garments, hand-spun textiles, hand-thrown pottery, hand-dipped candles, etc. 
 
 
-            For the brand to retain an element of that bespoke, hand-made quality, I cut two-dimensional shapes and then digitized these to form the graphic language. Objects can be used at different scales or in different colors.
+            For the brand to retain an element of that same bespoke, hand-made quality, I cut two-dimensional shapes and then digitized these to form the graphic language. Objects can be used at different scales or in different colors.
         - type: image
           file: /assets/images/cutouts-small.jpg
           alt: paper cut objects
@@ -83,10 +80,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Moodboard: Object Library Applied
+            ## Moodboard: Object Library Applied
 
 
-            These varied, colorful brands grounded in images, shapes, and colors guided my approach for Nice Things. I appreciate the way they play with scale and how central shapes are to their identity.
+            These varied, colorful brands grounded in images, shapes, and color guided my approach for Nice Things. I appreciate the way they play with scale and how central shapes are to their identity.
         - type: image
           file: /assets/images/brand-moodboard.jpg
           alt: moodboard of colorful graphics and illustrations
@@ -96,10 +93,10 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Static Elements
+            ## Static Elements
 
 
-            While the object library can be added to over time and the objects scaled up and down, the logo — derived using the typeface Heiy, fonts, and colors are consistent across assets.
+            While the object library can be added to over time and the objects scaled up and down, the logo (derived from the typeface Heiy), fonts, and colors are consistent across assets.
         - type: image
           file: /assets/images/colors-type-logo.png
           alt: logo, typefaces and color palette
@@ -109,7 +106,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ### Establishing Art
+            ## Establishing Art
 
 
             These assets show, at the most conceptual level, how the Nice Things visual identity can be applied.

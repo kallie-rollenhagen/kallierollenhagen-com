@@ -5,17 +5,17 @@ seoDescription: Travel guide concepts for rural exploration.
 publish: true
 roles_played: Brand Development | Layout Design | Photography
 project_description: >-
-  Design for a rural travel guide series that encourages more people to consider
-  rural travel destinations.
+  Rural travel guide series that encourages more people to consider rural travel
+  destinations.
 
 
-  ### The Goal
+  ## The Goal
 
 
   Whereas city guides require filtering to fight through the overwhelm, rural guides require scavengers to surface the gems. This project serves as a template of what a curated, designed travel guide could look like for smaller places. **Bonus:** Boost rural economic development efforts.
 
 
-  ### Design Scope
+  ## Design Scope
 
 
   Develop a printed guide template and proof of concept that is visually on par with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
