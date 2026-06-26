@@ -9,13 +9,13 @@ project_description: >-
   rural travel destinations.
 
 
-  ### The Goal
+  ## The Goal
 
 
   Whereas city guides require filtering to fight through the overwhelm, rural guides require scavengers to surface the gems. This project serves as a template of what a curated, designed travel guide could look like for smaller places. **Bonus:** Boost rural economic development efforts.
 
 
-  ### Design Scope
+  ## Design Scope
 
 
   Develop a printed guide template and proof of concept that is visually on par with more niche, design-focused urban guides, while providing an intimate, curated guide for rural regions.
