@@ -103,7 +103,7 @@ canvas {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    white-space: normal;
+    /* white-space: normal; */
     /* Allow text to wrap if needed */
     text-align: center;
     /* Center text within buttons */
