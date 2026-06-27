@@ -53,6 +53,20 @@ gallery:
       elements:
         - type: p5js
           sketch: wada-quilt-pattern.js
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
+          alt: 54-40 or fight quilt block, digitally rendered
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-wada.jpg
+          alt: 54-40 or fight quilt block, painted
     - layout: thirds
       elements:
         - type: image
@@ -80,18 +94,4 @@ gallery:
           file: /assets/images/challenges-web-block.jpg
           alt: grid of 3 rows and 5 columns showing the progression of block outputs
       object_fit: contain
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: halves
-      elements:
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
-          alt: 54-40 or fight quilt block, digitally rendered
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/kallie-sketchbook-wada.jpg
-          alt: 54-40 or fight quilt block, painted
 ---
