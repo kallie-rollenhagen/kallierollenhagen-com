@@ -79,7 +79,7 @@ gallery:
           alt: Collective Quarterly magazines
           caption: "Collective Quarterly: Audience overlap, photo essays, local intel"
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: thirds
       elements:
         - type: text
