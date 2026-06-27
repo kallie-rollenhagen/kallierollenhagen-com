@@ -3,7 +3,7 @@ title: "Admissions marketing: Visit Map"
 slug: admissions-marketing-visit-map
 seoDescription: Design overview of admissions visit map
 publish: true
-roles_played: Creative + Art Direction | Marketing Strategy
+roles_played: Creative & Art Direction | Marketing Strategy
 credits:
   - role: Design
     person: Beth Elzer
