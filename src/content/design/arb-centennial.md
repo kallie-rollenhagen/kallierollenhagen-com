@@ -62,7 +62,7 @@ gallery:
             ## Why Now 
 
 
-            In 2026, the Arb will celebrate its 100th birthday. We want to celebrate this place by asking visitors to engage with it and learn more about the restoration work happening within it.
+            In the 2026–2027 academic year, the Arb will celebrate its 100th birthday. The goal of these installations is to celebrate this place by inviting visitors to engage with it and learn more about the restoration work happening within the Arb.
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
