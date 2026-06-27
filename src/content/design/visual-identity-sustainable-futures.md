@@ -1,10 +1,10 @@
 ---
-title: "Visual Identity: Sustainable Futures"
+title: "Carleton College: Sustainable Futures"
 slug: visual-identity-sustainable-futures
 seoDescription: Design overview of visual identity for Carleton College's
   sustainable futures initiatives
 publish: true
-roles_played: Creative + Art Direction | Design
+roles_played: Creative & Art Direction | Design
 credits:
   - role: Photography
     person: Ackerman + Gruber
@@ -19,13 +19,13 @@ project_description: >-
   initiatives.
 
 
-  ### Goal 
+  ## Goal 
 
 
   Tout Carleton College’s climate action leadership and build excitement in a move *away* from carbon neutrality *toward* more impactful sustainability goals. 
 
 
-  ### Design challenge 
+  ## Design Challenge 
 
 
   Develop a unique name and distinct, brand-aligned visual identity to support a positive messaging campaign around this pivot, rather than skepticism over a policy change.
