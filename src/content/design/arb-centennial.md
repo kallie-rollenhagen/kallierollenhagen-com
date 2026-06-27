@@ -3,7 +3,7 @@ title: Arb Centennial
 slug: arb-centennial
 seoDescription: Visual identity for centennial celebration of Carleton College's arboretum
 publish: true
-roles_played: Brand Identity |  Environmental Graphics Design
+roles_played: Brand Identity |  Environmental Graphics
 project_description: >-
   Enhanced environmental design project to help celebrate the 100th anniversary
   of Carleton College's Cowling Arboretum in 2026–2027.
