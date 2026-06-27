@@ -8,13 +8,13 @@ project_description: >-
   A design studio of and for rural communities.
 
 
-  ### Deliverables
+  ## Deliverables
 
 
   Research, brand development, visual identity system, and website design.
 
 
-  ### About Rural Design Studio
+  ## About Rural Design Studio
 
 
   The Rural Design Studio collaborates with community partners and a network of fellow creatives to provide accessible, place-based design to rural people, places, initiatives, and businesses.
