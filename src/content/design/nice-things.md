@@ -47,9 +47,8 @@ gallery:
             For a shop selling handcrafted items and art, it was important that the identity also be handcrafted. 
 
 
-            I physically created the object library using cut paper to preserve a trace of materiality, similar to what you see in potato prints, and lino or wood block prints.\
+            I physically created the object library using cut paper to preserve a trace of materiality, similar to what you see in potato prints, and lino or wood block prints.
 
-            \
 
             This library can be added to over time, based on what new things Nice Things stocks.
         - type: image
