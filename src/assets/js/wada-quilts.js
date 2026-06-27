@@ -1016,7 +1016,8 @@ function preload() {
 }
 
 function setup() {
-
+    
+    // pixelDensity(1);
     generateButton.addEventListener("click", () => {
         if (currentMode === "single") {
             generateQuilt();
