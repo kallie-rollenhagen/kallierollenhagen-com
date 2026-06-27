@@ -1,5 +1,5 @@
 ---
-title: "Admissions marketing: Visit Map"
+title: "Admissions Marketing: Visit Map"
 slug: admissions-marketing-visit-map
 seoDescription: Design overview of admissions visit map
 publish: true
