@@ -76,8 +76,8 @@ gallery:
           file: /assets/images/wada_quilt_mixed_colors_calico-puzzle.png
           alt: 4x4 grid of calico puzzle quilt block
         - type: image
-          file: /assets/images/calico-puzzle-generated.png
-          alt: 54-40 or fight quilt block
+          file: /assets/images/wada_quilt_combo_139_hovering-hawks.png
+          alt: hovering hawks quilt block
       object_fit: cover
     - layout: right-wide
       elements:
