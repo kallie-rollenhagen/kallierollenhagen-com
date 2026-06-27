@@ -7,7 +7,8 @@ publish: true
 roles_played: Concept & Design Direction
 credits: []
 project_description: >-
-  Quilt block pattern generator that uses p5.js to sketch quilt block patterns. 
+  Quilt block pattern generator that uses p5.js to sketch quilt block patterns
+  in a variety of colors. 
 
 
   ## Scope
