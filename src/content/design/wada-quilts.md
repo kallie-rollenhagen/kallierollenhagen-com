@@ -25,8 +25,8 @@ main_image:
   alt: Scrolling images of different quilt blocks, all in different colors and
     patterns
 thumbnail_image:
-  file: /assets/images/ohio-star-generated.png
-  alt: Ohio quilt block, digitally rendered
+  file: /assets/images/kallie-sketchbook-wada.jpg
+  alt: Ohio quilt block, painted
 gallery:
   lightbox: false
   type: grid
@@ -62,7 +62,7 @@ gallery:
           file: /assets/images/wada_quilt_mixed_colors_calico-puzzle.png
           alt: 4x4 grid of calico puzzle quilt block
         - type: image
-          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
+          file: /assets/images/calico-puzzle-generated.png
           alt: 54-40 or fight quilt block
       object_fit: cover
     - layout: right-wide
@@ -80,4 +80,18 @@ gallery:
           file: /assets/images/challenges-web-block.jpg
           alt: grid of 3 rows and 5 columns showing the progression of block outputs
       object_fit: contain
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
+          alt: 54-40 or fight quilt block, digitally rendered
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-wada.jpg
+          alt: 54-40 or fight quilt block, painted
 ---
