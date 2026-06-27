@@ -8,19 +8,19 @@ project_description: >-
   Brand development for a rural destination diner.
 
 
-  ### Scope + Deliverables
+  ## Scope + Deliverables
 
 
   Market research, concept development, logo, signage, menus, and additional assets.
 
 
-  ### Brand Approach
+  ## Brand Approach
 
 
   Minimal and bright, elegant but laid-back, warm and inviting yet not quaint. Create a sense of fun, surprise, and playfulness. Family-friendly, but a place Twin Cities folks would want to drive to and hang out.
 
 
-  ### Audience
+  ## Audience
 
 
   Urban dwellers—including families with young kids—who are looking for a weekend drive destination, as well as rural neighbors looking for more dining options.
