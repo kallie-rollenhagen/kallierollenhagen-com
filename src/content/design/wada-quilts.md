@@ -53,32 +53,6 @@ gallery:
       elements:
         - type: p5js
           sketch: wada-quilt-pattern.js
-    - object_fit: contain
-      row_margin_bottom: small
-      layout: halves
-      elements:
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
-          alt: 54-40 or fight quilt block, digitally rendered
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/kallie-sketchbook-wada.jpg
-          alt: 54-40 or fight quilt block, painted
-    - layout: thirds
-      elements:
-        - type: image
-          file: /assets/images/wada_quilt_combo_177_clay-s-choice.png
-          alt: 177 clay's choice quilt block
-        - type: image
-          file: /assets/images/wada_quilt_mixed_colors_calico-puzzle.png
-          alt: 4x4 grid of calico puzzle quilt block
-        - type: image
-          file: /assets/images/wada_quilt_combo_139_hovering-hawks.png
-          alt: hovering hawks quilt block
-      object_fit: cover
     - layout: right-wide
       elements:
         - type: text
@@ -94,4 +68,31 @@ gallery:
           file: /assets/images/challenges-web-block.jpg
           alt: grid of 3 rows and 5 columns showing the progression of block outputs
       object_fit: contain
+    - layout: thirds
+      elements:
+        - type: image
+          file: /assets/images/wada_quilt_combo_177_clay-s-choice.png
+          alt: 177 clay's choice quilt block
+        - type: image
+          file: /assets/images/wada_quilt_mixed_colors_calico-puzzle.png
+          alt: 4x4 grid of calico puzzle quilt block
+        - type: image
+          file: /assets/images/wada_quilt_combo_139_hovering-hawks.png
+          alt: hovering hawks quilt block
+      object_fit: cover
+      row_margin_bottom: small
+    - object_fit: contain
+      row_margin_bottom: null
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
+          alt: 54-40 or fight quilt block, digitally rendered
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/kallie-sketchbook-wada.jpg
+          alt: 54-40 or fight quilt block, painted
 ---
