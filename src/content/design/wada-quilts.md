@@ -25,8 +25,8 @@ main_image:
   alt: Scrolling images of different quilt blocks, all in different colors and
     patterns
 thumbnail_image:
-  file: /assets/images/kallie-sketchbook-wada.jpg
-  alt: Ohio quilt block, painted
+  file: /assets/images/thumbnail-3x2.jpg
+  alt: grid of quilt blocks
 gallery:
   lightbox: false
   type: grid
