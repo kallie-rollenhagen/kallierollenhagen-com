@@ -56,14 +56,14 @@ gallery:
     - layout: thirds
       elements:
         - type: image
-          file: /assets/images/battleground-quilt-generated.png
-          alt: battleground quilt block in many colors
+          file: /assets/images/wada_quilt_combo_177_clay-s-choice.png
+          alt: 177 clay's choice quilt block
         - type: image
-          file: /assets/images/calico-puzzle-generated.png
-          alt: calico puzzle quilt block
+          file: /assets/images/wada_quilt_mixed_colors_calico-puzzle.png
+          alt: 4x4 grid of calico puzzle quilt block
         - type: image
-          file: /assets/images/ohio-star-generated.png
-          alt: ohio star patch quilt block
+          file: /assets/images/wada_quilt_combo_191_54-40-or-fight.png
+          alt: 54-40 or fight quilt block
       object_fit: cover
     - layout: right-wide
       elements:
