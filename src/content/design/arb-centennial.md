@@ -285,5 +285,11 @@ gallery:
           text: "**Artist partner:** Mary Jo Hoffman could lay out the collected seeds,
             which would then be set in resin and used to construct a seed stop
             from bus stop infrastructure."
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Engagement Stops Signage"
   type: grid
 ---
