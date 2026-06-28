@@ -170,7 +170,7 @@ gallery:
           file: /assets/images/cups.logos_v1.jpg
           alt: cup with goldenrod on it
     - object_fit: contain
-      row_margin_bottom: large
+      row_margin_bottom: small
       layout: halves
       elements:
         - type: image
