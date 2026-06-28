@@ -118,6 +118,21 @@ gallery:
           alt: Diagram showing the clients and collaborators of Rural Design Studio
     - object_fit: contain
       row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Color Palette
+
+
+            Drawing from natural materials, worn-in fabrics, and nostalgic neutrals, this subdued, complementary palette could be toned up or toned down based on the use case.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/color-web-block-rds.jpg
+          alt: Rural Design Studio color palette with color builds
+    - object_fit: contain
+      row_margin_bottom: large
       layout: thirds
       elements:
         - type: text
