@@ -152,6 +152,29 @@ gallery:
       elements:
         - type: text
           text: >-
+            ## Logo Development
+
+
+            I decided to switch to a text-based logo, while still incorporating a more minimal geometric quilt block shape. I explored several fonts by Taylor Penton, all hand-drawn that fit the bespoke, vernacular aesthetic. User feedback helped me select Flapjack as the primary typeface.
+
+
+            The last phase of iteration was getting the triangle shapes more asymmetrical, similar to the imperfect edges of the letters.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo-type-exploration.png
+          alt: RDS logo type options
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo-refinement.png
+          alt: RDS logo refinements
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
             ## Primary Logo
 
 
