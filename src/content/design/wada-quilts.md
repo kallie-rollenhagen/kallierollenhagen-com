@@ -1,8 +1,8 @@
 ---
 title: Wada Quilts
 slug: wada-quilts
-seoDescription: Project overview of a P5.js sketch to generate class quilt
-  blocks using the colors of the Dictionary of Color
+seoDescription: Project overview of a p5.js sketch to generate class quilt
+  blocks using the colors of Sanzo Wada's Dictionary of Color Combinations
 publish: true
 roles_played: Concept & Design Direction
 credits: []
@@ -19,7 +19,7 @@ project_description: >-
 
   ## Output
 
-   In the quilt block generator embedded below, users can create randomized classic quilt blocks, either single blocks or a 4-by-4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combinations in Sanzo Wada's Japanese *Dictionary of Color Combinations, Volume 2.*
+   In the quilt block generator embedded below, users can create randomized classic quilt blocks, either single blocks or a 4x4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combinations in Sanzo Wada's Japanese *Dictionary of Color Combinations, Volume 2.*
 main_image:
   file: /assets/images/wada-quilts-new.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
@@ -38,7 +38,7 @@ gallery:
             ## Background & Inspiration
 
 
-            I’d been practicing color mixing, inspired by this cult favorite color dictionary. I wanted to use the outputs of this prompt to generate new patterns, inspired by classic quilt patterns. 
+            I’d been [practicing color mixing,](https://kallierollenhagen.com/sketchbook) inspired by this cult favorite color dictionary. I wanted to use the outputs of this prompt to generate new patterns, inspired by classic quilt patterns. 
 
 
             My mother, grandmothers, and several of my friends are quilters. This project gave me a way to participate in creative quilting circles, just in another medium.
