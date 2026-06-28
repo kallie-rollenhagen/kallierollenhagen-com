@@ -79,6 +79,53 @@ gallery:
           file: /assets/images/rural-design-web-block.jpg
           alt: 12 images of rural design and places
     - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Key Observations Driving This Work"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/the-bean-logo.png
+          alt: Logo for The Bean coffeeshop
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rockfilter-branding.jpg
+          alt: Rock Filter products
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/exhibit-columus.jpg
+          alt: People sitting at installation at Exhibit Columbus
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ## DIY Design
+
+
+            I love and understand the scrappy nature of small business owners and nonprofit marketers, especially in rural places. But I want the hair stylist, the local florist, the new bakery, the community foundation, the mechanic not to *have* to be their own in-house graphic and web designer, too.
+        - type: text
+          text: >-
+            ## Design Dollars Going to Urban Agencies
+
+
+            The brands I noticed were doing a great job with their branding, web presence, and social media were more often than not working with a creative or agency partner in the Twin Cities. I want to keep rural design dollars local, at least to another rural community, when possible.
+        - type: text
+          text: >-
+            ## ROI of Branding is Undervalued
+
+
+            While brand and marketing investments can seem like "nice to have" assets, I’ve witnessed the rise in rural destinations largely due to their brand presence, from cool distilleries to cozy cafes to stunning remote retreats. I want rural businesses and entrepreneurs interested in growing their reach to have a local partner.
+    - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
       elements:
@@ -98,6 +145,77 @@ gallery:
 
 
             Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Studio Clients & Collaborators
+
+
+            Clients could include rural small businesses, nonprofits, foundations, community organizers, economic developers, and tourism agencies.
+
+
+            Studio collaborators would be graphic and web designers, marketing strategists, artists, illustrators, photographers, event professionals, and copywriters.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/who-we-work-with.png
+          alt: Diagram showing the clients and collaborators of Rural Design Studio
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Color Palette
+
+
+            Drawing from natural materials, worn-in fabrics, and nostalgic neutrals, this subdued, complementary palette could be toned up or toned down based on the use case.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/color-web-block-rds.jpg
+          alt: Rural Design Studio color palette with color builds
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Early Logo Sketches
+
+
+            I started sketches for the Rural Design Studio a couple of years ago. Upon revisiting these logos, they felt too geometric, bold, and quirky. They didn't align with the visual language I was hoping to achieve: warm, professional, approachable, while still contemporary.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo-sketches.png
+          alt: early RDS logo sketches
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ## Logo Development
+
+
+            I decided to switch to a text-based logo, while still incorporating a more minimal geometric quilt block shape. I explored several fonts by Taylor Penton, all hand-drawn that fit the bespoke, vernacular aesthetic. User feedback helped me select Flapjack as the primary typeface.
+
+
+            The last phase of iteration was getting the triangle shapes more asymmetrical, similar to the imperfect edges of the letters.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo-type-exploration.png
+          alt: RDS logo type options
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo-refinement.png
+          alt: RDS logo refinements
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
@@ -153,23 +271,32 @@ gallery:
           text: This brand mark can be used individually or to create a pattern.
     - object_fit: contain
       row_margin_bottom: small
-      layout: thirds
+      layout: halves
       elements:
         - type: image
           focal_x: 50
           focal_y: 50
           file: /assets/images/rds-storefront-mockup-small.jpg
-          alt: Rural Design Studio building mockup
+          alt: Mockup of physical building of Rural Design Studio
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-social-stories.png
+          alt: Instagram story mockups for RDS
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
         - type: image
           focal_x: 50
           focal_y: 50
           file: /assets/images/rds-business-card-small.jpg
-          alt: Rural Design Studio business card mockup
+          alt: Rural Design Studio business cards
         - type: image
           focal_x: 50
           focal_y: 50
           file: /assets/images/rds-tote-mockup-small-3x2.jpg
-          alt: Rural Design Studio branded tote
+          alt: Rural Design Studio tote bag being held by an arm against a blue sky
     - object_fit: contain
       row_margin_bottom: large
       layout: full-width
@@ -197,6 +324,24 @@ gallery:
           focal_y: 50
           file: /assets/images/website-homepage-blank.png
           alt: Mockup of Rural Design Studio homepage
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Mockups
+
+
+            I developed mockups of all key pages for the RDS website, prototyped in Figma. To align with the brand, page design incorporates some patchwork motifs, such as the triangles and squares, and some bold color blocking, while overall striving for a balance of minimalism and warmth, showcasing RDS work when possible.
+
+
+            See the final Figma prototype below, which incorporated feedback from both prospective clients and collaborators.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-figma-mockups.png
+          alt: Figma mockups of all RDS webpages
     - object_fit: contain
       row_margin_bottom: small
       layout: full-width
