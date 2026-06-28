@@ -79,6 +79,53 @@ gallery:
           file: /assets/images/rural-design-web-block.jpg
           alt: 12 images of rural design and places
     - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Key Observations Driving This Work"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: thirds
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/the-bean-logo.png
+          alt: Logo for The Bean coffeeshop
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rockfilter-branding.jpg
+          alt: Rock Filter products
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/exhibit-columus.jpg
+          alt: People sitting at installation at Exhibit Columbus
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ## DIY Design
+
+
+            I love and understand the scrappy nature of small business owners and nonprofit marketers, especially in rural places. But I want the hair stylist, the local florist, the new bakery, the community foundation, the mechanic not to *have* to be their own in-house graphic and web designer, too.
+        - type: text
+          text: >-
+            ## Design Dollars Going to Urban Agencies
+
+
+            The brands I noticed were doing a great job with their branding, web presence, and social media were more often than not working with a creative or agency partner in the Twin Cities. I want to keep rural design dollars local, at least to another rural community, when possible.
+        - type: text
+          text: >-
+            #### ROI of Branding is Undervalued
+
+
+            While brand and marketing investments can seem like "nice to have" assets, I’ve witnessed the rise in rural destinations largely due to their brand presence, from cool distilleries to cozy cafes to stunning remote retreats. I want rural businesses and entrepreneurs interested in growing their reach to have a local partner.
+    - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
       elements:
