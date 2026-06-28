@@ -132,6 +132,12 @@ gallery:
       row_margin_bottom: small
       layout: full-width
       elements:
+        - type: text
+          text: "## Engagement Stops Signage"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
         - type: image
           focal_x: 50
           focal_y: 50
@@ -142,11 +148,8 @@ gallery:
       layout: thirds
       elements:
         - type: text
-          text: >-
-            ## Engagement Stops Signage
-
-
-            There will be four engagement stops located in the Arb, each with a bold maize design.
+          text: There will be four engagement stops located in the Arb, each with a bold
+            maize design.
         - type: text
           text: >-
             **Arb Entry:** Positioned next to the tapestry entrance at the top
@@ -161,6 +164,12 @@ gallery:
 
 
             **Seed Stop:** This decorative "bus" stop features native prairie seeds and plants, captured in resin. It invites visitors to pause.
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Wayfinding Signage"
     - object_fit: contain
       row_margin_bottom: small
       layout: halves
@@ -180,10 +189,10 @@ gallery:
       layout: halves
       elements:
         - type: text
-          text: "## Wayfinding Signage"
-        - type: text
           text: A series of wayfinding signs support the event branding and guide users to
             the interactive stops within the Arb.
+        - type: spacer
+          spacer: true
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds

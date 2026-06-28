@@ -101,14 +101,17 @@ gallery:
           alt: logo, typefaces and color palette
       object_fit: contain
       row_margin_bottom: large
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Establishing Art"
     - layout: halves
       elements:
         - type: text
-          text: >-
-            ## Establishing Art
-
-
-            These assets show, at the most conceptual level, how the Nice Things visual identity can be applied.
+          text: These assets show, at the most conceptual level, how the Nice Things
+            visual identity can be applied.
         - type: text
           text: Assets features asymmetrical color background blocks, text overlays, and
             objects scaled to be more descriptive and literal vs. enlarged to

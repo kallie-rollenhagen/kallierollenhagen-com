@@ -138,6 +138,18 @@ gallery:
           file: /assets/images/color-web-block.jpg
           alt: color palette for Goldenrod
           caption: Final color palette
+    - layout: halves
+      elements:
+        - type: image
+          file: /assets/images/menu-mockup-small.jpg
+          alt: handheld menu mockup of menu on table
+          focal_x: 25
+          focal_y: 50
+        - type: image
+          file: /assets/images/kids-menu-mockup-small.jpg
+          alt: kids menu mockup on table with cereal
+      object_fit: cover
+      row_margin_bottom: small
     - object_fit: cover
       row_margin_bottom: small
       layout: thirds
@@ -157,18 +169,20 @@ gallery:
           focal_y: 50
           file: /assets/images/cups.logos_v1.jpg
           alt: cup with goldenrod on it
-    - layout: halves
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
       elements:
         - type: image
-          file: /assets/images/menu-mockup-small.jpg
-          alt: handheld menu mockup of menu on table
-          focal_x: 25
+          focal_x: 50
           focal_y: 50
+          file: /assets/images/handheld-drink-menus-mockup-goldenrod.jpg
+          alt: Goldenrod drink menus
         - type: image
-          file: /assets/images/kids-menu-mockup-small.jpg
-          alt: kids menu mockup on table with cereal
-      object_fit: cover
-      row_margin_bottom: small
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/glass-sign.jpg
+          alt: window graphics with hours
     - layout: full-width
       elements:
         - type: image
