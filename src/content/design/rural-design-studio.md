@@ -159,6 +159,20 @@ gallery:
           file: /assets/images/tray-mockup-small-800x820.jpg
           alt: lunch tray with RDS pattern sheet of paper on it
     - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-storefront-mockup-small.jpg
+          alt: Mockup of physical building of Rural Design Studio
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-social-stories.png
+          alt: Instagram story mockups for RDS
+    - object_fit: contain
       row_margin_bottom: large
       layout: thirds
       elements:
