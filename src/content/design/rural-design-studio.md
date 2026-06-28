@@ -121,7 +121,7 @@ gallery:
             The brands I noticed were doing a great job with their branding, web presence, and social media were more often than not working with a creative or agency partner in the Twin Cities. I want to keep rural design dollars local, at least to another rural community, when possible.
         - type: text
           text: >-
-            #### ROI of Branding is Undervalued
+            ## ROI of Branding is Undervalued
 
 
             While brand and marketing investments can seem like "nice to have" assets, I’ve witnessed the rise in rural destinations largely due to their brand presence, from cool distilleries to cozy cafes to stunning remote retreats. I want rural businesses and entrepreneurs interested in growing their reach to have a local partner.
