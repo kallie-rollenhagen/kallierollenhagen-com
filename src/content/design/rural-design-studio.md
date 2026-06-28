@@ -100,6 +100,24 @@ gallery:
             Hand-painted signs, geometric patchwork quilts, weathered and loved textures, diner menus, and bold yet natural colors helped inspire the brand visuals.
     - object_fit: contain
       row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Studio Clients & Collaborators
+
+
+            Clients could include rural small businesses, nonprofits, foundations, community organizers, economic developers, and tourism agencies.
+
+
+            Studio collaborators would be graphic and web designers, marketing strategists, artists, illustrators, photographers, event professionals, and copywriters.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/who-we-work-with.png
+          alt: Diagram showing the clients and collaborators of Rural Design Studio
+    - object_fit: contain
+      row_margin_bottom: large
       layout: thirds
       elements:
         - type: text
@@ -197,24 +215,6 @@ gallery:
           focal_y: 50
           file: /assets/images/website-homepage-blank.png
           alt: Mockup of Rural Design Studio homepage
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: right-wide
-      elements:
-        - type: text
-          text: >-
-            ## Studio Clients & Collaborators
-
-
-            Clients could include rural small businesses, nonprofits, foundations, community organizers, economic developers, and tourism agencies.
-
-
-            Studio collaborators would be graphic and web designers, marketing strategists, artists, illustrators, photographers, event professionals, and copywriters.
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/who-we-work-with.png
-          alt: Diagram showing the clients and collaborators of Rural Design Studio
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
