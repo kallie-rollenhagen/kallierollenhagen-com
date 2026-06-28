@@ -16,7 +16,10 @@
     box-shadow: none;
 }
 
-#text-panel > h3 {
+
+
+#wada-quilt-wrapper h2 {
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -467,34 +470,3 @@ canvas {
         /* padding: 5px; */
     }
 }
-
-
-
-/* @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-
-    #intro-paragraph {
-        font-size: 0.8em;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 15px;
-        max-width: 95%;
-    }
-
-    #generateButton {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
-    #quilt-name {
-        font-size: 1.2em;
-    }
-} */
