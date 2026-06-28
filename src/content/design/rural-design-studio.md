@@ -198,6 +198,42 @@ gallery:
           file: /assets/images/website-homepage-blank.png
           alt: Mockup of Rural Design Studio homepage
     - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Studio Clients & Collaborators
+
+
+            Clients could include rural small businesses, nonprofits, foundations, community organizers, economic developers, and tourism agencies.
+
+
+            Studio collaborators would be graphic and web designers, marketing strategists, artists, illustrators, photographers, event professionals, and copywriters.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/who-we-work-with.png
+          alt: Diagram showing the clients and collaborators of Rural Design Studio
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Mockups
+
+
+            I developed mockups of all key pages for the RDS website, prototyped in Figma. To align with the brand, page design incorporates some patchwork motifs, such as the triangles and squares, and some bold color blocking, while overall striving for a balance of minimalism and warmth, showcasing RDS work when possible.
+
+
+            See the final Figma prototype below, which incorporated feedback from both prospective clients and collaborators.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-figma-mockups.png
+          alt: Figma mockups of all RDS webpages
+    - object_fit: contain
       row_margin_bottom: small
       layout: full-width
       elements:
