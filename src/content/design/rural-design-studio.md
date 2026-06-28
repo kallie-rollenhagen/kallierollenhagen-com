@@ -198,25 +198,6 @@ gallery:
           file: /assets/images/rds-tote-mockup-small-3x2.jpg
           alt: Rural Design Studio tote bag being held by an arm against a blue sky
     - object_fit: contain
-      row_margin_bottom: small
-      layout: thirds
-      elements:
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/rds-storefront-mockup-small.jpg
-          alt: Rural Design Studio building mockup
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/rds-business-card-small.jpg
-          alt: Rural Design Studio business card mockup
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/rds-tote-mockup-small-3x2.jpg
-          alt: Rural Design Studio branded tote
-    - object_fit: contain
       row_margin_bottom: large
       layout: full-width
       elements:
