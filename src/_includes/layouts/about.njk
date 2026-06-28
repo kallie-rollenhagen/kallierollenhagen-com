@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 <div class="about-layout grid-inherit">
-    <div class="about-column about-column-1">
+    <div class="about-column about-column-1 grid-inherit">
         <figure>
             <img src="{{ photo.file | url }}" alt="{{ photo.alt }}">
             <figcaption>{{ photo.credit }}</figcaption>
@@ -21,6 +21,9 @@ layout: layouts/base.njk
         <h3>Bio</h3>
         <hr>
         {{ bio | markdown | safe }}
+        <h3>Services</h3>
+        <hr>
+        {{ services | markdown | safe }}
     </div>
     <div class="about-column about-column-3">
         <h3>Education</h3>
