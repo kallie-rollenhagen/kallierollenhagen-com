@@ -27,7 +27,7 @@ project_description: >-
   ## Design Challenge 
 
 
-  Create a self-mailer that stands out from the crowd and weaves in student voices.
+  Create a self-mailer that stands out from the crowd and weaves in student voices. This project was originally developed in the pandemic, when campus visits were paused. So, it needed to convey a sense of place and personality.
 main_image:
   file: /assets/images/admissions-map-cover-small.jpg
   alt: Cover of Detour From the Ordinary
