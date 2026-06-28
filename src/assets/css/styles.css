@@ -642,6 +642,10 @@ main {
     gap: 0 var(--gutter_size);
 }
 
+.project-card:hover {
+    text-shadow: none;
+}
+
 .about-column > h3:first-child {
     font-size: 20px;
     font-weight: 600;
