@@ -132,6 +132,12 @@ gallery:
       row_margin_bottom: small
       layout: full-width
       elements:
+        - type: text
+          text: "## Engagement Stops Signage"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
         - type: image
           focal_x: 50
           focal_y: 50
@@ -142,11 +148,8 @@ gallery:
       layout: thirds
       elements:
         - type: text
-          text: >-
-            ## Engagement Stops Signage
-
-
-            There will be four engagement stops located in the Arb, each with a bold maize design.
+          text: There will be four engagement stops located in the Arb, each with a bold
+            maize design.
         - type: text
           text: >-
             **Arb Entry:** Positioned next to the tapestry entrance at the top
@@ -285,11 +288,5 @@ gallery:
           text: "**Artist partner:** Mary Jo Hoffman could lay out the collected seeds,
             which would then be set in resin and used to construct a seed stop
             from bus stop infrastructure."
-    - object_fit: contain
-      row_margin_bottom: small
-      layout: full-width
-      elements:
-        - type: text
-          text: "## Engagement Stops Signage"
   type: grid
 ---
