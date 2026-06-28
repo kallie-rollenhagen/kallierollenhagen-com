@@ -1,10 +1,15 @@
-{% macro image(element, classes="") %}
+{% macro image(element, classes="", contain="") %}
 <div class="image-wrapper">
   <img
     src="{{ element.file | url }}"
     alt="{{ element.alt }}"
     class="{{ classes }}"
-    style="object-position: {{ element.focal_x or 50 }}% {{ element.focal_y or 50 }}%">
+    {% if contain == "contain" %}
+    style="object-position: top;"
+    {% else %}
+    style="object-position: {{ element.focal_x or 50 }}% {{ element.focal_y or 50 }}%;"
+    {% endif %}
+  >
 </div>
 {% if element.caption %}
 <p>{{element.caption}}</p>

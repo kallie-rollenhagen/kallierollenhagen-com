@@ -6,9 +6,9 @@
             {% if element.type == "image" %}
                 {% from "macros/image.njk" import image %}
                 {% if gallery.lightbox %}
-                    {{ image(element, "lightbox-trigger") }}
+                    {{ image(element, "lightbox-trigger", row.object_fit) }}
                 {% else %}
-                    {{ image(element) }}
+                    {{ image(element, "", row.object_fit) }}
                 {% endif %}
             {% elif element.type == "text" %}
                 {{ element.text | markdown | safe }}
