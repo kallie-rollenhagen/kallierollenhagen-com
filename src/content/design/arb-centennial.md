@@ -166,6 +166,12 @@ gallery:
             **Seed Stop:** This decorative "bus" stop features native prairie seeds and plants, captured in resin. It invites visitors to pause.
     - object_fit: contain
       row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Wayfinding Signage"
+    - object_fit: contain
+      row_margin_bottom: small
       layout: halves
       elements:
         - type: image
@@ -183,10 +189,10 @@ gallery:
       layout: halves
       elements:
         - type: text
-          text: "## Wayfinding Signage"
-        - type: text
           text: A series of wayfinding signs support the event branding and guide users to
             the interactive stops within the Arb.
+        - type: spacer
+          spacer: true
     - object_fit: contain
       row_margin_bottom: large
       layout: thirds
