@@ -132,6 +132,21 @@ gallery:
           file: /assets/images/color-web-block-rds.jpg
           alt: Rural Design Studio color palette with color builds
     - object_fit: contain
+      row_margin_bottom: small
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Early Logo Sketches
+
+
+            I started sketches for the Rural Design Studio a couple of years ago. Upon revisiting these logos, they felt too geometric, bold, and quirky. They didn't align with the visual language I was hoping to achieve: warm, professional, approachable, while still contemporary.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/rds-logo-sketches.png
+          alt: early RDS logo sketches
+    - object_fit: contain
       row_margin_bottom: large
       layout: thirds
       elements:
