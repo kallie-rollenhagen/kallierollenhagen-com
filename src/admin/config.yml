@@ -89,7 +89,6 @@ gallery_field: &gallery_field
             - { label: Large, value: large }
             - { label: Small, value: small }
 
-
         - label: Elements
           name: elements
           widget: list
