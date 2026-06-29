@@ -26,7 +26,7 @@ project_description: >-
 main_image:
   focal_x: 50
   focal_y: 50
-  file: /assets/images/design-riad-website.jpg
+  file: /assets/images/design-riad-website-small.png
   alt: Homepage of RIAD Studio website on a laptop
 thumbnail_image:
   focal_x: 50
@@ -36,8 +36,6 @@ thumbnail_image:
 gallery:
   lightbox: false
   rows:
-    - object_fit: contain
-      row_margin_bottom: large
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
