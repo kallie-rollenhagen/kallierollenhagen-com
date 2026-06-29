@@ -508,6 +508,7 @@ main {
 
 .gallery-row-element.text {
     align-content: center;
+    width: 100%;
 }
 
 .gallery-row-element.text > h2:first-child, .gallery-row-element.text > p:first-child {
