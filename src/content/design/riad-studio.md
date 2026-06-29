@@ -107,12 +107,12 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_stacked-green-with-outline.jpg
+          file: /assets/images/riad-logo-green-stacked-outline-01.png
           alt: Stacked text RIAD Studio logo
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-flavicon_green-with-outline.jpg
+          file: /assets/images/riad-logo-green-flavicon-outline-01.png
           alt: Initials only favicon
     - object_fit: contain
       row_margin_bottom: large
