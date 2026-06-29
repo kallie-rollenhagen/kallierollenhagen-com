@@ -89,7 +89,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_main-green-filled-outlined.jpg
+          file: /assets/images/riad-logo-green-filled-outline-01.png
           alt: Primary RIAD Studio logo - filled
     - object_fit: contain
       row_margin_bottom: large
