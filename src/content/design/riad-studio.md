@@ -66,6 +66,32 @@ gallery:
           focal_y: 50
           file: /assets/images/color-web-block-riad.jpg
     - object_fit: contain
+      row_margin_bottom: small
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ## Primary Logo
+
+
+            The RIAD Studio logo is derived from the Gyst typeface. The crossbar of the ‘A’ is slightly dropped to open the triangle shape. ‘RIAD’ has visual hierarchy, with ‘RIAD’ and ‘Studio’ paired across all logo types.
+
+
+            The cropped outline with the text occupying the interior is a reference to a riad structure. The opening, with ‘Studio’ coming up to the edge, conveys RIAD Studio’s willingness to push and reconsider existing boundaries.
+
+
+            The slightly angular and asymmetrical line weight mirrors the high contrast of the type, and gives a sense of surprise while feeling bespoke — the type of unique attention RIAD Studio brings to its work and spaces.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-logo_main-green.svg
+          alt: Primary RIAD Studio logo - open
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-logo_filled-green.svg
+          alt: Primary RIAD Studio logo - filled
+    - object_fit: contain
       row_margin_bottom: large
       layout: thirds
       elements:
@@ -103,5 +129,28 @@ gallery:
           focal_y: 50
           file: /assets/images/riad-graphic-elements.png
           alt: RIAD graphic elements, including lines and shape boxes
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ## Secondary Logomarks
+
+
+            The stacked text-only logo should be used when space is limited.
+
+
+            The initials-only logo should be used sparingly and where RIAD Studio’s brand is otherwise very apparent, such as a social media icon or a website favicon.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-logo_stacked-green.svg
+          alt: Stacked text RIAD Studio logo
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-logo_social-icon.svg
+          alt: Initials only favicon
   type: grid
 ---
