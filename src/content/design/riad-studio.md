@@ -84,12 +84,12 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_main-green.svg
+          file: /assets/images/riad-logo_main-green-with-outline.jpg
           alt: Primary RIAD Studio logo - open
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_filled-green.svg
+          file: /assets/images/riad-logo_main-green-filled-outlined.jpg
           alt: Primary RIAD Studio logo - filled
     - object_fit: contain
       row_margin_bottom: large
@@ -107,12 +107,12 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_stacked-green.svg
+          file: /assets/images/riad-logo_stacked-green-with-outline.jpg
           alt: Stacked text RIAD Studio logo
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_social-icon.svg
+          file: /assets/images/riad-flavicon_green-with-outline.jpg
           alt: Initials only favicon
     - object_fit: contain
       row_margin_bottom: large
