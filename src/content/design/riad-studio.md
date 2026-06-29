@@ -16,7 +16,7 @@ project_description: >-
   ## Scope
 
 
-  Moodboards, logo assets, color palette, typography, and proofs of concept.
+  Moodboards, logo and full logo set, color palette, typography, graphical elements, and proofs of concept.
 
 
   ## About RIAD Studio
