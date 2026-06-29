@@ -65,5 +65,28 @@ gallery:
           focal_x: 50
           focal_y: 50
           file: /assets/images/color-web-block-riad.jpg
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
+            ## Typefaces
+
+
+            **Gyst** is a neo-humanist typeface that spans the arc from a modern humanistic sans serif to a captivating cursive serif. Gyst is the base type for RIAD's logo and is used sparingly for headers and sub-heads. *Designer:* Roland Hörmann
+
+
+            **Karla** is a grotesque sans serif family, a touch quirky, designed by Johnny Pinhorn. It's a legible font used for body and web copy.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/gyst-type-riad.png
+          alt: Gyst typeface
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/karla-type-riad.png
+          alt: Karla typeface
   type: grid
 ---
