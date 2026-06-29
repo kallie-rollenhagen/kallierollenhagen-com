@@ -167,5 +167,14 @@ gallery:
           focal_y: 50
           file: /assets/images/instagram-stories-riad.jpg
           alt: four phones with Instagram story mockups of RIAD work
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: full-width
+      elements:
+        - type: text
+          text: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
+            height="450"
+            src="https://embed.figma.com/design/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?node-id=89-21&embed-host=share"
+            allowfullscreen></iframe>'
   type: grid
 ---
