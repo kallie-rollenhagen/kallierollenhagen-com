@@ -45,9 +45,9 @@ layout: layouts/about.njk
 id: about
 services: |-
   * Brand development
-  * Creative & Art Direction
+  * Creative and art direction
   * Design and brand consulting
   * Environmental and editorial photography
-  * Publication & Layout Design
+  * Publication and layout design
   * Visual identities
 ---
