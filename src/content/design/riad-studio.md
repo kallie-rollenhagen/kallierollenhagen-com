@@ -81,12 +81,27 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/gyst-type-riad.png
+          file: /assets/images/gyst-type-riad.jpg
           alt: Gyst typeface
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/karla-type-riad.png
+          file: /assets/images/karla-type-riad.jpg
           alt: Karla typeface
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Graphic Elements
+
+
+            These accent shapes can be used at different scales and in different colors. They are intended to provide subtle reinforcements of the brand identity. They all incorporate the slight asymmetry of the primary logo.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-graphic-elements.png
+          alt: RIAD graphic elements, including lines and shape boxes
   type: grid
 ---
