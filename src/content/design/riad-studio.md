@@ -152,5 +152,20 @@ gallery:
           focal_y: 50
           file: /assets/images/riad-graphic-elements.png
           alt: RIAD graphic elements, including lines and shape boxes
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Brand Elements: Instagram Story Panels
+
+
+            While Instagram is primarily used for showcasing process and finished projects, brand elements can be incorporated into Instagram panels for announcements, CTAs, etc.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/instagram-stories-riad.jpg
+          alt: four phones with Instagram story mockups of RIAD work
   type: grid
 ---
