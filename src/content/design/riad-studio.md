@@ -172,8 +172,7 @@ gallery:
       layout: full-width
       elements:
         - type: text
-          text: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
-            height="450"
+          text: '<iframe style="border: none" width="100%" height="800"
             src="https://embed.figma.com/design/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?node-id=89-21&embed-host=share"
             allowfullscreen></iframe>'
   type: grid
