@@ -97,6 +97,29 @@ gallery:
       elements:
         - type: text
           text: >-
+            ## Secondary Logomarks
+
+
+            The stacked text-only logo should be used when space is limited.
+
+
+            The initials-only logo should be used sparingly and where RIAD Studio’s brand is otherwise very apparent, such as a social media icon or a website favicon.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-logo_stacked-green.svg
+          alt: Stacked text RIAD Studio logo
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/riad-logo_social-icon.svg
+          alt: Initials only favicon
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: thirds
+      elements:
+        - type: text
+          text: >-
             ## Typefaces
 
 
@@ -129,28 +152,5 @@ gallery:
           focal_y: 50
           file: /assets/images/riad-graphic-elements.png
           alt: RIAD graphic elements, including lines and shape boxes
-    - object_fit: contain
-      row_margin_bottom: large
-      layout: thirds
-      elements:
-        - type: text
-          text: >-
-            ## Secondary Logomarks
-
-
-            The stacked text-only logo should be used when space is limited.
-
-
-            The initials-only logo should be used sparingly and where RIAD Studio’s brand is otherwise very apparent, such as a social media icon or a website favicon.
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/riad-logo_stacked-green.svg
-          alt: Stacked text RIAD Studio logo
-        - type: image
-          focal_x: 50
-          focal_y: 50
-          file: /assets/images/riad-logo_social-icon.svg
-          alt: Initials only favicon
   type: grid
 ---
