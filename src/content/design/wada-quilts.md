@@ -4,7 +4,7 @@ slug: wada-quilts
 seoDescription: Project overview of a p5.js sketch to generate class quilt
   blocks using the colors of Sanzo Wada's Dictionary of Color Combinations
 publish: true
-roles_played: Concept & Design Direction
+roles_played: User Interface Design | Creative Coding
 credits: []
 project_description: >-
   Quilt block pattern generator that uses p5.js to sketch quilt block patterns
@@ -14,12 +14,13 @@ project_description: >-
   ## Scope
 
 
-  Trained and provided design direction to an LLM to create a single-point user input interaction using p5.js that generates and exports graphic elements. 
+  Create a user input interaction using p5.js that generates and exports graphic elements. Train and provide design direction to an LLM to help achieve desired outputs.
 
 
   ## Output
 
-   In the quilt block generator embedded below, users can create randomized classic quilt blocks, either single blocks or a 4x4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combinations in Sanzo Wada's Japanese *Dictionary of Color Combinations, Volume 2.*
+
+  In the quilt block generator embedded below, users can create randomized classic quilt blocks, either single blocks or a 4x4 grid. Users can also download images. Each quilt has three colors, based on the 3-color combinations in Sanzo Wada's Japanese *Dictionary of Color Combinations, Volume 2.*
 main_image:
   file: /assets/images/wada-quilts-new.gif
   alt: Scrolling images of different quilt blocks, all in different colors and
@@ -60,7 +61,7 @@ gallery:
             ## Challenge: Pattern Recognition 
 
 
-            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. This shows my attempts to prompt the LLMs, using both verbal prompts and image inputs. Ultimately, several blocks had to be manually coded.
+            Anything that wasn’t a very simple geometric pattern was hard for both Gemini and ChatGPT to draw. Prompts were both verbal and image inputs. Ultimately, several blocks had to be manually coded.
 
 
             *Note: These outputs are from summer 2025.*
