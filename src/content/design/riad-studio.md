@@ -168,12 +168,26 @@ gallery:
           file: /assets/images/instagram-stories-riad.jpg
           alt: four phones with Instagram story mockups of RIAD work
     - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Website Mockup"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: halves
+      elements:
+        - type: text
+          text: The below Figma mockup shows how these brand elements can be applied to
+            the RIAD Studio website. The website will primarily showcase RIAD
+            Studio work, so the brand is designed to let imagery be the main
+            focal point.
+    - object_fit: contain
       row_margin_bottom: large
       layout: full-width
       elements:
         - type: text
           text: '<iframe style="border: none" width="100%" height="800"
-            src="https://embed.figma.com/design/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?node-id=89-21&embed-host=share"
-            allowfullscreen></iframe>'
+            src="https://embed.figma.com/design/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?node-id=89-20&embed-host=share"allowfullscreen></iframe>'
   type: grid
 ---
