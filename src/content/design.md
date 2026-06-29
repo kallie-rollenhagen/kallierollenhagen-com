@@ -17,4 +17,5 @@ design_projects:
   - admissions-marketing-visit-map
   - goldenrod
   - arb-centennial
+  - riad-studio
 ---
