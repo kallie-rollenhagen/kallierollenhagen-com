@@ -188,6 +188,7 @@ gallery:
       elements:
         - type: text
           text: '<iframe style="border: none" width="100%" height="800"
-            src="https://embed.figma.com/design/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?node-id=89-20&embed-host=share"allowfullscreen></iframe>'
+            src="https://embed.figma.com/proto/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?page-id=89%3A20&node-id=89-21&viewport=580%2C339%2C0.18&scaling=scale-down&content-scaling=fixed&starting-point-node-id=89%3A21&embed-host=share"
+            allowfullscreen></iframe>'
   type: grid
 ---
