@@ -178,10 +178,10 @@ gallery:
       layout: halves
       elements:
         - type: text
-          text: The Figma mockup below shows how these brand elements can be applied to
-            the RIAD Studio website. The website will primarily showcase RIAD
-            Studio work, so the brand is designed to let imagery be the main
-            focal point.
+          text: The partial Figma mockup below shows how these brand elements can be
+            applied to the RIAD Studio website. The website will primarily
+            showcase RIAD Studio work, so the brand is designed to let imagery
+            be the main focal point.
         - type: spacer
           spacer: true
     - object_fit: contain
