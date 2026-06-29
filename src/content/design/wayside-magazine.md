@@ -3,7 +3,7 @@ title: Wayside Magazine
 slug: wayside-magazine
 seoDescription: Project overview of branding and design of a travel magazine
 publish: true
-roles_played: Brand Development | Publication Design | Web Design
+roles_played: Brand Development | Publication Design
 project_description: >-
   A quarterly travel magazine for off-the-road and underrated places, focused on
   the essence of a place—captured via essays and recommendations from locals and
@@ -127,18 +127,6 @@ gallery:
         - type: image
           file: /assets/images/four-layouts.jpg
           alt: Four examples of magazine spreads
-      object_fit: contain
-    - layout: right-wide
-      elements:
-        - type: text
-          text: >-
-            ## Wayside Website
-
-
-            Designed in React in Programming for Web. The challenge was to repeat the same visual elements — color banner, imagery, nameplate, and type — to create a site that gives teaser content for each Wayside issue, encouraging viewers to buy the magazine.
-        - type: image
-          file: /assets/images/website-mockup-small.jpg
-          alt: Person looking at computer screen with Wayside magazine page pulled up
       object_fit: contain
     - layout: full-width
       elements:

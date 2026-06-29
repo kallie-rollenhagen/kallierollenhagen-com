@@ -10,11 +10,12 @@ design_projects:
   - wayside-magazine
   - nice-things
   - rural-travel-guide
-  - carleton-college-strategic-direction
   - rural-design-studio
   - visual-identity-sustainable-futures
   - wada-quilts
   - admissions-marketing-visit-map
   - goldenrod
   - arb-centennial
+  - riad-studio
+  - carleton-college-strategic-direction
 ---

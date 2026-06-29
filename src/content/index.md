@@ -5,14 +5,14 @@ seoDescription: Editorial design, branding, photography, and creative work by
   Kallie Rollenhagen.
 permalink: /
 slides:
-  - file: /assets/images/Kallie-Rollenhagen-ski-headshot.jpeg
-    alt: Kallie skiing
-    focal_x: 48
-    focal_y: 50
   - file: /assets/images/covers-mockup-small-3-2.jpg
     alt: wayside magazine covers
   - file: /assets/images/nice-things-sidewalk-side-small.jpg
     alt: Nice Things sandwich board sign on sidewalk
+    focal_x: 48
+    focal_y: 50
+  - file: /assets/images/Kallie-Rollenhagen-ski-headshot.jpeg
+    alt: Kallie skiing
     focal_x: 48
     focal_y: 50
   - file: /assets/images/Design-CarletonSustainable-Futures-posters.avif

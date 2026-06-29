@@ -130,6 +130,12 @@ gallery:
           file: /assets/images/typefaces-web-block-travel-narrow.jpg
           alt: typography selections for the guide
           caption: Two classic typefaces balance the more extensive, modern color palette
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Final Spreads"
     - layout: thirds
       elements:
         - type: image
@@ -162,11 +168,9 @@ gallery:
       layout: halves
       elements:
         - type: text
-          text: >-
-            ## Final Spreads
-
-
-            The 96-page proof of concept travel guide booklet is comprised of 6-column and 4-column spreads and full-bleed photo spreads for section intros.
+          text: The 96-page proof-of-concept travel guide booklet comprises 6-column
+            spreads, 4-column spreads, and full-bleed photo spreads for section
+            intros.
         - type: text
           text: These examples show how these page templates can flex, and how they offer
             a visual cadence to the guide book.

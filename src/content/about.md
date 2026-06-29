@@ -43,4 +43,11 @@ education:
     degree: BA in psychology, minor in architecture
 layout: layouts/about.njk
 id: about
+services: |-
+  * Brand development
+  * Creative and art direction
+  * Design and brand consulting
+  * Environmental and editorial photography
+  * Publication and layout design
+  * Visual identities
 ---
