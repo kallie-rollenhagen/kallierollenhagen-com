@@ -190,7 +190,7 @@ gallery:
       elements:
         - type: text
           text: <iframe style="border:none; width:100%; height:800px;"
-            src="https://embed.figma.com/proto/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?page-id=89%3A20&node-id=89-21&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=89%3A21&embed-host=share"
+            src="https://embed.figma.com/proto/zOsaTFR9L93X85MDkn8PF5/RIAD-Website-mockup?page-id=89%3A20&node-id=89-21&scaling=scale-down&content-scaling=fixed&starting-point-node-id=89%3A21&embed-host=share"
             allowfullscreen></iframe>
   type: grid
 ---
