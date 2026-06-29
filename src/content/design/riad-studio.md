@@ -84,7 +84,7 @@ gallery:
         - type: image
           focal_x: 50
           focal_y: 50
-          file: /assets/images/riad-logo_main-green-with-outline.jpg
+          file: /assets/images/riad-logo-green-outline-01.png
           alt: Primary RIAD Studio logo - open
         - type: image
           focal_x: 50
