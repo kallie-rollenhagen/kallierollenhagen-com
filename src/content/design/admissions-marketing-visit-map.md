@@ -47,6 +47,7 @@ gallery:
           file: /assets/images/map-flat-lat-small.jpg
           alt: Flat lay of admissions marketing map
           caption: "Inspiration: Vintage travel maps + New York Time’s 36 Hours features"
+      label: 36 Hours in Minnesota image
     - object_fit: cover
       row_margin_bottom: large
       layout: thirds
@@ -73,6 +74,7 @@ gallery:
           focal_y: 50
           file: /assets/images/map-gif.gif
           alt: map unfolding
+      label: Inspiration
     - object_fit: contain
       row_margin_bottom: small
       layout: halves
@@ -87,6 +89,7 @@ gallery:
           focal_y: 50
           file: /assets/images/bx6a6655-small.jpg
           alt: back side of map
+      label: Details of Maps
     - object_fit: cover
       row_margin_bottom: large
       layout: thirds
@@ -109,5 +112,6 @@ gallery:
           file: /assets/images/back-of-map-held-small.jpg
           caption: Large map allows for meandering exploration
           alt: full campus map on the back of the mailing piece
+      label: Images of Maps
   type: grid
 ---
