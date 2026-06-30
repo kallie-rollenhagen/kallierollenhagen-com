@@ -74,6 +74,7 @@ gallery:
           focal_y: 50
           file: /assets/images/map-gif.gif
           alt: map unfolding
+      label: Inspiration
     - object_fit: contain
       row_margin_bottom: small
       layout: halves
