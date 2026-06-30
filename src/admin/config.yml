@@ -60,8 +60,14 @@ gallery_field: &gallery_field
     - label: Rows
       name: rows
       widget: list
+      summary: "{{fields.label}} ({{fields.layout}})"
       fields:
         
+        - label: Row Label
+          name: label
+          widget: string
+          required: false
+          hint: "Optional. Used only in the editor."
         - label: Layout
           name: layout
           widget: select
@@ -97,11 +103,13 @@ gallery_field: &gallery_field
             - label: Image
               name: image
               widget: object
+              summary: "{{fields.file}} - {{fields.alt}}"
               fields: *image_fields
                 
             - label: Text
               name: text
               widget: object
+              summary: "{{fields.text}}"
               fields:
                 - { label: Text Content, name: text, widget: 'richtext' }
 
