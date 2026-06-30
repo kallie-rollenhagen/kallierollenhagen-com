@@ -89,6 +89,7 @@ gallery:
           focal_y: 50
           file: /assets/images/bx6a6655-small.jpg
           alt: back side of map
+      label: Details of Maps
     - object_fit: cover
       row_margin_bottom: large
       layout: thirds
@@ -111,5 +112,6 @@ gallery:
           file: /assets/images/back-of-map-held-small.jpg
           caption: Large map allows for meandering exploration
           alt: full campus map on the back of the mailing piece
+      label: Images of Maps
   type: grid
 ---
