@@ -29,6 +29,12 @@ project_description: >-
 
 
   Develop a unique name and distinct, brand-aligned visual identity to support a positive messaging campaign around this pivot, rather than skepticism over a policy change.
+
+
+  ## Deliverables
+
+
+  Visual identity, including logo, illustrated icons, and colors; website; social assets; posters; email announcement; and stickers.
 main_image:
   file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
   alt: three posters for sustainable futures
@@ -51,7 +57,7 @@ gallery:
           alt: 5 phones with social mockups of Sustainable Futures imagery
     - object_fit: contain
       row_margin_bottom: small
-      layout: full-width
+      layout: halves
       elements:
         - type: text
           text: >-
@@ -97,5 +103,35 @@ gallery:
           focal_y: 50
           file: /assets/images/sarah-fortner-olin-small.jpg
           alt: sustainability director portrait in front of college building
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Moodboard
+
+
+            I drew inspiration from Swarthmore College's To Zero by Thirty-Five net zero campaign, which used a defined color palette, set of environmental graphic icons, and duotone imagery. I also wanted to find an illustrator to partner with who could avoid cliché environmental graphics, while also creating a sense of DIY energy.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/moodboard-web-block-sustainable-futures.jpg
+          alt: Moodboard of environmental graphics
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Colors
+
+
+            This sub-visual identity uses select brand colors, including Carleton's primary blue and maize, plus a mix of vibrant secondary colors (green and cyan), and a few brand neutrals. The goal was to have this feel brand-aligned with Carleton's parent brand, bold, and also natural-leaning.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/color-web-block-sustainable-futures.jpg
+          alt: color palette for Sustainable Futures color palette, including color builds
   type: grid
 ---
