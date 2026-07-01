@@ -34,7 +34,7 @@ project_description: >-
   ## Deliverables
 
 
-  Visual identity, including logo, illustrated icons, and colors; website; social assets; posters; email announcement; and stickers.
+  Name; visual identity, including logo, illustrated icons, and colors; website; social assets; posters; email announcement; and stickers.
 main_image:
   file: /assets/images/Design-CarletonSustainable-Futures-posters.avif
   alt: three posters for sustainable futures
