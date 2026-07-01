@@ -158,15 +158,18 @@ gallery:
           text: I chose an illustrator with a unique, handmade style to evoke the tangible
             action each person in our college community has in this work. I
             wanted the visual design to underscore that this work isn't neat and
-            tidy, but is impactful.
+            tidy, but is impactful. These icons represent our infrastructure
+            work (including our passive housing), educational efforts, and
+            community participation in shared climate action goals.
     - object_fit: contain
       row_margin_bottom: large
       layout: right-wide
       elements:
-        - type: text
-          text: These icons represent our infrastructure work (including our passive
-            housing), educational efforts, and community participation in shared
-            climate action goals.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/sustainable-futuresicons-1.png
+          alt: Sustainable Futures logo
         - type: image
           focal_x: 50
           focal_y: 50
