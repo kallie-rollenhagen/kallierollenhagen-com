@@ -153,7 +153,7 @@ gallery:
           text: Struggle Inc. (Cody Hudson) created both the logo and icon set.
             "Sustainable Futures" underscores Carleton's forward-looking
             approach to climate action and incorporates "sustainable," a key SEO
-            word. Plus, it's short enough to use in many different contexts.
+            word.
         - type: text
           text: I chose an illustrator with a unique, handmade style to evoke the tangible
             action each person in our college community has in this work. I
