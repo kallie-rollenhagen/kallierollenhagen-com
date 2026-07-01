@@ -76,7 +76,7 @@ gallery:
       elements:
         - type: text
           text: >-
-            ## Colors
+            ## Color Palette
 
 
             This sub-visual identity uses select brand colors, including Carleton's primary blue and maize, plus a mix of vibrant secondary colors (green and cyan), and a few brand neutrals. The goal was to have this feel brand-aligned with Carleton's parent brand, bold, and also natural-leaning.
