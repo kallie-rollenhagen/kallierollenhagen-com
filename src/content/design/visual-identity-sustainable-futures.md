@@ -139,5 +139,38 @@ gallery:
           focal_y: 50
           file: /assets/images/sarah-fortner-olin-small.jpg
           alt: sustainability director portrait in front of college building
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: full-width
+      elements:
+        - type: text
+          text: "## Logo & Illustrated Icons"
+    - object_fit: contain
+      row_margin_bottom: small
+      layout: right-wide
+      elements:
+        - type: text
+          text: Struggle Inc. (Cody Hudson) created both the logo and icon set.
+            "Sustainable Futures" underscores Carleton's forward-looking
+            approach to climate action and incorporates "sustainable," a key SEO
+            word. Plus, it's short enough to use in many different contexts.
+        - type: text
+          text: I chose an illustrator with a unique, handmade style to evoke the tangible
+            action each person in our college community has in this work. I
+            wanted the visual design to underscore that this work isn't neat and
+            tidy, but is impactful.
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: These icons represent our infrastructure work (including our passive
+            housing), educational efforts, and community participation in shared
+            climate action goals.
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/sustainable-futures-final-illustrations-full-set.jpg
+          alt: set of seven hand-cut illustrated icons in different colors
   type: grid
 ---
