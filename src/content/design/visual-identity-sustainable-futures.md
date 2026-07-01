@@ -175,5 +175,26 @@ gallery:
           focal_y: 50
           file: /assets/images/sustainable-futures-final-illustrations-full-set.jpg
           alt: set of seven hand-cut illustrated icons in different colors
+    - object_fit: contain
+      row_margin_bottom: large
+      layout: right-wide
+      elements:
+        - type: text
+          text: >-
+            ## Results
+
+
+            * In the first two days the redesigned website was live, the site received 28% of the traffic compared to the previous year (2,915 views Oct 24–25, 2024 vs. 10,478 views October 1, 2023–September 30, 2024).
+
+            * The announcement was sent to nearly 30,000 people and had a click rate of 6.2%, double the education industry standard (~3%).
+
+            * Carleton was one of six institutions awarded an inaugural Second Nature Climate Luminary Honor in February 2025.
+
+            * Carleton was recognized for embedding sustainability and climate action into its core mission with a new Carnegie Elective Classification for Sustainability (March 2025).
+        - type: image
+          focal_x: 50
+          focal_y: 50
+          file: /assets/images/sustainable-futures-desktop-mockup-small.jpg
+          alt: Mockup of carleton.edu/sustainability redesigned site
   type: grid
 ---
