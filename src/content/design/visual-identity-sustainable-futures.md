@@ -161,7 +161,7 @@ gallery:
             tidy, but is impactful. These icons represent our infrastructure
             work (including our passive housing), educational efforts, and
             community participation in shared climate action goals.
-    - object_fit: contain
+    - object_fit: cover
       row_margin_bottom: large
       layout: right-wide
       elements:
