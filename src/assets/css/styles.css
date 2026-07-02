@@ -174,16 +174,17 @@ img {
 }
 
 header {
+    /* display: grid; */
     grid-column: 1/ 14;
     height: var(--header_height);
     z-index: 3;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
 
     transition: transform 0.25s ease;
-    z-index: 1000; */
+    z-index: 1000;
 }
 
 header.hidden {
