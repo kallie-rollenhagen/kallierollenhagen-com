@@ -237,7 +237,8 @@ main {
 
     transition:
         opacity .25s ease,
-        transform .25s ease;
+        transform .25s ease,
+        background-color .25s ease;
 }
 
 #backToTop.visible {
@@ -245,6 +246,10 @@ main {
     transform: translateY(0);
 
     pointer-events: auto;
+}
+
+#backToTop:hover {
+    background-color: #aaa;
 }
 
 #backToTop svg {
