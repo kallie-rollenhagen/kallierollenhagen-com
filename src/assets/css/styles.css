@@ -758,7 +758,7 @@ ul li::before {
 
     /* Safeguard: Stops the icon from shrinking if the text wraps to multiple lines */
     flex-shrink: 0;
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 svg {
