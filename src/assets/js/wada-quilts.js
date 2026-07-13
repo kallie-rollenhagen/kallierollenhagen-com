@@ -3080,7 +3080,7 @@ function smootherStep(t) {
 function draw() {
     
     if (isAnimating) {
-        animationProgress += 0.02;
+        animationProgress += 0.05;
     }
 
     const interpolatedPattern = interpolatePatterns(easeInOutCubic(animationProgress));
