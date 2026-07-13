@@ -7,6 +7,12 @@ layout: layouts/base.njk
       <img src="{{ slide.file | url }}"
            alt="{{ slide.alt }}"
            style="object-position: {{ slide.focal_x or 50 }}% {{ slide.focal_y or 50 }}%">
+
+      {% if slide.caption %}
+      <div class="slide-caption">
+        <a href="{{ slide.url | url }}">{{ slide.caption }}</a>
+      </div>
+      {% endif %}
     </div>
   {% endfor %}
 </div>

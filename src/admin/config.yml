@@ -39,6 +39,35 @@ image_fields: &image_fields
     required: false
     hint: Top = 0%, bottom = 100% (only applies if Image Fit = Cover)
 
+home_slider_fields: &home_slider_fields
+  - { label: File, name: file, widget: image }
+  
+  - { label: Alt Text, name: alt, widget: string, required: false }
+  
+  - { label: Caption, name: caption, widget: string, required: true }
+
+  - { label: URL, name: url, widget: string, required: true }
+  
+  - label: Cropping Focal Point - X
+    name: focal_x
+    widget: number
+    value_type: int
+    min: 0
+    max: 100
+    default: 50
+    required: false
+    hint: Left = 0 %, right = 100% (only applies if Image Fit = Cover)
+  
+  - label: Cropping Focal Point - Y
+    name: focal_y
+    widget: number
+    value_type: int
+    min: 0
+    max: 100
+    default: 50
+    required: false
+    hint: Top = 0%, bottom = 100% (only applies if Image Fit = Cover)
+
 gallery_field: &gallery_field
   label: Gallery
   name: gallery
@@ -142,7 +171,7 @@ collections:
           - label: Slides
             name: slides
             widget: list
-            fields: *image_fields
+            fields: *home_slider_fields
 
       - label: Design Page
         name: design
