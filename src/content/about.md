@@ -11,6 +11,8 @@ contact:
   email: kallie.rollenhagen@gmail.com
 links:
   - text: CV
+    url: https://drive.google.com/file/d/17h6UTJR34nXXSrIf_0cfYlmyIFpmkOIS/view?usp=sharing
+  - text: Resume
     url: https://drive.google.com/file/d/12eQF9KxtuRjUF2gkAwVPmFXTjwmLHP8Z/view?usp=sharing
   - text: Instagram
     url: https://www.instagram.com/kallierollenhagen/
