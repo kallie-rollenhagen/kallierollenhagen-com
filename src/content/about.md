@@ -29,7 +29,10 @@ bio: >-
   Raised on a corn farm in south central Minnesota, she has a love of prairie places and people, with a special attraction to the less-flat topography of the driftless region. One of her core beliefs is that small places deserve nice things.
 
 
-  Kallie is currently the director of design and user experience at Carleton College.
+  Kallie is currently the director of design and user experience at Carleton College. 
+
+
+  recleague.com/kalliope
 clients:
   - client: Architects and interior designers
   - client: Artists and arts organizations
