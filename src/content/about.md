@@ -32,7 +32,7 @@ bio: >-
   Kallie is currently the director of design and user experience at Carleton College. 
 
 
-  recleague.com/kalliope
+  <https://recleague.com/kalliope>
 clients:
   - client: Architects and interior designers
   - client: Artists and arts organizations
